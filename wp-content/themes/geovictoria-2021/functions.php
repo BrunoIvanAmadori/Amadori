@@ -148,6 +148,19 @@ function geovictoria_2021_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
+	// Bootstrap CSS
+
+	wp_enqueue_style( 'bootstrap-css', get_stylesheet_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap-grid-css', get_stylesheet_directory_uri() . '/css/bootstrap-grid.min.css' );
+	wp_enqueue_style( 'bootstrap-reboot-css', get_stylesheet_directory_uri() . '/css/bootstrap-reboot.min.css' );
+	wp_enqueue_style( 'bootstrap-utilities-css', get_stylesheet_directory_uri() . '/css/bootstrap-utilities.min.css' );
+
+	// Bootstrap JS
+	wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js' );
+	wp_enqueue_script( 'bootstrap-bundle-js', get_stylesheet_directory_uri() . '/js/bootstrap.bundle.min.js' );
+
+	
 }
 add_action( 'wp_enqueue_scripts', 'geovictoria_2021_scripts' );
 
@@ -178,3 +191,22 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Force all network uploads to reside in "wp-content/uploads", and by-pass
+ * "files" URL rewrite for site-specific directories.
+ * 
+ * @link    http://wordpress.stackexchange.com/q/147750/1685
+ * 
+ * @param   array   $dirs
+ * @return  array
+ */
+function wpse_147750_upload_dir( $dirs ) {
+    $dirs['baseurl'] = network_site_url( '/wp-content/uploads' );
+    $dirs['basedir'] = ABSPATH . 'wp-content/uploads';
+    $dirs['path'] = $dirs['basedir'] . $dirs['subdir'];
+    $dirs['url'] = $dirs['baseurl'] . $dirs['subdir'];
+
+    return $dirs;
+}
+
+add_filter( 'upload_dir', 'wpse_147750_upload_dir' );
