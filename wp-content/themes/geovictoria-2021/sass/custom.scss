@@ -1,0 +1,14 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Include any default variable overrides here
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1100px,
+  xxl: 1100px
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+

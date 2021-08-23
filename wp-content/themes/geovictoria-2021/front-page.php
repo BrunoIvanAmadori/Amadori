@@ -15,13 +15,9 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-	<div class='col-4'>
-		<h1> Sorete </h1>
-	</div>
+	<main id="primary" class="site-main container">
 		
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
