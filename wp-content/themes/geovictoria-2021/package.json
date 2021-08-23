@@ -41,9 +41,21 @@
     "compile:rtl": "rtlcss style.css style-rtl.css",
     "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
     "lint:js": "wp-scripts lint-js 'js/*.js'",
+    "browser-sync": "browser-sync start --proxy 'geovictoria-new.local' --files './*/*'",
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
   },
   "dependencies": {
-    "bootstrap": "^5.1.0"
+    "beeper": "^3.0.0",
+    "bootstrap": "^5.1.0",
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-shell": "^0.8.0",
+    "gulp-sourcemaps": "^3.0.0"
   }
 }

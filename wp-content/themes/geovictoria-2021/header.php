@@ -25,27 +25,30 @@
 <div id="page container-fluid" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'geovictoria-2021' ); ?></a>
 
-	<header id="masthead" class="site-header container">
+	<header id="tophead" class="container d-flex justify-content-between">
+		<div class='d-flex'>
+			<div class="contact-phone">
+				<i class="far fa-phone-alt"></i>
+				+54 9 11 5454 9090
+			</div>
+
+			<div class="contact-email">
+			<i class="far fa-envelope"></i>
+				ventas@geovictoria.com
+			</div>
+		</div>
+
+		<div class="language-selector">lenguajes</div>
+	</header> 
+
+	<header id="masthead" class="site-header d-flex container justify-content-between">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$geovictoria_2021_description = get_bloginfo( 'description', 'display' );
-			if ( $geovictoria_2021_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $geovictoria_2021_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation w-auto">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'geovictoria-2021' ); ?></button>
 			<?php
 			wp_nav_menu(

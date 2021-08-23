@@ -11,19 +11,31 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer container">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'geovictoria-2021' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'geovictoria-2021' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'geovictoria-2021' ), 'geovictoria-2021', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
+	<footer id="colophon" class="site-footer container-fluid">
+		<div class="container d-flex justify-content-between">
+			<div class="col-4">
+				<div class="site-branding">
+					<?php the_custom_logo(); ?>
+				</div>
+			</div>
+			<div class="col-2">
+				<?php dynamic_sidebar('footer-sidebar-1'); ?>
+			</div>
+			<div class="col-2">
+				<?php dynamic_sidebar('footer-sidebar-2'); ?>
+			</div>
+			<div class="col-2">
+				<?php dynamic_sidebar('footer-sidebar-3'); ?>
+			</div>
+			<div class="col-2">
+				<?php dynamic_sidebar('footer-sidebar-4'); ?>
+			</div>
+		</div>
+		
+			<?php 
+			
+			?>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

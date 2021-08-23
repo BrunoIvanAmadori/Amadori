@@ -1,0 +1,52 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Include any default variable overrides here
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1100px,
+  xxl: 1101px
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../fonts/fonts.css';
+
+// :root {
+//   --gray:#646464;
+//  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Brsonoma';
+}
+
+p {
+  font-family: 'Nunito';
+  color: var(--gray);
+}
+
+
+
+.hero {
+  display: flex;
+  align-items:center;
+  height: 500px;
+  background-color:beige;
+}
+
+main#primary section {
+  padding:50px 0px;
+}
+
+.site-branding {
+  max-width:150px;
+}
+
+#tophead {
+  padding:10px 0px;
+}
+
+#masthead {
+  padding:20px 0px;
+}
