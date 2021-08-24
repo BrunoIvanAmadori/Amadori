@@ -18,15 +18,15 @@ get_header();
 	<section class="hero container-fluid">
 		<div class="container d-flex justify-content-between h-100">
 			<div class="col-6 d-flex">
-				<div class="align-self-center">
-					<h1>
+				<div class="align-self-center pe-3">
+					<h1 class="gray mb-3">
 						Optimiza la gestión humana ahorrando tiempo, recursos y dinero
 					</h1>
-					<h2>
+					<h3 class="gray fw-light mb-3">
 						Mas de 10 años innovando para nuestros clientes.
-					</h2>
-					<button>
-						Solicita tu demo gratis
+					</h3>
+					<button class="button__bigblue">
+						<span class="white">Solicita tu demo gratis </span>
 					</button>
 				</div>
 			</div>
@@ -36,7 +36,7 @@ get_header();
 	</section>
 
 	<section class='container trusting-companies'>
-		<h1 class="text-center">Empresas que confian en nosotros</h1>
+		<h2 class="text-center gray mb-3">Empresas que confian en nosotros</h2>
 		<div class="d-flex justify-content-between">
 			<div>thyssenkrup</div>
 			<div>securitas</div>
@@ -50,7 +50,7 @@ get_header();
 	</section>
 
 	<section class='container products'>
-		<h1 class="text-center">Te acompañamos durante toda tu experiencia Geovictoria</h1>
+		<h2 class="text-center gray mb-3 fw-light">Te acompañamos durante toda<br> <b>tu experiencia Geovictoria</b></h2>
 		<div class="d-flex justify-content-between">
 			<div>Portal asistencia</div>
 			<div>Portal acceso</div>
@@ -60,7 +60,7 @@ get_header();
 	</section>
 
 	<section class='container'>
-		<h1 class="text-center">Te acompañamos durante toda tu experiencia Geovictoria</h1>
+	<h2 class="text-center gray mb-3 fw-light">Te acompañamos durante toda<br> <b>tu experiencia Geovictoria</b></h2>
 		<div class="d-flex justify-content-between">
 			<div>Contacto</div>
 			<div>Kickoff</div>
@@ -82,7 +82,7 @@ get_header();
 				<p>
 				GeoVictoria cuenta con una mesa de soporte multicanal a través de chat en linea, telefono, correo electrónico, que estará disponible 24/7 para resolver todas tus dudas guiarte en el uso de nuestra plataforma
 				</p>
-				<button>
+				<button class="button__bigblue">
 				Contáctanos ahora
 				</button>
 			</div>

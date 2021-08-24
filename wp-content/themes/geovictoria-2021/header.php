@@ -27,36 +27,39 @@
 
 	<header id="tophead" class="container d-flex justify-content-between">
 		<div class='d-flex'>
-			<div class="contact-phone">
-				<i class="far fa-phone-alt"></i>
-				+54 9 11 5454 9090
+			<div class="contact-phone pe-3">
+				<i class="far fa-phone-alt primary"></i>
+				<small>+54 9 11 5454 9090 </small>
 			</div>
 
 			<div class="contact-email">
-			<i class="far fa-envelope"></i>
-				ventas@geovictoria.com
+			<i class="far fa-envelope primary"></i>
+			<small> ventas@geovictoria.com </small>
 			</div>
 		</div>
 
 		<div class="language-selector">lenguajes</div>
 	</header> 
 
-	<header id="masthead" class="site-header d-flex container justify-content-between">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			?>
-		</div><!-- .site-branding -->
+	<header id="masthead" class="site-header">
+		<div class="container d-flex justify-content-between">
+				
+			<div class="site-branding">
+				<?php
+				the_custom_logo();
+				?>
+			</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation w-auto">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'geovictoria-2021' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+			<nav id="site-navigation" class="main-navigation w-auto">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'geovictoria-2021' ); ?></button>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+		</div>
 	</header><!-- #masthead -->

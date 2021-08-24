@@ -10,6 +10,7 @@ $container-max-widths: (
   xxl: 1101px
 );
 
+
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../fonts/fonts.css';
 
@@ -17,31 +18,41 @@ $container-max-widths: (
 //   --gray:#646464;
 //  }
 
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Brsonoma';
+  color: #646464;
 }
 
-p {
+p, span, small {
   font-family: 'Nunito';
-  color: var(--gray);
+  color: #646464;
 }
 
+.main-navigation a {
+  color:#646464;
+  margin-right:5px;
+  padding:10px;
 
-
-.hero {
-  display: flex;
-  align-items:center;
-  height: 500px;
-  background-color:beige;
-}
-
-main#primary section {
-  padding:50px 0px;
 }
 
 .site-branding {
   max-width:150px;
 }
+
+.hero {
+  display: flex;
+  align-items:center;
+  height: 500px;
+}
+
+
+
+main#primary section {
+  padding:50px 0px;
+}
+
 
 #tophead {
   padding:10px 0px;
@@ -49,4 +60,31 @@ main#primary section {
 
 #masthead {
   padding:20px 0px;
+  box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
+  -webkit-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
+  -moz-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
+}
+
+.bg-2-gv {
+  background-color: #00adf0;
+}
+
+.gray {
+  color: #646464;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.primary {
+  color:#00adf0;
+}
+
+.button__bigblue {
+  padding:5px 60px;
+  border-radius:20px;
+  background-color: #00adf0;
+  color:white;
+  border:0px;
 }
