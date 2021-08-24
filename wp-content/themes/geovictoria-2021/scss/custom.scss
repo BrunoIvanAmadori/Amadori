@@ -18,23 +18,49 @@ $container-max-widths: (
 //   --gray:#646464;
 //  }
 
+html {
+  font-size:18px;
+}
 
+.fw-semibold {
+  font-weight: 600;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Brsonoma';
   color: #646464;
 }
 
-p, span, small {
+*:not(h1, h2, h3, h4, h5, h6, a) {
   font-family: 'Nunito';
   color: #646464;
 }
+
+a {
+  font-family: 'Nunito';
+  color: #00adf0;
+  text-decoration: none;
+  &:hover {
+    color: #158dbb;
+  }
+
+  &:active {
+    color: #0e6282;
+  }
+
+  &:visited {
+    color: #073f55;
+  }
+}
+
+
+
+
 
 .main-navigation a {
   color:#646464;
   margin-right:5px;
   padding:10px;
-
 }
 
 .site-branding {
@@ -45,9 +71,43 @@ p, span, small {
   display: flex;
   align-items:center;
   height: 500px;
+
+  &__img{
+    height:600px;
+  }
 }
 
+.product {
 
+  &__icon {
+    height:100px;
+  }
+
+  &--box {
+    border-radius:10px;
+    width:270px;
+    height:250px;
+    padding:20px;
+    margin:20px 20px 0px 20px;
+    text-align: center;
+    box-shadow: 0px -2px 21px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px -2px 21px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px -2px 21px 0px rgba(0,0,0,0.15);
+  }
+
+
+  &--card {
+    border-radius:10px;
+    width:100%;
+    padding:20px;
+    margin:20px 20px 0px 20px;
+    text-align: center;
+    box-shadow: 0px -2px 21px 0px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0px -2px 21px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px -2px 21px 0px rgba(0,0,0,0.15);
+ 
+  }
+}
 
 main#primary section {
   padding:50px 0px;
@@ -65,8 +125,12 @@ main#primary section {
   -moz-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
 }
 
-.bg-2-gv {
+.bg-blue {
   background-color: #00adf0;
+}
+
+.bg-blue-2 {
+  background-color: #4dc5f4;
 }
 
 .gray {
@@ -77,14 +141,53 @@ main#primary section {
   color: #ffffff;
 }
 
-.primary {
+.blue {
   color:#00adf0;
 }
 
-.button__bigblue {
-  padding:5px 60px;
+.blue-2 {
+  color: #4dc5f4;
+}
+
+.bg-head{
+  height:110px;
+  &-blue{
+    @extend .bg-head;
+    background-image:url('../img/bg-head-blue.svg');
+    background-size:cover;
+  }
+
+  &-gray{
+    @extend .bg-head;
+    background-image:url('../img/bg-head-gray.svg');
+    background-size:cover;
+  }
+}
+
+.button {
   border-radius:20px;
-  background-color: #00adf0;
-  color:white;
   border:0px;
+
+  &--big {
+    @extend .button;
+    padding:5px 60px;
+
+    &blue{
+      @extend .button--big;
+      background-color: #00adf0;
+      color:white;
+    }
+
+    &white{
+      @extend .button--big;
+      background-color: white;
+      color:#4dc5f4;
+    }
+  }
+}
+
+section {
+  &.products {
+
+  }
 }
