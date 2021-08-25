@@ -50,30 +50,33 @@ get_header();
 		</div>
 	</section>
 
-	<div class="bg-head-gray"></div>
+
+	
 
 
+	<div class="container-fluid position-relative">
 	<section class='container products'>
 		<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> <b>tu experiencia Geovictoria</b></h2>
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex justify-content-between">
 				<div class='product--box d-flex flex-column align-content-center'>
 					<img class="product__icon" src="<?php echo get_template_directory_uri()?>/img/product-asistencia.svg"/>
-					<h4>Portal <br>asistencia</h4>	
+					<h4 class="fw-bold">Portal <br>asistencia</h4>	
 					<a href="#">Ver más</a>
 				</div>
 				<div class='product--box d-flex flex-column align-content-center'>
 					<img class="product__icon" src="<?php echo get_template_directory_uri()?>/img/product-acceso.svg"/>
-					<h4>Portal <br>acceso</h4>
+					<h4 class="fw-bold">Portal <br>acceso</h4>
 					<a href="#">Ver más</a>
 				</div>
 				<div class='product--box d-flex flex-column align-content-center'>
 					<img class="product__icon" src="<?php echo get_template_directory_uri()?>/img/product-comedor.svg"/>
-					<h4>Portal <br>comedor</h4>
+					<h4 class="fw-bold">Portal <br>comedor</h4>
 					<a href="#">Ver más</a>
 				</div>
 			</div>
 		</div>
+		
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex justify-content-between">
 				<div class="product--card d-flex flex-column align-items-center">
@@ -82,47 +85,105 @@ get_header();
 							<img class="product__icon" src="<?php echo get_template_directory_uri()?>/img/product-business.svg"/>
 						</div>
 						<div class="col d-flex flex-column justify-content-center text-start">
-							<h4>Business Intelligence</h4>
+							<h4 class="fw-bold">Business Intelligence</h4>
 							<a href="#">Ver más</a>
 						</div>
 					</div>
-					
-
 				</div>
 			</div>
 		</div>
 	</section>
+	<div class="bg-curve">
+		<img src="<?php echo get_template_directory_uri()?>/img/bg-head-gray.svg"/>
+		<div class="bg-tail-gray"></div>
+	</div>
+</div>
+
 
 	<section class='container'>
 	<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> tu experiencia Geovictoria</h2>
-		<div class="d-flex justify-content-between">
-			<div>Contacto</div>
-			<div>Kickoff</div>
-			<div>Implementación</div>
-			<div>Set-up</div>
-			<div>Soporte</div>
+		<div class="progress__section d-flex justify-content-between">
+			<div class="progress__bg step-1">
+				<div class="progress__circle d-flex justify-content-center align-items-center">
+					<img class="progress__logo" src="<?php echo get_template_directory_uri()?>/img/process-logo-step-1.svg"/>
+					<div class="progress__text--up">
+						<h6 class="fw-bold">Contacto</h6>
+						<small class="fw-light">Te contactaremos con un ejecutivo comercial especializado para tu rubro</small>
+					</div>
+				</div>
+			</div>
+			<div class="align-self-center">
+				<img class="progress__arrow step-1" src="<?php echo get_template_directory_uri()?>/img/process-arrow.svg"/>
+			</div>
+			<div class="progress__bg step-2 align-self-end">
+				<div class="progress__circle d-flex justify-content-center align-items-center">
+					<img class="progress__logo" src="<?php echo get_template_directory_uri()?>/img/process-logo-step-2.svg"/>
+					<div class="progress__text--down">
+						<h6 class="fw-bold">KickOff</h6>
+						<small class="fw-light">Nuestro equipo está listo para instalar los equipos y métodos de marcaje solicitados</small>
+					</div>
+				</div>
+			</div>
+			<div class="align-self-center">
+				<img class="progress__arrow step-2" src="<?php echo get_template_directory_uri()?>/img/process-arrow.svg"/>
+			</div>
+			<div class="progress__bg step-3">
+				<div class="progress__circle d-flex justify-content-center align-items-center">
+					<img class="progress__logo" src="<?php echo get_template_directory_uri()?>/img/process-logo-step-3.svg"/>
+					<div class="progress__text--up">
+						<h6 class="fw-bold">Implementación</h6>
+						<small class="fw-light">Nuestro equipo está listo para instalar los equipos y métodos de marcaje solicitados</small>
+					</div>
+				</div>
+			</div>
+			<div class="align-self-center">
+				<img class="progress__arrow step-3" src="<?php echo get_template_directory_uri()?>/img/process-arrow.svg"/>
+			</div>
+			<div class="progress__bg step-4 align-self-end">
+				<div class="progress__circle d-flex justify-content-center align-items-center">
+					<img class="progress__logo" src="<?php echo get_template_directory_uri()?>/img/process-logo-step-4.svg"/>
+					<div class="progress__text--down">
+						<h6 class="fw-bold">Set-Up</h6>
+						<small class="fw-light">Te ayudamos a configurar tu sistema de marcaje para que quede activo</small>
+					</div>
+				</div>
+			</div>
+			<div class="align-self-center">
+				<img class="progress__arrow step-4" src="<?php echo get_template_directory_uri()?>/img/process-arrow.svg"/>
+			</div>
+			<div class="progress__bg step-5">
+				<div class="progress__circle d-flex justify-content-center align-items-center">
+					<img class="progress__logo" src="<?php echo get_template_directory_uri()?>/img/process-logo-step-5.svg"/>
+					<div class="progress__text--up">
+						<h6 class="fw-bold">Soporte</h6>
+						<small class="fw-light">Contarás con un equipo de soporte que te apoyará en cada momento</small>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-	<div class="bg-head-blue container-fluid"></div>
-	<section class="hero container-fluid bg-blue-2">
+	<div>
+		<img class="bg-head-blue" src="<?php echo get_template_directory_uri()?>/img/bg-head-blue.svg"/>
+	</div>
+	<section class="support container-fluid bg-blue-2">
 		
 		<div class="container d-flex justify-content-between">
 			<div class="align-self-center pe-3">
-				<h1 class="white">
+				<h1 class="white fw-bold mb-3">
 					Soporte y atención personalizada
 				</h1>
-				<h3 class="fw-light white">
+				<h3 class="white mb-3">
 					Siempre contarás con un equipo humano que te apoyará en cada momento
 				</h3>
-				<p class="fw-light white">
+				<p class="fw-light white fs-5 mb-4">
 					GeoVictoria cuenta con una mesa de soporte multicanal a través de chat en linea, telefono, correo electrónico, que estará disponible 24/7 para resolver todas tus dudas guiarte en el uso de nuestra plataforma
 				</p>
 				<button class="fw-bold button--bigwhite">
 					Contáctanos ahora
 				</button>
 			</div>
-			<div class="col-6 h-100 d-flex justify-content-center">
-				<img class="hero__img" src="<?php echo get_template_directory_uri()?>/img/soporte-personalizado.png"/>
+			<div class="col-5 h-100 d-flex justify-content-center">
+				<img class="support__img" src="<?php echo get_template_directory_uri()?>/img/soporte-personalizado.png"/>
 			</div>
 		</div>
 	</section>

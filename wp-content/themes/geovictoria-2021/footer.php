@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer container-fluid">
 		<div class="container d-flex justify-content-between">
-			<div class="col-4">
+			<div class="col-2">
 				<div class="site-branding">
 					<?php the_custom_logo(); ?>
 				</div>

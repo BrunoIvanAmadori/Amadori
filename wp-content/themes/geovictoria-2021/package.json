@@ -45,6 +45,7 @@
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
     "beeper": "^3.0.0",
     "bootstrap": "^5.1.0",
     "browser-sync": "^2.27.5",
