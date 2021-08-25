@@ -163,6 +163,14 @@ a {
   opacity:0.8;
 }
 
+.bg-header {
+  position:absolute;
+  width: 100%;
+  z-index: -9999;
+  top:-50px;
+  opacity:0.8;
+}
+
 .bg-tail{
   height:600px;
   opacity:0.8;
@@ -275,7 +283,6 @@ li.featured-white {
   &.login a::before {
     color:#00adf0 !important;
     font-family: "Font Awesome 5 Pro" !important; font-weight: 900 !important; content: "\f2f6" !important;
-
   }
 }
 
@@ -368,6 +375,7 @@ footer {
     }
   & .wp-block-social-links .wp-social-link a {
     padding: 0;
+    color:white;
   }
 }
 
@@ -379,10 +387,12 @@ main#primary section {
 
 #tophead {
   padding:10px 0px;
+  background-color: white;
 }
 
 #masthead {
   padding:20px 0px;
+  background-color: white;
   box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
   -webkit-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
   -moz-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);

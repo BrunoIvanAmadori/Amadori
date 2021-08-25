@@ -14,6 +14,9 @@
 
 get_header();
 ?>
+	<div class="bg-header">
+		<img src="<?php echo get_template_directory_uri()?>/img/bg-header.svg"/>
+	</div>
 <main id="primary" class="site-main">
 	<section class="hero container-fluid">
 		<div class="container d-flex justify-content-between h-100">
