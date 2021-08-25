@@ -2,14 +2,17 @@ const progressAnimation = anime.timeline({
   autoplay:0
 });
 
-let progressAnimationHasPlayed = 0;
+let progressAnimationPlayed = 0;
 
-var observer = new IntersectionObserver(function(entries) {
-	if(entries[0].isIntersecting === true && progressAnimationHasPlayed == 0)
-		progressAnimation.play();
-    progressAnimationHasPlayed = 1;
-    
-}, { threshold: [0] });
+var observer = new IntersectionObserver(
+  function(entries) {
+    if(entries[0].isIntersecting === true && progressAnimationPlayed == 0) {
+      progressAnimation.play();
+      console.log('caca');
+      progressAnimationPlayed = 1;
+      console.log(progressAnimationPlayed);
+    }
+  }, { threshold: [0] });
 
 observer.observe(document.querySelector(".progress__bg"));
 

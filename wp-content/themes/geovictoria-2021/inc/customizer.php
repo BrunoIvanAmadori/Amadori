@@ -31,6 +31,45 @@ function geovictoria_2021_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	$wp_customize->add_section( 'geovictoria-2021_info_contacto',
+		array(
+		'title' => __( 'Información de contacto (ventas)' ),
+		'priority' => '50'
+		)
+	);
+
+	// Creo opcion para asignar telefono
+	$wp_customize->add_setting(
+		'geovictoria-2021_info_contacto_telefono', //give it an ID
+		array(
+			'default' => '', // Give it a default
+		)
+	);
+	
+	$wp_customize->add_control( 'geovictoria-2021_info_contacto_telefono',
+		array(
+			'label' => __( 'Teléfono de contacto' ),
+			'section' => 'geovictoria-2021_info_contacto',
+			'type' => 'text',
+		)
+	);
+
+	// Creo opcion para asignar email
+	$wp_customize->add_setting(
+		'geovictoria-2021_info_contacto_email', //give it an ID
+		array(
+			'default' => '', // Give it a default
+		)
+	);
+	
+	$wp_customize->add_control( 'geovictoria-2021_info_contacto_email',
+		array(
+			'label' => __( 'Email de contacto' ),
+			'section' => 'geovictoria-2021_info_contacto',
+			'type' => 'text',
+		)
+	);	
 }
 add_action( 'customize_register', 'geovictoria_2021_customize_register' );
 
@@ -59,3 +98,5 @@ function geovictoria_2021_customize_preview_js() {
 	wp_enqueue_script( 'geovictoria-2021-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), _S_VERSION, true );
 }
 add_action( 'customize_preview_init', 'geovictoria_2021_customize_preview_js' );
+
+

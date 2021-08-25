@@ -177,6 +177,20 @@ a {
 .button {
   border-radius:20px;
   border:0px;
+  padding:5px 40px;
+
+  &--blue{
+    @extend .button;
+    background-color: #00adf0;
+    color:white;
+  }
+
+  &--white{
+    @extend .button;
+    background-color: white;
+    color:#4dc5f4;
+  }
+  
 
   &--big {
     @extend .button;
@@ -276,6 +290,16 @@ footer {
       color: #646464;
       font-weight:300;
     }
+  & .wp-block-button__link {
+    @extend .button--blue;
+  }
+
+  & .wp-block-social-links .wp-social-link.wp-social-link.wp-social-link {
+      margin: 0;
+    }
+  & .wp-block-social-links .wp-social-link a {
+    padding: 0;
+  }
 }
 
 

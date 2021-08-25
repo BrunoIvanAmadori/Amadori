@@ -29,12 +29,12 @@
 		<div class='d-flex'>
 			<div class="contact-phone pe-3">
 				<i class="far fa-phone-alt blue"></i>
-				<small>+54 9 11 5454 9090 </small>
+				<small><?php echo get_theme_mod('geovictoria-2021_info_contacto_telefono')?></small>
 			</div>
 
 			<div class="contact-email">
 			<i class="far fa-envelope blue"></i>
-			<small> ventas@geovictoria.com </small>
+			<small><?php echo get_theme_mod('geovictoria-2021_info_contacto_email')?></small>
 			</div>
 		</div>
 
