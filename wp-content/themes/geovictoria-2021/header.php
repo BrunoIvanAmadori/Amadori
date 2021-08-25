@@ -24,28 +24,47 @@
 <?php wp_body_open(); ?>
 <div id="page container-fluid" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'geovictoria-2021' ); ?></a>
-
 	<header id="tophead" class="container-fluid">
 		<div class="container d-flex justify-content-between">
 			<div class='d-flex'>
 				<div class="contact-phone pe-3">
 					<i class="far fa-phone-alt blue"></i>
-					<small><?php echo get_theme_mod('geovictoria-2021_info_contacto_telefono')?></small>
+					<small><?php echo esc_html( get_theme_mod( 'geovictoria-2021_info_contacto_telefono' ) ); ?></small>
 				</div>
 
 				<div class="contact-email">
 				<i class="far fa-envelope blue"></i>
-				<small><?php echo get_theme_mod('geovictoria-2021_info_contacto_email')?></small>
+				<small><?php echo esc_html( get_theme_mod( 'geovictoria-2021_info_contacto_email' ) ); ?></small>
 				</div>
 			</div>
 
-			<div class="language-selector">lenguajes</div>
+			<div class="language-selector">
+			<ul>
+				<?php 
+				if (get_sites()) {
+					print_r(get_sites());
+					foreach (get_sites() as $site) {
+						if (get_current_blog_id() == $site->blog_id) {
+							continue;
+						}
+						$site_url_sanitized = str_replace('/', '', $site->path);
+						?>
+							<li>
+								<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/flags/<?php echo $site_url_sanitized; ?>.png">
+
+							</li>
+						<?php
+					}
+				};
+				?>
+				</ul>
+				
+			</div>
 		</div>
 	</header> 
 
 	<header id="masthead" class="site-header">
 		<div class="container d-flex justify-content-between">
-				
 			<div class="site-branding">
 				<?php
 				the_custom_logo();
