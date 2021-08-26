@@ -398,10 +398,33 @@ main#primary section {
   -moz-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
 }
 
-.language-selector ul {
-  list-style:none;
-  & li {
+.language-selector {
+
+
+  &__list{
+    position:absolute;
+    top:25px;
+    padding:25px;
+    background-color:white;
+
+    box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
+    -webkit-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
+    -moz-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
+
+    & ul {
+      list-style:none;
+      margin: 0px;
+      padding:0px;
+
+      & li {
+        margin-bottom:10px;
+        padding:5px;
+      }
+    }
+  }
+
+  &__flag {
     width:30px;
-    margin-bottom:5px;
+    margin-right:5px;
   }
 }
