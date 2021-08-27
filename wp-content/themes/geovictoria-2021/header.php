@@ -42,7 +42,7 @@
 	</header> 
 
 	<header id="masthead" class="site-header">
-		<div class="container d-flex justify-content-between">
+		<div class="container d-flex justify-content-between p-0">
 			<div class="site-branding">
 				<?php
 				the_custom_logo();

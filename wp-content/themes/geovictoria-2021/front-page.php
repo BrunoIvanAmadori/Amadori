@@ -33,8 +33,11 @@ get_header();
 					</button>
 				</div>
 			</div>
-			<div class="col-6 h-100">
-				<img src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/monitor.png' class='img-fluid'>
+			<div class="col-6 h-100 header-animation">
+				<img class="header-animation__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/screen.png'>
+				<img class="header-animation__arrow" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/arrow.svg'>
+				<img class="header-animation__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/entry_type.png'>
+				<img class="header-animation__user" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/user.png'>
 			</div>
 		</div>
 	</section>
