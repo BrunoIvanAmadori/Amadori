@@ -189,6 +189,7 @@ function geovictoria_2021_scripts() {
 	wp_enqueue_script( 'anime-js', get_template_directory_uri() . '/js/anime.min.js');
 	wp_enqueue_script( 'bootstrap-bundle-js', get_template_directory_uri() . '/js/bootstrap.bundle.min.js');
 	wp_enqueue_script( 'animation', get_template_directory_uri() . '/js/animation.js', array(), '', true  );
+	wp_enqueue_script( 'front-page-timeline', get_template_directory_uri() . '/js/timelines/front-page.js', array(), '', true  );
 	wp_enqueue_script( 'sticky-header', get_template_directory_uri() . '/js/sticky.js', array(), '', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
