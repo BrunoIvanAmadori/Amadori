@@ -24,28 +24,25 @@
 <?php wp_body_open(); ?>
 <div id="page container-fluid" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'geovictoria-2021' ); ?></a>
-
 	<header id="tophead" class="container-fluid">
 		<div class="container d-flex justify-content-between">
 			<div class='d-flex'>
 				<div class="contact-phone pe-3">
 					<i class="far fa-phone-alt blue"></i>
-					<small><?php echo get_theme_mod('geovictoria-2021_info_contacto_telefono')?></small>
+					<small><?php echo esc_html( get_theme_mod( 'geovictoria-2021_info_contacto_telefono' ) ); ?></small>
 				</div>
 
 				<div class="contact-email">
 				<i class="far fa-envelope blue"></i>
-				<small><?php echo get_theme_mod('geovictoria-2021_info_contacto_email')?></small>
+				<small><?php echo esc_html( get_theme_mod( 'geovictoria-2021_info_contacto_email' ) ); ?></small>
 				</div>
 			</div>
-
-			<div class="language-selector">lenguajes</div>
+		<?php get_template_part( 'template-parts/language-selector' ); ?>
 		</div>
 	</header> 
 
 	<header id="masthead" class="site-header">
-		<div class="container d-flex justify-content-between">
-				
+		<div class="container d-flex justify-content-between p-0">
 			<div class="site-branding">
 				<?php
 				the_custom_logo();
