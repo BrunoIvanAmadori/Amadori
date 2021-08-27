@@ -6,8 +6,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 1100px,
-  xl: 1100px,
 );
+
 
 
 @import '../node_modules/bootstrap/scss/bootstrap';
@@ -17,8 +17,13 @@ $container-max-widths: (
 //   --gray:#646464;
 //  }
 
+
 html {
   font-size:18px;
+}
+
+body {
+  overflow-x:hidden;
 }
 
 .fw-semibold {
@@ -31,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-*:not(h1, h2, h3, h4, h5, h6, a) {
+*:not(h1, h2, h3, h4, h5, h6, a, span) {
   font-family: 'Nunito';
   color: #646464;
 }
@@ -53,17 +58,51 @@ a {
   }
 }
 
-.navbar ul li {
-  padding:10px;
-  margin-right: 5px;
+.navbar {
+  & .collapsing, .collapse.show {
+    & ul {
+      margin-left: 0px;
+      & li {
+        margin-top:15px;
+      }
+    }
+  }
 
-  & a {
-    color: #646464;
+  &-collapse {
+    justify-content: flex-end;
+  }
+
+
+  & ul {
+  margin-left: 0px;
+  flex-wrap:nowrap;
+
+    & li {
+    padding:0;
+    margin-right: 5px;
+    white-space: nowrap;
+
+    & a {
+      color: #646464;
+      font-size: 16px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color:rgba(245,245,247,1);
+      }
+
+      &:active {
+        color: #646464;
+      }
+      }
+    }
   }
 }
 
 .site-branding {
   max-width:150px;
+  position:relative;
+  bottom: 8px;
 }
 
 .hero {
@@ -222,7 +261,8 @@ a {
 li.featured {
   border: 0 !important;
   border-radius: 20px !important;
-  padding: 10px 25px !important;
+  padding: 0px 25px !important;
+  transition: background-color 0.2s;
 
   &--blue{
     @extend .featured;
@@ -261,15 +301,7 @@ li.featured {
     background-color: white !important;
 
     &:hover {
-      background-color: rgb(245,245,247) !important;
-    }
-  
-    &:active {
-      background-color: #0e6282 !important;
-    }
-  
-    &:visited {
-      background-color: #073f55 !important;
+      background-color: rgba(245,245,247, 1) !important;
     }
   
     & a {
@@ -389,12 +421,11 @@ main#primary section {
 
 
 #tophead {
-  padding:10px 0px;
   background-color: white;
 }
 
 #masthead {
-  padding:20px 0px;
+  padding:5px 0px;
   background-color: white;
   box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
   -webkit-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);

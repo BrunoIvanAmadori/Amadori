@@ -24,8 +24,8 @@
 <?php wp_body_open(); ?>
 <div id="page container-fluid" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'geovictoria-2021' ); ?></a>
-	<header id="tophead" class="container-fluid">
-		<div class="container d-flex justify-content-between">
+	<header id="tophead" class="container-fluid d-none d-lg-block">
+		<div class="container d-flex justify-content-between align-items-center">
 			<div class='d-flex'>
 				<div class="contact-phone pe-3">
 					<i class="far fa-phone-alt blue"></i>
@@ -42,18 +42,17 @@
 	</header> 
 
 	<header id="masthead" class="site-header">
-		<div class="container d-flex justify-content-between p-0">
-
-
-
-
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid">
-					<a class="site-branding navbar-brand">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container justify-content-md-between">
+					<div class="d-md-block d-lg-none">
+						<?php get_template_part( 'template-parts/language-selector' ); ?>
+					</div>
+					<div class="site-branding navbar-brand">
 						<?php
 						the_custom_logo();
 						?>
-					</a><!-- .site-branding -->
+					</div><!-- .site-branding -->
 
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
