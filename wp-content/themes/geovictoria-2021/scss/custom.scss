@@ -64,6 +64,11 @@ a {
       margin-left: 0px;
       & li {
         margin-top:15px;
+
+        & a {
+          text-align: center;
+        }
+
       }
     }
   }
