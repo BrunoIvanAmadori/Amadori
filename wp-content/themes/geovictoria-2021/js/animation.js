@@ -1,22 +1,104 @@
+
+
+
+
+var observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        playTarget(entry.target);
+    }
+  }, { threshold: [0.5] });
+});
+
+observer.observe(document.querySelector(".progress__bg"));
+observer.observe(document.querySelector(".header-animation"));
+
+function playTarget(el) {
+  if(el.classList.contains('progress__bg') && progressAnimationPlayed == 0) {
+    progressAnimation.play();
+    progressAnimationPlayed = 1;
+  } else if ( el.classList.contains('header-animation') && headerAnimationPlayed == 0 ) {
+    headerAnimation.play();
+    headerAnimationPlayed = 1;
+  }
+}
+
+const headerAnimation = anime.timeline({
+  autoplay: 0
+})
+
+let headerAnimationPlayed = 0;
+let headerScreen = document.querySelector(".header-animation__screen");
+let headerUser = document.querySelector(".header-animation__user");
+
+headerAnimation
+.add({
+  targets: '.header-animation__screen',
+  duration: 1500,
+  opacity: [0, 1],
+  translateX: [700, 0],
+  easing: 'easeOutExpo'
+}, 0)
+
+.add({
+  targets: '.header-animation__arrow',
+  duration: 1000,
+  translateX: [700, 0],
+  easing: 'easeInOutSine'
+}, 0)
+
+.add({
+  targets: '.header-animation__user',
+  duration: 1500,
+  translateY: [100, 0],
+  opacity: [0, 1],
+  easing: 'easeOutExpo'
+}, 1000)
+
+.add({
+  targets: '.header-animation__screen',
+  duration: 500,
+  update: function(anim){
+    headerScreen.style.filter = 'brightness(' + (100 - (20 * anim.progress / 100)) + '%)'
+  },
+  easing: 'easeOutSine',
+}, 1000)
+
+
+.add({
+  targets: '.header-animation__entry-type',
+  duration: 1500,
+  translateY: [100, 0],
+  opacity: [0, 1],
+  easing: 'easeOutExpo'
+}, 1500)
+
+.add({
+  targets: ['.header-animation__user', '.header-animation__screen'],
+  duration: 500,
+  update: function(anim){
+    headerScreen.style.filter = 'brightness(' + (80 - (20 * anim.progress / 100)) + '%)';
+    headerUser.style.filter = 'brightness(' + (100 - (20 * anim.progress / 100)) + '%)'
+  },
+  easing: 'easeOutSine',
+}, 1500);
+
+anime({
+  targets: '.header-animation__arrow',
+  translateX: [-20, 0],
+  direction: 'alternate',
+  loop: true,
+  easing: 'easeInOutSine',
+});
+
+// Animation down - step 1
+
 const progressAnimation = anime.timeline({
   autoplay:0
 });
 
 let progressAnimationPlayed = 0;
-
-var observer = new IntersectionObserver(
-  function(entries) {
-    if(entries[0].isIntersecting === true && progressAnimationPlayed == 0) {
-      progressAnimation.play();
-      console.log('caca');
-      progressAnimationPlayed = 1;
-      console.log(progressAnimationPlayed);
-    }
-  }, { threshold: [0] });
-
-observer.observe(document.querySelector(".progress__bg"));
-
-// Animation down - step 1
 
 progressAnimation
 .add({
@@ -120,27 +202,3 @@ translateY: [0, 220]
   targets: ['.progress__bg.step-5 .progress__text--up'],
   opacity: [0, 1]
 }, 2800);
-
-
-
-
-
-// function elementInViewport(el) {
-//     var top = el.offsetTop;
-//     var left = el.offsetLeft;
-//     var width = el.offsetWidth;
-//     var height = el.offsetHeight;
-  
-//     while(el.offsetParent) {
-//       el = el.offsetParent;
-//       top += el.offsetTop;
-//       left += el.offsetLeft;
-//     }
-  
-//     return (
-//       top >= window.pageYOffset &&
-//       left >= window.pageXOffset &&
-//       (top + height) <= (window.pageYOffset + window.innerHeight) &&
-//       (left + width) <= (window.pageXOffset + window.innerWidth)
-//     );
-//   }
