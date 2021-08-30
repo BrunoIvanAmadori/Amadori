@@ -12,20 +12,20 @@
 ?>
 
 	<footer id="colophon" class="site-footer container-fluid">
-		<div class="container d-flex justify-content-between">
-			<div class="col-3">
+		<div class="container d-flex justify-content-between flex-column flex-md-row flex-wrap px-4">
+			<div class="col-12 col-md-12 col-lg-3">
 				<div class="site-branding mb-3">
 					<?php the_custom_logo(); ?>		
 				</div>
 				<?php dynamic_sidebar('footer-sidebar-1'); ?>
 			</div>
-			<div class="col-3">
+			<div class="col-12 col-md-6 col-lg-3">
 				<?php dynamic_sidebar('footer-sidebar-2'); ?>
 			</div>
-			<div class="col-3">
+			<div class="col-12 col-md-6 col-lg-3">
 				<?php dynamic_sidebar('footer-sidebar-3'); ?>
 			</div>
-			<div class="col-3">
+			<div class="col-12 col-md-12 col-lg-3">
 			<?php dynamic_sidebar('footer-sidebar-4'); ?>
 				<div class='d-flex flex-column mb-3'>
 					<div class="contact-phone pe-3">

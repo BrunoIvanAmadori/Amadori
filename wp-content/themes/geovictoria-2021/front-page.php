@@ -18,22 +18,22 @@ get_header();
 	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-header.svg"/>
 </div>
 <main id="primary" class="site-main">
-	<section class="hero container-fluid">
-		<div class="container d-flex justify-content-between h-100">
-			<div class="col-6 d-flex">
-				<div class="align-self-center pe-3">
+	<section class="hero container-fluid mt-md-5 px-4">
+		<div class="container d-flex flex-column flex-md-row justify-content-between h-100 px-4 text-center text-md-start">
+			<div class="col-12 col-md-6 mb-5">
+				<div class="align-self-center pe-md-3">
 					<h1 class="gray mb-3 fw-bold">
 						Optimiza la gestión humana ahorrando tiempo, recursos y dinero
 					</h1>
 					<h3 class="gray fw-light mb-3">
 						Mas de 10 años innovando para nuestros clientes.
 					</h3>
-					<button class="button--bigblue">
+					<button class="button--bigblue bounce">
 						<span class="white">Solicita tu demo gratis</span>
 					</button>
 				</div>
 			</div>
-			<div class="col-6 h-100 header-animation">
+			<div class="col-12 col-md-6 text-start header-animation">
 				<img class="header-animation__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/screen.png'>
 				<img class="header-animation__arrow" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/arrow.svg'>
 				<img class="header-animation__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/entry_type.png'>
@@ -41,24 +41,33 @@ get_header();
 			</div>
 		</div>
 	</section>
-	<section class='container trusting-companies'>
+	<section class="container col-12 mb-4 px-4 trusting-companies">
 		<h2 class="text-center gray mb-3 fw-bold">Empresas que confian en nosotros</h2>
-		<div class="d-flex justify-content-between">
-			<div>thyssenkrup</div>
-			<div>securitas</div>
-			<div>GrandVision</div>
-			<div>Addecco</div>
-			<div>Scotiabank</div>
-			<div>Coca-cola</div>
-			<div>Logitech</div>
-			<div>Starbucks</div>
+		<div class="d-flex justify-content-around">
+			<div>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/securitas-logo.png'>
+			</div>
+			<div>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/starbucks-logo.png'>
+			</div>
+			<div>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/adecco-logo.png'>
+			</div>
+			<div>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/scotiabank-logo.png'>
+			</div>
+			<div>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/coca-logo.png'>
+			</div>
 		</div>
 	</section>
-	<div class="container-fluid position-relative">
-	<section class='container products'>
+	
+	<section class='container-fluid products px-4'>
+
 		<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> <b>tu experiencia Geovictoria</b></h2>
+		
 		<div class="row d-flex justify-content-center">
-			<div class="col d-flex justify-content-between">
+			<div class="col d-flex flex-column flex-md-row justify-content-between">
 				<div class='product--box d-flex flex-column align-content-center'>
 					<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-asistencia.svg"/>
 					<h4 class="fw-bold">Portal <br>asistencia</h4>	
@@ -76,8 +85,9 @@ get_header();
 				</div>
 			</div>
 		</div>
+
 		<div class="row d-flex justify-content-center">
-			<div class="col d-flex justify-content-between">
+			<div class="col d-flex flex-column flex-md-row justify-content-between">
 				<div class="product--card d-flex flex-column align-items-center">
 					<div class='row'>
 						<div class="col justify-content-center text-end">
@@ -91,6 +101,7 @@ get_header();
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<div class="bg-curve">
 		<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-head-gray.svg"/>
@@ -98,7 +109,76 @@ get_header();
 	</div>
 	<section class='container'>
 	<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> tu experiencia Geovictoria</h2>
-		<div class="progress__section d-flex justify-content-between">
+	<!-- Para mobile -->
+
+	<div class="progressMobile__section d-flex flex-column d-md-none text-center px-4">
+		<div class="step-1 mb-4">
+			<div class="progressMobile__bg step-1 mb-4 ">
+				<div class="progressMobile__circle">
+					<img class="progressMobile__logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/process-logo-step-1.svg"/>
+					<div class="progressMobile__text--left">
+						<h3 class="fw-bold">Contacto</h3>
+					</div>
+				</div>
+			</div>
+
+				<p class="fw-light">Te contactaremos con un ejecutivo comercial especializado para tu rubro</p>
+
+		</div>
+
+		<div class="step-2 mb-4">
+			<div class="progressMobile__bg step-2 mb-4">
+				<div class="progressMobile__circle">
+					<img class="progressMobile__logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/process-logo-step-2.svg"/>
+					<div class="progressMobile__text--left">
+						<h3 class="fw-bold">Kickoff</h3>
+					</div>
+				</div>
+			</div>		
+			<p class="fw-light">Nuestro equipo está listo para instalar los equipos y métodos de marcaje solicitados</p>
+		</div>
+
+		<div class="step-3 mb-4">
+			<div class="progressMobile__bg step-3 mb-4">
+			
+				<div class="progressMobile__circle">
+					<img class="progressMobile__logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/process-logo-step-3.svg"/>
+					<div class="progressMobile__text--left">
+						<h3 class="fw-bold">Implementación</h3>
+					</div>
+				</div>
+			</div>
+			<p class="fw-light">Nuestro equipo está listo para instalar los equipos y métodos de marcaje solicitados</p>
+		</div>
+
+		<div class="step-4 mb-4">
+			<div class="progressMobile__bg step-4 mb-4">
+				<div class="progressMobile__circle">
+					<img class="progressMobile__logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/process-logo-step-4.svg"/>
+					<div class="progressMobile__text--left">
+						<h3 class="fw-bold">Setup</h3>
+					</div>
+				</div>			
+			</div>
+			<p class="fw-light">Te ayudamos a configurar tu sistema de marcaje para que quede activo</p>
+		</div>
+
+		<div class="step-5 mb-4">
+			<div class="progressMobile__bg step-5 mb-4">
+			
+				<div class="progressMobile__circle">
+					<img class="progressMobile__logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/process-logo-step-5.svg"/>
+					<div class="progressMobile__text--left">
+						<h3 class="fw-bold">Soporte</h3>
+					</div>
+				</div>
+			</div>
+			<p class="fw-light">Contarás con un equipo de soporte que te apoyará en cada momento</p>
+		</div>
+	</div>
+
+	<!-- Para desktop -->
+		<div class="progress__section d-none justify-content-between d-md-flex">
 			<div class="progress__bg step-1">
 				<div class="progress__circle d-flex justify-content-center align-items-center">
 					<img class="progress__logo" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/process-logo-step-1.svg"/>
@@ -163,7 +243,7 @@ get_header();
 	</div>
 	<section class="support container-fluid bg-blue-2">
 		<div class="container d-flex justify-content-between">
-			<div class="align-self-center pe-3">
+			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
 				<h1 class="white fw-bold mb-3">
 					Soporte y atención personalizada
 				</h1>
@@ -177,7 +257,7 @@ get_header();
 					Contáctanos ahora
 				</button>
 			</div>
-			<div class="col-5 h-100 d-flex justify-content-center">
+			<div class="col-5 h-100 justify-content-center d-none d-md-flex">
 				<img class="support__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/soporte-personalizado.png"/>
 			</div>
 		</div>
