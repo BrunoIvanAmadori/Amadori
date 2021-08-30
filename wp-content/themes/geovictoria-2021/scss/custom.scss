@@ -24,6 +24,7 @@ html {
 
 body {
   overflow-x:hidden;
+  padding-top:80px;
 }
 
 .fw-semibold {
@@ -427,6 +428,11 @@ main#primary section {
 
 #tophead {
   background-color: white;
+
+  top: 0px;
+  position: fixed;
+  padding-left:-14px;
+  z-index:99;
 }
 
 #masthead {
@@ -436,8 +442,14 @@ main#primary section {
   -webkit-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
   -moz-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
 
+  top: 40px;
+  position: fixed;
+  padding-left:-14px;
+  z-index:98;
+  width: 100%;
+
   &.stickyHeader {
-    top: 0;
+    top: 80px;
     position: fixed;
     width: 100%;
     padding-left:-14px;
@@ -447,6 +459,7 @@ main#primary section {
 
 .language-selector {
   position: relative;
+  z-index: 99;
 
   &__menu{
     width:220px;
