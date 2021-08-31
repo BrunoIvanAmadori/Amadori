@@ -64,7 +64,7 @@ let size;
 let throttled = false;
 let translated = false;
 function setHeaderPosition () {
-
+  console.log('ocurrio header position');
 
 
   if (viewport == "lg" && !translated) {
@@ -133,6 +133,7 @@ function setHeaderPosition () {
 function getViewport() {
   if(  window.innerWidth  < 990 ) {
     viewport = 'md';
+    // 
   } else {
     viewport = 'lg';
   }
@@ -239,3 +240,9 @@ function onScrollUp() {
 
 getViewport();
 setHeaderPosition();
+
+if (viewport == "md") {
+  header.style.transform= 'translateY(-40px)';
+} else {
+  header.style.transform= 'translateY(0px)';
+}
