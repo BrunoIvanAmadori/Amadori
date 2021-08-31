@@ -34,13 +34,6 @@ get_header();
 				</div>
 			</div>
 			<div class="header-animation col-12 col-md-6 text-start ">
-				asdadasdas
-				date_subdas
-				date_subdsa
-				date_subdsada
-				date_subdsads
-				asdadasdasdas
-				
 				<img class="header-animation header-animation__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/screen.png'>
 				<img class="header-animation header-animation__arrow" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/arrow.svg'>
 				<img class="header-animation header-animation__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/entry_type.png'>
