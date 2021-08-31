@@ -5,41 +5,6 @@
 
 let lastScrollTop = 0;
 
-window.onload = () => {
-  window.addEventListener('resize', () => {
-    if (!throttled) {
-      getViewport();
-      setHeaderPosition();
-  
-      throttled = true;
-  
-      setTimeout( function() {
-        throttled = false
-      }, 100);
-    }
-    // start timing for event "completion"
-    } 
-  );
-
-  window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-    let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-    getViewport();
-    setHeaderPosition();
-
-    if (st > lastScrollTop){
-       onScrollDown();
-    } else {
-       onScrollUp();
-    }
-    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-  }, false);
-  
-}
-
-
-
-// stickyheader class should be part of this plugin
-
 // Get the header
 let header = document.getElementById("masthead");
 let headerHeight = header.offsetHeight;
@@ -49,14 +14,10 @@ let headerHeight = header.offsetHeight;
 let topheader = document.getElementById("tophead");
 let topheaderHeight = topheader.offsetHeight;
 
-// Get the offset position of the navbar
-let sticky = header.offsetTop;
-
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 
-let isOnTop = 0;
-let scrollingDown = 0;
-let scrollingUp = 0;
+let scrollingDown;
+let scrollingUp;
 let viewport;
 let size;
 
@@ -103,18 +64,13 @@ function isPageOnTop() {
   }
  }
 
-const tl = anime.timeline({   });
-
 function show(s, e) {
-
   anime({
     duration: 150,
     targets: ['#tophead', '#masthead'],
     translateY: [s, e],
     easing: 'easeInOutSine'
-
     });
-
 }
 
 function hide(s, e) {
@@ -124,13 +80,11 @@ function hide(s, e) {
     translateY: [s, e],
     easing: 'easeInOutSine'
     });
-
 }
 
 function onScrollDown() {
   if(scrollingDown != true){
     hide (0, -size);
-    
   }
   scrollingDown = true;
   scrollingUp = false;
@@ -143,10 +97,35 @@ function onScrollUp() {
   }
   scrollingUp = true;
   scrollingDown = false;
-
-  
 }
 
+window.onload = () => {
+  window.addEventListener('resize', () => {
+    if (!throttled) {
+      getViewport();
+      setHeaderPosition();
+  
+      throttled = true;
+  
+      setTimeout( function() {
+        throttled = false
+      }, 100);
+    }
+  });
+
+  window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
+    let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+    getViewport();
+    setHeaderPosition();
+
+    if (st > lastScrollTop){
+       onScrollDown();
+    } else {
+       onScrollUp();
+    }
+    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+  }, false);
+}
 
 getViewport();
 setHeaderPosition();

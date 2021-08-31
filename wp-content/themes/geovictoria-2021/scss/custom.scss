@@ -8,8 +8,6 @@ $container-max-widths: (
   lg: 1100px,
 );
 
-
-
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../fonts/fonts.css';
 
@@ -24,7 +22,6 @@ html {
 }
 
 body {
-  overflow-x:hidden;
   padding-top:80px;
 }
 
