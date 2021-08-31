@@ -57,33 +57,76 @@ let sticky = header.offsetTop;
 let isOnTop = 0;
 let scrollingDown = 0;
 let scrollingUp = 0;
+let isFullMenu;
 let viewport;
 let size;
 
 let throttled = false;
-
+let translated = false;
 function setHeaderPosition () {
 
-  if (isPageOnTop() && viewport == "md") {
-    header.style.top = "0px";
-    size = 0;
-  } else {
-    header.style.top = "0px";
-    size = 0;
+
+
+  if (viewport == "lg" && !translated) {
+    //    header.style.top = "0px";
+    if (isPageOnTop()) {
+      topheader.style.transform= 'translateY(0px)';
+      header.style.transform= 'translateY(0px)';
+      actualPosition = 0;
+    } else {
+      topheader.style.transform= 'translateY(-40px)';
+      header.style.transform= 'translateY(-40px)';
+      actualPosition = -40;
+    }
+    
+    translated = true;
+     //actualPosition= -120;
+      }
+    
+
+  if (isPageOnTop() && viewport == "md" && isFullMenu) {
+  //  topheader.style.transform= 'translateY(0px)';
+  //  header.style.transform= 'translateY(0px)';
+//   header.style.top = "40px";
+//   topheader.style.top = "0px";
+    
+    // size= 120;
   }
 
-  if (!isPageOnTop() && viewport != "md") {
-    header.style.top = "0px";
-    topheader.style.top = "-40px"
-    size = 80;
+  if (isPageOnTop() && viewport == "lg") {
+    // console.log('isfullmenu desk')
+    // header.style.transform= 'translateY(40px)';
+//    header.style.top = "40px";
+    // size= 80;
+    isFullMenu = true;
   }
 
-  if (isPageOnTop() && viewport != "md") {
-    header.style.top = "40px";
-    topheader.style.top = "0px";
-    size = 120;
-    show(value = "-40", 0 );
-    console.log(size);
+  if (viewport == "md" && translated) {
+//    header.style.top = "0px";
+    header.style.transform= 'translateY(-40px)';
+    translated = false;
+ //    actualPosition= -120;
+  }
+
+  
+
+  if (!isPageOnTop() && viewport == "lg") {
+ //   header.style.transform= 'translateY(-40px)';
+ //   topheader.style.transform= 'translateY(-40px)';
+//    header.style.top = "0px";
+//    topheader.style.top = "-40px"
+    // size = 80;
+  }
+
+  if (isPageOnTop() && viewport == "lg") {
+ //   topheader.style.transform= 'translateY(0px)';
+ //   header.style.transform= 'translateY(40px)';
+ //   header.style.top = "40px";
+ //   topheader.style.top = "0px";
+  
+    // size = 120;
+   // show(value = "-40", 0 );
+   // console.log(size);
   }
 }
 
@@ -104,48 +147,94 @@ function isPageOnTop() {
  }
 
 const tl = anime.timeline({   });
-
+let actualPosition = 0;
 function show(s, e) {
-
   anime({
-    duration: 150,
-    targets: ['#tophead', '#masthead'],
-    translateY: [s, e],
-    easing: 'easeInOutSine'
-
-    });
-
-}
-
-function hide(s, e) {
-  anime({
-    duration: 150,
+    duration: 300,
     targets: ['#tophead', '#masthead'],
     translateY: [s, e],
     easing: 'easeInOutSine'
     });
-
+    actualPosition = e;
+    console.log(actualPosition);
 }
+
+// function hide(s, e) {
+//   anime({
+//     duration: 150,
+//     targets: ['#tophead', '#masthead'],
+//     translateY: [s, e],
+//     easing: 'easeInOutSine'
+//     });
+
+// }
 
 function onScrollDown() {
   if(scrollingDown != true){
-    hide (0, -size);
+//    console.log(size);
+    if (viewport == "lg" ) {
+      if (isFullMenu) {
+        show (actualPosition, actualPosition - 120);
+      }
+
+      if (!isFullMenu) {
+        show (actualPosition, actualPosition - 80);
+      }
+      
+    };
+
+    if (viewport == "md" ) {
+      actualPosition = -40;
+      show (actualPosition, actualPosition - 80);
+    };
+
+    // if (viewport == "lg" && !isFullMenu ) {
+    //   show (0, -80);
+    // };
+
+
+    // if (viewport == "md") {
+    //   show (0, -80);
+    // };
+    
     
   }
   scrollingDown = true;
   scrollingUp = false;
+  isFullMenu = false;
 
 }
 
 function onScrollUp() {
-  if(scrollingUp != true){
-    show(-size, 0);
+  let st = window.pageYOffset;
+  
+
+  if(scrollingUp == false){
+    if (viewport == "md" ) {
+      actualPosition = -120;
+      show (actualPosition, actualPosition + 80);
+    };
+
+    if (viewport == "lg" ) {
+      show (actualPosition, actualPosition + 80);
+    };
+    scrollingUp = true;
   }
-  scrollingUp = true;
-  scrollingDown = false;
+
+  if(st < 100 && scrollingUp === true && !isFullMenu){
+    if (viewport == "lg" ) {
+      show (actualPosition, actualPosition + 40);
+      isFullMenu = true;
+    };
+    // scrollingUp = false;
+  }
 
   
+  scrollingUp = true;
+  scrollingDown = false;
+  
 }
+
 
 
 getViewport();
