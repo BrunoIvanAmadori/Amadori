@@ -13,42 +13,51 @@ let $triggers = [];
 
 function addAnimationTrigger( $triggerEl, $animation) {
   observer.observe($triggerEl);
-  if (!$triggerEl) {
-    
-    
-  } else {
+
     
     
   let lazyImages = [];
   
   $triggerEl.childNodes.forEach( el => {
     if (el.nodeName == 'IMG') {
-     lazyImages.push(el);
+      console.log('el');
+      lazyImages.push(el);
     }
   });
 
-  if (lazyImages.length == 0) {
+  if (lazyImages.length == 0 ) {
     $triggers.push({trigger: $triggerEl, hasPlayed: 0, animation: $animation, finishedLoading: true  });
   } else {
+    loadingCount = 0;
+
     lazyImages.forEach( img => {
       
-      loadingCount = 0;
+
+      if (img.complete && img.naturalHeight !== 0) {
+        // console.log(img);
+        loadingCount++;
+        console.log('cargo');
+        console.log(loadingCount);
+        // console.log(lazyImages.length);
+
+        if (loadingCount == lazyImages.length ) {
+          console.log('submiteo');
+          let $finishedLoading = true;
+         
+          $triggers.push({trigger: $triggerEl, hasPlayed: 0, animation: $animation, finishedLoading: $finishedLoading  });  
+        }
+      }
       
       img.addEventListener("load", () => {
-        
+        console.log('added');
         loadingCount++;
         if (loadingCount == lazyImages.length ) {
           let $finishedLoading = true;
          
           $triggers.push({trigger: $triggerEl, hasPlayed: 0, animation: $animation, finishedLoading: $finishedLoading  });
           $triggers.forEach( ($trig) => {
-            console.log($trig);
-            console.log($trig.finishedLoading);
-            console.log(isInViewport($trig.trigger));
-            console.log($trig.hasPlayed);
             
             if ($trig.finishedLoading == true && isInViewport($trig.trigger) == true && $trig.hasPlayed == 0 ) {
-              console.log($trig.trigger)
               $trig.animation.play();
               $trig.hasPlayed = 1;
             }
@@ -60,7 +69,7 @@ function addAnimationTrigger( $triggerEl, $animation) {
     }
   }
   
-}
+
 
 function isInViewport(myElement) {
   var bounding = myElement.getBoundingClientRect();
