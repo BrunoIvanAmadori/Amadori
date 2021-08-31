@@ -15,7 +15,7 @@ window.onload = () => {
   
       setTimeout( function() {
         throttled = false
-      }, 100);
+      }, 20);
     }
     // start timing for event "completion"
     } 
@@ -74,9 +74,15 @@ function setHeaderPosition () {
       header.style.transform= 'translateY(0px)';
       actualPosition = 0;
     } else {
-      topheader.style.transform= 'translateY(-40px)';
-      header.style.transform= 'translateY(-40px)';
-      actualPosition = -40;
+      if (scrollingDown == true) {
+        topheader.style.transform= 'translateY(-120px)';
+        header.style.transform= 'translateY(-120px)';
+        actualPosition = -120;
+      } else {
+        topheader.style.transform= 'translateY(-40px)';
+        header.style.transform= 'translateY(-40px)';
+        actualPosition = -40;
+      }
     }
     
     translated = true;
@@ -131,7 +137,7 @@ function setHeaderPosition () {
 }
 
 function getViewport() {
-  if(  window.innerWidth  < 990 ) {
+  if(  window.innerWidth  < 992 ) {
     viewport = 'md';
     // 
   } else {
@@ -177,11 +183,9 @@ function onScrollDown() {
       if (isFullMenu) {
         show (actualPosition, actualPosition - 120);
       }
-
       if (!isFullMenu) {
         show (actualPosition, actualPosition - 80);
       }
-      
     };
 
     if (viewport == "md" ) {
