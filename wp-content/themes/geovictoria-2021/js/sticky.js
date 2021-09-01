@@ -1,161 +1,126 @@
-// When the user scrolls the page, execute myFunction
-// window.onscroll = function() {myFunction()};
-
-// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-
-let lastScrollTop = 0;
-
 window.onload = () => {
-  window.addEventListener('resize', () => {
-    if (!throttled) {
-      getViewport();
-      setHeaderPosition();
-  
-      throttled = true;
-  
-      setTimeout( function() {
-        throttled = false
-      }, 20);
-    }
-    // start timing for event "completion"
-    } 
-  );
-
-  window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-    let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-    getViewport();
-    setHeaderPosition();
-
-    if (st > lastScrollTop){
-       onScrollDown();
-    } else {
-       onScrollUp();
-    }
-    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-  }, false);
-  
+  window.addEventListener('resize', throttle(getViewport, 10));
+  window.addEventListener('resize', throttle(setHeaderPosition, 10));
+  window.addEventListener("scroll", throttle(setScrollActions, 30));
 }
-
-
-
-// stickyheader class should be part of this plugin
 
 // Get the header
 let header = document.getElementById("masthead");
 let headerHeight = header.offsetHeight;
 
 // get the topheader
-
 let topheader = document.getElementById("tophead");
 let topheaderHeight = topheader.offsetHeight;
 
-// Get the offset position of the navbar
-let sticky = header.offsetTop;
+// throttle function
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-
-let isOnTop = 0;
-let scrollingDown = 0;
-let scrollingUp = 0;
-let isFullMenu;
-let viewport;
-let size;
-
-let throttled = false;
-let translated = false;
-function setHeaderPosition () {
-  console.log('ocurrio header position');
-
-
-  if (viewport == "lg" && !translated) {
-    //    header.style.top = "0px";
-    if (isPageOnTop()) {
-      topheader.style.transform= 'translateY(0px)';
-      header.style.transform= 'translateY(0px)';
-      actualPosition = 0;
-    } else {
-      if (scrollingDown == true) {
-        topheader.style.transform= 'translateY(-120px)';
-        header.style.transform= 'translateY(-120px)';
-        actualPosition = -120;
-      } else {
-        topheader.style.transform= 'translateY(-40px)';
-        header.style.transform= 'translateY(-40px)';
-        actualPosition = -40;
+function throttle (callback, limit) {
+  var wait = false;                  // Initially, we're not waiting
+  return function () {               // We return a throttled function
+      if (!wait) {                   // If we're not waiting
+          callback.call();           // Execute users function
+          wait = true;               // Prevent future invocations
+          setTimeout(function () {   // After a period of time
+              wait = false;          // And allow future invocations
+          }, limit);
       }
-    }
-    
-    translated = true;
-     //actualPosition= -120;
-      }
-    
-
-  if (isPageOnTop() && viewport == "md" && isFullMenu) {
-  //  topheader.style.transform= 'translateY(0px)';
-  //  header.style.transform= 'translateY(0px)';
-//   header.style.top = "40px";
-//   topheader.style.top = "0px";
-    
-    // size= 120;
-  }
-
-  if (isPageOnTop() && viewport == "lg") {
-    // console.log('isfullmenu desk')
-    // header.style.transform= 'translateY(40px)';
-//    header.style.top = "40px";
-    // size= 80;
-    isFullMenu = true;
-  }
-
-  if (viewport == "md" && translated) {
-//    header.style.top = "0px";
-    header.style.transform= 'translateY(-40px)';
-    translated = false;
- //    actualPosition= -120;
-  }
-
-  
-
-  if (!isPageOnTop() && viewport == "lg") {
- //   header.style.transform= 'translateY(-40px)';
- //   topheader.style.transform= 'translateY(-40px)';
-//    header.style.top = "0px";
-//    topheader.style.top = "-40px"
-    // size = 80;
-  }
-
-  if (isPageOnTop() && viewport == "lg") {
- //   topheader.style.transform= 'translateY(0px)';
- //   header.style.transform= 'translateY(40px)';
- //   header.style.top = "40px";
- //   topheader.style.top = "0px";
-  
-    // size = 120;
-   // show(value = "-40", 0 );
-   // console.log(size);
   }
 }
 
+// Obtain viewport for setting header positions
+
+let viewport;
+  
 function getViewport() {
-  if(  window.innerWidth  < 992 ) {
+  if(  window.innerWidth <= 991 ) {
     viewport = 'md';
-    // 
   } else {
     viewport = 'lg';
   }
 }
 
-function isPageOnTop() {
-  if (window.pageYOffset == 0) {
-    return true;
+let isFullMenu;
+let firstTime = true;
+
+// Setting header positions
+
+function setHeaderPosition () {
+  
+  if (firstTime) {
+    if (viewport == "md") {
+      header.style.transform= 'translateY(-40px)';
+    } else {
+      header.style.transform= 'translateY(0px)';
+      topheader.style.transform= 'translateY(0px)';
+      actualPosition = 0;
+      console.log('is full menu');
+      isFullMenu = true;
+    }
+    firstTime = false;
   } else {
-    return false;
+    // Corrects header position when resizing
+  
+    if (viewport == "lg" ) {
+
+      // if resizing with page on Top
+      if ( isPageOnTop() ) {
+        topheader.style.transform= 'translateY(0px)';
+        header.style.transform= 'translateY(0px)';
+        actualPosition = 0;
+        isFullMenu = true;
+      } else {
+
+        // If resizing with header invisible
+        if (isScrollingDown) {
+          topheader.style.transform= 'translateY(-120px)';
+          header.style.transform= 'translateY(-120px)';
+          actualPosition = -120;
+        } else {
+
+        // If resizing with header visible
+          topheader.style.transform= 'translateY(-40px)';
+          header.style.transform= 'translateY(-40px)';
+          actualPosition = -40;
+        }
+      }
+    } else {
+      header.style.transform= 'translateY(-40px)';
+    }
+  }
+}
+
+// Set conditional invoking of functions depending on scroll direction.
+
+let lastScrollTop = 0;
+
+function setScrollActions() {
+  let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+   
+  if (st > lastScrollTop){
+    onScrollDown();
+ } else {
+    onScrollUp();
+ }
+ lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}
+
+// Function to check if page is on top
+
+let isOnTop = 0;
+
+function isPageOnTop() {
+  if ( window.pageYOffset == 0 ) {
+    return true
+  } else {
+    return false  
   }
  }
 
-const tl = anime.timeline({   });
+// Function to animate
+
 let actualPosition = 0;
-function show(s, e) {
+
+function animateMenu(s, e) {
   anime({
     duration: 300,
     targets: ['#tophead', '#masthead'],
@@ -163,90 +128,60 @@ function show(s, e) {
     easing: 'easeInOutSine'
     });
     actualPosition = e;
-    console.log(actualPosition);
 }
 
-// function hide(s, e) {
-//   anime({
-//     duration: 150,
-//     targets: ['#tophead', '#masthead'],
-//     translateY: [s, e],
-//     easing: 'easeInOutSine'
-//     });
+// Scroll actions
 
-// }
+let isScrollingDown = 0;
 
 function onScrollDown() {
-  if(scrollingDown != true){
-//    console.log(size);
+ 
+  if( isScrollingDown != true ){
+
     if (viewport == "lg" ) {
       if (isFullMenu) {
-        show (actualPosition, actualPosition - 120);
-      }
-      if (!isFullMenu) {
-        show (actualPosition, actualPosition - 80);
+        animateMenu (actualPosition, actualPosition - 120);
+      } else {
+        animateMenu (actualPosition, actualPosition - 80);
       }
     };
 
     if (viewport == "md" ) {
       actualPosition = -40;
-      show (actualPosition, actualPosition - 80);
+      animateMenu (actualPosition, actualPosition - 80);
     };
-
-    // if (viewport == "lg" && !isFullMenu ) {
-    //   show (0, -80);
-    // };
-
-
-    // if (viewport == "md") {
-    //   show (0, -80);
-    // };
-    
-    
   }
-  scrollingDown = true;
-  scrollingUp = false;
-  isFullMenu = false;
 
+  isScrollingDown = true;
+  isFullMenu = false;
 }
 
 function onScrollUp() {
   let st = window.pageYOffset;
-  
 
-  if(scrollingUp == false){
+  if( isScrollingDown ){
     if (viewport == "md" ) {
       actualPosition = -120;
-      show (actualPosition, actualPosition + 80);
+      animateMenu (actualPosition, actualPosition + 80);
     };
-
+    
     if (viewport == "lg" ) {
-      show (actualPosition, actualPosition + 80);
+      animateMenu (actualPosition, actualPosition + 80);
     };
-    scrollingUp = true;
   }
 
-  if(st < 100 && scrollingUp === true && !isFullMenu){
+  if( st < 100 && isScrollingDown === false && !isFullMenu){
     if (viewport == "lg" ) {
-      show (actualPosition, actualPosition + 40);
+      animateMenu (actualPosition, actualPosition + 40);
       isFullMenu = true;
     };
-    // scrollingUp = false;
   }
 
-  
-  scrollingUp = true;
-  scrollingDown = false;
-  
+  isScrollingDown = false;
+
 }
 
-
+// Set initial values at start
 
 getViewport();
 setHeaderPosition();
-
-if (viewport == "md") {
-  header.style.transform= 'translateY(-40px)';
-} else {
-  header.style.transform= 'translateY(0px)';
-}
