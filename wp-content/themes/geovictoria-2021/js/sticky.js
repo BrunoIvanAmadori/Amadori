@@ -53,7 +53,6 @@ function setHeaderPosition () {
       header.style.transform= 'translateY(0px)';
       topheader.style.transform= 'translateY(0px)';
       actualPosition = 0;
-      console.log('is full menu');
       isFullMenu = true;
     }
     firstTime = false;
