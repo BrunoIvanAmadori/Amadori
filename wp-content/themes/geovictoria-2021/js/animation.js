@@ -5,9 +5,10 @@ var observer = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {  
         playTarget(entry.target);
+        
     }
   });
-}, { threshold: [0.5]});
+}, { threshold: [0]});
 
 let $triggers = [];
 

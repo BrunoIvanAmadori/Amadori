@@ -258,7 +258,7 @@ li.featured {
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.25) !important;
 
   border-radius:10px;
-  margin:20px 20px 0px 0px;
+  // margin:20px 20px 0px 0px;
   padding:20px;
   text-align: center;
   width: 100%;
@@ -361,38 +361,42 @@ footer {
 // Animations
 .header-animation {
   position:relative;
-  height:350px;
 
-  &__screen {
-    position:absolute;
+  &__screen { 
+    position:relative;
     z-index: 1;
-    min-width:523px;
+    left: 0%;
+    object-fit: contain;
   }
 
   &__entry-type {
     position:absolute;
     z-index: 3;
-    width: 200px;
+    width:35%;
+    top: 0px;
     height:auto;
-    left:250px;
+    left:55%;
+    object-fit: contain;
   }
 
   &__user {
     position:absolute; 
     z-index: 2;
-    width: 195px;
+    width:40%;
     height:auto;
-    top:40px;
-    left:100px;
+    top:25px;
+    left: 25%;
+    object-fit: contain;
   }
 
   &__arrow {
     position:absolute;
     z-index: 4;
-    width:100px;
+    max-width:100px;
     height: auto;
-    top: 280px;
+    top: 70%;
     left:-20px;
+    object-fit: contain;
   }
 }
 
@@ -481,6 +485,7 @@ footer {
     width:120px;
     border-radius:150px;
     align-self: flex-end;
+    opacity: 0;
   }
 
   &__arrow {
@@ -543,7 +548,7 @@ footer {
 
 .product {
   width: 100%;
-  margin:20px 20px 0px 20px;
+  margin:20px 20px 0px 0px;
   padding:20px;
   border-radius:10px;
   text-align: center;
