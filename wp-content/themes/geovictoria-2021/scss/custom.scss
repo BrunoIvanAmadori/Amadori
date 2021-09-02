@@ -28,7 +28,7 @@ main#primary section {
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 // Colors
@@ -359,8 +359,44 @@ footer {
   }
 }
 
-// Animations
-.header-animation {
+
+
+
+.bg-head-blue {
+  position:relative;
+  top:5px;
+  z-index:-9999;
+}
+
+.bg-curve {
+  position:absolute;
+  width: 100%;
+  z-index: -9999;
+  top:200px;
+  opacity:0.8;
+}
+
+.bg-header {
+  position:absolute;
+  width: 100%;
+  z-index: -9999;
+  top:-50px;
+  opacity:0.8;
+}
+
+.bg-tail{
+  height:600px;
+  opacity:0.8;
+
+  &-gray{
+    @extend .bg-tail;
+    background: rgb(245,245,247);
+    background: linear-gradient(180deg, rgba(245,245,247,1) 0%, rgba(255,255,255,1) 100%);
+  }
+}
+
+// Animations front-page
+.animation-home {
   position:relative;
 
   &__screen { 
@@ -509,39 +545,87 @@ footer {
   }
 }
 
+// Animations page-asistencia
 
+// step 1
+.step-1 .animation-asistencia {
+  position: absolute;
+  top: 0;
+  &__graphics {
+    position:relative;
+  }
 
+  &__screen { 
+    position:relative;
+    z-index: 1;
+    left: 0%;
+    object-fit: contain;
+  }
 
-.bg-head-blue {
-  position:relative;
-  top:5px;
-  z-index:-9999;
+  &__entry-type {
+    position:absolute;
+    z-index: 3;
+    width:35%;
+    top: 0px;
+    height:auto;
+    left:55%;
+    object-fit: contain;
+  }
+
+  &__user {
+    position:absolute; 
+    z-index: 2;
+    width:40%;
+    height:auto;
+    top:25px;
+    left: 25%;
+    object-fit: contain;
+  }
+
+  &__arrow {
+    position:absolute;
+    z-index: 4;
+    max-width:100px;
+    height: auto;
+    top: 70%;
+    left:-20px;
+    object-fit: contain;
+  }
 }
 
-.bg-curve {
-  position:absolute;
-  width: 100%;
-  z-index: -9999;
-  top:200px;
-  opacity:0.8;
+// step 2
+
+.step-2.animation-asistencia {
+  position: absolute;
+  top:0;
 }
+.step-2 .animation-asistencia {
+  &__graphics {
+    position:relative;
+  }
 
-.bg-header {
-  position:absolute;
-  width: 100%;
-  z-index: -9999;
-  top:-50px;
-  opacity:0.8;
-}
+  &__text h1, &__text h3{
+    opacity: 0;
+  }
 
-.bg-tail{
-  height:600px;
-  opacity:0.8;
+  &__entry-type {
+    position:absolute;
+    z-index: 1;
+    width:35%;
+    top: 0;
+    height:auto;
+    left:0%;
+    object-fit: contain;
+  }
 
-  &-gray{
-    @extend .bg-tail;
-    background: rgb(245,245,247);
-    background: linear-gradient(180deg, rgba(245,245,247,1) 0%, rgba(255,255,255,1) 100%);
+  &__app-screen {
+    position:absolute;
+    z-index: 2;
+    width:35%;
+    height: auto;
+    top: 0;
+    left:50%;
+    object-fit: contain;
   }
 }
 
@@ -626,15 +710,14 @@ footer {
 
 
 
-
-
-
-
-
+// Asistencia
+.animation-space {
+  height: 5000px;
+}
 
 
 .anime *{
-  will-change: transform;
+  will-change: transform, opacity;
 }
 
 
