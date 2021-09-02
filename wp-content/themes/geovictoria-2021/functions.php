@@ -180,18 +180,20 @@ function geovictoria_2021_scripts() {
 	wp_enqueue_style( 'geovictoria-2021-custom-style', get_template_directory_uri() . '/css/custom.css', array(), _S_VERSION );
 	wp_enqueue_style( 'font-awesome', 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
 //	wp_enqueue_style( 'custom-fonts', get_template_directory_uri() . '/fonts/fonts.css', array(), _S_VERSION, true );
-
+	
 	wp_style_add_data( 'geovictoria-2021-style', 'rtl', 'replace' );
-
+	
 	wp_enqueue_script( 'geovictoria-2021-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr-webp.js', array(), _S_VERSION, true  );
 	//wp_enqueue_script( 'font-awesome', 'https://kit.fontawesome.com/fa0ce32386.js');
 	wp_enqueue_script( 'anime-js', get_template_directory_uri() . '/js/anime.min.js');
 	wp_enqueue_script( 'bootstrap-bundle-js', get_template_directory_uri() . '/js/bootstrap.bundle.min.js');
 	wp_enqueue_script( 'animation', get_template_directory_uri() . '/js/animation.js', array(), '', true  );
+	wp_enqueue_script( 'smooth-scrollbar', get_template_directory_uri() . '/js/smooth-scrollbar.js', array(), '', true );
 	wp_enqueue_script( 'front-page-timeline', get_template_directory_uri() . '/js/timelines/front-page.js', array(), '', true  );
-	wp_enqueue_script( 'sticky-header', get_template_directory_uri() . '/js/sticky.js', array(), '', true );
-	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smoothscroll.js', array(), '', true );
+	wp_enqueue_script( 'sticky-header', get_template_directory_uri() . '/js/sticky-smooth.js', array(), '', true );
+
+	
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -15,15 +15,19 @@ $container-max-widths: (
 
 html {
   font-size:18px;
-  overflow-x:hidden;
+  overflow:hidden;
 }
 
 body {
-  padding-top:80px;
+//  padding-top:80px;
 }
 
 main#primary section {
   padding-top: 50px;
+}
+
+main {
+  padding-top: 120px;
 }
 
 // Colors
@@ -102,7 +106,7 @@ a {
   top: 0px;
   position: fixed;
   padding-left:-14px;
-  z-index:99;
+  z-index:9998 !important;
 }
 
 #masthead {
@@ -111,20 +115,24 @@ a {
   box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
   -webkit-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
   -moz-box-shadow: 1px 17px 24px -16px rgba(0,0,0,0.19);
-
   top: 40px;
   position: fixed;
   padding-left:-14px;
-  z-index:98;
+  z-index:9998 !important;
   width: 100%;
 
-  &.stickyHeader {
-    top: 80px;
-    position: fixed;
-    width: 100%;
-    padding-left:-14px;
-    z-index:99;
-  }
+  // &.stickyHeader {
+  //   top: 80px;
+  //   position: fixed;
+  //   width: 100%;
+  //   padding-left:-14px;
+  //   z-index:99;
+  // }
+}
+
+#sticky-menu {
+  position: relative;
+  z-index: 9999;
 }
 
 .language-selector {
@@ -591,6 +599,15 @@ footer {
       color:#4dc5f4;
     }
   }
+}
+
+#scroll-content {
+  height:100vh;
+  overflow: auto;
+}
+
+.scrollbar-track {
+  z-index:9999 !important;
 }
 
 
