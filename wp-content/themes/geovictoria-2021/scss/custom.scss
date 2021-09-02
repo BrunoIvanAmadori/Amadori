@@ -546,13 +546,14 @@ main#primary section {
 
 .header-animation {
   position:relative;
-  
+
 
   &__screen { 
     position:relative;
     z-index: 1;
     left: 0%;
     object-fit: contain;
+ 
   }
 
   &__entry-type {
@@ -563,6 +564,7 @@ main#primary section {
     height:auto;
     left:55%;
     object-fit: contain;
+ 
   }
 
   &__user {
@@ -573,6 +575,7 @@ main#primary section {
     top:25px;
     left: 25%;
     object-fit: contain;
+ 
   }
 
   &__arrow {
@@ -584,6 +587,7 @@ main#primary section {
     top: 70%;
     left:-20px;
     object-fit: contain;
+
   }
 }
 
