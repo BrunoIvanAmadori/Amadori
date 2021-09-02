@@ -18,7 +18,7 @@ get_header();
 	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-header.svg"/>
 </div>
 <main id="primary" class="site-main">
-	<section class="hero container-fluid mt-md-5 px-4">
+	<section class="hero container-fluid px-4">
 		<div class="container d-flex flex-column flex-md-row justify-content-between h-100 px-4 text-center text-md-start">
 			<div class="col-12 col-md-6 mb-5">
 				<div class="align-self-center pe-md-3">

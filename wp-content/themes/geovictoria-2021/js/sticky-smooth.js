@@ -2,7 +2,24 @@ window.onload = () => {
   window.addEventListener('resize', throttle(getViewport, 10));
   window.addEventListener('resize', throttle(setHeaderPosition, 10));
   window.addEventListener("scroll", throttle(setScrollActions, 30));
+
 }
+
+var Scrollbar = window.Scrollbar;
+// document.documentElement.id = 'butter';
+
+const ScrollbarElement = Scrollbar.init(document.querySelector('#scroll-content'));
+
+var st;
+let stickyMenu = document.querySelector('#sticky-menu');
+
+ScrollbarElement.addListener( status => {
+  st = status.offset.y;
+  stickyMenu.style.transform = "translateY(" + st + "px)";
+  setScrollActions();
+ // console.log(status.offset.y)
+}
+);
 
 // Get the header
 let header = document.getElementById("masthead");
@@ -83,7 +100,12 @@ function setHeaderPosition () {
         }
       }
     } else {
-      header.style.transform= 'translateY(-40px)';
+      if (isScrollingDown) {
+        header.style.transform= 'translateY(-120px)';
+      } else {
+        header.style.transform= 'translateY(-40px)';
+      }
+      
     }
   }
 }
@@ -93,7 +115,9 @@ function setHeaderPosition () {
 let lastScrollTop = 0;
 
 function setScrollActions() {
-  let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+  //console.log(st);
+
+ // let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
    
   if (st > lastScrollTop){
     onScrollDown();
@@ -108,7 +132,7 @@ function setScrollActions() {
 let isOnTop = 0;
 
 function isPageOnTop() {
-  if ( window.pageYOffset == 0 ) {
+  if ( st == 0 ) {
     return true
   } else {
     return false  
@@ -156,7 +180,7 @@ function onScrollDown() {
 }
 
 function onScrollUp() {
-  let st = window.pageYOffset;
+//  let st = window.pageYOffset;
 
   if( isScrollingDown ){
     if (viewport == "md" ) {
