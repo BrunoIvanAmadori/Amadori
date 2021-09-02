@@ -21,9 +21,6 @@ ScrollbarElement.addListener( status => {
 }
 );
 
-
-
-
 // Get the header
 let header = document.getElementById("masthead");
 let headerHeight = header.offsetHeight;
@@ -118,7 +115,7 @@ function setHeaderPosition () {
 let lastScrollTop = 0;
 
 function setScrollActions() {
-  console.log(st);
+  //console.log(st);
 
  // let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
    
