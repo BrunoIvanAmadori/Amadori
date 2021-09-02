@@ -88,6 +88,8 @@ function playTarget(el) {
   $triggers.forEach( $trig => {
     if ( el == $trig.trigger && $trig.finishedLoading == true && $trig.hasPlayed == 0 ) {
       $trig.animation.play();
+     // $trig.trigger.classList.remove("anime")
+     // console.log();
       $trig.hasPlayed = 1;
     }
   });

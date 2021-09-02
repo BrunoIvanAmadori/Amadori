@@ -33,11 +33,13 @@ get_header();
 					</button>
 				</div>
 			</div>
-			<div class="header-animation col-12 col-md-6 text-start">
-				<img class="header-animation header-animation__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/screen.png'>
-				<!-- <img class="header-animation header-animation__arrow" src='<?php // echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/arrow.svg'> -->
-				<img class="header-animation header-animation__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/entry_type.png'>
-				<img class="header-animation header-animation__user" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/user.png'>
+			<div class="col-12 col-md-6 mb-5">
+				<div class="header-animation text-start anime">
+					<img class="header-animation header-animation__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/screen.png'>
+					<img class="header-animation header-animation__arrow" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/arrow.svg'>
+					<img class="header-animation header-animation__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/entry_type.png'>
+					<img class="header-animation header-animation__user" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/user.png'>
+				</div>
 			</div>
 		</div>
 	</section>

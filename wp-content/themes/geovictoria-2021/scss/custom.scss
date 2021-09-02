@@ -546,6 +546,7 @@ main#primary section {
 
 .header-animation {
   position:relative;
+  
 
   &__screen { 
     position:relative;
@@ -579,12 +580,16 @@ main#primary section {
     z-index: 4;
     max-width:100px;
     height: auto;
-    top: 280px;
+    opacity:0;
+    top: 70%;
     left:-20px;
     object-fit: contain;
   }
 }
 
+.anime *{
+  will-change: transform;
+}
 
 .trusting-companies__logo {
   margin: 0px 10px 0px 10px;
