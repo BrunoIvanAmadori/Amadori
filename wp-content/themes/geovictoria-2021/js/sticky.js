@@ -169,11 +169,15 @@ function onScrollUp() {
     };
   }
 
-  if( st < 100 && isScrollingDown === false && !isFullMenu){
+  if( st < 150 && isScrollingDown === false && !isFullMenu){
     if (viewport == "lg" ) {
       animateMenu (actualPosition, actualPosition + 40);
       isFullMenu = true;
     };
+  } else if ( st < 150 && isScrollingDown === true && !isFullMenu ) {
+    actualPosition= -120;
+    animateMenu (actualPosition, actualPosition + 120);
+      isFullMenu = true;
   }
 
   isScrollingDown = false;
