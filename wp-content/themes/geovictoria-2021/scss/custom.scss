@@ -76,7 +76,9 @@ main {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Brsonoma';
   color: #646464;
+  margin-bottom: 1rem;
 }
+
 
 
 
@@ -622,6 +624,14 @@ footer {
 
 .scrollbar-track {
   z-index:9999 !important;
+}
+
+.features {
+  &__icon {
+    height:100px;
+    margin-bottom: 1rem;
+    align-self: start;
+  }
 }
 
 

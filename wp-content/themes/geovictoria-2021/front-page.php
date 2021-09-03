@@ -18,8 +18,8 @@ get_header();
 	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-header.svg"/>
 </div>
 <main id="primary" class="site-main">
-	<section class="hero container-fluid px-4">
-		<div class="container d-flex flex-column flex-md-row justify-content-between h-100 px-4 text-center text-md-start">
+	<section class="hero container-fluid px-2">
+		<div class="container d-flex flex-column flex-md-row justify-content-between h-100 px-2 text-center text-md-start">
 			<div class="col-12 col-md-6 mb-5">
 				<div class="align-self-center pe-md-3">
 					<h1 class="gray mb-3 fw-bold">
@@ -43,7 +43,7 @@ get_header();
 			</div>
 		</div>
 	</section>
-	<section class="container col-12 mb-4 px-4 trusting-companies">
+	<section class="container col-12 mb-4 px-2 trusting-companies">
 		<h2 class="text-center gray mb-3 fw-bold">Empresas que confian en nosotros</h2>
 		<div class="d-flex justify-content-around">
 			<div>
@@ -64,7 +64,7 @@ get_header();
 		</div>
 	</section>
 	
-	<section class='container-fluid products px-4'>
+	<section class='container-fluid px-2 products'>
 
 		<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> <b>tu experiencia Geovictoria</b></h2>
 		
@@ -109,11 +109,56 @@ get_header();
 		<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-head-gray.svg"/>
 		<div class="bg-tail-gray"></div>
 	</div>
+
+	<section class="d-flex flex-column container justify-content-between px-2 features">
+		<div class="row">
+			<h2 class="text-center gray mb-3"><b>Ahorra, actualiza, simplifica</b><br><span class="fw-light">Bienvenido a un mundo de gestión</span><br> </h2>
+		</div>
+
+		<div class="row">
+			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+				<h5 class="fw-bold">Reportes personalizados</h5>
+				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			</div>
+
+			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+				<h5 class="fw-bold">Reportes personalizados</h5>
+				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			</div>
+
+			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+				<h5 class="fw-bold">Reportes personalizados</h5>
+				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			</div>
+
+			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+				<h5 class="fw-bold">Reportes personalizados</h5>
+				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			</div>
+
+			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+				<h5 class="fw-bold">Reportes personalizados</h5>
+				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			</div>
+
+			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+				<h5 class="fw-bold">Reportes personalizados</h5>
+				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			</div>
+		</div>
+</section>
+
 	<section class='container'>
 	<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> tu experiencia Geovictoria</h2>
 	<!-- Para mobile -->
 
-	<div class="progressMobile__section d-flex flex-column d-md-none text-center px-4">
+	<div class="progressMobile__section d-flex flex-column d-md-none text-center px-2">
 		<div class="step-1 mb-4">
 			<div class="progressMobile__bg step-1 mb-4 ">
 				<div class="progressMobile__circle">
