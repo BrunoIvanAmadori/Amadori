@@ -34,11 +34,11 @@ get_header();
 				</div>
 			</div>
 			<div class="col-12 col-md-6 mb-5">
-				<div class="header-animation text-start anime">
-					<img class="header-animation header-animation__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/screen.png'>
-					<img class="header-animation header-animation__arrow" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/arrow.svg'>
-					<img class="header-animation header-animation__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/entry_type.png'>
-					<img class="header-animation header-animation__user" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/user.png'>
+				<div class="animation-home text-start anime">
+					<img class="animation-home animation-home__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-home/screen.png'>
+					<img class="animation-home animation-home__arrow" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-home/arrow.svg'>
+					<img class="animation-home animation-home__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-home/entry-type.png'>
+					<img class="animation-home animation-home__user" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-home/user.png'>
 				</div>
 			</div>
 		</div>
@@ -47,19 +47,19 @@ get_header();
 		<h2 class="text-center gray mb-3 fw-bold">Empresas que confian en nosotros</h2>
 		<div class="d-flex justify-content-around">
 			<div>
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/securitas-logo.png'>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/securitas-logo.png'>
 			</div>
 			<div>
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/starbucks-logo.png'>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/starbucks-logo.png'>
 			</div>
 			<div>
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/adecco-logo.png'>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/adecco-logo.png'>
 			</div>
 			<div>
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/scotiabank-logo.png'>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/scotiabank-logo.png'>
 			</div>
 			<div>
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-animation/coca-logo.png'>
+				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/coca-logo.png'>
 			</div>
 		</div>
 	</section>

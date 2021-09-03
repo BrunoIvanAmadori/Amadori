@@ -190,7 +190,7 @@ function geovictoria_2021_scripts() {
 	wp_enqueue_script( 'bootstrap-bundle-js', get_template_directory_uri() . '/js/bootstrap.bundle.min.js');
 	wp_enqueue_script( 'animation', get_template_directory_uri() . '/js/animation.js', array(), '', true  );
 	
-	wp_enqueue_script( 'front-page-timeline', get_template_directory_uri() . '/js/timelines/front-page.js', array(), '', true  );
+	
 	
 
 	if (!wp_is_mobile()) {
@@ -198,9 +198,27 @@ function geovictoria_2021_scripts() {
 		wp_enqueue_script( 'sticky-smooth', get_template_directory_uri() . '/js/sticky-smooth.js', array(), '', true );
 	} else {
 		wp_enqueue_script( 'sticky', get_template_directory_uri() . '/js/sticky.js', array(), '', true );
+	};
+
+	global $template;
+
+	switch ( basename( $template ) ) {
+		case 'page-asistencia.php':
+			wp_enqueue_script( 'page-asistencia-timeline', get_template_directory_uri() . '/js/timelines/page-asistencia.js', array(), '', true  );
+			break;
+
+		case 'front-page.php':
+			wp_enqueue_script( 'front-page-timeline', get_template_directory_uri() . '/js/timelines/front-page.js', array(), '', true  );
+			break;
+
+
+
+
+		};
+
+	if ( basename( $template ) === 'page-asistencia.php' ) {
+		
 	}
-	
-	
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

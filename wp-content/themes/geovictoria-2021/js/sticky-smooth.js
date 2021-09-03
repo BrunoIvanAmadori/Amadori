@@ -1,25 +1,29 @@
 window.onload = () => {
   window.addEventListener('resize', throttle(getViewport, 10));
   window.addEventListener('resize', throttle(setHeaderPosition, 10));
-  window.addEventListener("scroll", throttle(setScrollActions, 30));
+  window.addEventListener("scroll", throttle(controlScroller, 30));
 
 }
 
 var Scrollbar = window.Scrollbar;
 // document.documentElement.id = 'butter';
 
-const ScrollbarElement = Scrollbar.init(document.querySelector('#scroll-content'));
+const ScrollbarElement = Scrollbar.init(document.querySelector('#scroll-content'), { damping: 0.04});
 
-var st;
+var scrollOffset;
 let stickyMenu = document.querySelector('#sticky-menu');
 
 ScrollbarElement.addListener( status => {
-  st = status.offset.y;
-  stickyMenu.style.transform = "translateY(" + st + "px)";
-  setScrollActions();
+  scrollOffset = status.offset.y;
+  stickyMenu.style.transform = "translateY(" + scrollOffset + "px)";
+  controlScroller();
  // console.log(status.offset.y)
 }
 );
+
+
+
+
 
 // Get the header
 let header = document.getElementById("masthead");
@@ -114,17 +118,17 @@ function setHeaderPosition () {
 
 let lastScrollTop = 0;
 
-function setScrollActions() {
+function controlScroller() {
   //console.log(st);
 
  // let st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
    
-  if (st > lastScrollTop){
+  if (scrollOffset > lastScrollTop){
     onScrollDown();
  } else {
     onScrollUp();
  }
- lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+ lastScrollTop = scrollOffset <= 0 ? 0 : scrollOffset; // For Mobile or negative scrolling
 }
 
 // Function to check if page is on top
@@ -132,7 +136,7 @@ function setScrollActions() {
 let isOnTop = 0;
 
 function isPageOnTop() {
-  if ( st == 0 ) {
+  if ( scrollOffset == 0 ) {
     return true
   } else {
     return false  
@@ -193,12 +197,12 @@ function onScrollUp() {
     };
   }
 
-  if( st < 150 && isScrollingDown === false && !isFullMenu){
+  if( scrollOffset < 150 && isScrollingDown === false && !isFullMenu){
     if (viewport == "lg" ) {
       animateMenu (actualPosition, actualPosition + 40);
       isFullMenu = true;
     };
-  } else if ( st < 150 && isScrollingDown === true && !isFullMenu ) {
+  } else if ( scrollOffset < 150 && isScrollingDown === true && !isFullMenu ) {
     actualPosition= -120;
     animateMenu (actualPosition, actualPosition + 120);
       isFullMenu = true;
