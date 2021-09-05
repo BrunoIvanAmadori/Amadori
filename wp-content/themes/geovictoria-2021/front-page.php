@@ -18,8 +18,8 @@ get_header();
 	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-header.svg"/>
 </div>
 <main id="primary" class="site-main">
-	<section class="hero container-fluid px-2">
-		<div class="container d-flex flex-column flex-md-row justify-content-between h-100 px-2 text-center text-md-start">
+	<section class="hero container-fluid">
+		<div class="container d-flex flex-column flex-md-row justify-content-between h-100 text-center text-md-start">
 			<div class="col-12 col-md-6 mb-5">
 				<div class="align-self-center pe-md-3">
 					<h1 class="gray mb-3 fw-bold">
@@ -43,8 +43,9 @@ get_header();
 			</div>
 		</div>
 	</section>
-	<section class="container col-12 mb-4 px-2 trusting-companies">
-		<h2 class="text-center gray mb-3 fw-bold">Empresas que confian en nosotros</h2>
+
+	<section class="container col-12 trusting-companies">
+		<h2 class="text-center gray section-title fw-bold">Empresas que confian en nosotros</h2>
 		<div class="d-flex justify-content-around">
 			<div>
 				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/securitas-logo.png'>
@@ -64,9 +65,9 @@ get_header();
 		</div>
 	</section>
 	
-	<section class='container-fluid px-2 products'>
+	<section class='container products'>
 
-		<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> <b>tu experiencia Geovictoria</b></h2>
+		<h2 class="text-center gray section-title"><span class="fw-light">Te acompañamos durante toda</span><br> <b>tu experiencia Geovictoria</b></h2>
 		
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
@@ -103,50 +104,50 @@ get_header();
 				</div>
 			</div>
 		</div>
-
 	</section>
+
 	<div class="bg-curve">
 		<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-head-gray.svg"/>
 		<div class="bg-tail-gray"></div>
 	</div>
 
-	<section class="d-flex flex-column container justify-content-between px-2 features">
+	<section class="d-flex flex-column container justify-content-between features">
 		<div class="row">
-			<h2 class="text-center gray mb-3"><b>Ahorra, actualiza, simplifica</b><br><span class="fw-light">Bienvenido a un mundo de gestión</span><br> </h2>
+			<h2 class="text-center gray section-title"><b>Ahorra, actualiza, simplifica</b><br><span class="fw-light">Bienvenido a un mundo de gestión</span><br> </h2>
 		</div>
 
 		<div class="row">
-			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 				<h5 class="fw-bold">Reportes personalizados</h5>
 				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 				<h5 class="fw-bold">Reportes personalizados</h5>
 				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 				<h5 class="fw-bold">Reportes personalizados</h5>
 				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 				<h5 class="fw-bold">Reportes personalizados</h5>
 				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 				<h5 class="fw-bold">Reportes personalizados</h5>
 				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 p-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 				<h5 class="fw-bold">Reportes personalizados</h5>
 				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
@@ -158,7 +159,7 @@ get_header();
 	<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> tu experiencia Geovictoria</h2>
 	<!-- Para mobile -->
 
-	<div class="progressMobile__section d-flex flex-column d-md-none text-center px-2">
+	<div class="progressMobile__section d-flex flex-column d-md-none text-center">
 		<div class="step-1 mb-4">
 			<div class="progressMobile__bg step-1 mb-4 ">
 				<div class="progressMobile__circle">
@@ -288,26 +289,75 @@ get_header();
 	<div>
 		<img class="bg-head-blue" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-head-blue.svg"/>
 	</div>
-	<section class="support container-fluid bg-blue-2">
-		<div class="container d-flex justify-content-between">
+
+	<div class="container-fluid bg-blue-2">
+		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
 				<h1 class="white fw-bold mb-3">
-					Soporte y atención personalizada
+					¿Por qué elegirnos?
 				</h1>
-				<h3 class="white mb-3">
-					Siempre contarás con un equipo humano que te apoyará en cada momento
-				</h3>
-				<p class="fw-light white fs-5 mb-4">
-					GeoVictoria cuenta con una mesa de soporte multicanal a través de chat en linea, telefono, correo electrónico, que estará disponible 24/7 para resolver todas tus dudas guiarte en el uso de nuestra plataforma
-				</p>
-				<button class="fw-bold button--bigwhite">
+				<div class="row">
+					<div class="col-3">
+						<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+					</div>
+					<div class="col py-2">
+						<h6>Solución hecha a tu medida:</h6>
+						<small class="fw-light">En GeoVictoria nos adaptamos a tu negocio. Haremos lo que necesites.</small>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-3">
+						<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+					</div>
+					<div class="col py-2">
+						<h6>Soporte en todo momento:</h6>
+						<small class="fw-light">Estaremos 24/7 para resolver todas tus dudas y guiarte en el uso de nuestra plataforma</small>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-3">
+						<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+					</div>
+					<div class="col py-2">
+						<h6>Tecnología biométrica:</h6>
+						<small class="fw-light">Contamos con la mejor tecnología biométrica: registro de huella, lectura de palma, reconocimiento facial. Marcajes 100% verificados.</small>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-3">
+						<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+					</div>
+					<div class="col py-2">
+						<h6>Paga por lo que usas:</h6>
+						<small class="fw-light">Sea diez, cien o mil usuarios. Solo pagarás por la cantidad de trabajadores que deban marcar. ¡Sin costos extras!</small>
+					</div>
+				</div>
+				
+				<button class="fw-bold button--bigwhite mt-3">
 					Contáctanos ahora
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">
-				<img class="support__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/soporte-personalizado.png"/>
+				<img class="why-us__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/soporte-personalizado.png"/>
 			</div>
+		</section>
+	</div>
+
+	<section class="d-flex justify-content-center container call-to-action">
+		<div class="col-12 col-lg-6 text-center my-3">
+			<img class="call-to-action__arrow" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/call-to-action/arrow.svg'>
+			<img class="call-to-action__arrow--left" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/call-to-action/arrow.svg'>
+			<h2 class="fw-bold mb-4">
+					¿Listo para ser <br>parte del cambio?
+			</h2>
+			<button class="button--bigblue bounce">
+				<span class="white">Solicita tu demo gratis</span>
+			</button>
 		</div>
+		
 	</section>
 </main><!-- #main -->
 <?php

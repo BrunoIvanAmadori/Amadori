@@ -13,13 +13,19 @@ $container-max-widths: (
 
 // _global.css
 
+
 html {
   font-size:18px;
   overflow:hidden;
+  width:100%;
 }
 
 body {
-//  padding-top:80px;
+}
+
+.site {
+  width:100% !important;
+  overflow:hidden !important;
 }
 
 main#primary section {
@@ -28,7 +34,7 @@ main#primary section {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 // Colors
@@ -39,6 +45,10 @@ main {
 
 .bg-blue-2 {
   background-color: #4dc5f4;
+  * p, h1, h2, h3, h4, h5, h6, span, small {
+    color: white;
+  }
+  
 }
 
 .bg-white {
@@ -76,11 +86,11 @@ main {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Brsonoma';
   color: #646464;
-  margin-bottom: 1rem;
 }
 
-
-
+.section-title {
+  margin-bottom:1.5rem;
+}
 
 
 a {
@@ -294,6 +304,8 @@ li.featured {
 // Footer
 footer {
   padding:50px 0px;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15); 
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
 
   & .widget-title{
     display: none;
@@ -325,7 +337,10 @@ footer {
     padding: 0;
     color:white;
   }
+
+
 }
+
 
 // front-page.css
 .hero {
@@ -339,17 +354,20 @@ footer {
   }
 }
 
-.support {
+.why-us {
   display: flex;
   align-items:center;
 
   &__img{
     object-fit: contain;
   }
+
+  &__feature {
+    padding:0px 5px;
+  }
 }
 
 .trusting-companies__logo {
-  margin: 0px 10px 0px 10px;
   max-height: 75px;
   transition: filter 0.1s;
   filter: saturate(0%);
@@ -396,6 +414,27 @@ footer {
     background: linear-gradient(180deg, rgba(245,245,247,1) 0%, rgba(255,255,255,1) 100%);
   }
 }
+
+.call-to-action {
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    z-index: 4;
+    max-width: 70px;
+    height: auto;
+    top: 30%;
+    transform: translateX(170px);
+    -o-object-fit: contain;
+    object-fit: contain;
+
+    &--left {
+      @extend .call-to-action__arrow;
+      transform: translateX(-240px) rotate(180deg);
+    }
+  }
+}
+
 
 // Animations front-page
 .animation-home {

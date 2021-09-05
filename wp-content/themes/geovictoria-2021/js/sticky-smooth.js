@@ -9,7 +9,7 @@ var Scrollbar = window.Scrollbar;
 // document.documentElement.id = 'butter';
 
 const ScrollbarElement = Scrollbar.init(document.querySelector('#scroll-content'), { damping: 0.04});
-
+ScrollbarElement.track.xAxis.element.remove();
 var scrollOffset;
 let stickyMenu = document.querySelector('#sticky-menu');
 
