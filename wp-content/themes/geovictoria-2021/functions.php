@@ -189,6 +189,7 @@ function geovictoria_2021_scripts() {
 	wp_enqueue_script( 'anime-js', get_template_directory_uri() . '/js/anime.min.js');
 	wp_enqueue_script( 'bootstrap-bundle-js', get_template_directory_uri() . '/js/bootstrap.bundle.min.js');
 	wp_enqueue_script( 'animation', get_template_directory_uri() . '/js/animation.js', array(), '', true  );
+	wp_enqueue_script( 'general-timeline', get_template_directory_uri() . '/js/timelines/general.js', array(), '', true  );
 	
 	
 	

@@ -21,13 +21,13 @@ get_header();
 	<section class="hero container-fluid">
 		<div class="container d-flex flex-column flex-md-row justify-content-between h-100 text-center text-md-start">
 			<div class="col-12 col-md-6 mb-5">
-				<div class="align-self-center pe-md-3">
+				<div class="align-self-center pe-md-3 anime-fadein-childs">
 					<h1 class="gray mb-3 fw-bold">
-						Optimiza la gestión humana ahorrando tiempo, recursos y dinero
+					La gestión de fuerza laboral por excelencia
 					</h1>
-					<h3 class="gray fw-light mb-3">
-						Mas de 10 años innovando para nuestros clientes.
-					</h3>
+					<h5 class="gray fw-light mb-3">
+					Solución integral 100% en la nube.<br>Gestiona, elabora reportes, obtén métricas<br>y ahorra dinero. Todo en un solo lugar
+					</h5>
 					<button class="button--bigblue bounce">
 						<span class="white">Solicita tu demo gratis</span>
 					</button>
@@ -45,8 +45,8 @@ get_header();
 	</section>
 
 	<section class="container col-12 trusting-companies">
-		<h2 class="text-center gray section-title fw-bold">Empresas que confian en nosotros</h2>
-		<div class="d-flex justify-content-around">
+		<h2 class="text-center gray section-title fw-light anime-fadein">Nuestros clientes ya<br><span class="fw-bold">optimizan su personal con nosotros</span></h2>
+		<div class="d-flex justify-content-around anime-fadein">
 			<div>
 				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/securitas-logo.png'>
 			</div>
@@ -67,31 +67,31 @@ get_header();
 	
 	<section class='container products'>
 
-		<h2 class="text-center gray section-title"><span class="fw-light">Te acompañamos durante toda</span><br> <b>tu experiencia Geovictoria</b></h2>
+		<h2 class="text-center gray section-title anime-fadein"><span class="fw-light">¡Conoce todas</span><br> <b>nuestras soluciones!</b></h2>
 		
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<div class='product--box d-flex flex-column align-content-center'>
+				<div class='product--box d-flex flex-column align-content-center anime-fadein'>
 					<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-asistencia.svg"/>
-					<h4 class="fw-bold">Portal <br>asistencia</h4>	
+					<h4 class="fw-bold">Gestión<br>asistencia</h4>	
 					<a href="#">Ver más</a>
 				</div>
-				<div class='product--box d-flex flex-column align-content-center'>
+				<div class='product--box d-flex flex-column align-content-center anime-fadein'>
 					<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-acceso.svg"/>
-					<h4 class="fw-bold">Portal <br>acceso</h4>
+					<h4 class="fw-bold">Control<br>de acceso</h4>
 					<a href="#">Ver más</a>
 				</div>
-				<div class='product--box d-flex flex-column align-content-center'>
+				<div class='product--box d-flex flex-column align-content-center anime-fadein'>
 					<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-comedor.svg"/>
-					<h4 class="fw-bold">Portal <br>comedor</h4>
+					<h4 class="fw-bold">Gestión de<br>comedor</h4>
 					<a href="#">Ver más</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="row d-flex justify-content-center">
+		<div class="row d-flex justify-content-center anime-fadein">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<div class="product--card d-flex flex-column align-items-center">
+				<div class="product--card d-flex flex-column align-items-center anime-fadein">
 					<div class='row'>
 						<div class="col justify-content-center text-end">
 							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
@@ -113,50 +113,50 @@ get_header();
 
 	<section class="d-flex flex-column container justify-content-between features">
 		<div class="row">
-			<h2 class="text-center gray section-title"><b>Ahorra, actualiza, simplifica</b><br><span class="fw-light">Bienvenido a un mundo de gestión</span><br> </h2>
+			<h2 class="text-center gray section-title anime-fadein"><b>Ahorra, actualiza, simplifica</b><br><span class="fw-light">Bienvenido a un mundo de gestión</span><br> </h2>
 		</div>
 
-		<div class="row">
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
+		<div class="row anime-fadein">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/reportes-personalizados.svg"/>
 				<h5 class="fw-bold">Reportes personalizados</h5>
 				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
-				<h5 class="fw-bold">Reportes personalizados</h5>
-				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/formularios-en-linea.svg"/>
+				<h5 class="fw-bold">Formularios en linea</h5>
+				<p>Crea formularios a tu medida. La opinión de tus trabajadores, trazabilidad Covid...</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
-				<h5 class="fw-bold">Reportes personalizados</h5>
-				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/optimizador-de-turnos.svg"/>
+				<h5 class="fw-bold">Optimizador de turnos</h5>
+				<p>¡Ya no pierdas más dinero! Calcula los turnos más optimos según las variables de tu negocio</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
-				<h5 class="fw-bold">Reportes personalizados</h5>
-				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/integracion-de-sistemas.svg"/>
+				<h5 class="fw-bold">Integración de sistemas</h5>
+				<p>Operamos con todos los software de recursos humanos.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
-				<h5 class="fw-bold">Reportes personalizados</h5>
-				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/respaldo-en-la-nube.svg"/>
+				<h5 class="fw-bold">Respaldo en la nube</h5>
+				<p>Información segura y al instante. Así es nuestra nube de almacenamiento</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 flex-column">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
-				<h5 class="fw-bold">Reportes personalizados</h5>
-				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/dotacion-inteligente.svg"/>
+				<h5 class="fw-bold">Dotación inteligente</h5>
+				<p>La persona que necesitas en el lugar y la hora indicada</p>
 			</div>
 		</div>
 </section>
 
 	<section class='container'>
-	<h2 class="text-center gray mb-3"><span class="fw-light">Te acompañamos durante toda</span><br> tu experiencia Geovictoria</h2>
+	<h2 class="text-center gray mb-3 anime-fadein"><span class="fw-light">Te acompañamos durante toda</span><br> tu experiencia Geovictoria</h2>
 	<!-- Para mobile -->
 
 	<div class="progressMobile__section d-flex flex-column d-md-none text-center">
@@ -292,51 +292,51 @@ get_header();
 
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
-			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3">
+			<div class="col-12 col-md-6 text-center text-start align-self-center pe-3">
+				<h1 class="white fw-bold mb-3 anime-fadein">
 					¿Por qué elegirnos?
 				</h1>
-				<div class="row">
+				<div class="row mb-3 anime-fadein">
 					<div class="col-3">
 						<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 					</div>
-					<div class="col py-2">
+					<div class="col py-2 text-start">
 						<h6>Solución hecha a tu medida:</h6>
 						<small class="fw-light">En GeoVictoria nos adaptamos a tu negocio. Haremos lo que necesites.</small>
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row mb-3 anime-fadein">
 					<div class="col-3">
 						<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 					</div>
-					<div class="col py-2">
+					<div class="col py-2 text-start">
 						<h6>Soporte en todo momento:</h6>
 						<small class="fw-light">Estaremos 24/7 para resolver todas tus dudas y guiarte en el uso de nuestra plataforma</small>
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row mb-3 anime-fadein">
 					<div class="col-3">
 						<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 					</div>
-					<div class="col py-2">
+					<div class="col py-2 text-start">
 						<h6>Tecnología biométrica:</h6>
 						<small class="fw-light">Contamos con la mejor tecnología biométrica: registro de huella, lectura de palma, reconocimiento facial. Marcajes 100% verificados.</small>
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row mb-3 mb-lg-1 anime-fadein">
 					<div class="col-3">
 						<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-business.svg"/>
 					</div>
-					<div class="col py-2">
+					<div class="col py-2 text-start">
 						<h6>Paga por lo que usas:</h6>
 						<small class="fw-light">Sea diez, cien o mil usuarios. Solo pagarás por la cantidad de trabajadores que deban marcar. ¡Sin costos extras!</small>
 					</div>
 				</div>
 				
-				<button class="fw-bold button--bigwhite mt-3">
+				<button class="fw-bold button--bigwhite mt-3 anime-fadein">
 					Contáctanos ahora
 				</button>
 			</div>
@@ -346,7 +346,7 @@ get_header();
 		</section>
 	</div>
 
-	<section class="d-flex justify-content-center container call-to-action">
+	<section class="d-flex justify-content-center container call-to-action anime-fadein">
 		<div class="col-12 col-lg-6 text-center my-3">
 			<img class="call-to-action__arrow" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/call-to-action/arrow.svg'>
 			<img class="call-to-action__arrow--left" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/call-to-action/arrow.svg'>
