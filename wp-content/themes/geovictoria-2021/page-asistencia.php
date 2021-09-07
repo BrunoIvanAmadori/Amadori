@@ -73,9 +73,10 @@ get_header();
 				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
-							<div class="benefits__flip-icon"><i class="fal fa-redo"></i> </div>
+
 							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-asistencia.svg"/>
-							<h5>Pagar correctamente los salarios</h5>
+							<div class="benefits__arrow"><i class="fal fa-chevron-up"></i></div>
+							<h5>Paga correctamente los salarios</h5>
 							
 						</div>
 
@@ -89,9 +90,8 @@ get_header();
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
 							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-acceso.svg"/>
-							<h5>Ahorra tiempo y dinero</h5>
-							<div class="benefits__flip-icon"> </div>
 							<div class="benefits__arrow"><i class="fal fa-chevron-up"></i></div>
+							<h5>Ahorra tiempo y dinero</h5>
 							
 						</div>
 
@@ -103,7 +103,8 @@ get_header();
 				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
-							<div class="benefits__flip-icon"><i class="fal fa-redo"></i> </div>
+						
+							<div class="benefits__arrow"><i class="fal fa-chevron-up"></i></div>
 							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-comedor.svg"/>
 							<h5>Toma decisiones al instante</h5>
 
@@ -125,19 +126,19 @@ get_header();
 
 		<div class="row anime-fadein">
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/reportes-personalizados.svg"/>
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/report.svg"/>
 				<h5 class="fw-bold">Plataforma en la nube</h5>
 				<p>Fácil acceso desde cualquier dispositivo con internet. Con Geovictoria no perderás información valiosa.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/formularios-en-linea.svg"/>
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/form.svg"/>
 				<h5 class="fw-bold">Acompañamiento</h5>
 				<p>Estámos contigo en todo el proceso, desde el primer contacto, hasta concretar la implementación. En lo que necesites, cuenta con nosotros.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column anime-fadein">
-				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/optimizador-de-turnos.svg"/>
+				<img class="features__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/optimizer.svg"/>
 				<h5 class="fw-bold">Adaptabilidad</h5>
 				<p>Cada industria funciona demanera muy diferente. Nos adaptamos a cada una de ellas.</p>
 			</div>

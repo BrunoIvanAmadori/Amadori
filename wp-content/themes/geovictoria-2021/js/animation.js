@@ -130,7 +130,7 @@ function playTarget(el) {
      // $trig.trigger.classList.remove("anime")
      // console.log();
       $trig.hasPlayed = 1;
-      el.style.willChange = "off";
+      el.style.willChange = null;
     }
   });
 }
