@@ -33,10 +33,10 @@ get_header();
 				</div>
 				<div class="col-12 col-md-6 mb-5 step-1 animation-asistencia__graphics">
 					<div class="text-start anime">
-						<img class="animation-asistencia animation-asistencia__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/step-1/screen.png'>
-						<img class="animation-asistencia animation-asistencia__arrow" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/step-1/arrow.svg'>
-						<img class="animation-asistencia animation-asistencia__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/step-1/entry-type.png'>
-						<img class="animation-asistencia animation-asistencia__user" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/step-1/user.png'>
+						<img class="animation-asistencia animation-asistencia__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/platform.png'>
+						<img class="animation-asistencia animation-asistencia__arrow" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/arrow.svg'>
+						<img class="animation-asistencia animation-asistencia__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-type.png'>
+						<img class="animation-asistencia animation-asistencia__user" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-user.png'>
 					</div>
 				</div>
 			</div>

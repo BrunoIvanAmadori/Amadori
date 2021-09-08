@@ -47,27 +47,59 @@ get_header();
 	<section class="container col-12 trusting-companies mb-3">
 		<h2 class="text-center gray section-title fw-light anime-fadein">Nuestros clientes ya<br><span class="fw-bold">optimizan su personal con nosotros</span></h2>
 		<div class="d-flex justify-content-around anime-fadein">
-			<div class="trusting-companies__container d-flex flex-column">
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/securitas-logo.png'>
-			</div>
-			<div class="trusting-companies__container d-flex flex-column">
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/starbucks-logo.png'>
-			</div>
-			<div class="position-relative d-flex flex-column">
-				<div class="trusting-companies__container d-flex flex-column">
-					<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/adecco-logo.png'>
+
+			<div class="position-relative d-flex flex-column text-center w-100">
+				<div class="trusting-companies__container d-flex flex-column w-100 align-items-center">
+					<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/securitas-logo.png'>
 					<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
 				</div>
 				<div class="trusting-companies__description">
 					<small>Lorem ipsum dolor sit amet, sanguche de bondiola con dulce de leche granizado</small>
 				</div>
 			</div>
-			<div class="trusting-companies__container d-flex flex-column">
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/scotiabank-logo.png'>
+
+			<div class="position-relative d-flex flex-column text-center w-100">
+				<div class="trusting-companies__container d-flex flex-column w-100 align-items-center">
+					<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/starbucks-logo.png'>
+					<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
+				</div>
+				<div class="trusting-companies__description">
+					<small>Lorem ipsum dolor sit amet, sanguche de bondiola con dulce de leche granizado</small>
+				</div>
 			</div>
-			<div class="trusting-companies__container d-flex flex-column">
-				<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/coca-logo.png'>
+
+
+				<div class="position-relative d-flex flex-column text-center w-100">
+					<div class="trusting-companies__container d-flex flex-column w-100 align-items-center">
+						<img class="trusting-companies__logo" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/adecco-logo.png'>
+						<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
+					</div>
+					<div class="trusting-companies__description">
+						<small>Lorem ipsum dolor sit amet, sanguche de bondiola con dulce de leche granizado</small>
+					</div>
+				</div>
+
+
+			<div class="position-relative d-flex flex-column text-center w-100">
+				<div class="trusting-companies__container d-flex flex-column w-100 align-items-center">
+					<img class="trusting-companies__logo--scotiabank" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/scotiabank-logo.png'>
+					<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
+				</div>
+				<div class="trusting-companies__description">
+						<small>Lorem ipsum dolor sit amet, sanguche de bondiola con dulce de leche granizado</small>
+				</div>
 			</div>
+
+			<div class="position-relative d-flex flex-column text-center w-100">
+				<div class="trusting-companies__container d-flex flex-column w-100 align-items-center" type="button">
+					<img class="trusting-companies__logo--cocacola" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/logos/coca-logo.png'>
+					<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
+				</div>
+				<div class="trusting-companies__description">
+					<small>Lorem ipsum dolor sit amet, sanguche de bondiola con dulce de leche granizado</small>
+				</div>
+			</div>
+
 		</div>
 	</section>
 	
