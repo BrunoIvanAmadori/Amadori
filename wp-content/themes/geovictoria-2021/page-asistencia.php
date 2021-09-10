@@ -18,10 +18,10 @@ get_header();
 	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-header.svg"/>
 </div>
 <main id="primary" class="site-main">
-<div class="container-fluid position-relative animation-asistencia-container"> 
-	<section class="hero container-fluid px-4 step-1 animation-asistencia">
+
+<section class="hero container-fluid px-4">
 			<div class="container d-flex flex-column flex-md-row justify-content-between h-100 px-4 text-center text-md-start">
-				<div class="col-12 col-md-6 mb-5 step-1 animation-asistencia__text">
+				<div class="col-12 col-md-6 mb-5 ">
 					<div class="align-self-center pe-md-3 anime-fadein-childs">
 						<h1 class="gray mb-3 fw-bold">
 						Control de asistencia en tiempo real para tu empresa
@@ -31,37 +31,40 @@ get_header();
 						</h3>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 mb-5 step-1 animation-asistencia__graphics">
-					<div class="text-start anime">
-						<img class="animation-asistencia animation-asistencia__screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/platform.png'>
-						<img class="animation-asistencia animation-asistencia__arrow" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/arrow.svg'>
-						<img class="animation-asistencia animation-asistencia__entry-type" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-type.png'>
-						<img class="animation-asistencia animation-asistencia__user" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-user.png'>
-					</div>
-				</div>
-			</div>
-	</section>
-	<section class="hero container-fluid px-4 step-2 animation-asistencia ">
-			<div class="container d-flex flex-column flex-md-row justify-content-between h-100 px-4 text-center text-md-start">
-				<div class="col-12 col-md-6 mb-5 step-2 animation-asistencia__text">
-					<div class="align-self-center pe-md-3">
-						<h1 class="gray mb-3 fw-bold">
-						Control de asistencia en tiempo real para tu empresa
-						</h1>
-						<h3 class="gray fw-light mb-3">
-						Somos el sistema más simple, amigable y eficiente para gestionar tu personal. 
-						</h3>
-					</div>
-				</div>
-				<div class="col-12 col-md-6 mb-5 step-2 animation-asistencia__graphics">
-					<div class="text-start anime">
-						<img class="animation-asistencia animation-asistencia__app-screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/step-2/app-screen.png'>
-						<img class="animation-asistencia animation-asistencia__entry-type" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/step-2/entry-type.png'>
+				<div class="col-12 col-md-6 mb-5">
+					<div class="d-flex justify-content-center">
+						<img class="header-assist" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-assist.png'>
 					</div>
 				</div>
 			</div>
 	</section>
 
+
+<div class="container-fluid position-relative animation-asistencia-container"> 
+	<section class="hero container px-4 step-1">
+			<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics">
+
+
+				<img class="step-1__app-screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/app-screen.png'>
+				<img class="step-1__entry-type" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-type.png'>
+				<img class="step-1__phone-camera" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/phone-camera.png'>
+				<img class="step-1__entry-id" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id.png'>
+				<img class="step-1__biometry" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/biometry.png'>
+
+
+			</div>
+			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
+					<div class="align-self-center pe-md-3 anime-fadein-childs">
+						<h1 class="gray mb-3 fw-bold">
+							Marca tu asistencia
+						</h1>
+						<p class="gray fw-light mb-3">
+						Según el método que elijas, tus trabajadores podrán marcar asistencia y será verificada gracias a nuestra tecnología biométrica.
+
+						</p>
+					</div>
+				</div>
+	</section>
 	</div>
 	<section class="animation-space">
 	</section>

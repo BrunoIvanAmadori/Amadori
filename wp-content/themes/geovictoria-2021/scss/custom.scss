@@ -656,6 +656,13 @@ footer {
 
 // page-asistencia
 
+.header-assist {
+  position: relative;
+  top: -50px;
+  height:400px;
+  
+}
+
 .benefits {
 
   
@@ -741,86 +748,51 @@ footer {
 // Animations page-asistencia
 
 // step 1
-.step-1 .animation-asistencia {
-  position: absolute;
-  top: 0;
+
+.step-1 {
   &__graphics {
-    position:relative;
-  }
-
-  &__screen { 
-    position:relative;
-    z-index: 1;
-    left: 0%;
-    object-fit: contain;
-  }
-
-  &__entry-type {
-    position:absolute;
-    z-index: 3;
-    width:35%;
-    top: 0px;
-    height:auto;
-    left:55%;
-    object-fit: contain;
-  }
-
-  &__user {
-    position:absolute; 
-    z-index: 2;
-    width:40%;
-    height:auto;
-    top:25px;
-    left: 25%;
-    object-fit: contain;
-  }
-
-  &__arrow {
-    position:absolute;
-    z-index: 4;
-    max-width:100px;
-    height: auto;
-    top: 70%;
-    left:-20px;
-    object-fit: contain;
-  }
-}
-
-// step 2
-
-.step-2.animation-asistencia {
-  position: absolute;
-  top:0;
-}
-.step-2 .animation-asistencia {
-  &__graphics {
-    position:relative;
-  }
-
-  &__text h1, &__text h3{
-    opacity: 0;
-  }
-
-  &__entry-type {
-    position:absolute;
-    z-index: 1;
-    width:35%;
-    top: 0;
-    height:auto;
-    left:0%;
-    object-fit: contain;
+    position: relative;
+    height: 350px;
   }
 
   &__app-screen {
-    position:absolute;
-    z-index: 2;
-    width:35%;
-    height: auto;
-    top: 0;
-    left:50%;
-    object-fit: contain;
+    position: absolute;
+    height:350px;
+    object-fit:contain;
+    opacity:0;
   }
+
+  &__entry-type {
+    position: absolute;
+    height:400px;
+    object-fit:contain;
+    opacity:1;
+  }
+
+  &__phone-camera {
+    position: absolute;
+    height:350px;
+    object-fit:contain;
+    opacity:0;
+  }
+
+  &__entry-id {
+    position: absolute;
+    height:350px;
+    object-fit:contain;
+    opacity:0;
+  }
+
+  &__biometry {
+    position: absolute;
+    object-fit:contain;
+    opacity:0;
+    
+  }
+
 }
+
+
 
 // products.css
 
