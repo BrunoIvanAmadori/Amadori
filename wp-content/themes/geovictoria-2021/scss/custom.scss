@@ -751,11 +751,23 @@ footer {
 // Animations page-asistencia
 
 // step 1
+.resizer {
+  transform-origin: left center;
+}
+
 
 .step-1 {
   &__graphics {
     position: relative;
-    height: 350px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+
+  & .resizer {
+    max-width:520px;
   }
 
   &__app-screen {
@@ -763,7 +775,7 @@ footer {
     height: 400px;
     width: 200px;
     border-radius:20px;
-    left:100px;
+    left:165px;
     top: 0;
     overflow: hidden;
 
@@ -801,7 +813,7 @@ footer {
     position: relative;
     height:400px;
     width: 200px;
-    left: 100px;
+    left:165px;
 
     & img {
       object-fit:contain;
@@ -830,7 +842,7 @@ footer {
     height:300px;
     object-fit:contain;
     opacity:0;
-    left:180px;
+    left:200px;
     top: -30px;
     filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1));
   }
@@ -856,6 +868,80 @@ footer {
 
 }
 
+// step-2
+
+.step-2 {
+  &__graphics {
+    position: relative;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+
+
+  & .resizer {
+    max-width:520px;
+  }
+
+  &__cloud {
+    width: 350px;
+    left: 0px;
+    position: relative;
+    z-index: 0;
+  }
+
+  &__loading {
+    width: 100px;
+    top: 110px;
+    left: 130px;
+    position: absolute;
+    z-index:6;
+  }
+
+  
+
+  &__entry-id {
+    position: absolute;
+    height:300px;
+    object-fit:contain;
+    opacity:1;
+    filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1));
+
+    &--size-1 {
+      @extend .step-2__entry-id;
+      height: 200px;
+      top: -50px;
+      z-index: 2;
+    }
+
+    &--size-2 {
+      @extend .step-2__entry-id;
+      height: 150px;
+      left: 60px;
+      top: 180px;
+      z-index: 3;
+    }
+
+    &--size-3 {
+      @extend .step-2__entry-id;
+
+      height: 110px;
+      left: 280px;
+      top: 150px;
+      z-index: 5;
+    }
+
+    &--size-4 {
+      @extend .step-2__entry-id;
+      height: 90px;
+      left: 250px;
+      top: 10px;
+      z-index: 4;
+    }
+  }
+}
 
 
 // products.css
