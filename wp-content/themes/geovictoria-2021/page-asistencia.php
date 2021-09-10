@@ -41,19 +41,32 @@ get_header();
 
 
 <div class="container-fluid position-relative animation-asistencia-container"> 
-	<section class="hero container px-4 step-1">
-			<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics">
+	<section class="hero container step-1 flex-column flex-lg-row">
+			<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics ">
+				<div class="step-1__ripple">
+				</div>
+				<div class="step-1__entry-type">
+					<img src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-type.png'>
+					<div class="step-1__entry-selector">
+					</div>
+				</div>
 
-
-				<img class="step-1__app-screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/app-screen.png'>
-				<img class="step-1__entry-type" src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-type.png'>
-				<img class="step-1__phone-camera" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/phone-camera.png'>
+				<div class="step-1__app-screen">
+					<img class="screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/app-screen.png'>
+					<img class="step-1__phone-camera" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/phone-camera.png'>
+					<img class="step-1__biometry" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/biometry.png'>
+					<img class="step-1__biometry-line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/biometry-line.png'>
+					
+				</div>
 				<img class="step-1__entry-id" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id.png'>
-				<img class="step-1__biometry" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/biometry.png'>
+					
+					
+					
+					
 
 
-			</div>
-			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
+				</div>
+				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs">
 						<h1 class="gray mb-3 fw-bold">
 							Marca tu asistencia

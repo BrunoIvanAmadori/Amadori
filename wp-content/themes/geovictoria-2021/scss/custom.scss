@@ -420,7 +420,9 @@ footer {
     transform: translate(-50%, -50px);
     width: 250px;
     top: 110px;
-    transition: all 0.5s;
+
+    transition: 0.2s ease;
+
     border-radius:10px;
     text-align: center;
     font-weight:lighter;
@@ -523,6 +525,7 @@ footer {
     left:55%;
     object-fit: contain;
   }
+
 
   &__user {
     position:absolute; 
@@ -757,37 +760,98 @@ footer {
 
   &__app-screen {
     position: absolute;
-    height:350px;
-    object-fit:contain;
-    opacity:0;
-  }
+    height: 400px;
+    width: 200px;
+    border-radius:20px;
+    left:100px;
+    top: 0;
+    overflow: hidden;
 
-  &__entry-type {
-    position: absolute;
-    height:400px;
-    object-fit:contain;
-    opacity:1;
+    & img.screen {
+      object-fit:contain;
+      height:100%;
+      position: absolute;
+    }
   }
 
   &__phone-camera {
     position: absolute;
-    height:350px;
+    height:100%;
     object-fit:contain;
-    opacity:0;
+    opacity:1;
+    left: 220px;
+    z-index: 2
   }
+
+
+  &__ripple {
+    -webkit-backdrop-filter: brightness(85%);
+    backdrop-filter: brightness(85%);
+    scale: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 9;
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0;
+    transform-origin: center center;
+  }
+
+  &__entry-type {
+    position: relative;
+    height:400px;
+    width: 200px;
+    left: 100px;
+
+    & img {
+      object-fit:contain;
+      height:100%;
+    }
+
+  }
+
+
+  &__entry-selector {
+    position: absolute;
+    opacity: 0;
+    width: 185px;
+    height: 45px;
+    backdrop-filter: brightness(93%);
+    border-radius: 5px;
+    left: 8px;
+    top: 0px;
+    transform: translateY(68px);
+  }
+
+
 
   &__entry-id {
     position: absolute;
-    height:350px;
+    height:300px;
     object-fit:contain;
     opacity:0;
+    left:180px;
+    top: -30px;
+    filter:drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.1));
   }
 
   &__biometry {
     position: absolute;
     object-fit:contain;
     opacity:0;
-    
+    z-index: 3;
+    left: 33px;
+    top: 100px;
+    width: 120px;
+
+    &-line {
+      position: absolute;
+      object-fit:contain;
+      opacity: 0;
+      z-index:4 ;
+      left: 22;
+      top:220px;
+    }
   }
 
 }
