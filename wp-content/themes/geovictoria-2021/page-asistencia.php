@@ -76,7 +76,7 @@ get_header();
 			</div>
 		</section>
 
-		<section class="d-flex container flex-column flex-md-row step-2 animation-asistencia">
+		<section class="d-flex container step-2 animation-asistencia flex-column flex-md-row ">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs">
 					<h1 class="gray mb-3 fw-bold">
@@ -96,11 +96,182 @@ get_header();
 					<img class="step-2__entry-id--size-4" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-4.png'>
 					<img class="step-2__cloud" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/cloud.svg'>
 					<img class="step-2__loading" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/loading.svg'>
-				
+					<img class="step-2__arrow-up" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/arrow-up.svg'>
+					<div class="step-2__bubble"></div>
+					<div class="step-2__check">
+						<i class="fas fa-check"></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="d-flex container step-3 animation-asistencia flex-column flex-md-row ">
+			<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
+				<div class="resizer">
+					<img class="step-3__platform" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/platform.png'>
+					<img class="step-3__report-action" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/report-action.png'>
+					
+					<div class="step-3__meter-container atrasos">
+						<div class="step-3__meter-title"><h6>Atrasos</h6></div>
+						<div class="step-3__meter--orange">
+							<span class="step-3__meter-num-progress"></span>
+							<span class="step-3__meter-start-value">0%</span>
+							<span class="step-3__meter-end-value">100%</span>
+							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
+							<div class="step-3__meter-fill-mask">
+								<div class="step-3__meter-bg"></div>
+								<div class="step-3__meter-fill--left"></div>
+								<div class="step-3__meter-fill--right"></div>
+							</div>
+						</div>
+						<div class="step-3__meter-left-data-container">
+							<span class="step-3__meter-left-data--orange">	
+							</span>
+							<small>Presentes</small>
+						</div>
+						<div class="step-3__meter-right-data-container">
+							<span class="step-3__meter-right-data">	
+							</span>
+							<small>Planificados</small>
+						</div>
+					</div>
+					
+					<div class="step-3__meter-container asistencia-total">
+						<div class="step-3__meter-title"><h6>Asistencia total</h6></div>
+
+						<div class="step-3__meter--blue">
+							
+							<span class="step-3__meter-num-progress"></span>
+							<span class="step-3__meter-start-value">0%</span>
+							<span class="step-3__meter-end-value">100%</span>
+
+							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
+							<div class="step-3__meter-fill-mask">
+								<div class="step-3__meter-bg"></div>
+								<div class="step-3__meter-fill--left"></div>
+								<div class="step-3__meter-fill--right"></div>
+							</div>
+						</div>
+
+						<div class="step-3__meter-left-data-container">
+							<span class="step-3__meter-left-data--blue">	
+							</span>
+							<small>Atrasos</small>
+						</div>
+						<div class="step-3__meter-right-data-container">
+							<span class="step-3__meter-right-data">	
+							</span>
+							<small>Presentes</small>
+						</div>
+					</div>
+
+					<div class="step-3__meter-container ausentismo-total">
+						<div class="step-3__meter-title"><h6>Ausentismo total</h6></div>
+
+						<div class="step-3__meter--orange">
+							
+							<span class="step-3__meter-num-progress"></span>
+							<span class="step-3__meter-start-value">0%</span>
+							<span class="step-3__meter-end-value">100%</span>
+
+							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
+							<div class="step-3__meter-fill-mask">
+								<div class="step-3__meter-bg"></div>
+								<div class="step-3__meter-fill--left"></div>
+								<div class="step-3__meter-fill--right"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="step-3__assist-bars">
+						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-assist-global.png'>
+						<div class="step-3__bar-group">
+							<div class="step-3__bar--1">100%</div>
+							<div class="step-3__bar--2">100%</div>
+							<div class="step-3__bar--3">100%</div>
+							<div class="step-3__bar--4">100%</div>
+							<div class="step-3__bar--5">100%</div>
+							<div class="step-3__bar--6">100%</div>	
+						</div>
+					</div>
+
+					<div class="step-3__assist-line">
+						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-assist-line.png'>
+						<img class="step-3__line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/bars-assist-line.svg'>
+					</div>
+
+					<div class="step-3__plan-bars">
+						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-plan-bars.png'>
+						<div class="step-3__bar-group">
+							<div class="step-3__bars--1">
+								<div class="step-3__bar--gray">
+								</div>
+								<div class="step-3__bar--blue">
+								</div>
+							</div>
+
+							<div class="step-3__bars--2">
+								<div class="step-3__bar--gray">
+								</div>
+								<div class="step-3__bar--blue">
+								</div>
+							</div>
+
+							<div class="step-3__bars--3">
+								<div class="step-3__bar--gray">
+								</div>
+								<div class="step-3__bar--blue">
+								</div>
+							</div>
+
+							<div class="step-3__bars--4">
+								<div class="step-3__bar--gray">
+								</div>
+								<div class="step-3__bar--blue">
+								</div>
+							</div>
+
+							<div class="step-3__bars--5">
+								<div class="step-3__bar--gray">
+								</div>
+								<div class="step-3__bar--blue">
+								</div>
+							</div>
+
+							<div class="step-3__bars--6">
+								<div class="step-3__bar--gray-small">
+								</div>
+								<div class="step-3__bar--blue-small">
+								</div>
+							</div>
+
+							<div class="step-3__bars--7">
+								<div class="step-3__bar--gray-small">
+								</div>
+								<div class="step-3__bar--blue-small">
+								</div>
+							</div>
+	
+			
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
+				<div class="align-self-center pe-md-3 anime-fadein-childs">
+					<h1 class="gray mb-3 fw-bold">
+						Reportes al instante
+					</h1>
+					<p class="gray fw-light mb-3">
+						Obtendrás todo tipo de reportes y podrás exportarlos en el formato que requieras. Horas extras, turnos consolidados, planificaciones y permisos. ¡Todo en un sólo lugar!
+					</p>
 				</div>
 			</div>
 		</section>
 	</div>
+
 	<section class="animation-space">
 	</section>
 
