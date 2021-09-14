@@ -11,6 +11,7 @@ $container-max-widths: (
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../fonts/fonts.css';
 
+
 // _global.css
 
 
@@ -34,8 +35,20 @@ main#primary section {
 }
 
 main {
-  padding-top: 160px;
+  padding-top: 70px;
 }
+
+@include media-breakpoint-up(md) {
+  main {
+    padding-top: 160px
+  }
+
+}
+
+
+// main {
+//   padding-top: 160px;
+// }
 
 // Colors
 
@@ -659,11 +672,21 @@ footer {
 
 // page-asistencia
 
+@include media-breakpoint-up(md) {
+  .header-assist {
+    position: relative;
+    left: 0px;
+    top: -50px;
+    height:400px;
+    object-fit: contain;
+  }
+}
+
 .header-assist {
   position: relative;
-  top: -50px;
-  height:400px;
-  
+  left: 20px;
+  height:180px;
+  object-fit: contain;
 }
 
 .benefits {
@@ -759,6 +782,7 @@ footer {
 .step-1 {
   &__graphics {
     position: relative;
+    height: 270px;
   }
 
   &__text {
@@ -772,7 +796,7 @@ footer {
 
   &__app-screen {
     position: absolute;
-    height: 400px;
+    height: 350px;
     width: 200px;
     border-radius:20px;
     left:165px;
@@ -811,7 +835,7 @@ footer {
 
   &__entry-type {
     position: relative;
-    height:400px;
+    height:350px;
     width: 200px;
     left:165px;
 
@@ -826,7 +850,7 @@ footer {
   &__entry-selector {
     position: absolute;
     opacity: 0;
-    width: 185px;
+    width: 163px;
     height: 45px;
     backdrop-filter: brightness(93%);
     border-radius: 5px;
@@ -839,7 +863,7 @@ footer {
 
   &__entry-id {
     position: absolute;
-    height:300px;
+    height:250px;
     object-fit:contain;
     opacity:0;
     left:200px;
@@ -854,14 +878,14 @@ footer {
     z-index: 3;
     left: 33px;
     top: 100px;
-    width: 120px;
+    width: 97px;
 
     &-line {
       position: absolute;
       object-fit:contain;
       opacity: 0;
-      z-index:4 ;
-      left: 22;
+      z-index:4;
+      width:180px;
       top:220px;
     }
   }
@@ -873,6 +897,7 @@ footer {
 .step-2 {
   &__graphics {
     position: relative;
+    height: 220px;
   }
 
   &__text {
@@ -887,12 +912,14 @@ footer {
 
   &__cloud {
     width: 350px;
+    min-width: 350px;
     left: 90px;
     top: -30px;
     position: relative;
     z-index: 1;
 
     &-aura{
+      min-width: 350px;
       width: 350px;
       left: 90px;
       top: -30px;
@@ -991,6 +1018,7 @@ footer {
 .step-3 {
   &__graphics {
     position: relative;
+    height: 225px;
   }
 
   &__text {
@@ -1004,9 +1032,18 @@ footer {
 
   &__platform{
     width:450px;
-    left: 30px;
+    left: 35px;
+    top: 80px;
     position: relative;
     z-index: 1;
+  }
+
+  &__report-action{
+    width: 300px;
+    top: 30px;
+    left: 200px;
+    z-index: 2;
+    position: absolute;
   }
 
   &__meter-container {
@@ -1026,8 +1063,8 @@ footer {
     &.ausentismo-total {
       @extend .step-3__meter-container;
       transform: scale(0.8);
-      top:100px;
-      right: 40px;
+      top:130px;
+      left: 160px;
       height:230px;
       z-index: 3;
     }
@@ -1036,15 +1073,15 @@ footer {
       @extend .step-3__meter-container;
       transform: scale(0.5);
       top:-40px;
-      right:260px;
+      left:-20px;
       z-index: 2;
     }
 
     &.asistencia-total {
       @extend .step-3__meter-container;
       transform: scale(0.3);
-      top:-140px;
-      right:130px;
+      top:-120px;
+      left: 80px;
       z-index: 1;
     }
 
@@ -1220,13 +1257,6 @@ footer {
     z-index: 11;
   }
 
-  &__report-action{
-    width: 300px;
-    top: -30px;
-    left: 200px;
-    z-index: 2;
-    position: absolute;
-  }
 
 
   // Assist global
@@ -1309,9 +1339,10 @@ footer {
 
   &__assist-line  {
     width:350px;
+    min-width:350px;
     position: absolute;
     left: 140px;
-    bottom: 40px;
+    top: 200px;
     z-index: 3;
     opacity: 1;
     transform: scale(0.9);

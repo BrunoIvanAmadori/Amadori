@@ -19,20 +19,20 @@ get_header();
 </div>
 <main id="primary" class="site-main">
 
-<section class="hero container-fluid px-4">
-			<div class="container d-flex flex-column flex-md-row justify-content-between h-100 px-4 text-center text-md-start">
-				<div class="col-12 col-md-6 mb-5 ">
+<section class="hero container-fluid">
+			<div class="container d-flex flex-column flex-md-row justify-content-between h-100 text-center text-md-start">
+				<div class="col-12 col-md-6 mb-3">
 					<div class="align-self-center pe-md-3 anime-fadein-childs">
 						<h1 class="gray mb-3 fw-bold">
 						Control de asistencia en tiempo real para tu empresa
 						</h1>
-						<h3 class="gray fw-light mb-3">
+						<h3 class="gray fw-light mb-3 fs-5 fs-md-3">
 						Somos el sistema más simple, amigable y eficiente para gestionar tu personal. 
 						</h3>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 mb-5">
-					<div class="d-flex justify-content-center">
+				<div class="col-12 col-md-6">
+					<div class="d-flex justify-content-center anime-fadein">
 						<img class="header-assist" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-assist.png'>
 					</div>
 				</div>
@@ -65,7 +65,7 @@ get_header();
 			</div>
 				
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
-				<div class="align-self-center pe-md-3 anime-fadein-childs">
+				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 					<h1 class="gray mb-3 fw-bold">
 						Marca tu asistencia
 					</h1>
@@ -78,7 +78,7 @@ get_header();
 
 		<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row ">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
-				<div class="align-self-center pe-md-3 anime-fadein-childs">
+				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 					<h1 class="gray mb-3 fw-bold">
 						¡Siempre en la nube!
 					</h1>
@@ -262,7 +262,7 @@ get_header();
 				</div>
 			</div>
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
-				<div class="align-self-center pe-md-3 anime-fadein-childs">
+				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 					<h1 class="gray mb-3 fw-bold">
 						Reportes al instante
 					</h1>
@@ -273,9 +273,9 @@ get_header();
 			</div>
 		</section>
 	</div>
-
+<!-- 
 	<section class="animation-space">
-	</section>
+	</section> -->
 
 	<section class="container benefits text-center d-flex flex-column">
 		<h2 class="text-center gray section-title anime-fadein"><span class="fw-light">¿Por qué elegir nuestro control de asistencia?</b></h2>
@@ -286,8 +286,9 @@ get_header();
 						<div class="benefits__flip-card-front flex-column align-items-center">
 
 							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-asistencia.svg"/>
-							<div class="benefits__arrow"><i class="fal fa-chevron-up"></i></div>
+							
 							<h5>Paga correctamente los salarios</h5>
+							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
 							
 						</div>
 
@@ -301,8 +302,9 @@ get_header();
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
 							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-acceso.svg"/>
-							<div class="benefits__arrow"><i class="fal fa-chevron-up"></i></div>
+							
 							<h5>Ahorra tiempo y dinero</h5>
+							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
 							
 						</div>
 
@@ -315,9 +317,10 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 						
-							<div class="benefits__arrow"><i class="fal fa-chevron-up"></i></div>
+							
 							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-comedor.svg"/>
 							<h5>Toma decisiones al instante</h5>
+							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
 
 						</div>
 

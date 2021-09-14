@@ -3,13 +3,13 @@
 var observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {  
+      if (entry.isIntersecting && entry.intersectionRatio > 0.3) {  
         
         playTarget(entry.target);
         
     }
   });
-}, { threshold: [0]});
+}, { threshold: [0.3]});
 
 let $triggers = [];
 
