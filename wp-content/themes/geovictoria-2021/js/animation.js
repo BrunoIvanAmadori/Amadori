@@ -110,9 +110,6 @@ function playTarget(el) {
 }
 
 
-
-// 
-
 let resizerWrappers = [];
 
 document.querySelectorAll('.resizer')

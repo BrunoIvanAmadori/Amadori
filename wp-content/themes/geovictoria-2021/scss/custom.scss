@@ -890,8 +890,18 @@ footer {
     left: 90px;
     top: -30px;
     position: relative;
-    z-index: 0;
+    z-index: 1;
+
+    &-aura{
+      width: 350px;
+      left: 90px;
+      top: -30px;
+      position: absolute;
+      opacity:0;
+      z-index: 1;
+    }
   }
+
 
   &__loading {
     width: 100px;
@@ -1015,19 +1025,30 @@ footer {
 
     &.ausentismo-total {
       @extend .step-3__meter-container;
-      top:600px;
+      transform: scale(0.8);
+      top:100px;
+      right: 40px;
       height:230px;
-    }
-
-    &.asistencia-total {
-      @extend .step-3__meter-container;
-      top:300px
+      z-index: 3;
     }
 
     &.atrasos {
       @extend .step-3__meter-container;
-      top:0px
+      transform: scale(0.5);
+      top:-40px;
+      right:260px;
+      z-index: 2;
     }
+
+    &.asistencia-total {
+      @extend .step-3__meter-container;
+      transform: scale(0.3);
+      top:-140px;
+      right:130px;
+      z-index: 1;
+    }
+
+
   }
 
   &__meter {
@@ -1213,8 +1234,9 @@ footer {
   &__assist-bars  {
     width:350px;
     position: absolute;
-    left: 300px;
-
+    transform: scale(0.55);
+    top: -100px;
+    left: 110px;
 
   
     & .step-3__graph {
@@ -1230,6 +1252,7 @@ footer {
     & .step-3__bar-group{
       position: absolute;
       top: 21%;
+     
     }
 
     & .step-3__bar {
@@ -1287,7 +1310,11 @@ footer {
   &__assist-line  {
     width:350px;
     position: absolute;
-    left: 0px;
+    left: 140px;
+    bottom: 40px;
+    z-index: 3;
+    opacity: 1;
+    transform: scale(0.9);
 
     .step-3__graph {
       position: absolute;
@@ -1310,7 +1337,9 @@ footer {
   &__plan-bars {
     width:350px;
     position: absolute;
-    left: 0px;
+    transform: scale(0.7);
+    left: -40px;
+    top: 80px;
 
     & .step-3__graph {
       
@@ -1327,7 +1356,7 @@ footer {
       align-items: end;
       height:100px;
       width:100%;
-      top: 35%;
+      top: 30%;
     }
 
     & .step-3__bar {

@@ -76,7 +76,7 @@ get_header();
 			</div>
 		</section>
 
-		<section class="d-flex container step-2 animation-asistencia flex-column flex-md-row ">
+		<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row ">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs">
 					<h1 class="gray mb-3 fw-bold">
@@ -95,6 +95,8 @@ get_header();
 					<img class="step-2__entry-id--size-3" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-3.png'>
 					<img class="step-2__entry-id--size-4" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-4.png'>
 					<img class="step-2__cloud" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/cloud.svg'>
+					<img class="step-2__cloud-aura" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/cloud.svg'>
+					
 					<img class="step-2__loading" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/loading.svg'>
 					<img class="step-2__arrow-up" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/arrow-up.svg'>
 					<div class="step-2__bubble"></div>
