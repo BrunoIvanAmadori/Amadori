@@ -15,7 +15,7 @@
 get_header();
 ?>
 <div class="bg-header">
-	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-header.svg"/>
+	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/bg-header.svg"/>
 </div>
 <main id="primary" class="site-main">
 
@@ -33,7 +33,7 @@ get_header();
 				</div>
 				<div class="hero-asistencia__graphics col-12 col-md-6">
 					<div class="d-flex justify-content-center anime-fadein h-100">
-						<img class="header-assist" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/header-assist.png'>
+						<img class="header-assist" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/header-assist.webp'>
 					</div>
 				</div>
 			</div>
@@ -48,19 +48,19 @@ get_header();
 					</div>
 
 					<div class="step-1__entry-type">
-						<img src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-type.png'>
+						<img src='<?php  echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-type.webp'>
 						<div class="step-1__entry-selector">
 						</div>
 					</div>
 
 					<div class="step-1__app-screen">
-						<img class="screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/app-screen.png'>
-						<img class="step-1__phone-camera" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/phone-camera.png'>
-						<img class="step-1__biometry" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/biometry.png'>
-						<img class="step-1__biometry-line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/biometry-line.png'>
+						<img class="screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/app-screen.webp'>
+						<img class="step-1__phone-camera" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/phone-camera.webp'>
+						<img class="step-1__biometry" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/biometry.webp'>
+						<img class="step-1__biometry-line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/biometry-line.webp'>
 					</div>
 
-					<img class="step-1__entry-id" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id.png'>
+					<img class="step-1__entry-id" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id.webp'>
 				</div>
 			</div>
 				
@@ -90,15 +90,15 @@ get_header();
 
 			<div class="col-12 col-md-6 step-2 step-2__graphics resizer-reference">
 				<div class="resizer">
-					<img class="step-2__entry-id--size-1" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id.png'>
-					<img class="step-2__entry-id--size-2" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-2.png'>
-					<img class="step-2__entry-id--size-3" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-3.png'>
-					<img class="step-2__entry-id--size-4" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-4.png'>
-					<img class="step-2__cloud" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/cloud.svg'>
-					<img class="step-2__cloud-aura" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/cloud.svg'>
+					<img class="step-2__entry-id--size-1" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id.webp'>
+					<img class="step-2__entry-id--size-2" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-2.webp'>
+					<img class="step-2__entry-id--size-3" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-3.webp'>
+					<img class="step-2__entry-id--size-4" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-4.webp'>
+					<img class="step-2__cloud" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/cloud.svg'>
+					<img class="step-2__cloud-aura" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/cloud.svg'>
 					
-					<img class="step-2__loading" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/loading.svg'>
-					<img class="step-2__arrow-up" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/arrow-up.svg'>
+					<img class="step-2__loading" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/loading.svg'>
+					<img class="step-2__arrow-up" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/arrow-up.svg'>
 					<div class="step-2__bubble"></div>
 					<div class="step-2__check">
 						<i class="fas fa-check"></i>
@@ -110,8 +110,8 @@ get_header();
 		<section class="d-flex container step-3 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
 				<div class="resizer">
-					<img class="step-3__platform" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/platform.png'>
-					<img class="step-3__report-action" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/report-action.png'>
+					<img class="step-3__platform" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/platform.webp'>
+					<img class="step-3__report-action" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/report-action.webp'>
 					<div class="step-3__ripple">
 					</div>
 
@@ -121,7 +121,7 @@ get_header();
 							<span class="step-3__meter-num-progress"></span>
 							<span class="step-3__meter-start-value">0%</span>
 							<span class="step-3__meter-end-value">100%</span>
-							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
+							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
 							<div class="step-3__meter-fill-mask">
 								<div class="step-3__meter-bg"></div>
 								<div class="step-3__meter-fill--left"></div>
@@ -149,7 +149,7 @@ get_header();
 							<span class="step-3__meter-start-value">0%</span>
 							<span class="step-3__meter-end-value">100%</span>
 
-							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
+							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
 							<div class="step-3__meter-fill-mask">
 								<div class="step-3__meter-bg"></div>
 								<div class="step-3__meter-fill--left"></div>
@@ -178,7 +178,7 @@ get_header();
 							<span class="step-3__meter-start-value">0%</span>
 							<span class="step-3__meter-end-value">100%</span>
 
-							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
+							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
 							<div class="step-3__meter-fill-mask">
 								<div class="step-3__meter-bg"></div>
 								<div class="step-3__meter-fill--left"></div>
@@ -188,7 +188,7 @@ get_header();
 					</div>
 
 					<div class="step-3__assist-bars">
-						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-assist-global.png'>
+						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-assist-global.webp'>
 						<div class="step-3__bar-group">
 							<div class="step-3__bar--1">100%</div>
 							<div class="step-3__bar--2">100%</div>
@@ -200,12 +200,12 @@ get_header();
 					</div>
 
 					<div class="step-3__assist-line">
-						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-assist-line.png'>
-						<img class="step-3__line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/bars-assist-line.svg'>
+						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-assist-line.webp'>
+						<img class="step-3__line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/bars-assist-line.svg'>
 					</div>
 
 					<div class="step-3__plan-bars">
-						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-plan-bars.png'>
+						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-plan-bars.webp'>
 						<div class="step-3__bar-group">
 							<div class="step-3__bars--1">
 								<div class="step-3__bar--gray">
@@ -275,240 +275,241 @@ get_header();
 			</div>
 		</section>
 		<?php else : ?>	
-			
-		<section class="d-flex container step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
-			<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
-				<div class="resizer">
-					<div class="step-1__ripple">
-					</div>
+		<div class="animation-asistencia-container">
+			<section class="d-flex container step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
+				<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
+					<div class="resizer">
+						<div class="step-1__ripple">
+						</div>
 
-					<div class="step-1__entry-type">
-						<img src='<?php  echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-type.png'>
-						<div class="step-1__entry-selector">
+						<div class="step-1__entry-type">
+							<img src='<?php  echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-type.webp'>
+							<div class="step-1__entry-selector">
+							</div>
+						</div>
+
+						<div class="step-1__app-screen">
+							<img class="screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/app-screen.webp'>
+							<img class="step-1__phone-camera" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/phone-camera.webp'>
+							<img class="step-1__biometry" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/biometry.webp'>
+							<img class="step-1__biometry-line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/biometry-line.webp'>
+						</div>
+
+						<img class="step-1__entry-id" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id.webp'>
+					</div>
+				</div>
+					
+				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
+					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
+						<h1 class="gray mb-3 fw-bold">
+							Marca tu asistencia
+						</h1>
+						<p class="gray fw-light mb-3">
+							Según el método que elijas, tus trabajadores podrán marcar asistencia y será verificada gracias a nuestra tecnología biométrica.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
+				<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
+					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
+						<h1 class="gray mb-3 fw-bold">
+							¡Siempre en la nube!
+						</h1>
+						<p class="gray fw-light mb-3">
+							Los datos de asistencia estarán protegidos en la nube. La información quedará alojada en tiempo real. ¡Disponible cuando la necesites!
+						</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 mb-5 step-2 step-2__graphics resizer-reference">
+					<div class="resizer">
+						<img class="step-2__entry-id--size-1" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id.webp'>
+						<img class="step-2__entry-id--size-2" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-2.webp'>
+						<img class="step-2__entry-id--size-3" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-3.webp'>
+						<img class="step-2__entry-id--size-4" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-4.webp'>
+						<img class="step-2__cloud" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/cloud.svg'>
+						<img class="step-2__cloud-aura" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/cloud.svg'>
+						
+						<img class="step-2__loading" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/loading.svg'>
+						<img class="step-2__arrow-up" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/arrow-up.svg'>
+						<div class="step-2__bubble"></div>
+						<div class="step-2__check">
+							<i class="fas fa-check"></i>
 						</div>
 					</div>
-
-					<div class="step-1__app-screen">
-						<img class="screen" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/app-screen.png'>
-						<img class="step-1__phone-camera" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/phone-camera.png'>
-						<img class="step-1__biometry" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/biometry.png'>
-						<img class="step-1__biometry-line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/biometry-line.png'>
-					</div>
-
-					<img class="step-1__entry-id" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id.png'>
 				</div>
-			</div>
+			</section>
+
+			<section class="d-flex container step-3 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
+				<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
+					<div class="resizer">
+						<img class="step-3__platform" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/platform.webp'>
+						<img class="step-3__report-action" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/report-action.webp'>
+						<div class="step-3__ripple">
+						</div>
+
+						<div class="step-3__meter-container atrasos">
+							<div class="step-3__meter-title"><h6>Atrasos</h6></div>
+							<div class="step-3__meter--orange">
+								<span class="step-3__meter-num-progress"></span>
+								<span class="step-3__meter-start-value">0%</span>
+								<span class="step-3__meter-end-value">100%</span>
+								<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
+								<div class="step-3__meter-fill-mask">
+									<div class="step-3__meter-bg"></div>
+									<div class="step-3__meter-fill--left"></div>
+									<div class="step-3__meter-fill--right"></div>
+								</div>
+							</div>
+							<div class="step-3__meter-left-data-container">
+								<span class="step-3__meter-left-data--orange">	
+								</span>
+								<small>Presentes</small>
+							</div>
+							<div class="step-3__meter-right-data-container">
+								<span class="step-3__meter-right-data">	
+								</span>
+								<small>Planificados</small>
+							</div>
+						</div>
+						
+						<div class="step-3__meter-container asistencia-total">
+							<div class="step-3__meter-title"><h6>Asistencia total</h6></div>
+
+							<div class="step-3__meter--blue">
+								
+								<span class="step-3__meter-num-progress"></span>
+								<span class="step-3__meter-start-value">0%</span>
+								<span class="step-3__meter-end-value">100%</span>
+
+								<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
+								<div class="step-3__meter-fill-mask">
+									<div class="step-3__meter-bg"></div>
+									<div class="step-3__meter-fill--left"></div>
+									<div class="step-3__meter-fill--right"></div>
+								</div>
+							</div>
+
+							<div class="step-3__meter-left-data-container">
+								<span class="step-3__meter-left-data--blue">	
+								</span>
+								<small>Atrasos</small>
+							</div>
+							<div class="step-3__meter-right-data-container">
+								<span class="step-3__meter-right-data">	
+								</span>
+								<small>Presentes</small>
+							</div>
+						</div>
+
+						<div class="step-3__meter-container ausentismo-total">
+							<div class="step-3__meter-title"><h6>Ausentismo total</h6></div>
+
+							<div class="step-3__meter--orange">
+								
+								<span class="step-3__meter-num-progress"></span>
+								<span class="step-3__meter-start-value">0%</span>
+								<span class="step-3__meter-end-value">100%</span>
+
+								<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
+								<div class="step-3__meter-fill-mask">
+									<div class="step-3__meter-bg"></div>
+									<div class="step-3__meter-fill--left"></div>
+									<div class="step-3__meter-fill--right"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="step-3__assist-bars">
+							<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-assist-global.webp'>
+							<div class="step-3__bar-group">
+								<div class="step-3__bar--1">100%</div>
+								<div class="step-3__bar--2">100%</div>
+								<div class="step-3__bar--3">100%</div>
+								<div class="step-3__bar--4">100%</div>
+								<div class="step-3__bar--5">100%</div>
+								<div class="step-3__bar--6">100%</div>	
+							</div>
+						</div>
+
+						<div class="step-3__assist-line">
+							<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-assist-line.webp'>
+							<img class="step-3__line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/bars-assist-line.svg'>
+						</div>
+
+						<div class="step-3__plan-bars">
+							<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-plan-bars.webp'>
+							<div class="step-3__bar-group">
+								<div class="step-3__bars--1">
+									<div class="step-3__bar--gray">
+									</div>
+									<div class="step-3__bar--blue">
+									</div>
+								</div>
+
+								<div class="step-3__bars--2">
+									<div class="step-3__bar--gray">
+									</div>
+									<div class="step-3__bar--blue">
+									</div>
+								</div>
+
+								<div class="step-3__bars--3">
+									<div class="step-3__bar--gray">
+									</div>
+									<div class="step-3__bar--blue">
+									</div>
+								</div>
+
+								<div class="step-3__bars--4">
+									<div class="step-3__bar--gray">
+									</div>
+									<div class="step-3__bar--blue">
+									</div>
+								</div>
+
+								<div class="step-3__bars--5">
+									<div class="step-3__bar--gray">
+									</div>
+									<div class="step-3__bar--blue">
+									</div>
+								</div>
+
+								<div class="step-3__bars--6">
+									<div class="step-3__bar--gray-small">
+									</div>
+									<div class="step-3__bar--blue-small">
+									</div>
+								</div>
+
+								<div class="step-3__bars--7">
+									<div class="step-3__bar--gray-small">
+									</div>
+									<div class="step-3__bar--blue-small">
+									</div>
+								</div>
+		
 				
-			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
-				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
-						Marca tu asistencia
-					</h1>
-					<p class="gray fw-light mb-3">
-						Según el método que elijas, tus trabajadores podrán marcar asistencia y será verificada gracias a nuestra tecnología biométrica.
-					</p>
-				</div>
-			</div>
-		</section>
+							</div>
+						</div>
 
-		<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
-			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
-				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
-						¡Siempre en la nube!
-					</h1>
-					<p class="gray fw-light mb-3">
-						Los datos de asistencia estarán protegidos en la nube. La información quedará alojada en tiempo real. ¡Disponible cuando la necesites!
-					</p>
-				</div>
-			</div>
-
-			<div class="col-12 col-md-6 mb-5 step-2 step-2__graphics resizer-reference">
-				<div class="resizer">
-					<img class="step-2__entry-id--size-1" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id.png'>
-					<img class="step-2__entry-id--size-2" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-2.png'>
-					<img class="step-2__entry-id--size-3" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-3.png'>
-					<img class="step-2__entry-id--size-4" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-4.png'>
-					<img class="step-2__cloud" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/cloud.svg'>
-					<img class="step-2__cloud-aura" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/cloud.svg'>
-					
-					<img class="step-2__loading" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/loading.svg'>
-					<img class="step-2__arrow-up" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/arrow-up.svg'>
-					<div class="step-2__bubble"></div>
-					<div class="step-2__check">
-						<i class="fas fa-check"></i>
+						
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<section class="d-flex container step-3 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
-			<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
-				<div class="resizer">
-					<img class="step-3__platform" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/platform.png'>
-					<img class="step-3__report-action" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/report-action.png'>
-					<div class="step-3__ripple">
+				<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
+					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
+						<h1 class="gray mb-3 fw-bold">
+							Reportes al instante
+						</h1>
+						<p class="gray fw-light mb-3">
+							Obtendrás todo tipo de reportes y podrás exportarlos en el formato que requieras. Horas extras, turnos consolidados, planificaciones y permisos. ¡Todo en un sólo lugar!
+						</p>
 					</div>
-
-					<div class="step-3__meter-container atrasos">
-						<div class="step-3__meter-title"><h6>Atrasos</h6></div>
-						<div class="step-3__meter--orange">
-							<span class="step-3__meter-num-progress"></span>
-							<span class="step-3__meter-start-value">0%</span>
-							<span class="step-3__meter-end-value">100%</span>
-							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
-							<div class="step-3__meter-fill-mask">
-								<div class="step-3__meter-bg"></div>
-								<div class="step-3__meter-fill--left"></div>
-								<div class="step-3__meter-fill--right"></div>
-							</div>
-						</div>
-						<div class="step-3__meter-left-data-container">
-							<span class="step-3__meter-left-data--orange">	
-							</span>
-							<small>Presentes</small>
-						</div>
-						<div class="step-3__meter-right-data-container">
-							<span class="step-3__meter-right-data">	
-							</span>
-							<small>Planificados</small>
-						</div>
-					</div>
-					
-					<div class="step-3__meter-container asistencia-total">
-						<div class="step-3__meter-title"><h6>Asistencia total</h6></div>
-
-						<div class="step-3__meter--blue">
-							
-							<span class="step-3__meter-num-progress"></span>
-							<span class="step-3__meter-start-value">0%</span>
-							<span class="step-3__meter-end-value">100%</span>
-
-							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
-							<div class="step-3__meter-fill-mask">
-								<div class="step-3__meter-bg"></div>
-								<div class="step-3__meter-fill--left"></div>
-								<div class="step-3__meter-fill--right"></div>
-							</div>
-						</div>
-
-						<div class="step-3__meter-left-data-container">
-							<span class="step-3__meter-left-data--blue">	
-							</span>
-							<small>Atrasos</small>
-						</div>
-						<div class="step-3__meter-right-data-container">
-							<span class="step-3__meter-right-data">	
-							</span>
-							<small>Presentes</small>
-						</div>
-					</div>
-
-					<div class="step-3__meter-container ausentismo-total">
-						<div class="step-3__meter-title"><h6>Ausentismo total</h6></div>
-
-						<div class="step-3__meter--orange">
-							
-							<span class="step-3__meter-num-progress"></span>
-							<span class="step-3__meter-start-value">0%</span>
-							<span class="step-3__meter-end-value">100%</span>
-
-							<img class="step-3__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/meter-bg.png'>		
-							<div class="step-3__meter-fill-mask">
-								<div class="step-3__meter-bg"></div>
-								<div class="step-3__meter-fill--left"></div>
-								<div class="step-3__meter-fill--right"></div>
-							</div>
-						</div>
-					</div>
-
-					<div class="step-3__assist-bars">
-						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-assist-global.png'>
-						<div class="step-3__bar-group">
-							<div class="step-3__bar--1">100%</div>
-							<div class="step-3__bar--2">100%</div>
-							<div class="step-3__bar--3">100%</div>
-							<div class="step-3__bar--4">100%</div>
-							<div class="step-3__bar--5">100%</div>
-							<div class="step-3__bar--6">100%</div>	
-						</div>
-					</div>
-
-					<div class="step-3__assist-line">
-						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-assist-line.png'>
-						<img class="step-3__line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/bars-assist-line.svg'>
-					</div>
-
-					<div class="step-3__plan-bars">
-						<img class="step-3__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/graph-plan-bars.png'>
-						<div class="step-3__bar-group">
-							<div class="step-3__bars--1">
-								<div class="step-3__bar--gray">
-								</div>
-								<div class="step-3__bar--blue">
-								</div>
-							</div>
-
-							<div class="step-3__bars--2">
-								<div class="step-3__bar--gray">
-								</div>
-								<div class="step-3__bar--blue">
-								</div>
-							</div>
-
-							<div class="step-3__bars--3">
-								<div class="step-3__bar--gray">
-								</div>
-								<div class="step-3__bar--blue">
-								</div>
-							</div>
-
-							<div class="step-3__bars--4">
-								<div class="step-3__bar--gray">
-								</div>
-								<div class="step-3__bar--blue">
-								</div>
-							</div>
-
-							<div class="step-3__bars--5">
-								<div class="step-3__bar--gray">
-								</div>
-								<div class="step-3__bar--blue">
-								</div>
-							</div>
-
-							<div class="step-3__bars--6">
-								<div class="step-3__bar--gray-small">
-								</div>
-								<div class="step-3__bar--blue-small">
-								</div>
-							</div>
-
-							<div class="step-3__bars--7">
-								<div class="step-3__bar--gray-small">
-								</div>
-								<div class="step-3__bar--blue-small">
-								</div>
-							</div>
-	
-			
-						</div>
-					</div>
-
-					
 				</div>
-			</div>
-			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
-				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
-						Reportes al instante
-					</h1>
-					<p class="gray fw-light mb-3">
-						Obtendrás todo tipo de reportes y podrás exportarlos en el formato que requieras. Horas extras, turnos consolidados, planificaciones y permisos. ¡Todo en un sólo lugar!
-					</p>
-				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 
 
 			<section class="animation-space">
@@ -524,7 +525,7 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 
-							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-asistencia.svg"/>
+							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-asistencia.svg"/>
 							
 							<h5>Paga correctamente los salarios</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
@@ -540,7 +541,7 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
-							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-acceso.svg"/>
+							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-acceso.svg"/>
 							
 							<h5>Ahorra tiempo y dinero</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
@@ -557,7 +558,7 @@ get_header();
 						<div class="benefits__flip-card-front flex-column align-items-center">
 						
 							
-							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/product-comedor.svg"/>
+							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-comedor.svg"/>
 							<h5>Toma decisiones al instante</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
 
@@ -579,19 +580,19 @@ get_header();
 
 		<div class="row anime-fadein">
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/report.svg"/>
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/report.svg"/>
 				<h5 class="fw-bold">Plataforma en la nube</h5>
 				<p>Fácil acceso desde cualquier dispositivo con internet. Con Geovictoria no perderás información valiosa.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/form.svg"/>
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/form.svg"/>
 				<h5 class="fw-bold">Acompañamiento</h5>
 				<p>Estámos contigo en todo el proceso, desde el primer contacto, hasta concretar la implementación. En lo que necesites, cuenta con nosotros.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/icons/optimizer.svg"/>
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/optimizer.svg"/>
 				<h5 class="fw-bold">Adaptabilidad</h5>
 				<p>Cada industria funciona demanera muy diferente. Nos adaptamos a cada una de ellas.</p>
 			</div>
@@ -599,7 +600,7 @@ get_header();
 	</section>
 
 	<div>
-		<img class="bg-head-blue" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/bg-head-blue.svg"/>
+		<img class="bg-head-blue" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/bg-head-blue.svg"/>
 	</div>
 
 	<div class="container-fluid bg-blue-2">
@@ -619,7 +620,7 @@ get_header();
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">
-				<img class="why-us__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/soporte-personalizado.png"/>
+				<img class="why-us__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/soporte-personalizado.webp"/>
 			</div>
 		</section>
 </main><!-- #main -->

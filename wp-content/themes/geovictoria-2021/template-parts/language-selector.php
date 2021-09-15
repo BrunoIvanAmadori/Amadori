@@ -46,10 +46,10 @@ for ($i = 0; $i < count($sites); $i++) {
 }
     // obtengo la url de la bandera de cada sitio
 
-$current_site_flag_url = esc_url( get_template_directory_uri() . '/img/flags/' . $current_site_path . '.png' );
+$current_site_flag_url = esc_url( get_template_directory_uri() . '/dist/img/flags/' . $current_site_path . '.webp' );
 
 for ($i = 0; $i < count($sites); $i++) {
-    $sites[$i][2] = esc_url( get_template_directory_uri() . '/img/flags/' . $sites[$i][0] . '.png' );
+    $sites[$i][2] = esc_url( get_template_directory_uri() . '/dist/img/flags/' . $sites[$i][0] . '.webp' );
 }
 ?>
 <div class="language-selector">

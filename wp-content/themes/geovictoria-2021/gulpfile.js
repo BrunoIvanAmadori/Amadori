@@ -13,6 +13,11 @@ const sasslint = require('gulp-sass-lint');
 const cache = require('gulp-cached');
 const notify = require('gulp-notify');
 const terser = require('gulp-terser');
+const rename = require('gulp-rename');
+const imagemin = require('gulp-imagemin');
+const imageminwebp = require('imagemin-webp');
+const webp = require('gulp-webp');
+var del = require('del');
 
 // Compile CSS from Sass.
 function buildCssStyles() {
@@ -22,27 +27,37 @@ function buildCssStyles() {
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7']))
     .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min'}))
     .pipe(dest('dist/css/'))
     .pipe(browsersync.stream());
 }
 
 function buildJsScripts() {
-  return src(['src/js/*.js', 'src/js/**/*.js'])
+  return src(['src/js/*.js', 'src/js/**/*.js', '!src/js/*.min.js', '!src/js/**/*.min.js'])
     .pipe(plumbError()) // Global error handler through all pipes.
-    .pipe(sourcemaps.init())
     .pipe(terser())
-    .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min'}))
     .pipe(dest('dist/js/'))
     .pipe(browsersync.stream());
 }
 
+function buildImg() {
+  return src('src/img/**/*.+(png|jpg|gif|svg)')
+    .pipe(plumbError()) // Global error handler through all pipes.
+ //   .pipe(imagemin([imageminwebp({ quality: 50 })]))
+    .pipe(webp())
+    .pipe(dest('dist/img/'))
+    .pipe(browsersync.stream());
+}
+
+ 
 
 
 // Watch changes on all *.scss files, lint them and
 // trigger buildCssStyles() at the end.
 function watchStyles() {
   watch(
-    ['scss/*.scss', 'scss/**/*.scss'],
+    ['src/scss/*.scss', 'src/scss/**/*.scss'],
     { events: 'all', ignoreInitial: false },
     series(sassLint, buildCssStyles)
   );
@@ -54,7 +69,15 @@ function watchScripts() {
   watch(
     ['src/js/*.js', 'src/js/**/*.js'],
     { events: 'all', ignoreInitial: false },
-    series(sassLint, buildJsScripts)
+    series(buildJsScripts)
+  );
+}
+
+function watchImg() {
+  watch(
+    ['src/img/*', 'src/img/**/*'],
+    { events: 'all', ignoreInitial: false },
+    series(buildImg)
   );
 }
 
@@ -98,8 +121,9 @@ function plumbError() {
 }
 
 // Export commands.
-exports.default = parallel(browserSync, watchStyles, watchScripts); // $ gulp
+exports.default = parallel(browserSync, watchStyles, watchScripts, watchImg); // $ gulp
 exports.sass = buildCssStyles; // $ gulp sass
 exports.js = buildJsScripts; // $ gulp sass
-exports.watch = parallel(watchStyles, watchScripts); // $ gulp watch
-exports.build = parallel(buildCssStyles, buildJsScripts); // $ gulp build
+exports.img = buildImg; // $ gulp sass
+exports.watch = parallel(watchStyles, watchScripts, watchImg); // $ gulp watch
+exports.build = parallel(buildCssStyles, buildJsScripts, buildImg); // $ gulp build
