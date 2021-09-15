@@ -47,7 +47,6 @@ main {
   main {
     padding-top: 160px
   }
-
 }
 
 
@@ -819,7 +818,12 @@ footer {
 
   &__graphics {
     position: relative;
- //   height: 270px;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__graphics {
+      position: absolute;
+    }
   }
 
   &__text {
@@ -939,7 +943,12 @@ footer {
 
   &__graphics {
     position: relative;
-//    height: 220px;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__graphics {
+      position: absolute;
+    }
   }
 
   &__text {
@@ -1065,7 +1074,12 @@ footer {
 
   &__graphics {
     position: relative;
- //   height: 225px;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__graphics {
+      position: absolute;
+    }
   }
 
   &__text {

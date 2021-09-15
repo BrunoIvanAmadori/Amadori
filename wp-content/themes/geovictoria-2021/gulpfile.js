@@ -12,26 +12,49 @@ const plumber = require('gulp-plumber');
 const sasslint = require('gulp-sass-lint');
 const cache = require('gulp-cached');
 const notify = require('gulp-notify');
+const terser = require('gulp-terser');
 
 // Compile CSS from Sass.
-function buildStyles() {
-  return src('scss/custom.scss')
+function buildCssStyles() {
+  return src(['src/scss/*.scss', 'src/scss/**/*.scss'])
     .pipe(plumbError()) // Global error handler through all pipes.
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7']))
     .pipe(sourcemaps.write())
-    .pipe(dest('css/'))
+    .pipe(dest('dist/css/'))
     .pipe(browsersync.stream());
 }
 
+function buildJsScripts() {
+  return src(['src/js/*.js', 'src/js/**/*.js'])
+    .pipe(plumbError()) // Global error handler through all pipes.
+    .pipe(sourcemaps.init())
+    .pipe(terser())
+    .pipe(sourcemaps.write())
+    .pipe(dest('dist/js/'))
+    .pipe(browsersync.stream());
+}
+
+
+
 // Watch changes on all *.scss files, lint them and
-// trigger buildStyles() at the end.
-function watchFiles() {
+// trigger buildCssStyles() at the end.
+function watchStyles() {
   watch(
-    ['scss/*.scss', 'scss/**/*.scss', '*.php'],
+    ['scss/*.scss', 'scss/**/*.scss'],
     { events: 'all', ignoreInitial: false },
-    series(sassLint, buildStyles)
+    series(sassLint, buildCssStyles)
+  );
+}
+
+// Watch changes on all *.scss files, lint them and
+// trigger buildCssStyles() at the end.
+function watchScripts() {
+  watch(
+    ['src/js/*.js', 'src/js/**/*.js'],
+    { events: 'all', ignoreInitial: false },
+    series(sassLint, buildJsScripts)
   );
 }
 
@@ -75,7 +98,8 @@ function plumbError() {
 }
 
 // Export commands.
-exports.default = parallel(browserSync, watchFiles); // $ gulp
-exports.sass = buildStyles; // $ gulp sass
-exports.watch = watchFiles; // $ gulp watch
-exports.build = series(buildStyles); // $ gulp build
+exports.default = parallel(browserSync, watchStyles, watchScripts); // $ gulp
+exports.sass = buildCssStyles; // $ gulp sass
+exports.js = buildJsScripts; // $ gulp sass
+exports.watch = parallel(watchStyles, watchScripts); // $ gulp watch
+exports.build = parallel(buildCssStyles, buildJsScripts); // $ gulp build

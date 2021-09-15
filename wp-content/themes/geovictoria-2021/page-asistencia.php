@@ -42,7 +42,7 @@ get_header();
 	<?php if (wp_is_mobile()): ?>
 
 		<section class="d-flex container step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
-			<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
+			<div class="col-12 col-md-6 step-1 step-1__graphics resizer-reference">
 				<div class="resizer">
 					<div class="step-1__ripple">
 					</div>
@@ -88,7 +88,7 @@ get_header();
 				</div>
 			</div>
 
-			<div class="col-12 col-md-6 mb-5 step-2 step-2__graphics resizer-reference">
+			<div class="col-12 col-md-6 step-2 step-2__graphics resizer-reference">
 				<div class="resizer">
 					<img class="step-2__entry-id--size-1" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id.png'>
 					<img class="step-2__entry-id--size-2" src='<?php echo esc_url( get_template_directory_uri() ); ?>/img/animation-asistencia/entry-id-2.png'>
@@ -274,7 +274,7 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<?php else : ?>
+		<?php else : ?>	
 			
 		<section class="d-flex container step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
