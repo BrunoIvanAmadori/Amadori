@@ -18,9 +18,9 @@ get_header();
 	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/bg-header.svg"/>
 </div>
 <main id="primary" class="site-main">
+<div class="icon-scroll"><small class="tip">SCROLLEA ABAJO</small></div>
+<section class="hero-asistencia container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
 
-<section class="hero-asistencia container-fluid">
-			<div class="container d-flex flex-column flex-md-row justify-content-around h-100 text-center text-md-start">
 				<div class="hero-asistencia__text col-12 col-md-6 mb-3">
 					<div class="align-self-center pe-md-3 anime-fadein-childs">
 						<h1 class="gray mb-3 fw-bold">
@@ -32,17 +32,15 @@ get_header();
 					</div>
 				</div>
 				<div class="hero-asistencia__graphics col-12 col-md-6">
-					<div class="d-flex justify-content-center anime-fadein h-100">
 						<img class="header-assist" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/header-assist.webp'>
-					</div>
 				</div>
-			</div>
 	</section>
 
 	<?php if (wp_is_mobile()): ?>
 
 		<section class="d-flex container step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
-			<div class="col-12 col-md-6 step-1 step-1__graphics resizer-reference">
+			
+		<div class="col-12 col-md-6 step-1 step-1__graphics resizer-reference">
 				<div class="resizer">
 					<div class="step-1__ripple">
 					</div>
@@ -61,6 +59,7 @@ get_header();
 					</div>
 
 					<img class="step-1__entry-id" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id.webp'>
+					
 				</div>
 			</div>
 				
@@ -74,6 +73,7 @@ get_header();
 					</p>
 				</div>
 			</div>
+	
 		</section>
 
 		<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
@@ -275,9 +275,14 @@ get_header();
 			</div>
 		</section>
 		<?php else : ?>	
-		<div class="animation-asistencia-container">
-			<section class="d-flex container step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
-				<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
+			
+		<div class="animation-asistencia-container container">
+			<section class="d-flex step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
+			<div class="step-1__bg-curve">
+			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/bg-head-gray.svg"/>
+			<div class="bg-tail-gray"></div>
+		</div>	
+			<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
 					<div class="resizer">
 						<div class="step-1__ripple">
 						</div>
@@ -311,7 +316,7 @@ get_header();
 				</div>
 			</section>
 
-			<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
+			<section class="d-flex step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
 				<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 						<h1 class="gray mb-3 fw-bold">
@@ -326,6 +331,7 @@ get_header();
 				<div class="col-12 col-md-6 mb-5 step-2 step-2__graphics resizer-reference">
 					<div class="resizer">
 						<img class="step-2__entry-id--size-1" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id.webp'>
+						<!-- <img class="step-2__entry-id--size-1-b" src='<?php //echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id.webp'> -->
 						<img class="step-2__entry-id--size-2" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-2.webp'>
 						<img class="step-2__entry-id--size-3" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-3.webp'>
 						<img class="step-2__entry-id--size-4" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/entry-id-4.webp'>
@@ -342,7 +348,7 @@ get_header();
 				</div>
 			</section>
 
-			<section class="d-flex container step-3 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
+			<section class="d-flex step-3 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
 				<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
 					<div class="resizer">
 						<img class="step-3__platform" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/platform.webp'>
@@ -510,6 +516,7 @@ get_header();
 				</div>
 			</section>
 		</div>
+		
 
 
 			<section class="animation-space">

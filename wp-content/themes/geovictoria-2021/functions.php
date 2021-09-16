@@ -216,13 +216,11 @@ function geovictoria_2021_scripts() {
 	switch ( basename( $template ) ) {
 		case 'page-asistencia.php':
 			if (wp_is_mobile()) {
-				echo 'es mobile';
 				wp_enqueue_script( 'page-asistencia-timeline-mobile', get_template_directory_uri() . '/dist/js/timelines/page-asistencia-mobile.min.js', array(), '', true  );
-				wp_enqueue_style( 'page-asistencia-mobile-css', get_template_directory_uri() . '/dist/css/page-asistencia-mobile.min.css', array(), '', false  );
+				wp_enqueue_style( 'page-asistencia-mobile-css', get_template_directory_uri() . '/dist/css/page-asistencia-mobile.min.css', array('geovictoria-2021-custom-style'), '', false  );
 			} else {
-				echo 'noes mobile';
 				wp_enqueue_script( 'page-asistencia-timeline', get_template_directory_uri() . '/dist/js/timelines/page-asistencia.min.js', array(), '', true  );
-				wp_enqueue_style( 'page-asistencia-css', get_template_directory_uri() . '/dist/css/page-asistencia.min.css', array(), '', false  );
+				wp_enqueue_style( 'page-asistencia-css', get_template_directory_uri() . '/dist/css/page-asistencia.min.css', array('geovictoria-2021-custom-style'), '', false  );
 			}
 			break;
 

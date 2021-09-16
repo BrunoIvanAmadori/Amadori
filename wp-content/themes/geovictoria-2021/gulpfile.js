@@ -35,8 +35,10 @@ function buildCssStyles() {
 function buildJsScripts() {
   return src(['src/js/*.js', 'src/js/**/*.js', '!src/js/*.min.js', '!src/js/**/*.min.js'])
     .pipe(plumbError()) // Global error handler through all pipes.
+    .pipe(sourcemaps.init())
     .pipe(terser())
     .pipe(rename({ suffix: '.min'}))
+    .pipe(sourcemaps.write())
     .pipe(dest('dist/js/'))
     .pipe(browsersync.stream());
 }
