@@ -18,7 +18,11 @@ get_header();
 	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/bg-header.svg"/>
 </div>
 <main id="primary" class="site-main">
-<div class="icon-scroll"><small class="tip">SCROLLEA ABAJO</small></div>
+
+<?php if (!wp_is_mobile()): ?>
+	<div class="icon-scroll"><small class="tip">SCROLLEA ABAJO</small></div>
+<?php endif; ?>
+
 <section class="hero-asistencia container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
 
 				<div class="hero-asistencia__text col-12 col-md-6 mb-3">
