@@ -47,7 +47,7 @@ function buildImg() {
   return src('src/img/**/*.+(png|jpg|gif|svg)')
     .pipe(plumbError()) // Global error handler through all pipes.
  //   .pipe(imagemin([imageminwebp({ quality: 50 })]))
-    .pipe(webp())
+    .pipe(cache(webp()))
     .pipe(dest('dist/img/'))
     .pipe(browsersync.stream());
 }

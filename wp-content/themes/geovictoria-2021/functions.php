@@ -219,7 +219,7 @@ function geovictoria_2021_scripts() {
 				wp_enqueue_script( 'page-asistencia-timeline-mobile', get_template_directory_uri() . '/dist/js/timelines/page-asistencia-mobile.min.js', array(), '', true  );
 				wp_enqueue_style( 'page-asistencia-mobile-css', get_template_directory_uri() . '/dist/css/page-asistencia-mobile.min.css', array('geovictoria-2021-custom-style'), '', false  );
 			} else {
-				wp_enqueue_script( 'page-asistencia-timeline', get_template_directory_uri() . '/dist/js/timelines/page-asistencia.min.js', array(), '', true  );
+				wp_enqueue_script( 'page-asistencia-timeline', get_template_directory_uri() . '/dist/js/page-asistencia.js', array(), '', true  );
 				wp_enqueue_style( 'page-asistencia-css', get_template_directory_uri() . '/dist/css/page-asistencia.min.css', array('geovictoria-2021-custom-style'), '', false  );
 			}
 			break;
