@@ -178,7 +178,7 @@ add_action( 'widgets_init', 'geovictoria_2021_widgets_init' );
 function geovictoria_2021_scripts() {
 	wp_enqueue_style( 'geovictoria-2021-style', get_stylesheet_uri());
 
-//	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/fonts/font-awesome.css', [], _S_VERSION, false);
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/dist/fonts/font-awesome.css', [], _S_VERSION, false);
 	wp_enqueue_style( 'custom-fonts', get_template_directory_uri() . '/dist/fonts/fonts.css', array(), _S_VERSION, false );
 	wp_enqueue_style( 'shared-styles', get_template_directory_uri() . '/dist/css/sharedStyles.css', array(), _S_VERSION, false );
 	
@@ -224,6 +224,36 @@ function geovictoria_2021_scripts() {
 				wp_enqueue_style( 'page-asistencia-css', get_template_directory_uri() . '/dist/css/asistencia.css', [], '', false  );
 			}
 			break;
+
+		case 'page-acceso.php':
+			if (wp_is_mobile()) {
+				wp_enqueue_script( 'page-acceso-mobile', get_template_directory_uri() . '/dist/js/pages/page-acceso-mobile.js', array(), '', true  );
+				wp_enqueue_style( 'page-acceso-mobile-css', get_template_directory_uri() . '/dist/css/accesoMobile.css', [], '', false  );
+			} else {
+				wp_enqueue_script( 'page-acceso', get_template_directory_uri() . '/dist/js/pages/page-acceso.js', [], '', true  );
+				wp_enqueue_style( 'page-acceso-css', get_template_directory_uri() . '/dist/css/acceso.css', [], '', false  );
+			}
+			break;	
+
+		case 'page-comedor.php':
+			if (wp_is_mobile()) {
+				wp_enqueue_script( 'page-comedor-mobile', get_template_directory_uri() . '/dist/js/pages/page-comedor-mobile.js', array(), '', true  );
+				wp_enqueue_style( 'page-comedor-mobile-css', get_template_directory_uri() . '/dist/css/comedorMobile.css', [], '', false  );
+			} else {
+				wp_enqueue_script( 'page-comedor', get_template_directory_uri() . '/dist/js/pages/page-comedor.js', [], '', true  );
+				wp_enqueue_style( 'page-comedor-css', get_template_directory_uri() . '/dist/css/comedor.css', [], '', false  );
+			}
+			break;
+
+		case 'page-business-intelligence.php':
+				if (wp_is_mobile()) {
+					wp_enqueue_script( 'page-business-intelligence-mobile', get_template_directory_uri() . '/dist/js/pages/page-business-intelligence-mobile.js', array(), '', true  );
+					wp_enqueue_style( 'page-business-intelligence-mobile-css', get_template_directory_uri() . '/dist/css/businessIntelligenceMobile.css', [], '', false  );
+				} else {
+					wp_enqueue_script( 'page-business-intelligence', get_template_directory_uri() . '/dist/js/pages/page-business-intelligence.js', [], '', true  );
+					wp_enqueue_style( 'page-business-intelligence-css', get_template_directory_uri() . '/dist/css/businessIntelligence.css', [], '', false  );
+				}
+				break;	
 
 		case 'front-page.php':
 			wp_enqueue_script( 'front-page-timeline', get_template_directory_uri() . '/dist/js/timelines/front-page.min.js', array(), '', true  );

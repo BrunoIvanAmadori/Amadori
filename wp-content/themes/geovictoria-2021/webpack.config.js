@@ -10,9 +10,16 @@ const isProduction = process.env.NODE_ENV == "production";
 const config = {
     entry: {
         asistencia: { import: "./src/js/pages/page-asistencia.js", filename: './js/pages/page-asistencia.js' },
+        asistenciaMobile: { import: "./src/js/pages/page-asistencia-mobile.js", filename: './js/pages/page-asistencia-mobile.js' },
+        acceso: { import: "./src/js/pages/page-acceso.js", filename: './js/pages/page-acceso.js' },
+        accesoMobile: { import: "./src/js/pages/page-acceso-mobile.js", filename: './js/pages/page-acceso-mobile.js' },
+        comedor: { import: "./src/js/pages/page-comedor.js", filename: './js/pages/page-comedor.js' },
+        comedorMobile: { import: "./src/js/pages/page-comedor-mobile.js", filename: './js/pages/page-comedor-mobile.js' },
+        businessIntelligence: { import: "./src/js/pages/page-business-intelligence.js", filename: './js/pages/page-business-intelligence.js' },
+        businessIntelligenceMobile: { import: "./src/js/pages/page-business-intelligence-mobile.js", filename: './js/pages/page-business-intelligence-mobile.js' },
         shared: { import: "./src/js/pages/_shared.js", filename: './js/pages/_shared.js' },
         sharedStyles: { import: "./src/shared-styles.js", filename: './_sharedStyles.js' },
-        asistenciaMobile: { import: "./src/js/pages/page-asistencia-mobile.js", filename: './js/pages/page-asistencia-mobile.js' }
+        
     },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -46,8 +53,7 @@ const config = {
           "sass-loader"
         ]
       },
-
-       {
+      {
         test: /\.(woff|woff2)$/,
         use: {
           loader: 'url-loader',
