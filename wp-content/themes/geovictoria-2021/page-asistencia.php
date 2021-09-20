@@ -23,9 +23,9 @@ get_header();
 	<div class="icon-scroll"><small class="tip">SCROLLEA ABAJO</small></div>
 <?php endif; ?>
 
-<section class="hero-asistencia container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
+<section class="hero container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
 
-				<div class="hero-asistencia__text col-12 col-md-6 mb-3">
+				<div class="hero__text col-12 col-md-6 mb-3">
 					<div class="align-self-center pe-md-3 anime-fadein-childs">
 						<h1 class="gray mb-3 fw-bold">
 						Control de asistencia en tiempo real para tu empresa
@@ -35,8 +35,8 @@ get_header();
 						</h3>
 					</div>
 				</div>
-				<div class="hero-asistencia__graphics col-12 col-md-6">
-						<img class="header-assist" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/header-assist.webp'>
+				<div class="hero__graphics col-12 col-md-6">
+						<img class="header-assist" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/header-asistencia.webp'>
 				</div>
 	</section>
 
