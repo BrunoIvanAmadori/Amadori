@@ -20,7 +20,7 @@ get_header();
 <main id="primary" class="site-main">
 
 <?php if (!wp_is_mobile()): ?>
-	<div class="icon-scroll"><small class="tip">SCROLLEA ABAJO</small></div>
+	<div class="icon-scroll"><small class="tip">GIRA LA RUEDA</small></div>
 <?php endif; ?>
 
 <section class="hero container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
@@ -84,10 +84,10 @@ get_header();
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 						<h1 class="gray mb-3 fw-bold">
-							Marca tu asistencia
+							Permite el acceso
 						</h1>
 						<p class="gray fw-light mb-3">
-							Según el método que elijas, tus trabajadores podrán marcar asistencia y será verificada gracias a nuestra tecnología biométrica.
+							Sin importar el dispositivo o el lugar de acceso, valida el ingreso de personas gracias a nuestra tecnología.
 						</p>
 					</div>
 				</div>
@@ -100,7 +100,7 @@ get_header();
 							¡Siempre en la nube!
 						</h1>
 						<p class="gray fw-light mb-3">
-							Los datos de asistencia estarán protegidos en la nube. La información quedará alojada en tiempo real. ¡Disponible cuando la necesites!
+							Los datos de acceso estarán protegidos en la nube. Encuentra la información en tiempo real. ¡Disponible cuando la necesites!
 						</p>
 					</div>
 				</div>
@@ -165,7 +165,7 @@ get_header();
 							Reportes al instante
 						</h1>
 						<p class="gray fw-light mb-3">
-							Obtendrás todo tipo de reportes y podrás exportarlos en el formato que requieras. Horas extras, turnos consolidados, planificaciones y permisos. ¡Todo en un sólo lugar!
+						Obtén distintos reportes de ingresos. Creación de perfiles. Planificación por días, semanas y meses. ¡Todo en un solo lugar!
 						</p>
 					</div>
 				</div>
@@ -477,6 +477,7 @@ get_header();
 				<img class="why-us__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/soporte-personalizado.webp"/>
 			</div>
 		</section>
+	</div>	
 </main><!-- #main -->
 <?php
 get_footer();

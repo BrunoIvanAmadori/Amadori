@@ -9,6 +9,8 @@ const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
     entry: {
+        frontpage: { import: "./src/js/pages/front-page.js", filename: './js/pages/front-page.js' },
+        frontpageMobile: { import: "./src/js/pages/front-page-mobile.js", filename: './js/pages/front-page-mobile.js' },
         asistencia: { import: "./src/js/pages/page-asistencia.js", filename: './js/pages/page-asistencia.js' },
         asistenciaMobile: { import: "./src/js/pages/page-asistencia-mobile.js", filename: './js/pages/page-asistencia-mobile.js' },
         acceso: { import: "./src/js/pages/page-acceso.js", filename: './js/pages/page-acceso.js' },

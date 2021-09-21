@@ -256,7 +256,13 @@ function geovictoria_2021_scripts() {
 				break;	
 
 		case 'front-page.php':
-			wp_enqueue_script( 'front-page-timeline', get_template_directory_uri() . '/dist/js/timelines/front-page.min.js', array(), '', true  );
+			if (wp_is_mobile()) {
+				wp_enqueue_script( 'front-page-mobile', get_template_directory_uri() . '/dist/js/pages/front-page-mobile.js', array(), '', true  );
+			} else {
+				wp_enqueue_script( 'front-page', get_template_directory_uri() . '/dist/js/pages/front-page.js', array(), '', true  );
+			}
+			break;
+			
 			break;
 
 

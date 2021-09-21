@@ -19,7 +19,7 @@ get_header();
 </div>
 <main id="primary" class="site-main">
 	<section class="hero container-fluid">
-		<div class="container d-flex flex-column flex-md-row justify-content-between h-100 text-center text-md-start">
+		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center h-100 text-center text-md-start">
 			<div class="col-12 col-md-6 mb-5">
 				<div class="align-self-center pe-md-3 anime-fadein-childs">
 					<h1 class="gray mb-3 fw-bold">

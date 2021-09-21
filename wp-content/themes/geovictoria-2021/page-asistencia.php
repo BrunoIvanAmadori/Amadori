@@ -20,7 +20,7 @@ get_header();
 <main id="primary" class="site-main">
 
 <?php if (!wp_is_mobile()): ?>
-	<div class="icon-scroll"><small class="tip">SCROLLEA ABAJO</small></div>
+	<div class="icon-scroll"><small class="tip">GIRA LA RUEDA</small></div>
 <?php endif; ?>
 
 <section class="hero container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
