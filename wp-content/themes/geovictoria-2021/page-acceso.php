@@ -313,7 +313,7 @@ get_header();
 		<h2 class="text-center gray section-title anime-fadein"><span class="fw-light">¿Por qué elegir nuestro control de asistencia?</b></h2>
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 
@@ -329,7 +329,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
@@ -345,7 +345,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 						
@@ -365,7 +365,7 @@ get_header();
 		</div>
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-center">
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 
@@ -381,7 +381,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
@@ -467,7 +467,6 @@ get_header();
 				<h5 class="white fw-light mb-3 anime-fadein">
 					Sabemos que toda transformación es un desafío. Más de 5000 empresas ya gestionan su acceso con nosotros.
 				</h5>
-
 				
 				<button class="fw-bold button--bigwhite mt-3 anime-fadein">
 					Cotiza con nosotros

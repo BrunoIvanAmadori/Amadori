@@ -23,181 +23,180 @@ get_header();
 		<div class="icon-scroll"><small class="tip">SCROLLEA ABAJO</small></div>
 	<?php endif; ?>
 
-	<section class="d-flex container hero flex-column align-items-center justify-content-center">
-
-		<div class="hero__graphics col-12 resizer-reference">
+	<section class="d-flex container hero flex-column align-items-center justify-content-start">
+		<div class="hero__graphics mb-5 col-12 resizer-reference">
 			<div class="resizer">
-				<img class="hero__img" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-bi/platform.webp'>
-
-				<div class="hero__meters">
-					<div class="hero__meter-container atrasos">
-						<div class="hero__meter-title"><h6>Atrasos</h6></div>
-						<div class="hero__meter--orange">
-							<span class="hero__meter-num-progress"></span>
-							<span class="hero__meter-start-value">0%</span>
-							<span class="hero__meter-end-value">100%</span>
-							<img class="hero__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
-							<div class="hero__meter-fill-mask">
-								<div class="hero__meter-bg"></div>
-								<div class="hero__meter-fill--left"></div>
-								<div class="hero__meter-fill--right"></div>
-							</div>
-						</div>
-						<div class="hero__meter-left-data-container">
-							<span class="hero__meter-left-data--orange">	
-							</span>
-							<small>Presentes</small>
-						</div>
-						<div class="hero__meter-right-data-container">
-							<span class="hero__meter-right-data">	
-							</span>
-							<small>Planificados</small>
-						</div>
-					</div>
 				
-					<div class="hero__meter-container asistencia-total">
-						<div class="hero__meter-title"><h6>Asistencia total</h6></div>
-
-						<div class="hero__meter--blue">
-						
-							<span class="hero__meter-num-progress"></span>
-							<span class="hero__meter-start-value">0%</span>
-							<span class="hero__meter-end-value">100%</span>
-
-							<img class="hero__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
-						
-							<div class="hero__meter-fill-mask">
-								<div class="hero__meter-bg"></div>
-								<div class="hero__meter-fill--left"></div>
-								<div class="hero__meter-fill--right"></div>
+				<div class="hero__container">
+					<img class="hero__img" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-bi/platform.webp'>
+					
+					<div class="hero__meters">
+						<div class="hero__meter-container atrasos">
+							<div class="hero__meter-title"><h6>Atrasos</h6></div>
+							<div class="hero__meter--orange">
+								<span class="hero__meter-num-progress"></span>
+								<span class="hero__meter-start-value">0%</span>
+								<span class="hero__meter-end-value">100%</span>
+								<img class="hero__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
+								<div class="hero__meter-fill-mask">
+									<div class="hero__meter-bg"></div>
+									<div class="hero__meter-fill--left"></div>
+									<div class="hero__meter-fill--right"></div>
+								</div>
+							</div>
+							<div class="hero__meter-left-data-container">
+								<span class="hero__meter-left-data--orange">	
+								</span>
+								<small>Presentes</small>
+							</div>
+							<div class="hero__meter-right-data-container">
+								<span class="hero__meter-right-data">	
+								</span>
+								<small>Planificados</small>
 							</div>
 						</div>
-
-						<div class="hero__meter-left-data-container">
-							<span class="hero__meter-left-data--blue">	
-							</span>
-							<small>Atrasos</small>
-						</div>
-						<div class="hero__meter-right-data-container">
-							<span class="hero__meter-right-data">	
-							</span>
-							<small>Presentes</small>
-						</div>
-					</div>
-
-					<div class="hero__meter-container ausentismo-total">
-						<div class="hero__meter-title"><h6>Ausentismo total</h6></div>
-
-						<div class="hero__meter--orange">
+					
+						<div class="hero__meter-container asistencia-total">
+							<div class="hero__meter-title"><h6>Asistencia total</h6></div>
+					
+							<div class="hero__meter--blue">
 							
-							<span class="hero__meter-num-progress"></span>
-							<span class="hero__meter-start-value">0%</span>
-							<span class="hero__meter-end-value">100%</span>
-
-							<img class="hero__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
-							<div class="hero__meter-fill-mask">
-								<div class="hero__meter-bg"></div>
-								<div class="hero__meter-fill--left"></div>
-								<div class="hero__meter-fill--right"></div>
+								<span class="hero__meter-num-progress"></span>
+								<span class="hero__meter-start-value">0%</span>
+								<span class="hero__meter-end-value">100%</span>
+					
+								<img class="hero__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
+							
+								<div class="hero__meter-fill-mask">
+									<div class="hero__meter-bg"></div>
+									<div class="hero__meter-fill--left"></div>
+									<div class="hero__meter-fill--right"></div>
+								</div>
+							</div>
+					
+							<div class="hero__meter-left-data-container">
+								<span class="hero__meter-left-data--blue">	
+								</span>
+								<small>Atrasos</small>
+							</div>
+							<div class="hero__meter-right-data-container">
+								<span class="hero__meter-right-data">	
+								</span>
+								<small>Presentes</small>
 							</div>
 						</div>
-					</div>
-	
-					<div class="hero__assist-bars">
-						<img class="hero__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-assist-global.webp'>
-						<div class="hero__bar-group">
-							<div class="hero__bar--1">100%</div>
-							<div class="hero__bar--2">100%</div>
-							<div class="hero__bar--3">100%</div>
-							<div class="hero__bar--4">100%</div>
-							<div class="hero__bar--5">100%</div>
-							<div class="hero__bar--6">100%</div>	
-						</div>
-					</div>
-
-					<div class="hero__assist-line">
-						<img class="hero__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-assist-line.webp'>
-						<img class="hero__line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/bars-assist-line.svg'>
-					</div>
-
-					<div class="hero__plan-bars">
-						<img class="hero__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-plan-bars.webp'>
-						<div class="hero__bar-group">
-							<div class="hero__bars--1">
-								<div class="hero__bar--gray">
-								</div>
-								<div class="hero__bar--blue">
-								</div>
-							</div>
-
-							<div class="hero__bars--2">
-								<div class="hero__bar--gray">
-								</div>
-								<div class="hero__bar--blue">
-								</div>
-							</div>
-
-							<div class="hero__bars--3">
-								<div class="hero__bar--gray">
-								</div>
-								<div class="hero__bar--blue">
-								</div>
-							</div>
-
-							<div class="hero__bars--4">
-								<div class="hero__bar--gray">
-								</div>
-								<div class="hero__bar--blue">
-								</div>
-							</div>
-
-							<div class="hero__bars--5">
-								<div class="hero__bar--gray">
-								</div>
-								<div class="hero__bar--blue">
-								</div>
-							</div>
-
-							<div class="hero__bars--6">
-								<div class="hero__bar--gray-small">
-								</div>
-								<div class="hero__bar--blue-small">
-								</div>
-							</div>
-
-							<div class="hero__bars--7">
-								<div class="hero__bar--gray-small">
-								</div>
-								<div class="hero__bar--blue-small">
+					
+						<div class="hero__meter-container ausentismo-total">
+							<div class="hero__meter-title"><h6>Ausentismo total</h6></div>
+					
+							<div class="hero__meter--orange">
+								
+								<span class="hero__meter-num-progress"></span>
+								<span class="hero__meter-start-value">0%</span>
+								<span class="hero__meter-end-value">100%</span>
+					
+								<img class="hero__meter-mask" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/meter-bg.webp'>		
+								<div class="hero__meter-fill-mask">
+									<div class="hero__meter-bg"></div>
+									<div class="hero__meter-fill--left"></div>
+									<div class="hero__meter-fill--right"></div>
 								</div>
 							</div>
 						</div>
+					
+						<div class="hero__assist-bars">
+							<img class="hero__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-assist-global.webp'>
+							<div class="hero__bar-group">
+								<div class="hero__bar--1">100%</div>
+								<div class="hero__bar--2">100%</div>
+								<div class="hero__bar--3">100%</div>
+								<div class="hero__bar--4">100%</div>
+								<div class="hero__bar--5">100%</div>
+								<div class="hero__bar--6">100%</div>	
+							</div>
+						</div>
+					
+						<div class="hero__assist-line">
+							<img class="hero__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-assist-line.webp'>
+							<img class="hero__line" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/bars-assist-line.svg'>
+						</div>
+					
+						<div class="hero__plan-bars">
+							<img class="hero__graph" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/graph-plan-bars.webp'>
+							<div class="hero__bar-group">
+								<div class="hero__bars--1">
+									<div class="hero__bar--gray">
+									</div>
+									<div class="hero__bar--blue">
+									</div>
+								</div>
+					
+								<div class="hero__bars--2">
+									<div class="hero__bar--gray">
+									</div>
+									<div class="hero__bar--blue">
+									</div>
+								</div>
+					
+								<div class="hero__bars--3">
+									<div class="hero__bar--gray">
+									</div>
+									<div class="hero__bar--blue">
+									</div>
+								</div>
+					
+								<div class="hero__bars--4">
+									<div class="hero__bar--gray">
+									</div>
+									<div class="hero__bar--blue">
+									</div>
+								</div>
+					
+								<div class="hero__bars--5">
+									<div class="hero__bar--gray">
+									</div>
+									<div class="hero__bar--blue">
+									</div>
+								</div>
+					
+								<div class="hero__bars--6">
+									<div class="hero__bar--gray-small">
+									</div>
+									<div class="hero__bar--blue-small">
+									</div>
+								</div>
+					
+								<div class="hero__bars--7">
+									<div class="hero__bar--gray-small">
+									</div>
+									<div class="hero__bar--blue-small">
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
+				</div> <!-- .hero__meters -->
+			</div> <!-- .resizer -->
+
+		</div> <!-- .hero__graphics -->
+
+		<div class="hero__text col-12 col-md-9 mb-3">
+			<div class="align-self-center pe-md-3 text-center anime-fadein-childs">
+				<h1 class="gray fs-2 mb-3 fw-bold">
+					¡Bienvenidos al mundo del Business Intelligence!
+				</h1>
+
+				<p class="gray fw-light mb-3 fs-6 fs-md-3">
+					Toma decisiones inteligentes para llevar el desempeño de tu fuerza laboral al máximo nivel. Visualiza indicadores de forma simple y amigable. Aumenta la productividad de tu empresa aquí y ahora.
+				</p>
+
+				<button class="button--bigblue">
+					<span class="white">Prueba la experiencia BI</span>
+				</button>
 			</div>
 		</div>
 
-
-				
-				
-
-			<div class="hero__text col-12 col-md-9 mb-3">
-				<div class="align-self-center pe-md-3 text-center anime-fadein-childs">
-					<h1 class="gray fs-2 mb-3 fw-bold">
-						¡Bienvenidos al mundo del Business Intelligence!
-					</h1>
-
-					<p class="gray fw-light mb-3 fs-6 fs-md-3">
-						Toma decisiones inteligentes para llevar el desempeño de tu fuerza laboral al máximo nivel. Visualiza indicadores de forma simple y amigable. Aumenta la productividad de tu empresa aquí y ahora.
-					</p>
-
-					<button class="button--bigblue">
-						<span class="white">Prueba la experiencia BI</span>
-					</button>
-				</div>
-			</div>
-
-	</section>
+	</section> <!-- .hero -->
 
 	<section class="d-flex flex-column container justify-content-between features">
 
@@ -205,7 +204,7 @@ get_header();
 			<h2 class="text-center gray section-title anime-fadein">Gestiona, analiza y toma decisiones </h2>
 		</div>
 
-		<div class="row anime-fadein justify-content-center">
+		<div class="row anime-fadein justify-content-around">
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
 				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/report.svg"/>
 				<h5 class="fw-bold">KPI's personalizados</h5>
@@ -219,7 +218,7 @@ get_header();
 			</div>
 		</div>
 
-		<div class="row anime-fadein justify-content-center">
+		<div class="row anime-fadein justify-content-around">
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
 				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/optimizer.svg"/>
 				<h5 class="fw-bold">Identifica causas</h5>
@@ -232,9 +231,7 @@ get_header();
 				<p>Indicadores de desempeño a la mano. Resuelve problemas operativos de tu empresa en tiempo real.</p>
 			</div>
 		</div>
-	</div>
-
-
+	
 	</section>
 
 	<div>
@@ -252,7 +249,6 @@ get_header();
 					Únete a las más de 5000 empresas que toman decisiones acertadas gracias a nuestra solución. Mejora el desempeño en tu empresa gracias a información valiosa y centralizada.
 				</h5>
 
-				
 				<button class="fw-bold button--bigwhite mt-3 anime-fadein">
 					Prueba ahora
 				</button>
@@ -261,6 +257,7 @@ get_header();
 				<img class="why-us__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/footer-sales.webp"/>
 			</div>
 		</section>
+	</div>
 </main><!-- #main -->
 <?php
 get_footer();

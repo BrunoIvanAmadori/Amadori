@@ -294,72 +294,71 @@ get_header();
 	<section class="container benefits text-center d-flex flex-column">
 		<h2 class="text-center gray section-title anime-fadein"><span class="fw-light">¿Por qué elegir nuestra gestión de comedor?</b></h2>
 		<div class="row d-flex justify-content-center">
-			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
-					<div class="benefits__flip-card">
-						<div class="benefits__flip-card-front flex-column align-items-center">
+			<div class="col-12 col-md-6 col-lg-3  benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="benefits__flip-card">
+					<div class="benefits__flip-card-front flex-column align-items-center">
 
-							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/meal.svg"/>
-							
-							<h5>Asigna raciones según perfiles</h5>
-							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
-							
-						</div>
-
-						<div class="benefits__flip-card-back flex-column align-items-center px-4">
-							<p class="fw-light">Asigna y distribuye las raciones a las personas habilitadas. Podrás fijar el tipo de alimento según hora y lugar autorizado.</p>
-						</div>
-					</div>
-				</div>
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
-					<div class="benefits__flip-card">
-						<div class="benefits__flip-card-front flex-column align-items-center">
-							
-							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/cloud-paper.svg"/>
-							
-							<h5>Encuentra datos en tiempo real</h5>
-							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
-							
-						</div>
-
-						<div class="benefits__flip-card-back flex-column align-items-center px-4">
-							<p class="fw-light">Conoce los datos de fecha, hora y lugar de las comidas asignadas. ¡No malgastes raciones por falta de información!</p>
-						</div>
-					</div>
-				</div>
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
-					<div class="benefits__flip-card">
-						<div class="benefits__flip-card-front flex-column align-items-center">
+						<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/meal.svg"/>
 						
-							
-							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/jigsaw.svg"/>
-								<h5>Integrable con acceso y asistencia</h5>
-							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
-
-						</div>
-
-						<div class="benefits__flip-card-back flex-column align-items-center px-4">
-							<p class="fw-light">Aprovecha tus módulos de asistencia y acceso con el control de comedor. Así tendrás información consolidada y a un solo clic.</p>
-						</div>
+						<h5>Asigna raciones según perfiles</h5>
+						<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
+						
 					</div>
-				</div>
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
-					<div class="benefits__flip-card">
-						<div class="benefits__flip-card-front flex-column align-items-center">
 
-							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/print.svg"/>
-							
-							<h5>Aumenta tu productividad</h5>
-							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
-							
-						</div>
-
-						<div class="benefits__flip-card-back flex-column align-items-center px-4">
-							<p class="fw-light">Otorga tickets individuales para el correcto control de las raciones entregadas. ¡Es el respaldo para tu comedor!</p>
-						</div>
+					<div class="benefits__flip-card-back flex-column align-items-center px-4">
+						<p class="fw-light">Asigna y distribuye las raciones a las personas habilitadas. Podrás fijar el tipo de alimento según hora y lugar autorizado.</p>
 					</div>
 				</div>
 			</div>
+			<div class="col-12 col-md-6 col-lg-3 benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="benefits__flip-card">
+					<div class="benefits__flip-card-front flex-column align-items-center">
+						
+						<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/cloud-paper.svg"/>
+						
+						<h5>Encuentra datos en tiempo real</h5>
+						<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
+						
+					</div>
+
+					<div class="benefits__flip-card-back flex-column align-items-center px-4">
+						<p class="fw-light">Conoce los datos de fecha, hora y lugar de las comidas asignadas. ¡No malgastes raciones por falta de información!</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="benefits__flip-card">
+					<div class="benefits__flip-card-front flex-column align-items-center">
+					
+						
+						<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/jigsaw.svg"/>
+							<h5>Integrable con acceso y asistencia</h5>
+						<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
+
+					</div>
+
+					<div class="benefits__flip-card-back flex-column align-items-center px-4">
+						<p class="fw-light">Aprovecha tus módulos de asistencia y acceso con el control de comedor. Así tendrás información consolidada y a un solo clic.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="benefits__flip-card">
+					<div class="benefits__flip-card-front flex-column align-items-center">
+
+						<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/print.svg"/>
+						
+						<h5>Aumenta tu productividad</h5>
+						<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
+						
+					</div>
+
+					<div class="benefits__flip-card-back flex-column align-items-center px-4">
+						<p class="fw-light">Otorga tickets individuales para el correcto control de las raciones entregadas. ¡Es el respaldo para tu comedor!</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</section>
 

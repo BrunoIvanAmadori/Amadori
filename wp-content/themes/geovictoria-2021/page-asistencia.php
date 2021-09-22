@@ -112,7 +112,7 @@ get_header();
 		</section>
 
 		<section class="d-flex container step-3 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
-			<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
+			<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics d-flex resizer-reference">
 				<div class="resizer">
 					<img class="step-3__platform" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/platform.webp'>
 					<img class="step-3__report-action" src='<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/animation-asistencia/report-action.webp'>
@@ -532,7 +532,7 @@ get_header();
 		<h2 class="text-center gray section-title anime-fadein"><span class="fw-light">¿Por qué elegir nuestro control de asistencia?</b></h2>
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 
@@ -548,7 +548,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
@@ -564,7 +564,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<div class="benefits__flippable-card-container d-flex flex-column justify-content-center">
+				<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 						

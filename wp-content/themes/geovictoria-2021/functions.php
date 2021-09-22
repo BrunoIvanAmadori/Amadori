@@ -260,6 +260,7 @@ function geovictoria_2021_scripts() {
 				wp_enqueue_script( 'front-page-mobile', get_template_directory_uri() . '/dist/js/pages/front-page-mobile.js', array(), '', true  );
 			} else {
 				wp_enqueue_script( 'front-page', get_template_directory_uri() . '/dist/js/pages/front-page.js', array(), '', true  );
+				wp_enqueue_style( 'page-business-intelligence-css', get_template_directory_uri() . '/dist/css/frontPage.css', [], '', false  );
 			}
 			break;
 			
