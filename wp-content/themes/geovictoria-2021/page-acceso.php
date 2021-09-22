@@ -30,8 +30,8 @@ get_header();
 						<h1 class="gray mb-3 fw-bold">
 						¡No más visitas inesperadas! Garantiza la seguridad de tu empresa
 						</h1>
-						<h3 class="gray fw-light mb-3 fs-5 fs-md-3">
-						Control de Acceso para visitas, externos y vehículos. Variados sistemas de marcajes, reportería personalizada y planificación. 
+						<h3 class="gray fw-light mb-3 fs-6 fs-md-3">
+							Control de Acceso para visitas, externos y vehículos. Variados sistemas de marcajes, reportería personalizada y planificación. 
 						</h3>
 					</div>
 				</div>
@@ -317,7 +317,7 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 
-							<img class="product__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/clock-dollar.svg"/>
+							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/clock-dollar.svg"/>
 							
 							<h5>Disminuye costos y tiempos</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
@@ -333,7 +333,7 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
-							<img class="product__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/pc-check.svg"/>
+							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/pc-check.svg"/>
 							
 							<h5>Digitaliza tus procesos</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
@@ -350,7 +350,7 @@ get_header();
 						<div class="benefits__flip-card-front flex-column align-items-center">
 						
 							
-							<img class="product__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/shield-check.svg"/>
+							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/shield-check.svg"/>
 							<h5>Seguridad para tu empresa</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
 
@@ -369,7 +369,7 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 
-							<img class="product__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/process-gear.svg"/>
+							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/process-gear.svg"/>
 							
 							<h5>Aumenta tu productividad</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
@@ -385,7 +385,7 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
-							<img class="product__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/ruler.svg"/>
+							<img class="benefits__icon mb-3" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/icons/ruler.svg"/>
 							
 							<h5>Reportes a medida</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>

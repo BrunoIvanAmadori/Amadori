@@ -30,7 +30,7 @@ get_header();
 						<h1 class="gray mb-3 fw-bold">
 						Control de asistencia en tiempo real para tu empresa
 						</h1>
-						<h3 class="gray fw-light mb-3 fs-5 fs-md-3">
+						<h3 class="gray fw-light mb-3 fs-6 fs-md-3">
 						Somos el sistema más simple, amigable y eficiente para gestionar tu personal. 
 						</h3>
 					</div>
@@ -285,7 +285,7 @@ get_header();
 			<div class="step-1__bg-curve">
 			<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/bg-head-gray.svg"/>
 			<div class="bg-tail-gray"></div>
-		</div>	
+		</div>
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
 					<div class="resizer">
 						<div class="step-1__ripple">
@@ -536,7 +536,7 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 
-							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-asistencia.svg"/>
+							<img class="benefits__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-asistencia.svg"/>
 							
 							<h5>Paga correctamente los salarios</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
@@ -552,7 +552,7 @@ get_header();
 					<div class="benefits__flip-card">
 						<div class="benefits__flip-card-front flex-column align-items-center">
 							
-							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-acceso.svg"/>
+							<img class="benefits__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-acceso.svg"/>
 							
 							<h5>Ahorra tiempo y dinero</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
@@ -569,7 +569,7 @@ get_header();
 						<div class="benefits__flip-card-front flex-column align-items-center">
 						
 							
-							<img class="product__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-comedor.svg"/>
+							<img class="benefits__icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/product-comedor.svg"/>
 							<h5>Toma decisiones al instante</h5>
 							<div class="benefits__arrow"><i class="fal fa-chevron-down"></i></div>
 

@@ -29,7 +29,7 @@ get_header();
 				<h1 class="gray mb-3 fw-bold">
 					Registra y controla la ración de alimentos para el comedor de tu empresa
 				</h1>
-				<h3 class="gray fw-light mb-3 fs-5 fs-md-3">
+				<h3 class="gray fw-light mb-3 fs-6 fs-md-3">
 					Evita mermas, desperdicios o incumplimientos en la entrega de alimentos en tu comedor. Planifica todo en una plataforma 100% online.
 				</h3>
 			</div>
