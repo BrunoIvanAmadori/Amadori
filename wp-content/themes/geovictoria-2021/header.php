@@ -27,7 +27,7 @@
 <?php wp_body_open(); ?>
 
 	
-<div id="scroll-content">
+<div id="scroll-content" data-scrollbar>
 	<div id="sticky-menu">
 		<div id="sticky-menu-offset">
 			<header id="tophead" class="container-fluid d-none d-lg-block">

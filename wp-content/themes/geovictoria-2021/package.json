@@ -69,11 +69,13 @@
     "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
   },
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "animejs": "^3.2.1",
     "beeper": "^3.0.0",
     "bootstrap": "^5.1.0",
     "browser-sync": "^2.27.5",
     "criticalcss": "^2.1.0",
+    "fslightbox": "^3.3.0-2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cached": "^1.1.1",

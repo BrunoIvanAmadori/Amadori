@@ -9,18 +9,21 @@ const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
     entry: {
-        frontpage: { import: "./src/js/pages/front-page.js", filename: './js/pages/front-page.js' },
-        frontpageMobile: { import: "./src/js/pages/front-page-mobile.js", filename: './js/pages/front-page-mobile.js' },
-        asistencia: { import: "./src/js/pages/page-asistencia.js", filename: './js/pages/page-asistencia.js' },
-        asistenciaMobile: { import: "./src/js/pages/page-asistencia-mobile.js", filename: './js/pages/page-asistencia-mobile.js' },
-        acceso: { import: "./src/js/pages/page-acceso.js", filename: './js/pages/page-acceso.js' },
-        accesoMobile: { import: "./src/js/pages/page-acceso-mobile.js", filename: './js/pages/page-acceso-mobile.js' },
-        comedor: { import: "./src/js/pages/page-comedor.js", filename: './js/pages/page-comedor.js' },
-        comedorMobile: { import: "./src/js/pages/page-comedor-mobile.js", filename: './js/pages/page-comedor-mobile.js' },
-        businessIntelligence: { import: "./src/js/pages/page-business-intelligence.js", filename: './js/pages/page-business-intelligence.js' },
-        businessIntelligenceMobile: { import: "./src/js/pages/page-business-intelligence-mobile.js", filename: './js/pages/page-business-intelligence-mobile.js' },
-        shared: { import: "./src/js/pages/_shared.js", filename: './js/pages/_shared.js' },
-        sharedStyles: { import: "./src/shared-styles.js", filename: './_sharedStyles.js' },
+      shared: { import: "./src/js/pages/_shared.js", filename: './js/pages/_shared.js' },
+      sharedStyles: { import: "./src/shared-styles.js", filename: './_sharedStyles.js' },
+      frontpage: { import: "./src/js/pages/front-page.js", filename: './js/pages/front-page.js' },
+      frontpageMobile: { import: "./src/js/pages/front-page-mobile.js", filename: './js/pages/front-page-mobile.js' },
+      asistencia: { import: "./src/js/pages/page-asistencia.js", filename: './js/pages/page-asistencia.js' },
+      asistenciaMobile: { import: "./src/js/pages/page-asistencia-mobile.js", filename: './js/pages/page-asistencia-mobile.js' },
+      acceso: { import: "./src/js/pages/page-acceso.js", filename: './js/pages/page-acceso.js' },
+      accesoMobile: { import: "./src/js/pages/page-acceso-mobile.js", filename: './js/pages/page-acceso-mobile.js' },
+      comedor: { import: "./src/js/pages/page-comedor.js", filename: './js/pages/page-comedor.js' },
+      comedorMobile: { import: "./src/js/pages/page-comedor-mobile.js", filename: './js/pages/page-comedor-mobile.js' },
+      businessIntelligence: { import: "./src/js/pages/page-business-intelligence.js", filename: './js/pages/page-business-intelligence.js' },
+      businessIntelligenceMobile: { import: "./src/js/pages/page-business-intelligence-mobile.js", filename: './js/pages/page-business-intelligence-mobile.js' },
+      quienesSomos: { import: "./src/js/pages/page-quienes-somos.js", filename: './js/pages/page-quienes-somos.js' },
+      partners: { import: "./src/js/pages/page-partners.js", filename: './js/pages/page-partners.js' },
+
         
     },
   output: {
