@@ -49,9 +49,9 @@ get_header();
 				<h1 class="mb-4">Nuevas tecnologías</h1>
 				<div class="col-12 col-md-8">
 					<div class="blog-card--big card">
-						<div class="blog-card__img--big" style="background-image:url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/test-img2.webp')">
+						<div class="blog-card__img" style="background-image:url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/test-img2.webp')">
 						</div>
-						<div class="blog-card__content--big">
+						<div class="blog-card__content">
 							<div class="blog-card__tag-container">
 								<span class="blog-card__tag">Recursos humanos</span>
 								<span class="blog-card__tag">Productividad laboral</span>
