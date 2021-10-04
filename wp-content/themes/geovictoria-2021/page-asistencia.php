@@ -294,7 +294,7 @@ get_header();
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-gray.svg" />
 						<div class="bg-tail-gray"></div>
 					</div>
-					<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
+					<div class="col-12 col-md-6 step-1 step-1__graphics resizer-reference">
 						<div class="resizer">
 							<div class="step-1__ripple">
 							</div>
@@ -316,7 +316,7 @@ get_header();
 						</div>
 					</div>
 
-					<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
+					<div class="col-12 col-md-6 step-1 step-1__text">
 						<div class="align-self-center pe-md-3 text-center text-md-start">
 							<h1 class="gray mb-3 fw-bold anime-fadein">
 								Marca tu asistencia
@@ -329,7 +329,7 @@ get_header();
 				</section>
 
 				<section class="d-flex step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
-					<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
+					<div class="col-12 col-md-6 step-2 step-2__text">
 						<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 							<h1 class="gray mb-3 fw-bold">
 								¡Siempre en la nube!
@@ -340,7 +340,7 @@ get_header();
 						</div>
 					</div>
 
-					<div class="col-12 col-md-6 mb-5 step-2 step-2__graphics resizer-reference">
+					<div class="col-12 col-md-6 step-2 step-2__graphics resizer-reference">
 						<div class="scale-fix">
 							<div class="resizer">
 								<img class="step-2__entry-id--size-1" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/entry-id.webp'>
@@ -364,7 +364,7 @@ get_header();
 				</section>
 
 				<section class="d-flex step-3 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
-					<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
+					<div class="col-12 col-md-6 step-3 step-3__graphics resizer-reference">
 						<div class="resizer">
 							<img class="step-3__platform" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/platform.webp'>
 							<img class="step-3__report-action" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/report-action.webp'>
@@ -525,7 +525,7 @@ get_header();
 
 						</div>
 					</div>
-					<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
+					<div class="col-12 col-md-6 step-3 step-3__text">
 						<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 							<h1 class="gray mb-3 fw-bold">
 								Reportes al instante

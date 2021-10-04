@@ -282,7 +282,11 @@ function geovictoria_2021_scripts()
 			break;
 
 		default:
-			wp_enqueue_script('default', get_template_directory_uri() . '/dist/js/pages/_shared.js', array(), '', true);
+			if (wp_is_mobile()) {
+				wp_enqueue_script('default-mobile', get_template_directory_uri() . '/dist/js/pages/_shared-mobile.js', array(), '', true);
+			} else {
+				wp_enqueue_script('default', get_template_directory_uri() . '/dist/js/pages/_shared.js', array(), '', true);
+			}
 	};
 
 
