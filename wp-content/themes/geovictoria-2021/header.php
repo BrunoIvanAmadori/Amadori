@@ -29,7 +29,9 @@
 	<?php wp_body_open(); ?>
 
 
-	<div id="scroll-content" data-scrollbar>
+	<?php if (!wp_is_mobile()) : ?>
+		<div id="scroll-content" data-scrollbar>
+		<?php endif; ?>
 		<div id="sticky-menu">
 			<div id="sticky-menu-offset">
 				<header id="tophead" class="container-fluid d-none d-lg-block">
@@ -70,7 +72,7 @@
 								array(
 									'theme_location' => 'menu-1',
 									'menu_id'        => 'primary-menu',
-									'depth'             => 2,
+									'depth'             => 3,
 									'container'         => 'div',
 									'container_class'   => 'collapse navbar-collapse',
 									'container_id'      => 'navbarSupportedContent',

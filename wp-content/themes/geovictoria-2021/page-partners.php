@@ -68,7 +68,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/microsoft.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/microsoft-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Microsoft
@@ -83,7 +83,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/direccion-del-trabajo.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/direccion-del-trabajo-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Dirección del trabajo
@@ -98,7 +98,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/red-rrhh.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/red-rrhh-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Red de recursos humanos
@@ -113,7 +113,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/endeavor.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/endeavor-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Endeavor
@@ -157,7 +157,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/visma.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/visma-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Visma
@@ -172,7 +172,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/siigo.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/siigo-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Siigo
@@ -187,7 +187,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/rex+.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/rex+-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Rex+
@@ -202,7 +202,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/kame-erp.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/kame-erp-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Kame ERP
@@ -221,7 +221,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/softland.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/softland-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Softland
@@ -236,7 +236,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/dbnet.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/dbnet-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									DBNet
@@ -251,7 +251,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/rankmi.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/rankmi-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Rankmi
@@ -266,7 +266,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/hcmfront.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/hcmfront-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Hcmfront
@@ -285,7 +285,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/turecibo.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/turecibo-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Turecibo
@@ -300,7 +300,7 @@ get_header();
 
 					<div class="col-12 col-sm-6 col-lg-3">
 						<div class="partners-estrategicos__partner card">
-							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/sinergy-lowells.webp'>
+							<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/sinergy-lowells-logo.webp'>
 							<div class="card-body">
 								<h5 class="card-title">
 									Sinergy & Lowells
@@ -341,7 +341,7 @@ get_header();
 
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="partners-estrategicos__partner card">
-						<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/foco-en-obra.webp'>
+						<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/foco-en-obra-logo.webp'>
 						<div class="card-body">
 							<h5 class="card-title">
 								Foco en obra
@@ -356,7 +356,7 @@ get_header();
 
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="partners-estrategicos__partner card">
-						<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/shift.webp'>
+						<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/shift-logo.webp'>
 						<div class="card-body">
 							<h5 class="card-title">
 								Shift
@@ -371,7 +371,7 @@ get_header();
 
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="partners-estrategicos__partner card">
-						<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/ipsum.webp'>
+						<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ipsum-logo.webp'>
 						<div class="card-body">
 							<h5 class="card-title">
 								Ipsum

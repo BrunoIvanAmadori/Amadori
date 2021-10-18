@@ -13,6 +13,10 @@ const config = {
       import: "./src/js/pages/_shared.js",
       filename: "./js/pages/_shared.js",
     },
+    sharedmobile: {
+      import: "./src/js/pages/_shared-mobile.js",
+      filename: "./js/pages/_shared-mobile.js",
+    },
     sharedStyles: {
       import: "./src/shared-styles.js",
       filename: "./_sharedStyles.js",
@@ -64,6 +68,10 @@ const config = {
     partners: {
       import: "./src/js/pages/page-partners.js",
       filename: "./js/pages/page-partners.js",
+    },
+    single: {
+      import: "./src/js/pages/page-single.js",
+      filename: "./js/pages/page-single.js",
     },
   },
   output: {

@@ -281,6 +281,14 @@ function geovictoria_2021_scripts()
 			}
 			break;
 
+		case 'single.php':
+			if (wp_is_mobile()) {
+				//	wp_enqueue_script( 'front-page-mobile', get_template_directory_uri() . '/dist/js/pages/front-page-mobile.js', array(), '', true  );
+			} else {
+				wp_enqueue_script('page-single', get_template_directory_uri() . '/dist/js/pages/page-single.js', array(), '', true);
+			}
+			break;
+
 		default:
 			if (wp_is_mobile()) {
 				wp_enqueue_script('default-mobile', get_template_directory_uri() . '/dist/js/pages/_shared-mobile.js', array(), '', true);
@@ -352,3 +360,16 @@ function register_navwalker()
 	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 }
 add_action('after_setup_theme', 'register_navwalker');
+
+
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function wpdocs_custom_excerpt_length($length)
+{
+	return 20;
+}
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
