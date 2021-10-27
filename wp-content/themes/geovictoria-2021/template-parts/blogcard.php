@@ -1,7 +1,7 @@
-<div class="col-12 col-lg-4">
+<div class="col-12 col-md-6 col-lg-4">
     <div class="blog-card card">
         <a class="blog-card__link" href="<?php the_permalink() ?>"></a>
-        <div class="blog-card__img" style="background-image:url('<?php echo esc_url(get_the_post_thumbnail_url()); ?>')"></div>
+        <div class="blog-card__img" style="background-image:url('<?php echo esc_url(get_the_post_thumbnail_url($post->ID, 'large')); ?>')"></div>
         <div class="card-body d-flex flex-column justify-content-between">
             <div class="blog-card__content">
                 <div class="blog-card__tag-container">
@@ -21,7 +21,7 @@
                 <div class="col-8">
                     <img class="blog-card__logo-icon" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/logo-gv.svg'>
                     <?php echo (esc_html_x('Por', 'Speaking of author', 'geovictoria-2021')) ?>
-                    <span class="fw-bold pe-2"><?php echo "Nicolas Cortés" ?></span>
+                    <span class="fw-bold pe-2"><?php the_author() ?></span>
                 </div>
                 <div class="col-4 text-end">
                     <i class="far fa-calendar-alt"></i>

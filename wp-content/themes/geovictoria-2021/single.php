@@ -120,11 +120,11 @@ $relacionadas = new WP_Query(
 			if (comments_open() || get_comments_number()) : ?>
 
 				<div class="row d-flex blog-bottom">
-					<div class="col-8 pe-lg-2">
+					<div class="col-12 col-lg-8 pe-lg-2">
 						<?php comments_template(); ?>
 					</div>
-					<div class="col-4 d-flex justify-content-center align-items-center">
-						<img class="header" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/header-blog.webp'>
+					<div class="col-4 d-none d-lg-flex justify-content-center align-items-center">
+						<img class="header" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/header-blog.png'>
 					</div>
 				</div>
 

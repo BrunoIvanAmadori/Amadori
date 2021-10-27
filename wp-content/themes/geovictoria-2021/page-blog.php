@@ -20,9 +20,9 @@ get_header();
 </div>
 <main id="primary" class="site-main">
 	<section class="hero container-fluid">
-		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center h-100 text-center text-md-start">
+		<div class="container d-flex flex-column-reverse flex-md-row justify-content-between align-items-center h-100 text-center text-md-start">
 			<div class="hero__graphics col-12 col-md-6 mb-5">
-				<img class="header anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/header-blog.webp'>
+				<img class="header anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/header-blog.png'>
 			</div>
 			<div class="col-12 col-md-6 justify-content-center anime-fadein-childs">
 				<img class="logo" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/logo-blog.svg'>
@@ -32,20 +32,25 @@ get_header();
 	</section>
 	<?php
 
+	$seleccion_portada_id = get_term_by('slug', 'seleccion-portada', 'post-tag')->term_id;
+	$populares_portada_id = get_term_by('slug', 'populares-portada', 'post-tag')->term_id;
+
 	$seleccionadas_por_editor = new WP_Query(
 		array(
 			'post_type' => 'post',
 			'post_status' => 'publish',
 			'posts_per_page' => 1,
+			'tag_slug__in' => 'seleccion-portada'
 		)
 	);
 
-	$destacadas = new WP_Query(
+	$populares = new WP_Query(
 		array(
 			'post_type' => 'post',
 			'post_status' => 'publish',
 			'posts_per_page' => 3,
-			'offset' => 1
+			'tag_slug__in' => 'popular-portada'
+
 		)
 	);
 
@@ -54,7 +59,7 @@ get_header();
 			'post_type' => 'post',
 			'post_status' => 'publish',
 			'posts_per_page' => 3,
-			'offset' => 1
+			'tag__not_in' => [$seleccion_portada_id, $populares_portada_id]
 		)
 	);
 	?>
@@ -75,7 +80,7 @@ get_header();
 					wp_reset_postdata();
 				}
 				?>
-				<div class="col-12 col-md-4">
+				<div class="col-12 col-lg-4">
 					<div class="card subscribe-sidebar h-100">
 						<div class="card-body flex-column d-flex justify-content-center">
 							<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
@@ -84,7 +89,7 @@ get_header();
 								Sé el primero en recibir nuevos contenidos.
 							</h4>
 
-							<?php echo do_shortcode('[contact-form-7 id="135669" title="Suscripcion Sidebar"]') ?>
+							<?php echo do_shortcode('[contact-form-7 id="136407" title="Suscripcion (simple)"]') ?>
 						</div>
 
 					</div>
@@ -93,12 +98,12 @@ get_header();
 		</section>
 
 		<section class="container popular-post">
-			<div class="row gy-4">
+			<div class="row justify-content-center gy-4">
 				<h2 class="mb-4">Notas populares</h2>
 				<?php
-				if ($destacadas->have_posts()) {
-					while ($destacadas->have_posts()) {
-						$destacadas->the_post();
+				if ($populares->have_posts()) {
+					while ($populares->have_posts()) {
+						$populares->the_post();
 						get_template_part('template-parts/blogcard');
 					}
 					wp_reset_postdata();
@@ -126,7 +131,7 @@ get_header();
 		</section>
 
 		<section class="container recent-post">
-			<div class="row gy-4">
+			<div class="row justify-content-center gy-4">
 				<h2 class="mb-4">Notas Recientes</h2>
 				<!-- <div class="ajax d-flex flex-wrap"> -->
 				<?php
@@ -181,10 +186,8 @@ get_header();
 					<img class="subscribe-cta__envelope align-self-center" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg">
 					<div class="col-md-7">
 						<h3 class="mb-4">Suscribete a nuestro blog y enterate de tus noticias de interés.</h3>
-						<div class=" align-self-center"><?php echo do_shortcode('[contact-form-7 id="135669" title="Suscripcion Sidebar"]') ?></div>
+						<div class=" align-self-center"><?php echo do_shortcode('[contact-form-7 id="136407" title="Suscripcion (simple)"]') ?></div>
 					</div>
-
-
 					<!-- <button class="button--bigwhite"> Enviar</button> -->
 				</div>
 			</div>

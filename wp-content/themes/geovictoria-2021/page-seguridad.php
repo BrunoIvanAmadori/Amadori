@@ -37,14 +37,14 @@ get_header();
 						Ahorra, gestiona y decide con GeoVictoria.
 					</p>
 
-					<button class="button--bigblue w-100 anime-fadein">
+					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
 						<span class="white fw-bold">Solicita tu demo gratis</span>
 					</button>
 
 				</div>
 			</div>
 			<div class="hero__graphics col-12 col-md-6">
-				<img class="header-nosotros anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/header-seguridad.webp'>
+				<img class="header-nosotros anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/header-seguridad.png'>
 			</div>
 		</div>
 	</section>
@@ -56,10 +56,10 @@ get_header();
 		<section class="container clients col-12 mb-3">
 			<h2 class="text-center gray section-title fw-light anime-fadein">Nuestros clientes ya<br><span class="fw-bold">gestionan su personal con nosotros</span></h2>
 			<div class="d-flex justify-content-around anime-fadein flex-wrap">
-				<img class="clients__logo securitas" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/securitas-logobnw.webp'>
-				<img class="clients__logo prosegur" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/prosegur-logobnw.webp'>
-				<img class="clients__logo alianzaseguridad" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/alianzaseguridad-logobnw.webp'>
-				<img class="clients__logo rhseguridad" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/rhseguridad-logobnw.webp'>
+				<img class="clients__logo securitas" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/securitas-logobnw.png'>
+				<img class="clients__logo prosegur" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/prosegur-logobnw.png'>
+				<img class="clients__logo alianzaseguridad" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/alianzaseguridad-logobnw.png'>
+				<img class="clients__logo rhseguridad" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/rhseguridad-logobnw.png'>
 			</div>
 
 		</section>
@@ -73,7 +73,7 @@ get_header();
 
 		<div class="row gx-5 gy-4 mb-5">
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/graphic-1.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/graphic-1.png'>
 			</div>
 			<div class="col-12 col-md-6 anime-fadein">
 				<h3 class="fw-bold mb-4">Administra, decide, ahorra</h3>
@@ -103,7 +103,7 @@ get_header();
 				</p>
 			</div>
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/graphic-2.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/graphic-2.png'>
 			</div>
 		</div>
 	</section>
@@ -157,7 +157,7 @@ get_header();
 		<div class="row gx-5 anime-fadein">
 			<div class="col-lg-8 pe-lg-5 mb-5">
 				<div class="testimonal__video text-center">
-					<video width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg-thumb.webp" controls>
+					<video width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg-thumb.png" controls>
 						<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -176,7 +176,7 @@ get_header();
 
 				<div class="row">
 					<div class="col-3">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/iseg-logobnw.webp" />
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/iseg-logobnw.png" />
 					</div>
 					<div class="col-9 d-flex flex-column justify-content-center">
 						<span>
@@ -209,12 +209,12 @@ get_header();
 					<span class="fw-bold">Haz que tus clientes estén tranquilos.</span>
 				</p>
 
-				<button class="fw-bold button--bigwhite mt-3">
+				<button class="fw-bold button--bigwhite mt-3 w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
 					Cotiza con nosotros
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex anime-fadein">
-				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.webp" />
+				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png" />
 			</div>
 		</section>
 	</div>
@@ -222,3 +222,4 @@ get_header();
 <?php
 get_footer();
 ?>
+<?php get_template_part('template-parts/modal', 'contacto') ?>;

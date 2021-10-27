@@ -37,13 +37,13 @@ get_header();
 					<p class="fw-light mb-4 anime-fadein">
 						<span class="fw-bold">Ahorra, gestiona y decide con GeoVictoria.</span>
 					</p>
-					<button class="button--bigblue w-100 anime-fadein">
+					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
 						<span class="white fw-bold">Solicita tu demo gratis</span>
 					</button>
 				</div>
 			</div>
 			<div class="hero__graphics col-12 col-md-6">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/header-retail.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/header-retail.png'>
 			</div>
 		</div>
 	</section>
@@ -55,11 +55,11 @@ get_header();
 		<section class="container clients col-12 mb-3">
 			<h2 class="text-center gray section-title fw-light anime-fadein">Nuestros clientes ya<br><span class="fw-bold">gestionan su personal con nosotros</span></h2>
 			<div class="d-flex justify-content-around anime-fadein flex-wrap">
-				<img class="clients__logo cencosud" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/cencosud-logobnw.webp'>
-				<img class="clients__logo oxxo" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/oxxo-logobnw.webp'>
-				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/luxottica-logobnw.webp'>
-				<img class="clients__logo kfc" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/kfc-logobnw.webp'>
-				<img class="clients__logo starbucks" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/starbucks-logobnw.webp'>
+				<img class="clients__logo cencosud" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/cencosud-logobnw.png'>
+				<img class="clients__logo oxxo" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/oxxo-logobnw.png'>
+				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/luxottica-logobnw.png'>
+				<img class="clients__logo kfc" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/kfc-logobnw.png'>
+				<img class="clients__logo starbucks" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/starbucks-logobnw.png'>
 			</div>
 		</section>
 	</div>
@@ -74,7 +74,7 @@ get_header();
 
 		<div class="row gx-5 gy-4 mb-5">
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/graphic-1.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/graphic-1.png'>
 			</div>
 			<div class="col-12 col-md-6 anime-fadein">
 				<h3 class="fw-bold mb-4">Decide, optimiza, ahorra</h3>
@@ -105,7 +105,7 @@ get_header();
 				</p>
 			</div>
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/graphic-2.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/graphic-2.png'>
 			</div>
 		</div>
 	</section>
@@ -157,7 +157,7 @@ get_header();
 				<div class="col-12">
 					<div class="testimonal__video text-center">
 						<h1 class="fw-bold anime-fadein mb-5">Caso de éxito: Starbucks</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/caso-starbucks-thumb.webp" controls>
+						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/caso-starbucks-thumb.png" controls>
 							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/caso-starbucks.mp4" type="video/mp4">
 						</video>
 					</div>
@@ -165,7 +165,7 @@ get_header();
 			</div>
 			<div class="row gy-5 gx-5 anime-fadein-childs">
 				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/luxottica-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/luxottica-logobnw.png" />
 					<p>
 						“Nos sirve para el tema operativo. Para
 						tener a fin de mes el control de caja.
@@ -183,7 +183,7 @@ get_header();
 				</div>
 
 				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mt-4 mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/kfc-logobnw.webp" />
+					<img class="testimonial__logo mt-4 mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/kfc-logobnw.png" />
 					<p>
 						“Redujimos un 90% de incidentes con
 						el software y ahorramos con la
@@ -198,7 +198,7 @@ get_header();
 
 
 				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/starbucks-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/starbucks-logobnw.png" />
 					<p>
 						“Ha sido una tremenda herramienta que
 						hemos podido entregar a nuestros
@@ -236,12 +236,12 @@ get_header();
 					la sucursal asignada. ¡Optimiza y ahorra!
 				</p>
 
-				<button class="fw-bold button--bigwhite mt-3">
+				<button class="fw-bold button--bigwhite mt-3 w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
 					Cotiza ahora
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex anime-fadein">
-				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.webp" />
+				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png" />
 			</div>
 		</section>
 	</div>
@@ -249,3 +249,4 @@ get_header();
 <?php
 get_footer();
 ?>
+<?php get_template_part('template-parts/modal', 'contacto') ?>;

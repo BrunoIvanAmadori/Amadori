@@ -19,8 +19,18 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
 	<?php wp_head(); ?>
+	<!-- 
+	<script>
+		(function() {
+			if (sessionStorage.fonts) {
+				console.log("Fonts installed.");
+				document.documentElement.classList.add("wf-active");
+			} else {
+				console.log("No fonts installed.");
+			}
+		})();
+	</script> -->
 </head>
 
 </div>
@@ -39,12 +49,12 @@
 						<div class='d-flex'>
 							<div class="contact-phone pe-3">
 								<i class="far fa-phone-alt blue"></i>
-								<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_telefono')); ?></small>
+								<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></small>
 							</div>
 
 							<div class="contact-email">
 								<i class="far fa-envelope blue"></i>
-								<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email')); ?></small>
+								<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></small>
 							</div>
 						</div>
 						<?php get_template_part('template-parts/language-selector'); ?>

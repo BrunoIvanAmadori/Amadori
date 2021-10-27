@@ -34,13 +34,13 @@ get_header();
 						obras. Visualiza y distribuye los trabajadores según tus
 						necesidades. Súmate a un nuevo mundo de gestión.
 					</p>
-					<button class="button--bigblue w-100 anime-fadein">
+					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
 						<span class="white fw-bold">Solicita tu demo gratis</span>
 					</button>
 				</div>
 			</div>
 			<div class="hero__graphics col-12 col-md-6">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/header-construccion.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/header-construccion.png'>
 			</div>
 		</div>
 	</section>
@@ -53,13 +53,13 @@ get_header();
 		<section class="container clients col-12 mb-3">
 			<h2 class="text-center gray section-title fw-light anime-fadein">Nuestros clientes ya<br><span class="fw-bold">gestionan su personal con nosotros</span></h2>
 			<div class="d-flex justify-content-around anime-fadein flex-wrap">
-				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/aconcagua-logobnw.webp'>
-				<img class="clients__logo--6em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/desarrolladora-logobnw.webp'>
-				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ictino-logobnw.webp'>
-				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ingevec-logobnw.webp'>
-				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/armas-logobnw.webp'>
-				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/siena-logobnw.webp'>
-				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/eurocorp-logobnw.webp'>
+				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/aconcagua-logobnw.png'>
+				<img class="clients__logo--6em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/desarrolladora-logobnw.png'>
+				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ictino-logobnw.png'>
+				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ingevec-logobnw.png'>
+				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/armas-logobnw.png'>
+				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/siena-logobnw.png'>
+				<img class="clients__logo--5em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/eurocorp-logobnw.png'>
 			</div>
 		</section>
 	</div>
@@ -73,7 +73,7 @@ get_header();
 
 		<div class="row gx-5 gy-4 mb-5">
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/graphic-1.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/graphic-1.png'>
 			</div>
 
 			<div class="col-12 col-md-6 anime-fadein">
@@ -115,7 +115,7 @@ get_header();
 				</p>
 			</div>
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/graphic-2.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/graphic-2.png'>
 			</div>
 		</div>
 	</section>
@@ -172,7 +172,7 @@ get_header();
 				<div class="col-12">
 					<div class="testimonal__video text-center">
 						<h1 class="fw-bold anime-fadein mb-5">Caso de éxito: Ictino</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-ictino-thumb.webp" controls>
+						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-ictino-thumb.png" controls>
 							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-ictino.mp4" type="video/mp4">
 						</video>
 					</div>
@@ -180,7 +180,7 @@ get_header();
 			</div>
 			<div class="row gy-5 gx-5 anime-fadein-childs">
 				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/desarrolladora-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/desarrolladora-logobnw.png" />
 					<p>
 						“Con GeoVictoria los colaboradores
 						pueden marcar desde la aplicación y nos
@@ -197,7 +197,7 @@ get_header();
 				</div>
 
 				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ictino-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ictino-logobnw.png" />
 					<p>
 						“Es un sistema muy amigable. Tenemos
 						certeza que el registro de asistencia es el
@@ -215,7 +215,7 @@ get_header();
 
 
 				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/eurocorp-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/eurocorp-logobnw.png" />
 					<p>
 						“El hecho de poder entrar a ver los datos
 						de asistencia en un navegador, es algo
@@ -253,12 +253,12 @@ get_header();
 					el proyecto asignado. ¡Optimiza y ahorra!
 				</p>
 
-				<button class="fw-bold button--bigwhite mt-3">
+				<button class="fw-bold w-100 button--bigwhite mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
 					Cotiza ahora
 				</button>
 			</div>
-			<div class="col-5 h-100 justify-content-center d-none d-md-flex anime-fadein">
-				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.webp" />
+			<div class="col-5 h-100 justify-content-center d-none d-md-flex ">
+				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png" />
 			</div>
 		</section>
 	</div>
@@ -266,3 +266,4 @@ get_header();
 <?php
 get_footer();
 ?>
+<?php get_template_part('template-parts/modal', 'contacto') ?>;

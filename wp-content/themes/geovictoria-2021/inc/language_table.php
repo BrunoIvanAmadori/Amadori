@@ -36,9 +36,9 @@ return '
   {
     "id": 5,
     "code": "ar",
-    "pt_name": "árabe",
-    "es_name": "Arábica",
-    "en_name": "Arabic",
+    "pt_name": "argentina",
+    "es_name": "argentina",
+    "en_name": "Argentinian",
     "tag": "es-AR"
   },
   {

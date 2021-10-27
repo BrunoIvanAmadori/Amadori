@@ -26,24 +26,24 @@ get_header();
 
 	<section class="hero container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
 		<div class="hero__text col-12 col-md-6 mb-3">
-			<div class="align-self-center pe-md-3 anime-fadein-childs">
+			<div class="align-self-center pe-md-3">
 				<h1 class="gray mb-3 fw-bold">
 					Registra y controla la ración
 					de alimentos para el
 					comedor de tu empresa
 				</h1>
-				<h3 class="gray fw-light mb-3 fs-6 fs-md-3">
+				<p class="gray fw-light mb-3 fs-6 fs-md-3 anime-fadein">
 					Evita mermas, desperdicios o incumplimientos
 					en la entrega de alimentos de tu comedor.
 					Planifica todo en una plataforma 100% online.
-				</h3>
-				<button class="button--bigblue bounce">
+				</p>
+				<button class="button--bigblue w-100 fw-bold anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
 					<span class="white">Solicita tu demo gratis</span>
 				</button>
 			</div>
 		</div>
 		<div class="hero__graphics col-12 col-md-6">
-			<img class="header" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/header-comedor.webp'>
+			<img class="header anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/header-comedor.png'>
 		</div>
 	</section>
 
@@ -52,7 +52,7 @@ get_header();
 			<div class="col-12 col-md-6 mb-2 step-1 step-1__graphics resizer-reference">
 				<div class="resizer">
 					<div class="step-1__ticket">
-						<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.webp'>
+						<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.png'>
 					</div>
 
 
@@ -60,14 +60,14 @@ get_header();
 					</div>
 
 					<div class="step-1__entry-type">
-						<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/entry-type.webp'>
+						<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/entry-type.png'>
 						<div class="step-1__entry-selector"></div>
 					</div>
 
 					<div class="step-1__box-container">
-						<img class="step-1__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box.webp'>
-						<img class="step-1__box-options" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box-options.webp'>
-						<img class="step-1__box-pass" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box-pass.webp'>
+						<img class="step-1__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box.png'>
+						<img class="step-1__box-options" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box-options.png'>
+						<img class="step-1__box-pass" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box-pass.png'>
 						<div class="step-1__box-code">
 							<span>*</span>
 							<span>*</span>
@@ -105,10 +105,10 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-2 step-2 step-2__graphics resizer-reference">
 				<div class="resizer">
-					<img class="step-2__ticket--size-1" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.webp'>
-					<img class="step-2__ticket--size-2" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-2.webp'>
-					<img class="step-2__ticket--size-3" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-3.webp'>
-					<img class="step-2__ticket--size-4" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-4.webp'>
+					<img class="step-2__ticket--size-1" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.png'>
+					<img class="step-2__ticket--size-2" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-2.png'>
+					<img class="step-2__ticket--size-3" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-3.png'>
+					<img class="step-2__ticket--size-4" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-4.png'>
 					<img class="step-2__cloud" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/cloud.svg'>
 					<img class="step-2__cloud-aura" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/cloud.svg'>
 
@@ -124,26 +124,26 @@ get_header();
 		<section class="d-flex container step-3 animation-comedor flex-column flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
 				<div class="resizer">
-					<img class="step-3__platform" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/platform.webp'>
-					<img class="step-3__report-action" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/report-action.webp'>
+					<img class="step-3__platform" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/platform.png'>
+					<img class="step-3__report-action" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/report-action.png'>
 					<div class="step-3__ripple"></div>
 
 					<div class="step-3__graphic-container">
-						<img class="step-3__graphic" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/graphic.webp'>
+						<img class="step-3__graphic" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/graphic.png'>
 						<img class="step-3__bar-group" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/graphic-bar-group.svg'>
 						<div class="step-3__data-1">0</div>
 						<div class="step-3__data-2">0</div>
 					</div>
 
 					<div class="step-3__report-container d-flex flex-column">
-						<img class="step-3__report" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/report-individual.webp'>
+						<img class="step-3__report" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/report-individual.png'>
 						<div class="step-3__data-1">0</div>
 						<div class="step-3__data-2">0</div>
 						<div class="step-3__data-3">0</div>
 					</div>
 
 					<div class="step-3__rations-container d-flex flex-column">
-						<img class="step-3__rations" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/rations.webp'>
+						<img class="step-3__rations" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/rations.png'>
 						<div class="step-3__data-1">0</div>
 						<div class="step-3__data-2">0</div>
 						<div class="step-3__data-3">0</div>
@@ -174,22 +174,22 @@ get_header();
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
 					<div class="resizer">
 						<div class="step-1__ticket">
-							<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.webp'>
+							<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.png'>
 						</div>
 
 						<div class="step-1__ripple">
 						</div>
 
 						<div class="step-1__entry-type">
-							<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/entry-type.webp'>
+							<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/entry-type.png'>
 							<div class="step-1__entry-selector">
 							</div>
 						</div>
 
 						<div class="step-1__box-container">
-							<img class="step-1__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box.webp'>
-							<img class="step-1__box-options" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box-options.webp'>
-							<img class="step-1__box-pass" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box-pass.webp'>
+							<img class="step-1__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box.png'>
+							<img class="step-1__box-options" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box-options.png'>
+							<img class="step-1__box-pass" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/box-pass.png'>
 							<div class="step-1__box-code">
 								<span>*</span>
 								<span>*</span>
@@ -230,19 +230,21 @@ get_header();
 				</div>
 
 				<div class="col-12 col-md-6 mb-5 step-2 step-2__graphics resizer-reference">
-					<div class="resizer">
-						<img class="step-2__ticket--size-1" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.webp'>
-						<img class="step-2__ticket--size-2" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-2.webp'>
-						<img class="step-2__ticket--size-3" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-3.webp'>
-						<img class="step-2__ticket--size-4" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-4.webp'>
-						<img class="step-2__cloud" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/cloud.svg'>
-						<img class="step-2__cloud-aura" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/cloud.svg'>
+					<div class="scale-fix">
+						<div class="resizer">
+							<img class="step-2__ticket--size-1" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.png'>
+							<img class="step-2__ticket--size-2" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-2.png'>
+							<img class="step-2__ticket--size-3" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-3.png'>
+							<img class="step-2__ticket--size-4" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-4.png'>
+							<img class="step-2__cloud" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/cloud.svg'>
+							<img class="step-2__cloud-aura" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/cloud.svg'>
 
-						<img class="step-2__loading" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/loading.svg'>
-						<img class="step-2__arrow-up" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/arrow-up.svg'>
-						<div class="step-2__bubble"></div>
-						<div class="step-2__check">
-							<i class="fas fa-check"></i>
+							<img class="step-2__loading" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/loading.svg'>
+							<img class="step-2__arrow-up" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/arrow-up.svg'>
+							<div class="step-2__bubble"></div>
+							<div class="step-2__check">
+								<i class="fas fa-check"></i>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -251,27 +253,27 @@ get_header();
 			<section class="d-flex step-3 animation-comedor flex-column flex-md-row align-items-center justify-content-center">
 				<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
 					<div class="resizer">
-						<img class="step-3__platform" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/platform.webp'>
-						<img class="step-3__report-action" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/report-action.webp'>
+						<img class="step-3__platform" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/platform.png'>
+						<img class="step-3__report-action" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/report-action.png'>
 						<div class="step-3__ripple">
 						</div>
 
 						<div class="step-3__graphic-container">
-							<img class="step-3__graphic" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/graphic.webp'>
+							<img class="step-3__graphic" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/graphic.png'>
 							<img class="step-3__bar-group" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/graphic-bar-group.svg'>
 							<div class="step-3__data-1">0</div>
 							<div class="step-3__data-2">0</div>
 						</div>
 
 						<div class="step-3__report-container d-flex flex-column">
-							<img class="step-3__report" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/report-individual.webp'>
+							<img class="step-3__report" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/report-individual.png'>
 							<div class="step-3__data-1">0</div>
 							<div class="step-3__data-2">0</div>
 							<div class="step-3__data-3">0</div>
 						</div>
 
 						<div class="step-3__rations-container d-flex flex-column">
-							<img class="step-3__rations" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/rations.webp'>
+							<img class="step-3__rations" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/rations.png'>
 							<div class="step-3__data-1">0</div>
 							<div class="step-3__data-2">0</div>
 							<div class="step-3__data-3">0</div>
@@ -403,20 +405,20 @@ get_header();
 			<h2 class="text-center gray section-title anime-fadein">Somos más que un control de comedor</h2>
 		</div>
 
-		<div class="row anime-fadein">
-			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
+		<div class="row anime-fadein-childs">
+			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
 				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/meal.svg" />
 				<h5 class="fw-bold">Tipos de raciones</h5>
 				<p>No importa si es desayuno, almuerzo o cena. Con nuestra solución puedes crear hasta seis tipos de raciones. </p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
+			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
 				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/papers.svg" />
 				<h5 class="fw-bold">Respaldo permanente</h5>
 				<p>Sea gestionado por ti o por un externo, siente la tranquilidad de que tus colaboradores obtendrán su ración asignada. </p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
+			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
 				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/notebook-check.svg" />
 				<h5 class="fw-bold">Planeación inteligente</h5>
 				<p>Genera una planificación precisa de la ración. Evita mermas, desperdicios o incumplimiento en la entrega.</p>
@@ -431,22 +433,22 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3 anime-fadein">
+				<h1 class="white fw-bold mb-3">
 					¿Listo para ser parte del cambio?
 				</h1>
 
-				<h5 class="white fw-light mb-3 anime-fadein">
+				<p class="white fw-light mb-3 anime-fadein">
 					Miles de empresas ya gestionan su
 					comedor desde nuestra plataforma.
 					Tú puedes ser el próximo.
-				</h5>
+				</p>
 
-				<button class="fw-bold button--bigwhite mt-3 anime-fadein">
+				<button class="fw-bold button--bigwhite w-100 mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
 					Cotiza con nosotros
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">
-				<img class="why-us__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.webp" />
+				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png" />
 			</div>
 		</section>
 	</div>
@@ -454,3 +456,4 @@ get_header();
 <?php
 get_footer();
 ?>
+<?php get_template_part('template-parts/modal', 'contacto') ?>;

@@ -21,19 +21,19 @@ get_header();
 <main id="primary" class="site-main">
 	<section class="hero container-fluid">
 		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center h-100 text-center text-md-start">
-			<div class="col-12 col-md-6 mb-5">
+			<div class="col-12 col-md-6">
 				<div class="align-self-center pe-md-3">
 					<h1 class="gray mb-3 fw-bold">
 						¡Hola! Somos GeoVictoria
 					</h1>
-					<h5 class="gray fw-light mb-3  anime-fadein">
+					<h4 class="gray fw-light mb-3  anime-fadein">
 						Queremos ser el software de gestión de capital humano más grande del mundo.
-					</h5>
+					</h4>
 
 				</div>
 			</div>
 			<div class="hero__graphics col-12 col-md-6">
-				<img class="header-nosotros" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/header-nosotros.webp'>
+				<img class="header-nosotros anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/header-nosotros.png'>
 			</div>
 		</div>
 	</section>
@@ -60,8 +60,8 @@ get_header();
 							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-1.svg" />
 						</div>
 						<div class="progressMobile__text--left">
-							<h3 class="fw-bold">2006</h3>
-							<h4 class="fw-ligter">Primer método de marcaje</h4>
+							<p class="fw-bold">2006</p>
+							<h6>Primer método de marcaje</h6>
 						</div>
 					</div>
 
@@ -75,8 +75,8 @@ get_header();
 							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-2.svg" />
 						</div>
 						<div class="progressMobile__text--left">
-							<h3 class="fw-bold">2007</h3>
-							<h4 class="fw-ligter">¡Nace Victoria!</h4>
+							<p class="fw-bold">2007</p>
+							<h6>¡Nace Victoria!</h6>
 						</div>
 					</div>
 					<p class="fw-light">Con la llegada de nuestro primer gran cliente nace Victoria: solución de registro de asistencia.</p>
@@ -88,8 +88,8 @@ get_header();
 							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-3.svg" />
 						</div>
 						<div class="progressMobile__text--left">
-							<h3 class="fw-bold">2011</h3>
-							<h4 class="fw-ligter">Victoria SA</h4>
+							<p class="fw-bold">2011</p>
+							<h6>Victoria SA</h6>
 						</div>
 					</div>
 					<p class="fw-light">Ya con más de 100 clientes, nos independizamos y nace Victoria S.A. Aparecen nuevos métodos de marcaje: Huellero, Box y APP.</p>
@@ -101,8 +101,8 @@ get_header();
 							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-4.svg" />
 						</div>
 						<div class="progressMobile__text--left">
-							<h3 class="fw-bold">2017</h3>
-							<h4 class="fw-ligter">GeoVictoria</h4>
+							<p class="fw-bold">2017</p>
+							<h6>GeoVictoria</h6>
 						</div>
 					</div>
 					<p class="fw-light">Cambiamos el nombre a GeoVictoria. Aquí comienza nuestra expansión internacional con más de 1000 clientes</p>
@@ -134,7 +134,7 @@ get_header();
 			<div class="progress__section d-none justify-content-between d-lg-flex mb-5">
 				<div class="progress__bg step-1">
 					<div class="progress__circle d-flex justify-content-center align-items-center">
-						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-1.webp" />
+						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-1.png" />
 						<div class="progress__text--up">
 							<h6 class="fw-bold">2006<br> Primer método de marcaje </h6>
 							<small class="fw-light">Nace el marcaje por llamada teléfonica para ATCOM, especialista en servicios de outsourcing</small>
@@ -146,7 +146,7 @@ get_header();
 				</div>
 				<div class="progress__bg step-2 align-self-end">
 					<div class="progress__circle d-flex justify-content-center align-items-center">
-						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-2.webp" />
+						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-2.png" />
 						<div class="progress__text--down">
 							<h6 class="fw-bold">2007 <br>¡Nace Victoria!</h6>
 							<small class="fw-light">Con la llegada de nuestro primer gran cliente nace Victoria: solución de registro de asistencia.</small>
@@ -158,7 +158,7 @@ get_header();
 				</div>
 				<div class="progress__bg step-3">
 					<div class="progress__circle d-flex justify-content-center align-items-center">
-						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-3.webp" />
+						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-3.png" />
 						<div class="progress__text--up">
 							<h6 class="fw-bold">2011<br>Victoria SA</h6>
 							<small class="fw-light">Ya con más de 100 clientes, nos independizamos y nace Victoria S.A. Aparecen nuevos métodos de marcaje: Huellero, Box y APP.</small>
@@ -170,7 +170,7 @@ get_header();
 				</div>
 				<div class="progress__bg step-4 align-self-end">
 					<div class="progress__circle d-flex justify-content-center align-items-center">
-						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-4.webp" />
+						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-4.png" />
 						<div class="progress__text--down">
 							<h6 class="fw-bold">2017<br>GeoVictoria</h6>
 							<small class="fw-light">Cambiamos el nombre a GeoVictoria. Aquí comienza nuestra expansión internacional con más de 1000 clientes</small>
@@ -182,7 +182,7 @@ get_header();
 				</div>
 				<div class="progress__bg step-5">
 					<div class="progress__circle d-flex justify-content-center align-items-center">
-						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-5.webp" />
+						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-5.png" />
 						<div class="progress__text--up">
 							<h6 class="fw-bold">2021</h6>
 							<small class="fw-light">
@@ -205,85 +205,85 @@ get_header();
 		<div class="container">
 
 			<h2 class="text-center gray mb-5 fw-bold">Nuestra presencia en el mundo</h2>
-			<div class="nuestra-presencia__grid  anime-fadein-childs">
+			<div class="nuestra-presencia__grid anime-fadein">
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/cl.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/cl.png">
 					<span>Chile</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/es.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/es.png">
 					<span>España</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/gt.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/gt.png">
 					<span>Guatemala</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/mx.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/mx.png">
 					<span>México</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pt-br.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pt-br.png">
 					<span>Brasil</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/co.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/co.png">
 					<span>Colombia</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/hn.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/hn.png">
 					<span>Honduras</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/bo.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/bo.png">
 					<span>Bolivia</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ec.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ec.png">
 					<span>Ecuador</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/en.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/en.png">
 					<span>USA</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ar.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ar.png">
 					<span>Argentina</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/sv.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/sv.png">
 					<span>El Salvador</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/py.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/py.png">
 					<span>Paraguay</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/cr.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/cr.png">
 					<span>Costa Rica</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pe.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pe.png">
 					<span>Perú</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/do.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/do.png">
 					<span>Rep. Dominicana</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/uy.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/uy.png">
 					<span>Uruguay</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ni.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ni.png">
 					<span>Nicaragua</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pa.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pa.png">
 					<span>Panamá</span>
 				</div>
 				<div class="nuestra-presencia__flag-container">
-					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/de.webp">
+					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/de.png">
 					<span>Alemania</span>
 				</div>
 			</div>
@@ -293,8 +293,8 @@ get_header();
 	<section class="nuestro-proposito container-fluid">
 		<div class="container d-flex flex-column flex-lg-row text-center text-lg-start">
 			<div class="row gy-5">
-				<div class="col-12 col-lg-6 align-self-center anime-fadein">
-					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/purpose.webp')">
+				<div class="col-12 col-lg-6 align-self-center anime-pop">
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/purpose.png')">
 				</div>
 				<div class="col-12 col-lg-6">
 					<h1 class="gray mb-3 fw-bold">
@@ -341,7 +341,7 @@ get_header();
 
 				<div class="row anime-fadein-childs">
 					<div class="d-flex col-12 col-md-6 col-lg-3 mt-4 flex-column flex-wrap text-center text-md-start">
-						<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/value-1.webp" />
+						<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/value-1.png" />
 						<h4 class="fw-bold">Happy</h4>
 						<p>¡Nos sentimos felices con lo que
 							hacemos! El equipo de <b>GeoVictoria se
@@ -350,7 +350,7 @@ get_header();
 
 
 					<div class="d-flex col-12 col-md-6 col-lg-3 mt-4 flex-column text-center text-md-start">
-						<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/value-2.webp" />
+						<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/value-2.png" />
 						<h4 class="fw-bold">Honest</h4>
 						<p>Somos sinceros en cada proyecto que
 							afrontamos. <b>La honestidad en nuestro
@@ -359,7 +359,7 @@ get_header();
 					</div>
 
 					<div class="d-flex col-12 col-md-6 col-lg-3 mt-4 flex-column text-center text-md-start">
-						<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/value-3.webp" />
+						<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/value-3.png" />
 						<h4 class="fw-bold">Humble</h4>
 						<p>Estamos conscientes de nuestras
 							capacidades y debilidades. <b>¡Aprendemos
@@ -367,7 +367,7 @@ get_header();
 					</div>
 
 					<div class="d-flex col-12 col-md-6 col-lg-3 mt-4 flex-column text-center text-md-start">
-						<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/value-4.webp" />
+						<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/value-4.png" />
 						<h4 class="fw-bold">Hungry</h4>
 						<p>Conquistaremos el mundo para ser la
 							plataforma de capital humano por excelencia
@@ -388,31 +388,31 @@ get_header();
 			<div class="splide">
 				<div class="splide__arrows">
 					<button class="splide__arrow splide__arrow--prev">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/arrow-white.webp" />
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/arrow-white.png" />
 					</button>
 					<button class="splide__arrow splide__arrow--next">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/arrow-white.webp" />
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/arrow-white.png" />
 					</button>
 				</div>
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-1.webp"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-1.webp" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-1.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-1.png" /></a>
 						</li>
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-2.webp"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-2.webp" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-2.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-2.png" /></a>
 						</li>
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-3.webp"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-3.webp" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-3.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-3.png" /></a>
 						</li>
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-1.webp"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-1.webp" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-1.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-1.png" /></a>
 						</li>
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-2.webp"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-2.webp" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-2.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-2.png" /></a>
 						</li>
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-3.webp"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/nosotros/team-3.webp" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-3.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-3.png" /></a>
 						</li>
 
 					</ul>
@@ -433,45 +433,43 @@ get_header();
 
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="partners-estrategicos__partner card">
-						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-1.webp'>
+						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-1.png'>
 						<div class="card-body">
 							<h5 class="card-title">
 								Endeavor
 							</h5>
 							<p class="card-text">
-								Una empresa dedicada a hacer cosas varias.
+								Somos parte de la comunidad líder de emprendedores de Alto Impacto en todo el mundo.
 							</p>
-							<a href="#" type="button" class="button--blue">Ver más</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="partners-estrategicos__partner card">
-						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-2.webp'>
+						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-2.png'>
 						<div class="card-body">
 							<h5 class="card-title">
 								Microsoft - Gold partner
 							</h5>
 							<p class="card-text">
-								Una empresa dedicada a hacer cosas varias.
+								Valida nuestra experiencia técnica a través de exámenes rigurosos, probados y reconocidos por la industria.
 							</p>
-							<a href="#" type="button" class="button--blue">Ver más</a>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-12 col-sm-6 col-lg-3">
 					<div class="partners-estrategicos__partner card">
-						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-3.webp'>
+						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-3.png'>
 						<div class="card-body">
 							<h5 class="card-title">
 								Latam Microsoft - Partner of the Year
 							</h5>
 							<p class="card-text">
-								Una empresa dedicada a hacer cosas varias.
+								Conoce como llegamos a ser el Partner del Año 2019 para Microsoft.
 							</p>
-							<a href="#" type="button" class="button--blue">Ver más</a>
+							<a href="https://www.geovictoria.com/cl/geovictoria-partner-ano-chile-2019/" type="button" class="button--blue">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -497,13 +495,13 @@ get_header();
 						GeoVictoria no dudes en revisar las siguientes
 						ofertas laborales que tenemos para ti. </p>
 
-					<button class="fw-bold button--bigwhite mt-3">
+					<button class="fw-bold button--bigwhite mt-3 w-100">
 						Postulate aquí
 					</button>
 				</div>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">
-				<img class="why-us__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/soporte-personalizado.webp" />
+				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/soporte-personalizado.png" />
 			</div>
 		</section>
 	</div>

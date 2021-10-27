@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying 404 pages (not found)
  *
@@ -8,53 +9,60 @@
  */
 
 get_header();
+
+$recientes = new WP_Query(
+	array(
+		'post_type' => 'post',
+		'post_status' => 'publish',
+		'posts_per_page' => 3,
+		'offset' => 1
+	)
+);
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
+	<div class="bg-header" style="position: absolute; top:-150px; z-index:0;">
+		<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-header.svg" />
+	</div>
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'geovictoria-2021' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'geovictoria-2021' ); ?></p>
-
+	<section class="hero container">
+		<div class="row w-100 d-flex flex-column flex-md-row justify-content-between align-items-center h-100 ">
+			<div class="col-12 col-md-6 mb-5">
+				<div class="align-self-center pe-md-3">
+					<h1 class="gray mb-3 fw-bold">
+						No podemos encontrar esta página
+					</h1>
+					<h4 class="fw-light mb-4 anime-fadein">
+						Parece que no existe. Prueba con el buscador o con alguno de los siguientes enlaces.
+					</h4>
 					<?php
 					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
+				</div>
+			</div>
+			<div class="hero__graphics col-12 col-md-6">
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png'>
+			</div>
+		</div>
+	</section>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'geovictoria-2021' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
+	<section class="recent-posts container">
+		<h2 class="mb-4">Entradas recientes</h2>
+		<div class="row gy-4">
+			<?php
+			if ($recientes->have_posts()) {
+				while ($recientes->have_posts()) {
+					$recientes->the_post();
+					get_template_part('template-parts/blogcard');
+				}
+				//echo do_shortcode('[cpt_ajax_load_more post_type="post" template="blogcard" item_class="blog-card" posts_per_page="3" grid="3"]');
+				//	wp_reset_postdata(); 
+			}
+			?>
+		</div>
+	</section><!-- .error-404 -->
 
-					<?php
-					/* translators: %1$s: smiley */
-					$geovictoria_2021_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'geovictoria-2021' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$geovictoria_2021_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
+</main><!-- #main -->
 
 <?php
 get_footer();

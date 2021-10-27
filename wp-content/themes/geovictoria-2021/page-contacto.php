@@ -20,22 +20,21 @@ get_header();
 </div>
 <main id="primary" class="site-main">
 
-	<section class="container-fluid">
-		<div class="container">
-			<div class="row ">
-				<div class="col-12 col-md-8 d-flex flex-column justify-content-center col-12 col-md-6">
+	<section class="hero container">
+		<div class="row w-100 d-flex flex-column flex-md-row justify-content-between align-items-center h-100 ">
+			<div class="col-12 col-md-6 mb-5">
+				<div class="align-self-center pe-md-3">
 					<h1 class="gray mb-3 fw-bold">
-						Queremos conocerte.
+						Queremos conocerte
 					</h1>
+					<h4 class="fw-light mb-4 anime-fadein">
+						Completa el formulario debajo para que podamos atender tu consulta.
+					</h4>
 
-					<h5 class="gray fw-light">
-						Llena el formulario debajo para que nuestros expertos puedan tomar tu consulta
-					</h5>
 				</div>
-
-				<div class="contact__img col-12 col-md-4 d-flex justify-content-center">
-					<img class="header" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/contacto/footer-sales.webp">
-				</div>
+			</div>
+			<div class="hero__graphics col-12 col-md-6">
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png'>
 			</div>
 		</div>
 	</section>
@@ -51,7 +50,8 @@ get_header();
 							Nuestros expertos te guiarán y
 							ofrecerán la mejor alternativa para ti
 						</p>
-						<?php echo do_shortcode('[contact-form-7 id="82" title="Contacto (principal)"]') ?>
+						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal"]') ?>
+
 					</div>
 				</div>
 
@@ -63,15 +63,28 @@ get_header();
 
 							<h5>Soporte</h5>
 							<div>
-								<i class="fas fa-phone-alt"></i>
-								<span>+56 228976512</span><br>
-								<i class="fas fa-phone-alt"></i>
-								<span>+56 228976517</span>
+								<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_1')) : ?>
+									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_1')); ?>">
+										<i class="fas fa-phone-alt"></i>
+										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_1')); ?></span>
+									</a><br>
+								<?php endif; ?>
+
+								<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_2')) : ?>
+									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_2')); ?>">
+										<i class="fas fa-phone-alt"></i>
+										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_2')); ?></span>
+									</a>
+								<?php endif; ?>
 							</div>
 
 							<div>
-								<i class="far fa-envelope"></i>
-								<span>ventas@geovictoria.com</span>
+								<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_soporte')) : ?>
+									<a href="mailto:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_soporte')); ?>">
+										<i class="far fa-envelope"></i>
+										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_soporte')); ?></span>
+									</a>
+								<?php endif; ?>
 							</div>
 						</div>
 
@@ -79,22 +92,36 @@ get_header();
 						<div class="contact__ventas mb-4">
 							<h5>Ventas</h5>
 							<div>
-								<i class="fas fa-phone-alt"></i>
-								<span>+56 228976517</span><br>
-								<i class="fas fa-phone-alt"></i>
-								<span>+56 228976512</span>
+								<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1')) : ?>
+									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?>">
+										<i class="fas fa-phone-alt"></i>
+										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></span>
+									</a><br>
+								<?php endif; ?>
+								<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_2')) : ?>
+									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_2')); ?>">
+										<i class="fas fa-phone-alt"></i>
+										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_2')); ?></span>
+									</a><br>
+								<?php endif; ?>
 							</div>
 
 							<div>
-								<i class="far fa-envelope"></i>
-								<span>ventas@geovictoria.com</span><br>
+								<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_ventas')) : ?>
+									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?>">
+										<i class="far fa-envelope"></i>
+										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></span>
+									</a>
+								<?php endif; ?>
 							</div>
 						</div>
 
 
 						<div>
-							<h5>Ubicación</h5>
-							<span>Av. Los Leones 2061, Providencia</span><br>
+							<?php if (get_theme_mod('geovictoria-2021_info_contacto_direccion')) : ?>
+								<h5>Ubicación</h5>
+								<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_direccion')); ?></span></a>
+							<?php endif; ?>
 						</div>
 
 					</div>

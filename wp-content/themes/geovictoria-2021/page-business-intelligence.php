@@ -29,7 +29,7 @@ get_header();
 			<div class="resizer">
 
 				<div class="hero__container">
-					<img class="hero__img" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-bi/platform.webp'>
+					<img class="hero__img" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-bi/platform.png'>
 
 					<div class="hero__meters">
 						<div class="hero__meter-container atrasos">
@@ -40,7 +40,7 @@ get_header();
 								<span class="hero__meter-num-progress"></span>
 								<span class="hero__meter-start-value">0%</span>
 								<span class="hero__meter-end-value">100%</span>
-								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.webp'>
+								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
 								<div class="hero__meter-fill-mask">
 									<div class="hero__meter-bg"></div>
 									<div class="hero__meter-fill--left"></div>
@@ -70,7 +70,7 @@ get_header();
 								<span class="hero__meter-start-value">0%</span>
 								<span class="hero__meter-end-value">100%</span>
 
-								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.webp'>
+								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
 
 								<div class="hero__meter-fill-mask">
 									<div class="hero__meter-bg"></div>
@@ -102,7 +102,7 @@ get_header();
 								<span class="hero__meter-start-value">0%</span>
 								<span class="hero__meter-end-value">100%</span>
 
-								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.webp'>
+								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
 								<div class="hero__meter-fill-mask">
 									<div class="hero__meter-bg"></div>
 									<div class="hero__meter-fill--left"></div>
@@ -112,7 +112,7 @@ get_header();
 						</div>
 
 						<div class="hero__assist-bars">
-							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-assist-global.webp'>
+							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-assist-global.png'>
 							<div class="hero__bar-group">
 								<div class="hero__bar--1">100%</div>
 								<div class="hero__bar--2">100%</div>
@@ -124,12 +124,12 @@ get_header();
 						</div>
 
 						<div class="hero__assist-line">
-							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-assist-line.webp'>
+							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-assist-line.png'>
 							<img class="hero__line" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/bars-assist-line.svg'>
 						</div>
 
 						<div class="hero__plan-bars">
-							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-plan-bars.webp'>
+							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-plan-bars.png'>
 							<div class="hero__bar-group">
 								<div class="hero__bars--1">
 									<div class="hero__bar--gray">
@@ -199,7 +199,7 @@ get_header();
 					<b>Aumenta la productividad de tu empresa aquí y ahora.</b>
 				</p>
 
-				<button class="button--bigblue">
+				<button class="button--bigblue" data-bs-toggle="modal" data-bs-target="#contactModal">
 					<span class="white">Prueba la experiencia BI</span>
 				</button>
 			</div>
@@ -213,9 +213,9 @@ get_header();
 			<h2 class="text-center gray section-title anime-fadein">Gestiona, analiza y toma decisiones </h2>
 		</div>
 
-		<div class="row anime-fadein justify-content-around">
-			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/dashboard.webp" />
+		<div class="row anime-fadein-childs justify-content-around">
+			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/dashboard.png" />
 				<h5 class="fw-bold">KPI's personalizados</h5>
 				<p>
 					Plataforma ajustable a tus necesidades.
@@ -224,8 +224,8 @@ get_header();
 				</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/dash-graphic.webp" />
+			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/dash-graphic.png" />
 				<h5 class="fw-bold">Gestión simplificada</h5>
 				<p>
 					Encuentra información valiosa de forma
@@ -235,9 +235,9 @@ get_header();
 			</div>
 		</div>
 
-		<div class="row anime-fadein justify-content-around">
-			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/magnifier.webp" />
+		<div class="row anime-fadein-childs justify-content-around">
+			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/magnifier.png" />
 				<h5 class="fw-bold">Identifica causas</h5>
 				<p>
 					Todos los reportes a un clic de
@@ -247,8 +247,8 @@ get_header();
 				</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column anime-fadein text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/metrics.webp" />
+			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/metrics.png" />
 				<h5 class="fw-bold">Mejora tus resultados</h5>
 				<p>
 					Indicadores de desempeño a la mano.
@@ -271,16 +271,16 @@ get_header();
 					¿Listo para ser parte del mundo Business Intelligence?
 				</h1>
 
-				<h5 class="white fw-light mb-3 anime-fadein">
+				<p class="white fw-light mb-3 anime-fadein">
 					Únete a las más de 5000 empresas que toman decisiones acertadas gracias a nuestra solución. Mejora el desempeño en tu empresa gracias a información valiosa y centralizada.
-				</h5>
+				</p>
 
-				<button class="fw-bold button--bigwhite mt-3 anime-fadein">
+				<button class="fw-bold w-100 button--bigwhite mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
 					Prueba ahora
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">
-				<img class="why-us__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.webp" />
+				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png" />
 			</div>
 		</section>
 	</div>
@@ -288,3 +288,4 @@ get_header();
 <?php
 get_footer();
 ?>
+<?php get_template_part('template-parts/modal', 'contacto') ?>;

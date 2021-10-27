@@ -85,6 +85,7 @@
     "gulp-sass-lint": "^1.4.0",
     "gulp-shell": "^0.8.0",
     "gulp-sourcemaps": "^3.0.0",
-    "smooth-scrollbar": "^8.6.3"
+    "smooth-scrollbar": "^8.6.3",
+    "webfontloader": "^1.6.28"
   }
 }

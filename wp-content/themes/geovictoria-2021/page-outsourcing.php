@@ -32,13 +32,13 @@ get_header();
 						información de los trabajadores en terreno. Todo
 						esto y mucho más desde nuestra plataforma.
 					</p>
-					<button class="button--bigblue w-100 anime-fadein">
+					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
 						<span class="white fw-bold">Solicita tu demo gratis</span>
 					</button>
 				</div>
 			</div>
 			<div class="hero__graphics col-12 col-md-6">
-				<img class="header-nosotros anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/header-outsourcing.webp'>
+				<img class="header-nosotros anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/header-outsourcing.png'>
 			</div>
 		</div>
 	</section>
@@ -51,10 +51,10 @@ get_header();
 		<section class="container clients col-12 mb-3">
 			<h2 class="text-center gray section-title fw-light anime-fadein">Nuestros clientes ya<br><span class="fw-bold">gestionan su personal con nosotros</span></h2>
 			<div class="d-flex justify-content-around anime-fadein flex-wrap">
-				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ecrgroup-logobnw.webp'>
-				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/grupoexpro-logobnw.webp'>
-				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ugs-logobnw.webp'>
-				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.webp'>
+				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ecrgroup-logobnw.png'>
+				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/grupoexpro-logobnw.png'>
+				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ugs-logobnw.png'>
+				<img class="clients__logo--10em" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png'>
 
 			</div>
 		</section>
@@ -68,7 +68,7 @@ get_header();
 
 		<div class="row gx-5 gy-4 mb-5">
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/graphic-1.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/graphic-1.png'>
 			</div>
 			<div class="col-12 col-md-6 anime-fadein">
 				<h3 class="fw-bold mb-4">Administra, decide, ahorra</h3>
@@ -94,7 +94,7 @@ get_header();
 				</p>
 			</div>
 			<div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/graphic-2.webp'>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/graphic-2.png'>
 			</div>
 		</div>
 	</section>
@@ -116,7 +116,7 @@ get_header();
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
-				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/form.webp" />
+				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/form.svg" />
 				<h6 class="fw-bold">Cumplimiento de cobertura</h6>
 				<p>Seguimiento de rutas y tareas del
 					personal en terreno. Conoce en el
@@ -125,7 +125,7 @@ get_header();
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
-				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/optimizer.webp" />
+				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/optimizer.svg" />
 				<h6 class="fw-bold">Decisión en tiempo real
 				</h6>
 				<p>Toma decisiones al instante.
@@ -146,7 +146,7 @@ get_header();
 				<div class="col-12">
 					<div class="testimonal__video text-center">
 						<h1 class="fw-bold anime-fadein mb-5">Caso de éxito: Colegio Nuestra Señora Santa María</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio-thumb.webp" controls>
+						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio-thumb.png" controls>
 							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio.mp4" type="video/mp4">
 						</video>
 					</div>
@@ -154,7 +154,7 @@ get_header();
 			</div>
 			<div class="row gy-5 gx-5 anime-fadein-childs">
 				<div class="col-lg-3 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ecrgroup-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ecrgroup-logobnw.png" />
 					<p>
 						“Anteriormente era todo manual
 						con el libro de asistencia donde
@@ -171,7 +171,7 @@ get_header();
 				</div>
 
 				<div class="col-lg-3 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
 					<p>
 						“GeoVictoria nos cambió al
 						100%. Recomiendo GeoVictoria,
@@ -187,7 +187,7 @@ get_header();
 
 
 				<div class="col-lg-3 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ugs-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ugs-logobnw.png" />
 					<p>
 						“Con una dotación incompleta se nos
 						podría aplicar algún tipo de multa por
@@ -205,7 +205,7 @@ get_header();
 				</div>
 
 				<div class="col-lg-3 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/grupoexpro-logobnw.webp" />
+					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/grupoexpro-logobnw.png" />
 					<p>
 						“Tenemos procesos de facturación
 						mucho más claros con nuestros clientes
@@ -228,7 +228,7 @@ get_header();
 
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
-			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3 anime-fadein">
+			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3 anime-fadein-childs">
 				<h2 class="white fw-bold mb-3">
 					Mantén a tus clientes felices
 					¡Ahorra tiempo y dinero en la
@@ -241,12 +241,12 @@ get_header();
 					su personal externo con nosotros.
 				</p>
 
-				<button class="fw-bold button--bigwhite mt-3">
+				<button class="fw-bold button--bigwhite mt-3 w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
 					Contáctanos ahora
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">
-				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.webp" />
+				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png" />
 			</div>
 		</section>
 	</div>
@@ -255,3 +255,4 @@ get_header();
 <?php
 get_footer();
 ?>
+<?php get_template_part('template-parts/modal', 'contacto') ?>;
