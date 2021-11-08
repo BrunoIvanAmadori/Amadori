@@ -20,17 +20,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
-	<!-- 
-	<script>
-		(function() {
-			if (sessionStorage.fonts) {
-				console.log("Fonts installed.");
-				document.documentElement.classList.add("wf-active");
-			} else {
-				console.log("No fonts installed.");
-			}
-		})();
-	</script> -->
 </head>
 
 </div>
@@ -47,15 +36,69 @@
 				<header id="tophead" class="container-fluid d-none d-lg-block">
 					<div class="container d-flex justify-content-between align-items-center">
 						<div class='d-flex'>
-							<div class="contact-phone pe-3">
-								<i class="far fa-phone-alt blue"></i>
-								<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></small>
-							</div>
 
-							<div class="contact-email">
-								<i class="far fa-envelope blue"></i>
-								<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></small>
-							</div>
+							<?php
+							$isContactInfo = 0;
+
+							if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1')) :
+								$isContactInfo += 1;
+							?>
+
+								<div class="contact-phone pe-3">
+									<i class="far fa-phone-alt blue"></i>
+									<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></small>
+								</div>
+
+							<?php
+							endif;
+							?>
+
+							<?php
+							if (get_theme_mod('geovictoria-2021_info_contacto_email_ventas')) :
+								$isContactInfo += 1;
+							?>
+
+								<div class="contact-email">
+									<i class="far fa-envelope blue"></i>
+									<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></small>
+								</div>
+
+							<?php
+							endif;
+							?>
+
+							<?php
+
+
+							$hasLegalMenu = wp_nav_menu(
+								array(
+									'menu'           => 'Menu legal',
+									'echo' => 0,  // true or 0
+									'theme_location' => '__fake', // fake value, to prevent display of 1st real menu
+									'fallback_cb' => false  // prevent display of 1st real menu
+								)
+							);
+
+							if ($isContactInfo > 0 && $hasLegalMenu) :
+							?>
+								<span class="menu-legal-separator"> | </span>
+							<?php
+							endif;
+
+							if ($hasLegalMenu) {
+
+								wp_nav_menu(
+									array(
+										'menu'           => 'Menu legal',
+										'menu_id'        => 'legal-menu',
+										'container_class' => 'menu-menu-legal-header-container'
+									)
+								);
+							}
+
+
+							?>
+
 						</div>
 						<?php get_template_part('template-parts/language-selector'); ?>
 					</div>

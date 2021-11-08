@@ -1,4 +1,4 @@
-[data-aos][data-aos][data-aos-duration="50"],
+/* [data-aos][data-aos][data-aos-duration="50"],
 body[data-aos-duration="50"] [data-aos] {
   transition-duration: 50ms;
 }
@@ -1131,7 +1131,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos] {
 
 [data-aos="flip-down"].aos-animate {
   transform: perspective(2500px) rotateX(0);
-}
+} */
 
 /*! bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma */
 
@@ -1550,7 +1550,7 @@ h6 {
 	font-weight: 400
 }*/
 
-ul {
+/* ul {
   list-style: none;
 }
 
@@ -1559,9 +1559,9 @@ input,
 select,
 textarea {
   margin: 0;
-}
+} */
 
-html {
+/* html {
   background-color: #fff;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -1574,8 +1574,8 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-}
-
+} */
+/* 
 *,
 ::after,
 ::before {
@@ -1732,7 +1732,7 @@ table th {
 
 .is-pulled-right {
   float: right !important;
-}
+} */
 
 .is-size-1 {
   font-size: 3rem !important;
@@ -4351,7 +4351,7 @@ fieldset[disabled] .button {
 .buttons.is-right {
   justify-content: flex-end;
 }
-
+/* 
 .container {
   flex-grow: 1;
   margin: 0 auto;
@@ -4382,8 +4382,8 @@ fieldset[disabled] .button {
   .container.is-fullhd {
     max-width: 1344px;
   }
-}
-
+} */
+/* 
 @media screen and (min-width: 1216px) {
   .container {
     max-width: 1152px;
@@ -4397,7 +4397,7 @@ fieldset[disabled] .button {
   .container {
     max-width: 1344px;
   }
-}
+} */
 
 .highlight,
 .highlight pre,
@@ -12317,7 +12317,7 @@ label.panel-block:hover {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem;
 }
-
+/* 
 :root {
   --primary-color: #3298dc !important;
   --primary-bright: white;
@@ -12361,7 +12361,7 @@ label.panel-block:hover {
   --h3-font-size: 1.556em;
   --h4-font-size: 1.111em;
   --special-size: 1.389em;
-}
+} */
 
 .gv-strong {
   font-weight: 700;
@@ -14039,22 +14039,22 @@ a {
   max-height: none;
 }
 
-* {
+/* * {
   font-family: var(--font-family);
   box-sizing: border-box;
-}
+} */
 
-html {
+/* html {
   font-size: var(--general-font-size);
   color: #181818;
-}
+} */
 
 .tabs li.is-active a {
   border-bottom-color: #c58d27;
   border-bottom-width: 5px;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .column.is-full-mobile {
     flex: none !important;
     width: 100% !important;
@@ -14068,7 +14068,7 @@ html {
         ((100vw - 320px) / (1400px - 320px))
     );
   }
-}
+} */
 
 body {
   margin: 0;
@@ -14130,14 +14130,14 @@ body {
   background-image: url(../images/after.svg);
 }
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   html {
     font-size: var(--general-font-size);
   }
   .topbox > .gv-container {
     max-width: 657px;
   }
-}
+} */
 
 .topbox-title {
   font-size: var(--topbox-font-size);

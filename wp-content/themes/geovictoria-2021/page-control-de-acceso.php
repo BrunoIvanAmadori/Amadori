@@ -37,7 +37,7 @@ get_header();
 					personalizada y planificación.
 				</p>
 				<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					<span class="white fw-bold">Solicita tu demo gratis</span>
+					<span class="white fw-bold">¡Quiero actualizarme!</span>
 				</button>
 			</div>
 		</div>
@@ -185,7 +185,7 @@ get_header();
 					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-gray.svg" />
 					<div class="bg-tail-gray"></div>
 				</div>
-				<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference">
+				<div class="col-12 col-md-6 mb-5 step-1 step-1__graphics resizer-reference mb-5">
 					<div class="resizer">
 						<div class="step-1__ripple">
 						</div>
@@ -222,7 +222,7 @@ get_header();
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 						<h1 class="gray mb-3 fw-bold">
-							Marca tu asistencia
+							Marca tu acceso
 						</h1>
 						<p class="gray fw-light mb-3">
 							Según el método que elijas, tus trabajadores podrán marcar asistencia y será verificada gracias a nuestra tecnología biométrica.
@@ -243,7 +243,7 @@ get_header();
 					</div>
 				</div>
 
-				<div class="col-12 col-md-6 step-2 step-2__graphics resizer-reference">
+				<div class="col-12 col-md-6 step-2 step-2__graphics resizer-reference mb-5">
 					<div class="scale-fix">
 						<div class="resizer">
 							<img class="step-2__entry-id--size-1" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/entry-id.png'>
@@ -267,7 +267,7 @@ get_header();
 			</section>
 
 			<section class="d-flex step-3 animation-acceso flex-column flex-md-row align-items-center justify-content-center">
-				<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference">
+				<div class="col-12 col-md-6 mb-5 step-3 step-3__graphics resizer-reference mb-5">
 					<div class="resizer">
 						<img class="step-3__platform" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-acceso/platform.png'>
 						<img class="step-3__report-action" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-acceso/report-action.png'>
@@ -321,7 +321,7 @@ get_header();
 	<?php endif; ?>
 
 	<section class="container benefits text-center d-flex flex-column">
-		<h2 class="text-center gray section-title anime-fadein"><span class="fw-light">¿Por qué elegir nuestro control de asistencia?</b></h2>
+		<h2 class="text-center fw-bold gray section-title anime-fadein">¿Por qué elegir nuestro control de asistencia?</h2>
 		<div class="row d-flex justify-content-center">
 
 			<div class="col-12 col-md-4 benefits__flippable-card-container d-flex flex-column justify-content-center">
@@ -521,7 +521,7 @@ get_header();
 				</p>
 
 				<button class="fw-bold w-100 button--bigwhite mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
-					Cotiza con nosotros
+					¡Quiero actualizarme!
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex anime-pop">

@@ -34,6 +34,8 @@ get_header();
 						Conoce nuestros aliados en todo el mundo.
 					</h5>
 
+
+
 				</div>
 			</div>
 
@@ -372,13 +374,39 @@ get_header();
 						GeoVictoria. ¡Hablemos!
 					</p>
 
+					<button class="fw-bold button--bigwhite mt-3 w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#partnersModal">
+						¡Quiero participar!
+					</button>
+
 				</div>
 
-				<div class="col-12 col-md-6 align-self-center">
 
-					<div class="contact__form anime-fadein-childs">
-						<?php echo do_shortcode('[contact-form-7 id="82" title="Contacto (principal)"]') ?>
-					</div>
+
+				<div class="col-12 col-md-6 d-flex justify-content-center">
+					<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/soporte-personalizado.png" />
+					<!-- <div class="contact__form anime-fadein-childs">
+						<?php
+						// // Program to display URL of current page.
+
+						// if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+						// 	$link = "https";
+						// else
+						// 	$link = "http";
+
+						// // Here append the common URL characters.
+						// $link .= "://";
+
+						// // Append the host(domain name, ip) to the URL.
+						// $link .= $_SERVER['HTTP_HOST'];
+
+						// // Append the requested resource location to the URL
+						// $link .= $_SERVER['REQUEST_URI'];
+						// 
+						?>
+
+						// <?php // echo do_shortcode('[contact-form-7 id="136530" html_id="partners" title="Partners" origen-zoho="' . $link . '"]') 
+							?>
+					</div> -->
 
 				</div>
 
@@ -391,3 +419,4 @@ get_header();
 <?php
 get_footer();
 ?>
+<?php get_template_part('template-parts/modal', 'partners') ?>;

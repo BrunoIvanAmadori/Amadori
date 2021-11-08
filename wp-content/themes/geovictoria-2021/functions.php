@@ -204,7 +204,9 @@ function geovictoria_2021_scripts()
 
 
 	switch (basename($template)) {
-		case 'page-asistencia.php':
+		case 'page-gestion-de-asistencia.php':
+		case 'page-controle-de-ponto.php':
+		case 'page-attendance-control.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-asistencia-mobile', get_template_directory_uri() . '/dist/js/pages/page-asistencia-mobile.js', array(), '', true);
 				wp_enqueue_style('page-asistencia-mobile-css', get_template_directory_uri() . '/dist/css/asistenciaMobile.css', [], '', false);
@@ -214,7 +216,10 @@ function geovictoria_2021_scripts()
 			}
 			break;
 
-		case 'page-acceso.php':
+		case 'page-control-de-acceso.php':
+		case 'page-controle-de-acesso.php':
+		case 'page-access-control.php':
+
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-acceso-mobile', get_template_directory_uri() . '/dist/js/pages/page-acceso-mobile.js', array(), '', true);
 				wp_enqueue_style('page-acceso-mobile-css', get_template_directory_uri() . '/dist/css/accesoMobile.css', [], '', false);
@@ -225,7 +230,9 @@ function geovictoria_2021_scripts()
 			}
 			break;
 
-		case 'page-comedor.php':
+		case 'page-gestion-de-comedor.php':
+		case 'page-refeitorio.php':
+		case 'page-canteen-management.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-comedor-mobile', get_template_directory_uri() . '/dist/js/pages/page-comedor-mobile.js', array(), '', true);
 				wp_enqueue_style('page-comedor-mobile-css', get_template_directory_uri() . '/dist/css/comedorMobile.css', [], '', false);
@@ -256,6 +263,8 @@ function geovictoria_2021_scripts()
 			break;
 
 		case 'page-quienes-somos.php':
+		case 'page-quem-somos.php':
+		case 'page-who-we-are.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-nosotros-mobile', get_template_directory_uri() . '/dist/js/pages/page-quienes-somos-mobile.js', array(), '', true);
 				wp_enqueue_style('page-nosotros-css', get_template_directory_uri() . '/dist/css/quienesSomos.css', [], '', false);
@@ -357,3 +366,19 @@ function wpdocs_custom_excerpt_length($length)
 	return 20;
 }
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
+
+
+// Code for adding shortcode attributes to Contact Form 7
+
+add_filter('shortcode_atts_wpcf7', 'custom_shortcode_atts_wpcf7_filter', 10, 3);
+
+function custom_shortcode_atts_wpcf7_filter($out, $pairs, $atts)
+{
+	$my_attr = 'origen-zoho';
+
+	if (isset($atts[$my_attr])) {
+		$out[$my_attr] = $atts[$my_attr];
+	}
+
+	return $out;
+}

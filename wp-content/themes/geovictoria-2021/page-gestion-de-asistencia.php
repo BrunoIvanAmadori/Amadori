@@ -25,6 +25,7 @@ get_header();
 		<div class="icon-scroll"><small class="tip">GIRA LA RUEDA</small></div>
 	<?php endif; ?>
 
+
 	<section class="hero container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
 
 		<div class="hero__text col-12 col-md-6 mb-3">
@@ -37,7 +38,7 @@ get_header();
 				</p>
 			</div>
 			<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-				<span class="white fw-bold">Solicita tu demo gratis</span>
+				<span class="white fw-bold">¡Quiero actualizarme!</span>
 			</button>
 
 
@@ -304,7 +305,7 @@ get_header();
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-gray.svg" />
 						<div class="bg-tail-gray"></div>
 					</div>
-					<div class="col-12 col-md-6 step-1 step-1__graphics resizer-reference">
+					<div class="col-12 col-md-6 step-1 step-1__graphics resizer-reference mb-5">
 						<div class="resizer">
 							<div class="step-1__ripple">
 							</div>
@@ -350,7 +351,7 @@ get_header();
 						</div>
 					</div>
 
-					<div class="col-12 col-md-6 step-2 step-2__graphics resizer-reference">
+					<div class="col-12 col-md-6 step-2 step-2__graphics resizer-reference mb-5">
 						<div class="scale-fix">
 							<div class="resizer">
 								<img class="step-2__entry-id--size-1" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/entry-id.png'>
@@ -374,7 +375,7 @@ get_header();
 				</section>
 
 				<section class="d-flex step-3 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
-					<div class="col-12 col-md-6 step-3 step-3__graphics resizer-reference">
+					<div class="col-12 col-md-6 step-3 step-3__graphics resizer-reference mb-5 pb-4">
 						<div class="resizer">
 							<img class="step-3__platform" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/platform.png'>
 							<img class="step-3__report-action" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/report-action.png'>
@@ -558,8 +559,8 @@ get_header();
 
 	<section class="container benefits text-center d-flex flex-column">
 
-		<h2 class="text-center gray section-title anime-fadein">
-			<span class="fw-light">¿Por qué elegir nuestro control de asistencia?</span>
+		<h2 class="text-center gray fw-bold section-title anime-fadein">
+			¿Por qué elegir nuestro control de asistencia?
 		</h2>
 
 		<div class="row d-flex justify-content-center">
@@ -624,7 +625,7 @@ get_header();
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
 				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/form.svg" />
 				<h5 class="fw-bold">Acompañamiento</h5>
-				<p>Estámos contigo en todo el proceso, desde el primer contacto, hasta concretar la implementación. En lo que necesites, cuenta con nosotros.</p>
+				<p>Estamos contigo en todo el proceso, desde el primer contacto, hasta concretar la implementación. En lo que necesites, cuenta con nosotros.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
@@ -650,9 +651,8 @@ get_header();
 					Sabemos que toda transformación es un desafío. Más de 5000 empresas ya gestionan su asistencia con nosotros.
 				</p>
 
-
 				<button class="fw-bold w-100 button--bigwhite mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					Cotiza con nosotros
+					¡Quiero actualizarme!
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">

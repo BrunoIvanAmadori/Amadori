@@ -27,10 +27,10 @@ get_header();
 						La gestión de fuerza laboral por excelencia
 					</h1>
 					<p class="gray fw-light mb-3">
-						Solución integral 100% en la nube.<br>Gestiona, elabora reportes, obtén métricas<br>y ahorra dinero. Todo en un solo lugar
+						Solución integral 100% en la nube.<br>Gestiona, elabora reportes, obtén métricas<br>y ahorra dinero. Todo en un solo lugar.
 					</p>
 					<button class="button--bigblue bounce fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white">Solicita tu demo gratis</span>
+						<span class="white">¡Quiero actualizarme!</span>
 					</button>
 				</div>
 			</div>
@@ -67,7 +67,7 @@ get_header();
 						<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
 					</div>
 					<div class="trusting-companies__description">
-						<small> “Es una herramienta que eleva la gestión de los gerentes de tienda”</small>
+						<i><small> “Es una herramienta que eleva la gestión de los gerentes de tienda”</small></i>
 					</div>
 				</div>
 
@@ -87,7 +87,7 @@ get_header();
 						<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
 					</div>
 					<div class="trusting-companies__description">
-						<small>“Con GeoVictoria marcamos de forma segura desde nuestras casas y lugares de trabajo”</small>
+						<i><small>“Con GeoVictoria marcamos de forma segura desde nuestras casas y lugares de trabajo”</small></i>
 					</div>
 				</div>
 
@@ -97,7 +97,7 @@ get_header();
 						<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
 					</div>
 					<div class="trusting-companies__description">
-						<small>“Gracias a este sistema, el trabajador conoce siempre la duración de su jornada”</small>
+						<i><small>“Gracias a este sistema, el trabajador conoce siempre la duración de su jornada”</small></i>
 					</div>
 				</div>
 
@@ -170,13 +170,13 @@ get_header();
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/form.svg" />
 				<h5 class="fw-bold">Formularios en linea</h5>
-				<p>Crea formularios a tu medida. La opinión de tus trabajadores, trazabilidad Covid...</p>
+				<p>Crea formularios a tu medida. Recopila la opinión de tus trabajadores o trazabilidad de casos por Covid-19. </p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/optimizer.svg" />
 				<h5 class="fw-bold">Optimizador de turnos</h5>
-				<p>¡Ya no pierdas más dinero! Calcula los turnos más optimos según las variables de tu negocio</p>
+				<p>¡Ya no pierdas más dinero! Calcula los turnos más optimos según las variables de tu negocio.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
@@ -188,13 +188,13 @@ get_header();
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/cloud.svg" />
 				<h5 class="fw-bold">Respaldo en la nube</h5>
-				<p>Información segura y al instante. Así es nuestra nube de almacenamiento</p>
+				<p>Información segura y al instante. Así es nuestra nube de almacenamiento.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/geo.svg" />
 				<h5 class="fw-bold">Dotación inteligente</h5>
-				<p>La persona que necesitas en el lugar y la hora indicada</p>
+				<p>La persona que necesitas en el lugar y la hora indicada.</p>
 			</div>
 		</div>
 	</section>
@@ -204,80 +204,101 @@ get_header();
 		<h2 class="text-center gray mb-3 anime-fadein"><span class="fw-light">Te acompañamos durante toda</span><br> tu experiencia Geovictoria</h2>
 		<!-- Para mobile -->
 
-		<div class="progressMobile__section d-flex flex-column d-md-none text-center">
+		<div class="progressMobile__section d-flex flex-column d-lg-none text-center">
 			<div class="step-1 mb-4">
 				<div class="progressMobile__bg step-1 mb-4 ">
 					<div class="progressMobile__circle">
-						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-1.svg" />
+						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-1.gif" />
 						<div class="progressMobile__text--left">
 							<h3 class="fw-bold">Contacto</h3>
 						</div>
 					</div>
 				</div>
 
-				<h6 class="fw-light">Te contactaremos con un ejecutivo comercial especializado para tu rubro</h6>
+				<h6 class="fw-light">Atenderemos tus dudas,
+					evaluaremos tus necesidades
+					y despejaremos el
+					camino para comenzar
+					nuestra alianza.</h6>
 
 			</div>
 
 			<div class="step-2 mb-4">
 				<div class="progressMobile__bg step-2 mb-4">
 					<div class="progressMobile__circle">
-						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-2.svg" />
+						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-2.gif" />
 						<div class="progressMobile__text--left">
-							<h3 class="fw-bold">Kickoff</h3>
+							<h3 class="fw-bold">Planificación</h3>
 						</div>
 					</div>
 				</div>
-				<h6 class="fw-light">Nuestro equipo está listo para instalar los equipos y métodos de marcaje solicitados</h6>
+				<h6 class="fw-light">Nos reuniremos para
+					definir el alcance de lo
+					contratado, conocerás el
+					equipo de trabajo y las
+					etapas de implementación.</h6>
 			</div>
 
 			<div class="step-3 mb-4">
 				<div class="progressMobile__bg step-3 mb-4">
 
 					<div class="progressMobile__circle">
-						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-3.svg" />
+						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-3.gif" />
 						<div class="progressMobile__text--left">
 							<h4 class="fw-bold">Implementación</h4>
 						</div>
 					</div>
 				</div>
-				<h6 class="fw-light">Nuestro equipo está listo para instalar los equipos y métodos de marcaje solicitados</h6>
+				<h6 class="fw-light">Cuando sea la fecha y el
+					lugar, nuestro equipo
+					estará listo para instalar
+					los equipos y métodos de
+					marcaje solicitados.</h6>
 			</div>
 
 			<div class="step-4 mb-4">
 				<div class="progressMobile__bg step-4 mb-4">
 					<div class="progressMobile__circle">
-						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-4.svg" />
+						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-4.gif" />
 						<div class="progressMobile__text--left">
 							<h3 class="fw-bold">Setup</h3>
 						</div>
 					</div>
 				</div>
-				<h6 class="fw-light">Te ayudamos a configurar tu sistema de marcaje para que quede activo</h6>
+				<h6 class="fw-light">Te ayudamos a configurar
+					tu sistema de marcaje para
+					que quede activo
+					lo antes posible. </h6>
 			</div>
 
 			<div class="step-5 mb-4">
 				<div class="progressMobile__bg step-5 mb-4">
 
 					<div class="progressMobile__circle">
-						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-5.svg" />
+						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-5.gif" />
 						<div class="progressMobile__text--left">
 							<h3 class="fw-bold">Soporte</h3>
 						</div>
 					</div>
 				</div>
-				<h6 class="fw-light">Contarás con un equipo de soporte que te apoyará en cada momento</h6>
+				<h6 class="fw-light">Contarás con un sólido
+					equipo de soporte que te
+					apoyará en cada momento. </h6>
 			</div>
 		</div>
 
 		<!-- Para desktop -->
-		<div class="progress__section d-none justify-content-between d-md-flex">
+		<div class="progress__section d-none justify-content-between d-lg-flex">
 			<div class="progress__bg step-1">
 				<div class="progress__circle d-flex justify-content-center align-items-center">
-					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-1.svg" />
+					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-1.gif" />
 					<div class="progress__text--up">
 						<h6 class="fw-bold">Contacto</h6>
-						<p class="fw-light text-resize">Te contacta&shy;remos con un ejecutivo comercial especializado para tu rubro</p>
+						<p class="fw-light text-resize">Atenderemos tus dudas,
+							evaluaremos tus necesidades
+							y despejaremos el
+							camino para comenzar
+							nuestra alianza.</p>
 					</div>
 				</div>
 			</div>
@@ -286,10 +307,14 @@ get_header();
 			</div>
 			<div class="progress__bg step-2 align-self-end">
 				<div class="progress__circle d-flex justify-content-center align-items-center">
-					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-2.svg" />
+					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-2.gif" />
 					<div class="progress__text--down">
-						<h6 class="fw-bold">KickOff</h6>
-						<p class="fw-light text-resize">Nuestro equipo está listo para instalar los equipos y métodos de marcaje solicitados</p>
+						<h6 class="fw-bold">Planificación</h6>
+						<p class="fw-light text-resize">Nos reuniremos para
+							definir el alcance de lo
+							contratado, conocerás el
+							equipo de trabajo y las
+							etapas de implementación.</p>
 					</div>
 				</div>
 			</div>
@@ -298,10 +323,14 @@ get_header();
 			</div>
 			<div class="progress__bg step-3">
 				<div class="progress__circle d-flex justify-content-center align-items-center">
-					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-3.svg" />
+					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-3.gif" />
 					<div class="progress__text--up">
-						<h6 class="fw-bold">Imple&shy;mentación</h6>
-						<p class="fw-light text-resize">Nuestro equipo está listo para instalar los equipos y métodos de marcaje solicitados</p>
+						<h6 class="fw-bold title-resize">Implementación</h6>
+						<p class="fw-light text-resize">Cuando sea la fecha y el
+							lugar, nuestro equipo
+							estará listo para instalar
+							los equipos y métodos de
+							marcaje solicitados. </p>
 					</div>
 				</div>
 			</div>
@@ -310,10 +339,13 @@ get_header();
 			</div>
 			<div class="progress__bg step-4 align-self-end">
 				<div class="progress__circle d-flex justify-content-center align-items-center">
-					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-4.svg" />
+					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-4.gif" />
 					<div class="progress__text--down">
 						<h6 class="fw-bold">Set-Up</h6>
-						<p class="fw-light text-resize">Te ayudamos a configurar tu sistema de marcaje para que quede activo</p>
+						<p class="fw-light text-resize">Te ayudamos a configurar
+							tu sistema de marcaje para
+							que quede activo
+							lo antes posible.</p>
 					</div>
 				</div>
 			</div>
@@ -322,10 +354,12 @@ get_header();
 			</div>
 			<div class="progress__bg step-5">
 				<div class="progress__circle d-flex justify-content-center align-items-center">
-					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-5.svg" />
+					<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-5.gif" />
 					<div class="progress__text--up">
 						<h6 class="fw-bold">Soporte</h6>
-						<p class="fw-light text-resize">Contarás con un equipo de soporte que te apoyará en cada momento</p>
+						<p class="fw-light text-resize">Contarás con un sólido
+							equipo de soporte que te
+							apoyará en cada momento.</p>
 					</div>
 				</div>
 			</div>
@@ -399,7 +433,7 @@ get_header();
 				¿Listo para ser <br>parte del cambio?
 			</h2>
 			<button class="button--bigblue bounce" data-bs-toggle="modal" data-bs-target="#contactModal">
-				<span class="white fw-bold w-100">Solicita tu demo gratis</span>
+				<span class="white fw-bold w-100">¡Quiero actualizarme!</span>
 			</button>
 		</div>
 
@@ -409,4 +443,4 @@ get_header();
 get_footer();
 ?>
 
-<?php get_template_part('template-parts/modal', 'contacto') ?>;
+<?php get_template_part('template-parts/modal', 'contacto', ['origin' => 'front-page']) ?>;

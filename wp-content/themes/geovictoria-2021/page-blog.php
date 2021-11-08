@@ -89,7 +89,9 @@ get_header();
 								Sé el primero en recibir nuevos contenidos.
 							</h4>
 
-							<?php echo do_shortcode('[contact-form-7 id="136407" title="Suscripcion (simple)"]') ?>
+							<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+								<span class="white fw-bold">¡Suscribirme ahora!</span>
+							</button>
 						</div>
 
 					</div>
@@ -185,37 +187,21 @@ get_header();
 				<div class="contact__form d-flex align-items-center flex-column">
 					<img class="subscribe-cta__envelope align-self-center" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg">
 					<div class="col-md-7">
-						<h3 class="mb-4">Suscribete a nuestro blog y enterate de tus noticias de interés.</h3>
-						<div class=" align-self-center"><?php echo do_shortcode('[contact-form-7 id="136407" title="Suscripcion (simple)"]') ?></div>
+						<h3 class="mb-4"><b>Suscríbete</b> a nuestro blog y enterate de tus noticias de interés.</h3>
+						<button class="fw-bold button--bigwhite w-100 mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+							¡Suscribirme ahora!
+						</button>
 					</div>
-					<!-- <button class="button--bigwhite"> Enviar</button> -->
 				</div>
+				<!-- <button class="button--bigwhite"> Enviar</button> -->
 			</div>
 		</div>
+		</div>
 	</section>
-
-
-	<?php
-
-
-
-
-	// // The Loop
-	// if ($the_newest_post->have_posts()) {
-	// 	echo '<ul>';
-	// 	while ($the_newest_post->have_posts()) {
-	// 		$the_newest_post->the_post();
-	// 		echo '<li>' . get_the_title() . '</li>';
-	// 	}
-	// 	echo '</ul>';
-	// } else {
-	// 	// no posts found
-	// }
-	// /* Restore original Post Data */
-	// wp_reset_postdata();
-	?>
 </main><!-- #main -->
 
 <?php
 
 get_footer();
+get_template_part('template-parts/modal', 'newsletter');
+?>

@@ -1,10 +1,10 @@
 <!-- Modal -->
 
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+<div class="modal fade" id="partnersModal" tabindex="-1" aria-labelledby="partnersModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¿Listo para empezar nuestra alianza?</h5>
+                <h5 class="modal-title" id="partnersModalLabel">¿Listo para empezar nuestra alianza?</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -27,7 +27,7 @@
                 $link .= $_SERVER['REQUEST_URI'];
                 ?>
 
-                <?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal" html_id="potenciales-clientes" origen-zoho="' . $link . '"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="136530" html_id="partners" title="Partners" origen-zoho="' . $link . '"]'); ?>
             </div>
         </div>
     </div>

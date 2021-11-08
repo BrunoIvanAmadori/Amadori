@@ -38,7 +38,7 @@ get_header();
 					Planifica todo en una plataforma 100% online.
 				</p>
 				<button class="button--bigblue w-100 fw-bold anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					<span class="white">Solicita tu demo gratis</span>
+					<span class="white">¡Quiero actualizarme!</span>
 				</button>
 			</div>
 		</div>
@@ -302,7 +302,7 @@ get_header();
 	<?php endif; ?>
 
 	<section class="container benefits text-center d-flex flex-column">
-		<h2 class="text-center gray section-title anime-fadein"><span class="fw-light">¿Por qué elegir nuestra gestión de comedor?</b></h2>
+		<h2 class="text-center fw-bold gray section-title anime-fadein">¿Por qué elegir nuestra gestión de comedor?</h2>
 		<div class="row d-flex justify-content-center">
 			<div class="col-12 col-md-6 col-lg-3  benefits__flippable-card-container d-flex flex-column justify-content-center">
 				<div class="benefits__flip-card">
@@ -421,7 +421,7 @@ get_header();
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
 				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/notebook-check.svg" />
 				<h5 class="fw-bold">Planeación inteligente</h5>
-				<p>Genera una planificación precisa de la ración. Evita mermas, desperdicios o incumplimiento en la entrega.</p>
+				<p>Genera una planificación precisa de la ración. Evita mermas, desperdicios o incumplimientos en la entrega.</p>
 			</div>
 		</div>
 	</section>
@@ -444,7 +444,7 @@ get_header();
 				</p>
 
 				<button class="fw-bold button--bigwhite w-100 mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					Cotiza con nosotros
+					¡Quiero actualizarme!
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">

@@ -29,6 +29,9 @@ get_header();
 					<h4 class="gray fw-light mb-3  anime-fadein">
 						Queremos ser el software de gestión de capital humano más grande del mundo.
 					</h4>
+					<!-- <button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#postulacionesModal">
+						<span class="white fw-bold">Trabaja con nosotros</span>
+					</button> -->
 
 				</div>
 			</div>
@@ -54,7 +57,7 @@ get_header();
 			<!-- Para mobile -->
 
 			<div class="progressMobile__section d-flex flex-column d-lg-none text-center">
-				<div class="step-1 mb-4">
+				<!-- <div class="step-1 mb-4">
 					<div class="progressMobile__bg step-1 mb-4 d-flex">
 						<div class="progressMobile__circle">
 							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-1.svg" />
@@ -67,12 +70,12 @@ get_header();
 
 					<p class="fw-light">Nace el marcaje por llamada teléfonica para ATCOM, especialista en servicios de outsourcing</p>
 
-				</div>
+				</div> -->
 
 				<div class="step-2 mb-4">
 					<div class="progressMobile__bg step-2 mb-4 d-flex">
 						<div class="progressMobile__circle">
-							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-2.svg" />
+							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-2.png" />
 						</div>
 						<div class="progressMobile__text--left">
 							<p class="fw-bold">2007</p>
@@ -85,7 +88,7 @@ get_header();
 				<div class="step-3 mb-4">
 					<div class="progressMobile__bg step-3 mb-4 d-flex">
 						<div class="progressMobile__circle">
-							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-3.svg" />
+							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-3.png" />
 						</div>
 						<div class="progressMobile__text--left">
 							<p class="fw-bold">2011</p>
@@ -98,7 +101,7 @@ get_header();
 				<div class="step-4 mb-4">
 					<div class="progressMobile__bg step-4 mb-4 d-flex">
 						<div class="progressMobile__circle">
-							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-4.svg" />
+							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-4.png" />
 						</div>
 						<div class="progressMobile__text--left">
 							<p class="fw-bold">2017</p>
@@ -112,7 +115,7 @@ get_header();
 					<div class="progressMobile__bg step-5 mb-4 d-flex align-self-center">
 
 						<div class="progressMobile__circle">
-							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-logo-step-5.svg" />
+							<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-5.png" />
 						</div>
 						<div class="progressMobile__text--left mt-3">
 							<h3 class="fw-bold">2021</h3>
@@ -132,7 +135,7 @@ get_header();
 
 			<!-- Para desktop -->
 			<div class="progress__section d-none justify-content-between d-lg-flex mb-5">
-				<div class="progress__bg step-1">
+				<!-- <div class="progress__bg step-1">
 					<div class="progress__circle d-flex justify-content-center align-items-center">
 						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-1.png" />
 						<div class="progress__text--up">
@@ -140,10 +143,10 @@ get_header();
 							<small class="fw-light">Nace el marcaje por llamada teléfonica para ATCOM, especialista en servicios de outsourcing</small>
 						</div>
 					</div>
-				</div>
-				<div class="align-self-center">
+				</div> -->
+				<!-- <div class="align-self-center">
 					<img class="progress__arrow step-1" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/process-arrow.svg" />
-				</div>
+				</div> -->
 				<div class="progress__bg step-2 align-self-end">
 					<div class="progress__circle d-flex justify-content-center align-items-center">
 						<img class="progress__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/story-2.png" />
@@ -301,19 +304,19 @@ get_header();
 						Nuestro propósito
 					</h1>
 					<div class="anime-fadein">
-						<p class="gray fw-light mb-3">
-							Nuestro objetivo es <b>ser la empresa de tecnología líder</b> en solucionar la
-							administración de personal y herramientas para el análisis de capital humano.<br>
+						<p class="gray mb-3">
+							<i>"Nuestro objetivo es <b>ser la empresa de tecnología líder</b> en solucionar la
+								administración de personal con herramientas para el análisis de capital humano."</i><br>
 						</p>
-						<p class="gray fw-light mb-3">
+						<p class="gray mb-3">
 							Queremos <b>hacer una gestión sencilla, intuitiva y eficiente</b> de todos
 							los datos que serán determinantes para la operación de las empresas.<br>
 						</p>
-						<p class="gray fw-light mb-3">
+						<p class="gray mb-3">
 							Desarrollamos <b>innovaciones tecnológicas utilizando inteligencia</b>
 							artificial aplicadas a la biometría, orientadas al mercado laboral.<br>
 						</p>
-						<p class="gray fw-light mb-3">
+						<p class="gray mb-3">
 							<b>¡Escuchamos, entendemos y nos adaptamos a nuestros clientes!</b>
 						</p>
 					</div>
@@ -406,13 +409,16 @@ get_header();
 							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-3.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-3.png" /></a>
 						</li>
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-1.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-1.png" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-4.jpg"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-4.jpg" /></a>
 						</li>
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-2.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-2.png" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-5.jpg"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-5.jpg" /></a>
 						</li>
 						<li class="splide__slide">
-							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-3.png"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-3.png" /></a>
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-6.jpg"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-6.jpg" /></a>
+						</li>
+						<li class="splide__slide">
+							<a data-fslightbox="team" href="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-7.jpg"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/team-7.jpg" /></a>
 						</li>
 
 					</ul>
@@ -469,7 +475,7 @@ get_header();
 							<p class="card-text">
 								Conoce como llegamos a ser el Partner del Año 2019 para Microsoft.
 							</p>
-							<a href="https://www.geovictoria.com/cl/geovictoria-partner-ano-chile-2019/" type="button" class="button--blue">Ver más</a>
+							<a href="https://www.geovictoria.com/cl/geovictoria-partner-ano-chile-2019/" type="button" class="button--blue w-100 text-center">Ver más</a>
 						</div>
 					</div>
 				</div>
@@ -479,7 +485,7 @@ get_header();
 	</section>
 
 
-
+	<!-- 
 	<div>
 		<img class="bg-head-blue" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-blue.svg" />
 	</div>
@@ -495,7 +501,7 @@ get_header();
 						GeoVictoria no dudes en revisar las siguientes
 						ofertas laborales que tenemos para ti. </p>
 
-					<button class="fw-bold button--bigwhite mt-3 w-100">
+					<button class="fw-bold button--bigwhite mt-3 w-100" data-bs-toggle="modal" data-bs-target="#postulacionesModal">
 						Postulate aquí
 					</button>
 				</div>
@@ -504,8 +510,9 @@ get_header();
 				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/soporte-personalizado.png" />
 			</div>
 		</section>
-	</div>
+	</div> -->
 </main><!-- #main -->
 <?php
 get_footer();
 ?>
+<?php get_template_part('template-parts/modal', 'postulaciones') ?>;

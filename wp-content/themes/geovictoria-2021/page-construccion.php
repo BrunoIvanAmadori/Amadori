@@ -35,7 +35,7 @@ get_header();
 						necesidades. Súmate a un nuevo mundo de gestión.
 					</p>
 					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white fw-bold">Solicita tu demo gratis</span>
+						<span class="white fw-bold">¡Quiero actualizarme!</span>
 					</button>
 				</div>
 			</div>
@@ -254,7 +254,7 @@ get_header();
 				</p>
 
 				<button class="fw-bold w-100 button--bigwhite mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
-					Cotiza ahora
+					¡Quiero actualizarme!
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex ">
