@@ -797,7 +797,9 @@ const containList = document.querySelectorAll(".tabs-contain"),
     const c = document.getElementById(b),
       d = c.parentNode.childNodes;
     d.forEach((a) => {
-      a.classList.remove("is-active");
+      if (a.nodeName != "#text") {
+        a.classList.remove("is-active");
+      }
     }),
       c.classList.add("is-active"),
       containList.forEach((a) => {
@@ -805,18 +807,20 @@ const containList = document.querySelectorAll(".tabs-contain"),
       }),
       document.getElementById(a).classList.add("active");
     for (let c = 0; c < d.length; c++) {
-      if (d[c].classList.contains("is-active") && 0 === c) {
-        document.getElementById("prev-tab").classList.add("hidden");
-        break;
-      } else
-        document.getElementById("prev-tab").classList.remove("hidden"),
-          document.getElementById("next-tab").classList.remove("hidden");
-      if (d[c].classList.contains("is-active") && c === d.length - 1) {
-        document.getElementById("next-tab").classList.add("hidden");
-        break;
-      } else
-        document.getElementById("next-tab").classList.remove("hidden"),
-          document.getElementById("prev-tab").classList.remove("hidden");
+      if (d[c].nodeName != "#text") {
+        if (d[c].classList.contains("is-active") && 0 === c) {
+          document.getElementById("prev-tab").classList.add("hidden");
+          break;
+        } else
+          document.getElementById("prev-tab").classList.remove("hidden"),
+            document.getElementById("next-tab").classList.remove("hidden");
+        if (d[c].classList.contains("is-active") && c === d.length - 1) {
+          document.getElementById("next-tab").classList.add("hidden");
+          break;
+        } else
+          document.getElementById("next-tab").classList.remove("hidden"),
+            document.getElementById("prev-tab").classList.remove("hidden");
+      }
     }
   },
   nextTab = () => {
@@ -862,9 +866,7 @@ const containList = document.querySelectorAll(".tabs-contain"),
     periodo = "Mensual";
     if (descuent === true) periodo = "Anual";
     console.log("DOWN");
-    setTimeout(function () {
-      window.location.href = theme_vars.site_url + "/" + thanksite;
-    }, 3000);
+
     queryer =
       "?s=" +
       site +
@@ -1072,6 +1074,9 @@ const containList = document.querySelectorAll(".tabs-contain"),
         window.location = "";
       }, 800);
     });
+    setTimeout(function () {
+      window.location.href = theme_vars.site_url + "/" + thanksite;
+    }, 5000);
   };
 
 function modalAction(a, b = "navbar") {
@@ -1191,9 +1196,9 @@ function cotizacionStep1() {
     cotizationtoMail();
     cotizationtoPdf();
 
-    setTimeout(function () {
-      window.location.href = theme_vars.site_url + "/" + thanksite;
-    }, 2000);
+    // setTimeout(function () {
+    //   window.location.href = theme_vars.site_url + "/" + thanksite;
+    // }, 5000);
 
     //document.getElementById("step2-title").style.display = 'block';
     //document.getElementById("step2-content").style.display = 'block';

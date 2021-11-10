@@ -1,18 +1,21 @@
-<section class="hero container">
-	<div class="row w-100 d-flex flex-column flex-md-row justify-content-between align-items-center h-100 ">
-		<div class="col-12 col-md-6 mb-5">
+<div class="bg-header" style="position: absolute; top:-150px; z-index:0;">
+	<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-header.svg" />
+</div>
+<section class="hero container justify-content-center mt-5">
+	<div class="row w-100 d-flex flex-column flex-md-row justify-content-between align-items-center h-100">
+		<div class="col-12 col-md-6 text-center text-lg-start">
 			<div class="align-self-center pe-md-3">
 				<h1 class="gray mb-3 fw-bold">
-					Queremos conocerte
+					Precios
 				</h1>
 				<h4 class="fw-light mb-4 anime-fadein">
-					Completa el formulario debajo para que podamos atender tu consulta.
+					A la medida de tu empresa.
 				</h4>
 
 			</div>
 		</div>
-		<div class="hero__graphics col-12 col-md-6">
-			<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png'>
+		<div class="hero__graphics justify-content-end col-12 col-md-6">
+			<img class="anime-pop header-calc" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/pricer/header-pricer.png'>
 		</div>
 	</div>
 </section>
@@ -101,7 +104,7 @@
 					<article class="element column active">
 						<div onclick="actionProducts('Asistencia', 'check-asist')" style="display: contents;">
 							<div class="btn-chk" id="check-asist"><span class="mdi mdi-check"></span></div>
-							<img alt="" class="" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/asist.png">
+							<img alt="" class="big-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_1.svg">
 							<span>Asistencia y turnos</span>
 						</div>
 						<div><span class="mdi"></span> <span class="mdi"></span></div>
@@ -111,7 +114,7 @@
 					<article class="element column">
 						<div onclick="actionProducts('Acceso', 'check-acces')" style="display: contents;">
 							<div class="btn-chk" id="check-acces"><span class="mdi mdi-check"></span></div>
-							<img alt="" class="" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/acces.png">
+							<img alt="" class="big-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_2.svg">
 							<span>Gestión de acceso</span>
 						</div>
 						<div><span class="mdi"></span> <span class="mdi"></span> <span><img alt="Cantidad" class="icono-persona" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icono-persona.svg"> Cant.:<input class="input" id="total-empleados-acceso-input" oninput="totalEmpleadosProductoAction('acces')" placeholder="0" type="text" readonly="readonly"></span></div>
@@ -120,7 +123,7 @@
 					<article class="element column">
 						<div onclick="actionProducts('Comedor', 'check-comed')" style="display: contents;">
 							<div class="btn-chk" id="check-comed"><span class="mdi mdi-check"></span></div>
-							<img alt="" class="" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/comed.png">
+							<img alt="" class="big-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_3.svg">
 							<span>Portal comedor y casino</span>
 						</div>
 						<div><span class="mdi"></span> <span class="mdi"></span> <span><img alt="Cantidad" class="icono-persona" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icono-persona.svg"> Cant.:<input class="input" id="total-empleados-comedor-input" oninput="totalEmpleadosProductoAction('comed')" placeholder="0" type="text" readonly="readonly"></span></div>
@@ -129,7 +132,7 @@
 					<article class="element column">
 						<div onclick="actionProducts('Externos', 'check-exter')" style="display: contents;">
 							<div class="btn-chk" id="check-exter"><span class="mdi mdi-check"></span></div>
-							<img alt="" class="" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/exter.png">
+							<img alt="" class="big-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_4.svg">
 							<span>Portal externos</span>
 						</div>
 						<div><span class="mdi"></span> <span class="mdi"></span> <span><img alt="Cantidad" class="icono-persona" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icono-persona.svg"> Cant.:<input class="input" id="total-empleados-externos-input" oninput="totalEmpleadosProductoAction('exter')" placeholder="0" type="text" readonly="readonly"></span></div>
@@ -137,12 +140,12 @@
 
 				</div>
 
-				<div class="elements-container columns">
+				<div class="elements-container columns flex-wrap">
 
 					<article class="element column">
 						<div onclick="actionProducts('Powerbi', 'check-powerbi')" style="display: contents;">
 							<div class="btn-chk btn-sub-chk" id="check-powerbi"><span class="mdi mdi-check"></span></div>
-							<img alt="Dashboard en power BI" class="imgmax" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/Plataforma princing-10.svg">
+							<img alt="Dashboard en power BI" class="small-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_5.svg">
 							<span>Dashboard BI</span>
 						</div>
 					</article>
@@ -150,7 +153,7 @@
 					<article class="element column">
 						<div onclick="actionProducts('Reporte', 'check-reporte')" style="display: contents;">
 							<div class="btn-chk btn-sub-chk" id="check-reporte"><span class="mdi mdi-check"></span></div>
-							<img alt="Reportes personalizados" class="imgmax" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/Plataforma princing-11.svg">
+							<img alt="Reportes personalizados" class="small-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_6.svg">
 							<span>Reportes personalizados</span>
 						</div>
 					</article>
@@ -158,7 +161,7 @@
 					<article class="element column">
 						<div onclick="actionProducts('Formapp', 'check-formapp')" style="display: contents;">
 							<div class="btn-chk btn-sub-chk" id="check-formapp"><span class="mdi mdi-check"></span></div>
-							<img alt="Formulario App" class="imgmax" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/Plataforma princing-12.svg">
+							<img alt="Formulario App" class="small-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_7.svg">
 							<span>Formulario App</span>
 						</div>
 					</article>
@@ -166,7 +169,7 @@
 					<article class="element column">
 						<div onclick="actionProducts('Optimizador', 'check-optimizador')" style="display: contents;">
 							<div class="btn-chk btn-sub-chk" id="check-optimizador"><span class="mdi mdi-check"></span></div>
-							<img alt="Optimizador de turnos" class="imgmax" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/Plataforma princing-13.svg">
+							<img alt="Optimizador de turnos" class="small-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_8.svg">
 							<span>Optimizador de turnos</span>
 						</div>
 					</article>
@@ -174,7 +177,7 @@
 					<article class="element column">
 						<div onclick="actionProducts('Integraerp', 'check-integraerp')" style="display: contents;">
 							<div class="btn-chk btn-sub-chk" id="check-integraerp"><span class="mdi mdi-check"></span></div>
-							<img alt="Integración con otros sistemas" class="imgmax" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/Plataforma princing-14.svg">
+							<img alt="Integración con otros sistemas" class="small-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_9.svg">
 							<span>Integración con otros sistemas</span>
 						</div>
 					</article>
@@ -182,7 +185,7 @@
 					<article class="element column">
 						<div onclick="actionProducts('Soporte', 'check-soporte')" style="display: contents;">
 							<div class="btn-chk btn-sub-chk" id="check-soporte"><span class="mdi mdi-check"></span></div>
-							<img alt="Soporte 24/7" class="imgmax" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/Plataforma princing-15.svg">
+							<img alt="Soporte 24/7" class="small-icon" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/icons/icon_10.svg">
 							<span>Soporte 24/7</span>
 						</div>
 					</article>
@@ -201,7 +204,7 @@
 				<article class="element column ml0" style="height: auto;width: auto;margin-top: unset;">
 					<div class="columns is-vcentered" style="border-bottom: 1px solid rgba(0, 0, 0, .25);width: 100%;">
 						<div class="column is-7 gv-align-left paddl0">
-							<img alt="" class="" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/LOGO-GV-NUEVO.svg">
+							<img alt="" class="" src="<?php echo get_template_directory_uri() ?>/gvcalc/img/logo-gv-nuevo.png">
 						</div>
 						<div class="column is-3 gv-align-right resumen">
 							<span class="slide-labels" style="margin-bottom: 0; text-align: left; font-size: 12px; line-height: 13px;">Nuestra solución cumple con:</span>
@@ -272,7 +275,7 @@
 					</div>
 
 					<div class="column is-3 resumen" id="cotization-pdf-btn" style="width: auto;">
-						<a class="gv-btn-medium gv-primary gv-text-color-white width-only-content" onclick="modalAction('cotizacion-modal')">Descargar informe detalle con valores</a>
+						<btn class="btn btn-primary" onclick="modalAction('cotizacion-modal')">Descargar informe detalle con valores</btn>
 					</div>
 
 				</article>
@@ -550,9 +553,9 @@
 		<div class="gv-modal-card" style="z-index: 2;width: 450px;">
 			<div class="gv-modal-card-header">
 				<span id="step1-title">
-					<h4 class="gv-h4">Estás a <b>1 paso</b> de descargar tu informe</h4>
+					<h6>Estás a <b>1 paso</b> de descargar tu informe</h6>
 				</span><span id="step2-title" style="display: none">
-					<h4 class="gv-h4">Cotización</h4>
+					<h6>Cotización</h6>
 				</span>
 				<button aria-label="close" class="modal-close" onclick="modalAction('cotizacion-modal')"></button>
 			</div>

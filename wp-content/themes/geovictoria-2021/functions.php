@@ -204,9 +204,9 @@ function geovictoria_2021_scripts()
 
 
 	switch (basename($template)) {
-		case 'page-gestion-de-asistencia.php':
-		case 'page-controle-de-ponto.php':
-		case 'page-attendance-control.php':
+		case 'control-de-asistencia.php':
+		case 'controle-de-ponto.php':
+		case 'attendance-control.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-asistencia-mobile', get_template_directory_uri() . '/dist/js/pages/page-asistencia-mobile.js', array(), '', true);
 				wp_enqueue_style('page-asistencia-mobile-css', get_template_directory_uri() . '/dist/css/asistenciaMobile.css', [], '', false);
@@ -216,9 +216,9 @@ function geovictoria_2021_scripts()
 			}
 			break;
 
-		case 'page-control-de-acceso.php':
-		case 'page-controle-de-acesso.php':
-		case 'page-access-control.php':
+		case 'control-de-acceso.php':
+		case 'controle-de-acesso.php':
+		case 'access-control.php':
 
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-acceso-mobile', get_template_directory_uri() . '/dist/js/pages/page-acceso-mobile.js', array(), '', true);
@@ -230,9 +230,9 @@ function geovictoria_2021_scripts()
 			}
 			break;
 
-		case 'page-gestion-de-comedor.php':
-		case 'page-refeitorio.php':
-		case 'page-canteen-management.php':
+		case 'gestion-de-comedor.php':
+		case 'refeitorio.php':
+		case 'canteen-management.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-comedor-mobile', get_template_directory_uri() . '/dist/js/pages/page-comedor-mobile.js', array(), '', true);
 				wp_enqueue_style('page-comedor-mobile-css', get_template_directory_uri() . '/dist/css/comedorMobile.css', [], '', false);
@@ -242,7 +242,7 @@ function geovictoria_2021_scripts()
 			}
 			break;
 
-		case 'page-business-intelligence.php':
+		case 'business-intelligence.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-business-intelligence-mobile', get_template_directory_uri() . '/dist/js/pages/page-business-intelligence-mobile.js', array(), '', true);
 				wp_enqueue_style('page-business-intelligence-mobile-css', get_template_directory_uri() . '/dist/css/businessIntelligenceMobile.css', [], '', false);
@@ -253,6 +253,7 @@ function geovictoria_2021_scripts()
 			break;
 
 		case 'front-page.php':
+		case 'home.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('front-page-mobile', get_template_directory_uri() . '/dist/js/pages/front-page-mobile.js', array(), '', true);
 				wp_enqueue_style('front-page-css', get_template_directory_uri() . '/dist/css/frontPage.css', [], '', false);
@@ -262,9 +263,9 @@ function geovictoria_2021_scripts()
 			}
 			break;
 
-		case 'page-quienes-somos.php':
-		case 'page-quem-somos.php':
-		case 'page-who-we-are.php':
+		case 'quienes-somos.php':
+		case 'quem-somos.php':
+		case 'who-we-are.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('page-nosotros-mobile', get_template_directory_uri() . '/dist/js/pages/page-quienes-somos-mobile.js', array(), '', true);
 				wp_enqueue_style('page-nosotros-css', get_template_directory_uri() . '/dist/css/quienesSomos.css', [], '', false);

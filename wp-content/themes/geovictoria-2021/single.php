@@ -89,6 +89,14 @@ $relacionadas = new WP_Query(
 						</aside>
 					</div>
 				</div>
+
+				<div class="entry-banner mt-4 mb-4">
+					<?php $path = explode('/', $_SERVER["REQUEST_URI"]); ?>
+
+					<a href="<?php echo '/' . $path[1]; ?>/calculadora/?utm_source=pricing+&utm_medium=banner+calculadora&utm_campaign=campa%C3%B1a+pricing">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer.png'">
+					</a>
+				</div>
 				<footer class="entry-footer col-lg-8">
 					<h4>
 						¡Unete a nuestra conversación!

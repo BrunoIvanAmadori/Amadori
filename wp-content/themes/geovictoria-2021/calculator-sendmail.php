@@ -21,12 +21,12 @@ $apellido = $_GET['fap'];
 
 switch ($_GET['s']) {
    case 'cl':
-      $subject = "Report GeoVictoria para " . $nombre . " " . $apellido;
+      $subject = "Cotización GeoVictoria para " . $nombre . " " . $apellido;
       $headers .= "CC: ventas@geovictoria.com" . "\r\n";
       break;
 
    case 'ar':
-      $subject = "Report GeoVictoria for " . $nombre . " " . $apellido;
+      $subject = "Cotización GeoVictoria para " . $nombre . " " . $apellido;
       $headers .= "CC: ventas.ar@geovictoria.com" . "\r\n";
       break;
 
@@ -36,7 +36,7 @@ switch ($_GET['s']) {
       break;
 
    case 'co':
-      $subject = "Cotizacion GeoVictoria para " . $nombre . " " . $apellido;
+      $subject = "Cotización GeoVictoria para " . $nombre . " " . $apellido;
       $headers .= "CC: ventas.co@geovictoria.com" . "\r\n";
       break;
 
@@ -46,17 +46,17 @@ switch ($_GET['s']) {
       break;
 
    case 'pe':
-      $subject = "Cotizacion GeoVictoria para " . $nombre . " " . $apellido;
+      $subject = "Cotización GeoVictoria para " . $nombre . " " . $apellido;
       $headers .= "CC: ventasperu@geovictoria.com" . "\r\n";
       break;
 
    case 'mx':
-      $subject = "Cotizacion GeoVictoria para " . $nombre . " " . $apellido;
+      $subject = "Cotización GeoVictoria para " . $nombre . " " . $apellido;
       $headers .= "CC: ventasmx@geovictoria.com" . "\r\n";
       break;
 
    default:
-      $subject = "Cotizacion GeoVictoria para " . $nombre . " " . $apellido;
+      $subject = "Cotización GeoVictoria para " . $nombre . " " . $apellido;
       $headers .= "CC: ventas@geovictoria.com" . "\r\n";
       break;
 }
@@ -180,6 +180,11 @@ function get_html()
 
       case 'mx':
          $pais = "Mexico";
+         break;
+
+
+      case 'es':
+         $pais = "España";
          break;
 
       default:
