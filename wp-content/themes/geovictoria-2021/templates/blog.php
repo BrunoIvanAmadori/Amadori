@@ -76,7 +76,7 @@ get_header();
 						<div class="card-body flex-column d-flex justify-content-center">
 							<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
 
-							<h4 class="card-title mb-4">
+							<h4 class="card-title mb-4 text-center">
 								Sé el primero en recibir nuevos contenidos.
 							</h4>
 
@@ -178,15 +178,14 @@ get_header();
 				<div class="contact__form d-flex align-items-center flex-column">
 					<img class="subscribe-cta__envelope align-self-center" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg">
 					<div class="col-md-7">
-						<h3 class="mb-4"><b>Suscríbete</b> a nuestro blog y enterate de tus noticias de interés.</h3>
+						<h3 class="mb-4"><b>
+								Suscríbete</b> a nuestro blog y enterate de tus noticias de interés.</h3>
 						<button class="fw-bold button--bigwhite w-100 mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
 							¡Suscribirme ahora!
 						</button>
 					</div>
 				</div>
-				<!-- <button class="button--bigwhite"> Enviar</button> -->
 			</div>
-		</div>
 		</div>
 	</section>
 </main><!-- #main -->

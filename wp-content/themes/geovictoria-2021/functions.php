@@ -277,7 +277,7 @@ function geovictoria_2021_scripts()
 
 		case 'single.php':
 			if (wp_is_mobile()) {
-				wp_enqueue_script('default-mobile', get_template_directory_uri() . '/dist/js/pages/_shared-mobile.js', array(), '', true);
+				wp_enqueue_script('default-mobile', get_template_directory_uri() . '/dist/js/pages/page-single-mobile.js', array(), '', true);
 			} else {
 				wp_enqueue_script('page-single', get_template_directory_uri() . '/dist/js/pages/page-single.js', array(), '', true);
 			}

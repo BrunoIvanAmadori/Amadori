@@ -11,16 +11,16 @@ get_header();
 </div>
 <main id="primary" class="site-main">
 
-	<?php if (!wp_is_mobile()) : ?>
-		<div class="icon-scroll"><small class="tip">SCROLLEA ABAJO</small></div>
-	<?php endif; ?>
-
 	<section class="d-flex container hero flex-column align-items-center justify-content-start">
-		<div class="hero__graphics mb-5 col-12 resizer-reference">
-			<div class="resizer">
 
-				<div class="hero__container">
-					<img class="hero__img" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-bi/platform.png'>
+		<div class='col-12 mb-5'>
+			<div class="hero__graphics mb-5 col-12 resizer-reference">
+				<div class="resizer">
+
+					<div class="hero__img">
+						<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-bi/platform.png'>
+					</div>
+
 
 					<div class="hero__meters">
 						<div class="hero__meter-container atrasos">
@@ -172,11 +172,13 @@ get_header();
 								</div>
 							</div>
 						</div>
-					</div>
-				</div> <!-- .hero__meters -->
-			</div> <!-- .resizer -->
 
-		</div> <!-- .hero__graphics -->
+
+					</div> <!-- .resizer -->
+				</div>
+
+			</div> <!-- .hero__graphics -->
+		</div>
 
 		<div class="hero__text col-12 col-md-9 mb-3">
 			<div class="align-self-center pe-md-3 text-center anime-fadein-childs">

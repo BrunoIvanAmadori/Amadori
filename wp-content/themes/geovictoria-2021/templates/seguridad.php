@@ -29,7 +29,7 @@ get_header();
 					</p>
 
 					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white fw-bold">Solicita tu demo gratis</span>
+						<span class="white fw-bold">¡Quiero actualizarme!</span>
 					</button>
 
 				</div>

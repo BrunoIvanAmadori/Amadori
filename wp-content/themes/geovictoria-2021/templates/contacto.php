@@ -11,14 +11,14 @@ get_header();
 </div>
 <main id="primary" class="site-main">
 
-	<section class="hero container">
+	<section class="hero container justify-content-center">
 		<div class="row w-100 d-flex flex-column flex-md-row justify-content-between align-items-center h-100 ">
-			<div class="col-12 col-md-6 mb-5">
+			<div class="col-12 col-md-6">
 				<div class="align-self-center pe-md-3">
-					<h1 class="gray mb-3 fw-bold">
+					<h1 class="gray mb-3 fw-bold text-center text-lg-start">
 						Queremos conocerte
 					</h1>
-					<h4 class="fw-light mb-4 anime-fadein">
+					<h4 class="fw-light mb-4 anime-fadein text-center text-lg-start">
 						Completa el formulario debajo para que podamos atender tu consulta.
 					</h4>
 
@@ -41,7 +41,25 @@ get_header();
 							Nuestros expertos te guiarán y
 							ofrecerán la mejor alternativa para ti
 						</p>
-						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal"]') ?>
+						<?php
+						// Program to display URL of current page.
+
+						if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+							$link = "https";
+						else
+							$link = "http";
+
+						// Here append the common URL characters.
+						$link .= "://";
+
+						// Append the host(domain name, ip) to the URL.
+						$link .= $_SERVER['HTTP_HOST'];
+
+						// Append the requested resource location to the URL
+						$link .= $_SERVER['REQUEST_URI'];
+						?>
+
+						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal" html_id="potenciales-clientes" html_class="no-privacy-policy" origen-zoho="' . $link . '"]'); ?>
 
 					</div>
 				</div>

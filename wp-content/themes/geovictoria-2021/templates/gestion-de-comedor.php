@@ -40,7 +40,7 @@ get_header();
 
 	<?php if (wp_is_mobile()) : ?>
 		<section class="d-flex container step-1 animation-comedor flex-column flex-md-row align-items-center justify-content-center">
-			<div class="col-12 col-md-6 mb-2 step-1 step-1__graphics resizer-reference">
+			<div class="col-12 col-md-6 step-1 step-1__graphics resizer-reference">
 				<div class="resizer">
 					<div class="step-1__ticket">
 						<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-comedor/ticket-1.png'>
@@ -389,6 +389,49 @@ get_header();
 			</div>
 
 		</div>
+	</section>
+
+	<section class="container-fluid bg-blue-2 logging-types ">
+		<div class="container">
+			<div class="row mb-5">
+				<h2>Podrás elegir entre diferentes tipos de marcaje</h2>
+			</div>
+			<div class="row justify-content-between <?php if (!wp_is_mobile()) echo 'anime-fadein-childs' ?>">
+
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start<?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-web.png" />
+					<h6>Web</h6>
+					<small>Registro via web desde la plataforma.</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-usb.png" />
+					<h6>Huellero USB</h6>
+					<small>Registro vía lector de huellas con conexión USB.</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-app.png" />
+					<h6>App Mobile</h6>
+					<small>Registro vía aplicación móvil con georreferenciación y reconocimiento fácial.</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-box.png" />
+					<h6>Box</h6>
+					<small>Registro vía reloj control LAN, 3G o WiFi.</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-call.png" />
+					<h6>GeoVictoria Call</h6>
+					<small>Registro vía llamada telefónica.</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
+					<h6>GeoVictoria Face</h6>
+					<small>Registro vía reconocimiento facial.
+					</small>
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<section class="d-flex flex-column container justify-content-between features">

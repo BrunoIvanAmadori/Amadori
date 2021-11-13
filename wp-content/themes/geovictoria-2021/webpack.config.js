@@ -65,6 +65,10 @@ const config = {
       import: "./src/js/pages/page-quienes-somos.js",
       filename: "./js/pages/page-quienes-somos.js",
     },
+    quienesSomosMobile: {
+      import: "./src/js/pages/page-quienes-somos-mobile.js",
+      filename: "./js/pages/page-quienes-somos-mobile.js",
+    },
     partners: {
       import: "./src/js/pages/page-partners.js",
       filename: "./js/pages/page-partners.js",
@@ -72,6 +76,10 @@ const config = {
     single: {
       import: "./src/js/pages/page-single.js",
       filename: "./js/pages/page-single.js",
+    },
+    singleMobile: {
+      import: "./src/js/pages/page-single-mobile.js",
+      filename: "./js/pages/page-single-mobile.js",
     },
   },
   output: {
@@ -126,7 +134,7 @@ const config = {
 };
 
 module.exports = () => {
-  if (isProduction) {
+  if (true) {
     config.mode = "production";
   } else {
     config.mode = "development";

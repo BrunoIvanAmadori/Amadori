@@ -29,7 +29,7 @@ get_header();
 						<span class="fw-bold">Ahorra, gestiona y decide con GeoVictoria.</span>
 					</p>
 					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white fw-bold">Solicita tu demo gratis</span>
+						<span class="white fw-bold">¡Quiero actualizarme!</span>
 					</button>
 				</div>
 			</div>

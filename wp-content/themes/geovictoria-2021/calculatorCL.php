@@ -140,7 +140,7 @@
 
 				</div>
 
-				<div class="elements-container columns">
+				<div class="elements-container columns flex-wrap">
 
 					<article class="element column">
 						<div onclick="actionProducts('Powerbi', 'check-powerbi')" style="display: contents;">

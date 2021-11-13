@@ -51,35 +51,22 @@ $relacionadas = new WP_Query(
 									wp_reset_postdata();
 								}
 								?>
-								<div class="card subscribe-sidebar h-100">
-									<div class="card-body flex-column d-flex justify-content-center">
-										<h4 class="card-title mb-4 text-center">
-											Descarga el e-book gratis
-										</h4>
-										<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
-										<p class="text-center">Descarga el ebook “Clima
-											en el equipo de trabajo”
-											totalmente gratis.
-										</p>
 
+								<div class="col-12">
+									<div class="card subscribe-sidebar h-100">
+										<div class="card-body flex-column d-flex justify-content-center">
+											<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
 
-										<?php echo do_shortcode('[contact-form-7 id="135669" title="Suscripcion Sidebar"]') ?>
+											<h4 class="card-title mb-4 text-center">
+												Sé el primero en recibir nuevos contenidos.
+											</h4>
+
+											<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+												<span class="white fw-bold">¡Suscribirme ahora!</span>
+											</button>
+										</div>
+
 									</div>
-
-								</div>
-
-								<div class="card subscribe-sidebar h-100">
-									<div class="card-body flex-column d-flex justify-content-center">
-
-										<h4 class="card-title mb-4 text-center">
-											Sé el primero en recibir nuevos contenidos.
-										</h4>
-										<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
-
-
-										<?php echo do_shortcode('[contact-form-7 id="135669" title="Suscripcion Sidebar"]') ?>
-									</div>
-
 								</div>
 
 							</div>
@@ -146,5 +133,6 @@ $relacionadas = new WP_Query(
 
 </div>
 <?php
+get_template_part('template-parts/modal', 'newsletter');
 get_sidebar();
 get_footer();

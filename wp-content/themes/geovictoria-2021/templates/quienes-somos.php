@@ -199,84 +199,84 @@ get_header();
 		<div class="container">
 
 			<h2 class="text-center gray mb-5 fw-bold">Nuestra presencia en el mundo</h2>
-			<div class="nuestra-presencia__grid anime-fadein">
-				<div class="nuestra-presencia__flag-container">
+			<div class="nuestra-presencia__grid <?php if (!wp_is_mobile()) echo 'anime-fadein-childs'; ?>">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/cl.png">
 					<span>Chile</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/es.png">
 					<span>España</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/gt.png">
 					<span>Guatemala</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/mx.png">
 					<span>México</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pt-br.png">
 					<span>Brasil</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/co.png">
 					<span>Colombia</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/hn.png">
 					<span>Honduras</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/bo.png">
 					<span>Bolivia</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ec.png">
 					<span>Ecuador</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/en.png">
 					<span>USA</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ar.png">
 					<span>Argentina</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/sv.png">
 					<span>El Salvador</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/py.png">
 					<span>Paraguay</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/cr.png">
 					<span>Costa Rica</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pe.png">
 					<span>Perú</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/do.png">
 					<span>Rep. Dominicana</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/uy.png">
 					<span>Uruguay</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/ni.png">
 					<span>Nicaragua</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/pa.png">
 					<span>Panamá</span>
 				</div>
-				<div class="nuestra-presencia__flag-container">
+				<div class="nuestra-presencia__flag-container <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 					<img class="nuestra-presencia__flag" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/flags/de.png">
 					<span>Alemania</span>
 				</div>
@@ -288,7 +288,7 @@ get_header();
 		<div class="container d-flex flex-column flex-lg-row text-center text-lg-start">
 			<div class="row gy-5">
 				<div class="col-12 col-lg-6 align-self-center anime-pop">
-					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/purpose.png')">
+					<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/purpose.png	">
 				</div>
 				<div class="col-12 col-lg-6">
 					<h1 class="gray mb-3 fw-bold">
@@ -426,10 +426,10 @@ get_header();
 
 		<div class="awards__content d-flex flex-column flex-md-row justify-content-around">
 
-			<div class="row gy-3 justify-content-center anime-fadein-childs">
+			<div class="row gy-3 justify-content-center <?php if (!wp_is_mobile()) echo 'anime-fadein-childs'; ?>">
 
 				<div class="col-12 col-sm-6 col-lg-3">
-					<div class="partners-estrategicos__partner card">
+					<div class="partners-estrategicos__partner card <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-1.png'>
 						<div class="card-body">
 							<h5 class="card-title">
@@ -443,7 +443,7 @@ get_header();
 				</div>
 
 				<div class="col-12 col-sm-6 col-lg-3">
-					<div class="partners-estrategicos__partner card">
+					<div class="partners-estrategicos__partner card <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-2.png'>
 						<div class="card-body">
 							<h5 class="card-title">
@@ -457,7 +457,7 @@ get_header();
 				</div>
 
 				<div class="col-12 col-sm-6 col-lg-3">
-					<div class="partners-estrategicos__partner card">
+					<div class="partners-estrategicos__partner card <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 						<img class="card-img-top align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/quienes-somos/partner-3.png'>
 						<div class="card-body">
 							<h5 class="card-title">
@@ -506,4 +506,3 @@ get_header();
 <?php
 get_footer();
 ?>
-<?php get_template_part('template-parts/modal', 'postulaciones') ?>;

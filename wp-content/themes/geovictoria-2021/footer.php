@@ -65,16 +65,19 @@
 
 
 				</div>
+				<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1')) : ?>
+					<div class="contact-phone pe-3">
+						<i class="far fa-phone-alt blue"></i>
+						<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></small>
+					</div>
+				<?php endif; ?>
 
-				<div class="contact-phone pe-3">
-					<i class="far fa-phone-alt blue"></i>
-					<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></small>
-				</div>
-
-				<div class="contact-email">
-					<i class="far fa-envelope blue"></i>
-					<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></small>
-				</div>
+				<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_ventas')) : ?>
+					<div class="contact-email">
+						<i class="far fa-envelope blue"></i>
+						<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></small>
+					</div>
+				<?php endif; ?>
 			</div>
 
 		</div>

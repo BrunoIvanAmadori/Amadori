@@ -11,15 +11,15 @@ get_header();
 </div>
 <main id="primary" class="site-main">
 
-	<section class="hero container">
+	<section class="hero container justify-content-center">
 		<div class="row w-100 d-flex flex-column flex-md-row justify-content-between align-items-center h-100 ">
-			<div class="col-12 col-md-6 mb-5">
+			<div class="col-12 col-md-6">
 				<div class="align-self-center pe-md-3">
-					<h1 class="gray mb-3 fw-bold">
+					<h1 class="gray mb-3 fw-bold text-center text-lg-start">
 						¡Gracias por contactarte con nosotros!
 					</h1>
-					<h4 class="fw-light mb-4 anime-fadein">
-						Un especialista pronto se comunicará contigo para que conozcas nuestra solución tecnológica
+					<h4 class="fw-light mb-4 anime-fadein text-center text-lg-start">
+						Un especialista pronto se comunicará contigo.
 					</h4>
 
 				</div>

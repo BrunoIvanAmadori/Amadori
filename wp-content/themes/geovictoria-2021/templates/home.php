@@ -18,21 +18,34 @@ get_header();
 						La gestión de fuerza laboral por excelencia
 					</h1>
 					<p class="gray fw-light mb-3">
-						Solución integral 100% en la nube.<br>Gestiona, elabora reportes, obtén métricas<br>y ahorra dinero. Todo en un solo lugar.
+						Solución integral 100% en la nube. Gestiona, elabora reportes, obtén métricas y ahorra dinero. Todo en un solo lugar.
 					</p>
-					<button class="button--bigblue bounce fw-bold" data-bs-toggle="modal" data-bs-target="#contactModal">
+					<button class="button--bigblue bounce fw-bold w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
 						<span class="white">¡Quiero actualizarme!</span>
 					</button>
 				</div>
 			</div>
 			<div class="col-12 col-md-6 mb-5">
-				<div class="animation-home text-start anime">
-					<img class="animation-home animation-home__screen" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen.png'>
-					<img class="animation-home animation-home__arrow" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/arrow.svg'>
-					<img class="animation-home animation-home__entry-type" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/entry-type.png'>
-					<img class="animation-home animation-home__user" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/user.png'>
+
+				<div class="animation-home text-start anime resizer-reference">
+					<div class="resizer">
+						<div class="animation-home__screen-group">
+							<!-- <img class="animation-home animation-home__arrow" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/arrow.svg'> -->
+							<img class="animation-home animation-home__entry-type" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/entry-type.png'>
+							<img class="animation-home animation-home__user" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/user.png'>
+							<img class="animation-home animation-home__screen-desk" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-desk.png'>
+						</div>
+						<!-- <img class="animation-home animation-home__screen" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen.png'> -->
+
+						<img class="animation-home animation-home__screen-mobile" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-mobile.png'>
+						<img class="animation-home animation-home__screen-tablet" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-tablet.png'>
+						<img class="animation-home animation-home__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/box.png'>
+						<img class="animation-home animation-home__usb" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/usb.png'>
+					</div>
 				</div>
 			</div>
+
+
 		</div>
 	</section>
 	<div class="position-relative">
@@ -102,21 +115,21 @@ get_header();
 
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between anime-fadein">
-				<a class="product--box" href="control-de-asistencia">
+				<a class="product--box anime-fadein" href="control-de-asistencia">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-asistencia.svg" />
 						<h4 class="fw-bold">Control de<br>asistencia</h4>
 						Ver más
 					</div>
 				</a>
-				<a class="product--box" href="control-de-acceso">
+				<a class="product--box anime-fadein" href="control-de-acceso">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-acceso.svg" />
 						<h4 class="fw-bold">Control<br>de acceso</h4>
 						Ver más
 					</div>
 				</a>
-				<a class="product--box" href="gestion-de-comedor">
+				<a class="product--box anime-fadein" href="gestion-de-comedor">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-comedor.svg" />
 						<h4 class="fw-bold">Gestión de<br>comedor</h4>
@@ -128,8 +141,8 @@ get_header();
 
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<a class="product--card" href="business-intelligence">
-					<div class="d-flex flex-column align-items-center anime-fadein-childs">
+				<a class="product--card anime-fadein" href="business-intelligence">
+					<div class="d-flex flex-column align-items-center">
 						<div class='row'>
 							<div class="col justify-content-center text-end">
 								<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-business.svg" />
@@ -151,38 +164,38 @@ get_header();
 			<h2 class="text-center gray section-title anime-fadein"><b>Ahorra, actualiza, simplifica</b><br><span class="fw-light">Bienvenido a un mundo de gestión</span><br> </h2>
 		</div>
 
-		<div class="row anime-fadein-childs">
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
+		<div class="row <?php if (!wp_is_mobile()) echo "anime-fadein-childs" ?>">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column <?php if (wp_is_mobile()) echo 'anime-fadein' ?>">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/report.svg" />
 				<h5 class="fw-bold">Reportes personalizados</h5>
 				<p>Horas extras, atrasos, turnos por hacer. Todos los reportes que requieras en un solo lugar.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/form.svg" />
 				<h5 class="fw-bold">Formularios en linea</h5>
 				<p>Crea formularios a tu medida. Recopila la opinión de tus trabajadores o trazabilidad de casos por Covid-19. </p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/optimizer.svg" />
 				<h5 class="fw-bold">Optimizador de turnos</h5>
 				<p>¡Ya no pierdas más dinero! Calcula los turnos más optimos según las variables de tu negocio.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/integration.svg" />
 				<h5 class="fw-bold">Integración de sistemas</h5>
 				<p>Operamos con todos los software de recursos humanos.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/cloud.svg" />
 				<h5 class="fw-bold">Respaldo en la nube</h5>
 				<p>Información segura y al instante. Así es nuestra nube de almacenamiento.</p>
 			</div>
 
-			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column">
+			<div class="d-flex col-12 col-md-6 col-lg-4 px-4 mt-4 flex-column <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 				<img class="features__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/geo.svg" />
 				<h5 class="fw-bold">Dotación inteligente</h5>
 				<p>La persona que necesitas en el lugar y la hora indicada.</p>
@@ -362,11 +375,11 @@ get_header();
 
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
-			<div class="col-12 col-md-6 text-center text-start align-self-center pe-3">
+			<div class="col-12 col-md-6 text-center text-start align-self-center pe-3 <?php if (!wp_is_mobile()) echo "anime-fadein-childs" ?>">
 				<h1 class="white fw-bold mb-3 anime-fadein">
 					¿Por qué elegirnos?
 				</h1>
-				<div class="row mb-3 anime-fadein">
+				<div class="row mb-3 <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 					<div class="col-3 d-flex justify-content-end flex-row align-self-center">
 						<img class="why-us__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/white/ruler.svg" />
 					</div>
@@ -376,7 +389,7 @@ get_header();
 					</div>
 				</div>
 
-				<div class="row mb-3 anime-fadein">
+				<div class="row mb-3 <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 					<div class="col-3 d-flex justify-content-end flex-row align-self-center">
 						<img class="why-us__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/white/integration.svg" />
 					</div>
@@ -386,7 +399,7 @@ get_header();
 					</div>
 				</div>
 
-				<div class="row mb-3 anime-fadein">
+				<div class="row mb-3 <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 					<div class="col-3 d-flex justify-content-end flex-row align-self-center">
 						<img class="why-us__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/white/portal.svg" />
 					</div>
@@ -396,7 +409,7 @@ get_header();
 					</div>
 				</div>
 
-				<div class="row mb-3 mb-lg-1 anime-fadein">
+				<div class="row mb-3 mb-lg-1 <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 					<div class="col-3 d-flex justify-content-end flex-row align-self-center">
 						<img class="why-us__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/white/dollar.svg" />
 					</div>
@@ -406,7 +419,7 @@ get_header();
 					</div>
 				</div>
 
-				<button class="fw-bold button--bigwhite mt-3 anime-fadein w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
+				<button class="fw-bold button--bigwhite mt-3 <?php if (wp_is_mobile()) echo "anime-fadein" ?> w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
 					Contáctanos ahora
 				</button>
 			</div>
