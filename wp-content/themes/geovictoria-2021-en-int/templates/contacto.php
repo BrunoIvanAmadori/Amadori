@@ -63,78 +63,92 @@ get_header();
 					</div>
 				</div>
 
-				<div class="col-12 col-md-4">
-					<div class="contact__info">
-						<h4 class="mb-4">
-							Communication channels</h4>
+				<?php
+				if (
+					get_theme_mod('geovictoria-2021_info_contacto_soporte_1')
+					|| get_theme_mod('geovictoria-2021_info_contacto_soporte_2')
+					|| get_theme_mod('geovictoria-2021_info_contacto_email_soporte')
+					|| get_theme_mod('geovictoria-2021_info_contacto_ventas_1')
+					|| get_theme_mod('geovictoria-2021_info_contacto_ventas_2')
+					|| get_theme_mod('geovictoria-2021_info_contacto_email_ventas')
+					|| get_theme_mod('geovictoria-2021_info_contacto_direccion')
+				) : ?>
+					<div class="col-12 col-md-4">
+						<div class="contact__info">
+							<h4 class="mb-4">
+								Communication channels</h4>
 
-						<div class="contact__soporte mb-4">
+							<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_1') || get_theme_mod('geovictoria-2021_info_contacto_soporte_2') || get_theme_mod('geovictoria-2021_info_contacto_email_soporte')) : ?>
+								<div class="contact__soporte mb-4">
 
-							<h5>Support</h5>
-							<div>
-								<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_1')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_1')); ?>">
-										<i class="fas fa-phone-alt"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_1')); ?></span>
-									</a><br>
-								<?php endif; ?>
+									<h5>Support</h5>
+									<div>
+										<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_1')) : ?>
+											<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_1')); ?>">
+												<i class="fas fa-phone-alt"></i>
+												<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_1')); ?></span>
+											</a><br>
+										<?php endif; ?>
 
-								<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_2')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_2')); ?>">
-										<i class="fas fa-phone-alt"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_2')); ?></span>
-									</a>
-								<?php endif; ?>
-							</div>
+										<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_2')) : ?>
+											<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_2')); ?>">
+												<i class="fas fa-phone-alt"></i>
+												<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_2')); ?></span>
+											</a>
+										<?php endif; ?>
+									</div>
 
-							<div>
-								<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_soporte')) : ?>
-									<a href="mailto:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_soporte')); ?>">
-										<i class="far fa-envelope"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_soporte')); ?></span>
-									</a>
-								<?php endif; ?>
-							</div>
-						</div>
-
-
-						<div class="contact__ventas mb-4">
-							<h5>Sales</h5>
-							<div>
-								<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?>">
-										<i class="fas fa-phone-alt"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></span>
-									</a><br>
-								<?php endif; ?>
-								<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_2')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_2')); ?>">
-										<i class="fas fa-phone-alt"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_2')); ?></span>
-									</a><br>
-								<?php endif; ?>
-							</div>
-
-							<div>
-								<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_ventas')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?>">
-										<i class="far fa-envelope"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></span>
-									</a>
-								<?php endif; ?>
-							</div>
-						</div>
-
-
-						<div>
-							<?php if (get_theme_mod('geovictoria-2021_info_contacto_direccion')) : ?>
-								<h5>Location</h5>
-								<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_direccion')); ?></span></a>
+									<div>
+										<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_soporte')) : ?>
+											<a href="mailto:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_soporte')); ?>">
+												<i class="far fa-envelope"></i>
+												<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_soporte')); ?></span>
+											</a>
+										<?php endif; ?>
+									</div>
+								</div>
 							<?php endif; ?>
-						</div>
 
-					</div>
-				</div> <!-- col contact__info -->
+							<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1') || get_theme_mod('geovictoria-2021_info_contacto_ventas_2') || get_theme_mod('geovictoria-2021_info_contacto_email_ventas')) : ?>
+								<div class="contact__ventas mb-4">
+									<h5>Sales</h5>
+									<div>
+										<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1')) : ?>
+											<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?>">
+												<i class="fas fa-phone-alt"></i>
+												<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></span>
+											</a><br>
+										<?php endif; ?>
+										<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_2')) : ?>
+											<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_2')); ?>">
+												<i class="fas fa-phone-alt"></i>
+												<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_2')); ?></span>
+											</a><br>
+										<?php endif; ?>
+									</div>
+
+									<div>
+										<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_ventas')) : ?>
+											<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?>">
+												<i class="far fa-envelope"></i>
+												<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></span>
+											</a>
+										<?php endif; ?>
+									</div>
+								</div>
+							<?php endif; ?>
+
+
+							<div>
+								<?php if (get_theme_mod('geovictoria-2021_info_contacto_direccion')) : ?>
+									<h5>Location</h5>
+									<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_direccion')); ?></span></a>
+								<?php endif; ?>
+							</div>
+
+						</div>
+					</div> <!-- col contact__info -->
+				<?php endif; ?>
 			</div>
 		</div>
 	</section>
