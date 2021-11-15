@@ -176,12 +176,32 @@ function geovictoria_2021_widgets_init()
 }
 add_action('widgets_init', 'geovictoria_2021_widgets_init');
 
+// This fix is for the multisite installation. Somehow, URLs of SVGS, CSS and JS weren't working because of the "/{country-code}/" subdirectory.
+// This may be because our server is delivering via nGinx static assets so, it can't take the htaccess rewrite instructions.
+// With this function I manage to check if I'm in a subdirectory url, and strip it away. 
+
+
+add_filter('template_directory_uri', 'multisiteUrlFix', 10, 2);
+
+function multisiteUrlFix($string)
+{
+	if (get_current_blog_id() != 1) { //checking that I'm not in the root URL folder, which is the main site
+		//Modify the string here
+		$array = explode("/", $string);
+		array_splice($array, 3, 1);
+		$array = implode("/", $array);
+		return $array;
+	} else {
+		return $string;
+	}
+}
+
 /**
  * Enqueue scripts and styles.
  */
 function geovictoria_2021_scripts()
 {
-	// wp_enqueue_script('wf-active-onStart', get_template_directory_uri() . '/dist/js/wf-active-onStart.js', array(), '', false);
+
 
 	wp_enqueue_style('custom-fonts', get_template_directory_uri() . '/dist/fonts/fonts.css', array(), _S_VERSION, false);
 	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/dist/fonts/font-awesome.css', [], _S_VERSION, false);
@@ -256,10 +276,10 @@ function geovictoria_2021_scripts()
 		case 'home.php':
 			if (wp_is_mobile()) {
 				wp_enqueue_script('front-page-mobile', get_template_directory_uri() . '/dist/js/pages/front-page-mobile.js', array(), '', true);
-				wp_enqueue_style('front-page-css', get_template_directory_uri() . '/dist/css/frontPage.css', [], '', false);
+				wp_enqueue_style('front-page-css', get_template_directory_uri() . '/dist/css/frontpage.css', [], '', false);
 			} else {
 				wp_enqueue_script('front-page', get_template_directory_uri() . '/dist/js/pages/front-page.js', array(), '', true);
-				wp_enqueue_style('front-page-css', get_template_directory_uri() . '/dist/css/frontPage.css', [], '', false);
+				wp_enqueue_style('front-page-css', get_template_directory_uri() . '/dist/css/frontpage.css', [], '', false);
 			}
 			break;
 
@@ -297,6 +317,23 @@ function geovictoria_2021_scripts()
 	}
 }
 add_action('wp_enqueue_scripts', 'geovictoria_2021_scripts');
+
+
+// add_filter('style_loader_tag', 'my_style_loader_tag_filter', 10, 2);
+
+// function my_style_loader_tag_filter($html, $handle)
+// {
+// 	if ($handle === 'font-awesome') {
+// 		return str_replace(
+// 			"rel='stylesheet'",
+// 			"rel='preload' as='style'",
+// 			$html
+// 		);
+// 	}
+// 	return $html;
+// }
+
+
 
 /**
  * Implement the Custom Header feature.

@@ -376,7 +376,7 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-start align-self-center pe-3 <?php if (!wp_is_mobile()) echo "anime-fadein-childs" ?>">
-				<h1 class="white fw-bold mb-3 anime-fadein">
+				<h1 class="white fw-bold mb-3 <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
 					¿Por qué elegirnos?
 				</h1>
 				<div class="row mb-3 <?php if (wp_is_mobile()) echo "anime-fadein" ?>">
