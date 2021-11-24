@@ -252,7 +252,7 @@ get_header();
 					<div class="progressMobile__circle">
 						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-3.gif" />
 						<div class="progressMobile__text--left">
-							<h4 class="fw-bold">Implementation</h4>
+							<h4 class="fw-bold small-title-on-mobile">Implementation</h4>
 						</div>
 					</div>
 				</div>

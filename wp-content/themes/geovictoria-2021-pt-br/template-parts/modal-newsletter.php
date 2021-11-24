@@ -27,7 +27,7 @@
                 $link .= $_SERVER['REQUEST_URI'];
                 ?>
 
-                <?php echo do_shortcode('[contact-form-7 id="136804" title="Newsletter" html_class="with-privacy-policy-and-marketing-consent" html_id="newsletter" origen-zoho="' . $link . '"]'); ?>
+                <?php echo do_shortcode('[contact-form-7 id="136804" title="Newsletter" html_class="with-privacy-policy-and-marketing-consent" html_id="newsletter" origen_zoho="' . $link . '"]'); ?>
             </div>
         </div>
     </div>

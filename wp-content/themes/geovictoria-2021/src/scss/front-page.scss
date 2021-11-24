@@ -1,0 +1,354 @@
+@import "./variables";
+
+.hero {
+  // min-height: 700px;
+}
+
+// front-page.css
+
+.product {
+  width: 100%;
+  margin: 20px 20px 0px 0px;
+  padding: 20px;
+  border-radius: $border-radius-3;
+  text-align: center;
+  background-color: $neutral-5;
+  box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s;
+  color: $neutral-1 !important;
+
+  &__icon {
+    height: 100px;
+    object-fit: contain;
+  }
+
+  &--box {
+    @extend .product;
+  }
+
+  &--card {
+    @extend .product;
+  }
+
+  &:hover {
+    transform: scale(1.05) !important;
+  }
+}
+
+.call-to-action {
+  position: relative;
+  &__arrow {
+    position: absolute;
+    z-index: 4;
+    max-width: 70px;
+    height: auto;
+    top: 30%;
+    transform: translateX(170px);
+    -o-object-fit: contain;
+    object-fit: contain;
+
+    &--left {
+      @extend .call-to-action__arrow;
+      transform: translateX(-240px) rotate(180deg);
+    }
+  }
+}
+
+.trusting-companies {
+  &__container {
+    height: 100px;
+  }
+
+  &__content {
+    position: relative;
+    transition: transform 0.2s;
+    justify-content: space-between;
+    height: 100%;
+
+    &:hover ~ .trusting-companies__description {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    &:hover .trusting-companies__logo {
+      filter: saturate(100%);
+      filter: darkness(100%);
+      pointer-events: none;
+    }
+
+    &:hover .trusting-companies__arrow {
+      transform: rotateX(360deg);
+    }
+  }
+
+  &__logo {
+    max-height: 80px;
+    max-width: 150px;
+    transition: filter 0.3s;
+    filter: saturate(0%);
+    filter: darkness(0%);
+    object-fit: contain;
+    z-index: 1;
+
+    &--scotiabank {
+      @extend .trusting-companies__logo;
+      position: relative;
+      top: 12px;
+      width: 100%;
+    }
+
+    &--cocacola {
+      @extend .trusting-companies__logo;
+      position: relative;
+      top: 24px;
+    }
+  }
+
+  &__description {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    width: 250px;
+    top: 110px;
+    z-index: 2;
+
+    transition: 0.2s ease;
+
+    text-align: center;
+    font-weight: lighter;
+    border-radius: $border-radius-1;
+    box-shadow: 0px -2px 21px 0px rgb(0 0 0 / 15%);
+    -webkit-box-shadow: 0px -2px 21px 0px rgb(0 0 0 / 15%);
+    background-color: $neutral-5;
+    padding: 10px;
+    pointer-events: none;
+  }
+
+  &__arrow {
+    transform: rotateX(180deg);
+    color: $neutral-3;
+    position: relative;
+    //    top:-20px;
+
+    text-align: center;
+    transition: transform 0.2s;
+  }
+}
+
+// Animations front-page
+.animation-home {
+  position: relative;
+  height: 400px;
+
+  &__screen {
+    position: relative;
+    z-index: 1;
+    left: 0%;
+    object-fit: contain;
+  }
+
+  &__entry-type {
+    position: absolute;
+    z-index: 3;
+    width: 30%;
+    top: 0px;
+    height: auto;
+    left: 220px;
+    object-fit: contain;
+  }
+
+  &__user {
+    position: absolute;
+    z-index: 2;
+    width: 35%;
+    height: auto;
+    top: 25px;
+    left: 50px;
+    object-fit: contain;
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: 9;
+    max-width: 100px;
+    height: auto;
+    top: 70%;
+    left: -50px;
+    object-fit: contain;
+  }
+
+  &__screen-desk {
+    position: relative;
+    z-index: 0;
+    left: 0%;
+    object-fit: contain;
+  }
+
+  &__screen-mobile {
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    width: 70px;
+    left: 20px;
+    object-fit: contain;
+  }
+
+  &__screen-tablet {
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 320px;
+    width: 220px;
+    object-fit: contain;
+  }
+
+  &__usb {
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 101px;
+    width: 60px;
+    object-fit: contain;
+  }
+  &__box {
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    left: 165px;
+    width: 150px;
+    object-fit: contain;
+  }
+
+  &__screen-group {
+    position: absolute;
+    top: 0;
+    left: -20;
+    width: 600px;
+  }
+}
+
+.progress {
+  &__section {
+    height: 550px;
+  }
+
+  &__logo {
+    height: 100px;
+  }
+
+  &__circle {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 140px;
+    width: 100%;
+    border-radius: 100px;
+    box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+    background-color: white;
+  }
+
+  &__bg {
+    background-color: #00adf0;
+    border: 10px solid #4dc5f4;
+    height: 180px;
+    width: 180px;
+    border-radius: 150px;
+    opacity: 0;
+    padding-right: 20px;
+  }
+
+  &__arrow {
+    height: 40px;
+  }
+
+  &__text {
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+
+    &--up {
+      @extend .progress__text;
+      top: -325px;
+    }
+
+    &--down {
+      @extend .progress__text;
+      top: 170px;
+    }
+
+    & p,
+    h6,
+    h5,
+    h4,
+    h3,
+    small {
+      color: white !important;
+    }
+
+    .title-resize {
+      font-size: 0.9em;
+    }
+  }
+}
+
+.progressMobile {
+  &__logo {
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  &__circle {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+    background-color: white;
+  }
+
+  &__bg {
+    background-color: #00adf0;
+    border: 10px solid #4dc5f4;
+    height: 120px;
+    width: 120px;
+    border-radius: 150px;
+    align-self: flex-end;
+    opacity: 0;
+  }
+
+  &__arrow {
+    height: 30px;
+  }
+
+  &__text {
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+
+    &--left h3,
+    &--left h4,
+    &--left h5,
+    &--left h6 {
+      @extend .progress__text;
+      left: 100px;
+      top: 20px;
+      color: white !important;
+    }
+  }
+}
+
+.text-resize {
+  font-size: min(1.9vw, 1em);
+}
