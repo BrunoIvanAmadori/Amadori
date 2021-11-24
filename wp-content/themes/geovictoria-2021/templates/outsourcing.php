@@ -133,38 +133,35 @@ get_header();
 			<div class="bg-tail-gray"></div>
 		</div>
 		<section class="d-flex flex-column container justify-content-between">
-			<div class="row gx-5 anime-fadein">
+			<div class="row gx-5 anime-fadein mb-5">
+				<h2 class="text-center mb-5">El mejor respaldo, <b>son nuestros clientes</b></h2>
 				<div class="col-lg-8 pe-lg-5 mb-5">
 					<div class="testimonal__video text-center">
-						<video width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg-thumb.png" controls>
-							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg.mp4" type="video/mp4">
+						<video controlsList="nodownload" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-outsourcing-lim-chile-thumb.jpg" controls>
+							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-outsourcing-lim-chile.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
 
-				<div class="col-lg-4">
-					<h2 class="fw-bold">Caso de éxito: LIM Chile</h2>
+				<div class="col-lg-4 text-center text-lg-start">
+					<h3 class="fw-bold">Caso de éxito: LIM Chile</h3>
 					<p>
 						<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
-						<i>“GeoVictoria nos cambió al 100%. Recomiendo GeoVictoria, siempre tienen una respuesta inmediata y correcta. Con el sistema de asistencia online, nosotros descargamos y aparece la información de inmediato, nos ahorramos de ir a terreno y perder tiempo” </i>
+						<i>“GeoVictoria nos cambió al 100%. Recomiendo GeoVictoria, siempre tienen una respuesta inmediata y correcta.” </i>
 						<!-- <img class="arrow-quote--right" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
 					</p>
+					<div class="row justify-content-center justify-content-lg-start">
+						<span>
+							<span class="fw-bold">Bastián Garrido</span></br>
+							<small>Encargado de Gestión de Personal</small>
 
-					<div class="row">
-						<div class="col-3">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/iseg-logobnw.png" />
-						</div>
-						<div class="col-9 d-flex flex-column justify-content-center">
-							<span>
-								<span class="fw-bold">Gabriel Lerner</span></br>
-								Gerente General ISEG
-							</span>
-						</div>
+						</span>
+						<img class="testimonial__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
 					</div>
 				</div>
 			</div>
 			<div class="row gy-5 gx-5 anime-fadein-childs">
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ecrgroup-logobnw.png" />
 					<p>
 						“Anteriormente era todo manual
@@ -180,24 +177,7 @@ get_header();
 						</span>
 					</p>
 				</div>
-
-				<div class="col-lg-3 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
-					<p>
-						“GeoVictoria nos cambió al
-						100%. Recomiendo GeoVictoria,
-						siempre tienen una respuesta
-						inmediata y correcta”.
-					</p>
-					<p>
-						<span class="fw-bold">
-							LIM Chile
-						</span>
-					</p>
-				</div>
-
-
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ugs-logobnw.png" />
 					<p>
 						“Con una dotación incompleta se nos
@@ -215,7 +195,7 @@ get_header();
 					</p>
 				</div>
 
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/grupoexpro-logobnw.png" />
 					<p>
 						“Tenemos procesos de facturación

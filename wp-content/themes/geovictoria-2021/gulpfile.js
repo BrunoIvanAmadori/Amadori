@@ -59,6 +59,13 @@ function buildImg() {
   );
 }
 
+function buildVideo() {
+  return src("src/img/**/*.+(mp4)")
+    .pipe(plumbError()) // Global error handler through all pipes.
+    .pipe(dest("dist/img/"))
+    .pipe(browsersync.stream());
+}
+
 // Watch changes on all *.scss files, lint them and
 // trigger buildCssStyles() at the end.
 function watchStyles() {
@@ -132,6 +139,6 @@ function plumbError() {
 exports.default = parallel(browserSync, watchStyles, watchScripts, watchImg); // $ gulp
 exports.sass = buildCssStyles; // $ gulp sass
 exports.js = buildJsScripts; // $ gulp sass
-exports.img = buildImg; // $ gulp sass
+exports.img = parallel(buildVideo, buildImg); // $ gulp sass
 exports.watch = parallel(watchStyles, watchScripts, watchImg); // $ gulp watch
 exports.build = parallel(buildCssStyles, buildJsScripts, buildImg); // $ gulp build
