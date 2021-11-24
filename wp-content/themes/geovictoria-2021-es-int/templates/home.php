@@ -10,42 +10,43 @@ get_header();
 	<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-header.svg" />
 </div>
 <main id="primary" class="site-main">
-	<section class="hero container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
-
-		<div class="col-12 col-md-6 mb-5">
-			<div class="align-self-center pe-md-3">
-				<h1 class="gray mb-3 fw-bold">
-					La gestión de fuerza laboral por excelencia
-				</h1>
-				<p class="gray fw-light mb-3">
-					Solución integral 100% en la nube. Gestiona, elabora reportes, obtén métricas y ahorra dinero. Todo en un solo lugar.
-				</p>
-				<button class="button--bigblue bounce fw-bold w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
-					<span class="white">¡Quiero actualizarme!</span>
-				</button>
-			</div>
-		</div>
-		<div class="col-12 col-md-6 mb-5">
-
-			<div class="animation-home text-start anime resizer-reference">
-				<div class="resizer">
-					<div class="animation-home__screen-group">
-						<!-- <img class="animation-home animation-home__arrow" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/arrow.svg'> -->
-						<img class="animation-home animation-home__entry-type" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/entry-type.png'>
-						<img class="animation-home animation-home__user" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/user.png'>
-						<img class="animation-home animation-home__screen-desk" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-desk.png'>
-					</div>
-					<!-- <img class="animation-home animation-home__screen" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen.png'> -->
-
-					<img class="animation-home animation-home__screen-mobile" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-mobile.png'>
-					<img class="animation-home animation-home__screen-tablet" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-tablet.png'>
-					<img class="animation-home animation-home__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/box.png'>
-					<img class="animation-home animation-home__usb" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/usb.png'>
+	<section class="hero container-fluid">
+		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center h-100 text-center text-md-start">
+			<div class="col-12 col-md-6 mb-5">
+				<div class="align-self-center pe-md-3">
+					<h1 class="gray mb-3 fw-bold">
+						La gestión de fuerza laboral por excelencia
+					</h1>
+					<p class="gray fw-light mb-3">
+						Solución integral 100% en la nube. Gestiona, elabora reportes, obtén métricas y ahorra dinero. Todo en un solo lugar.
+					</p>
+					<button class="button--bigblue bounce fw-bold w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
+						<span class="white">¡Quiero actualizarme!</span>
+					</button>
 				</div>
 			</div>
+			<div class="col-12 col-md-6 mb-5">
+
+				<div class="animation-home text-start anime resizer-reference">
+					<div class="resizer">
+						<div class="animation-home__screen-group">
+							<!-- <img class="animation-home animation-home__arrow" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/arrow.svg'> -->
+							<img class="animation-home animation-home__entry-type" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/entry-type.png'>
+							<img class="animation-home animation-home__user" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/user.png'>
+							<img class="animation-home animation-home__screen-desk" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-desk.png'>
+						</div>
+						<!-- <img class="animation-home animation-home__screen" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen.png'> -->
+
+						<img class="animation-home animation-home__screen-mobile" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-mobile.png'>
+						<img class="animation-home animation-home__screen-tablet" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-tablet.png'>
+						<img class="animation-home animation-home__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/box.png'>
+						<img class="animation-home animation-home__usb" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/usb.png'>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
-
-
 	</section>
 	<div class="position-relative">
 		<div class="bg-curve--top-250">
@@ -231,7 +232,7 @@ get_header();
 					<div class="progressMobile__circle">
 						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-2.gif" />
 						<div class="progressMobile__text--left">
-							<h3 class="fw-bold small-title-on-mobile">Planificación</h3>
+							<h3 class="fw-bold">Planificación</h3>
 						</div>
 					</div>
 				</div>
@@ -248,7 +249,7 @@ get_header();
 					<div class="progressMobile__circle">
 						<img class="progressMobile__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/progress-logo-step-3.gif" />
 						<div class="progressMobile__text--left">
-							<h4 class="fw-bold small-title-on-mobile">Implementación</h4>
+							<h4 class="fw-bold">Implementación</h4>
 						</div>
 					</div>
 				</div>
@@ -446,4 +447,4 @@ get_header();
 get_footer();
 ?>
 
-<?php get_template_part('template-parts/modal', 'contacto') ?>;
+<?php get_template_part('template-parts/modal', 'contacto', ['origin' => 'front-page']) ?>;

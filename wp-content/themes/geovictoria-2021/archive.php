@@ -63,39 +63,41 @@ global $post;
 			</div>
 		</div>
 	</section>
-	<section class="destacada-categoria container">
-		<div class="row gy-4">
-			<h1 class="mb-4">Destacada por el editor</h1>
-			<?php
-			if ($destacada_de_categoria->have_posts()) {
+
+	<?php if ($destacada_de_categoria->have_posts()) : ?>
+
+		<section class="destacada-categoria container">
+			<div class="row gy-4">
+				<h1 class="mb-4">Destacada por el editor</h1>
+				<?php
+
 				while ($destacada_de_categoria->have_posts()) {
 					$destacada_de_categoria->the_post();
 					$destacada_de_categoria_id = get_the_ID();
 					get_template_part('template-parts/blogcard', 'big');
 				}
 				wp_reset_postdata();
-			}
 
+				?>
+				<div class="col-12 col-md-4">
+					<div class="card subscribe-sidebar h-100">
+						<div class="card-body flex-column d-flex justify-content-center">
+							<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
 
+							<h4 class="card-title mb-4 text-center">
+								Sé el primero en recibir nuevos contenidos.
+							</h4>
 
-			?>
-			<div class="col-12 col-md-4">
-				<div class="card subscribe-sidebar h-100">
-					<div class="card-body flex-column d-flex justify-content-center">
-						<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
+							<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+								<span class="white fw-bold">¡Suscribirme ahora!</span>
+							</button>
+						</div>
 
-						<h4 class="card-title mb-4">
-							Sé el primero en recibir nuevos contenidos.
-						</h4>
-
-						<?php echo do_shortcode('[contact-form-7 id="136407" title="Suscripcion (simple)"]') ?>
 					</div>
-
 				</div>
 			</div>
-		</div>
-	</section>
-
+		</section>
+	<?php endif; ?>
 
 	<div class="container-fluid px-0 blog-content">
 
@@ -136,30 +138,9 @@ global $post;
 			</div>
 		</section>
 
-		<section class="container recent-post-load-more">
-
-		</section>
-
-		<!-- <div class="container show-more">
-			<div class="row justify-content-center">
-				<div class="col-12 d-flex justify-content-center">
-					<button class="button--bigblue">
-						<i class="far fa-eye"></i>
-						Mostrar más
-					</button>
-				</div>
-			</div>
-		</div> -->
-
-
 		<img class="bg-head-blue" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-blue.svg">
 
 	</div>
-
-
-
-
-
 	<section class="container-fluid bg-blue-2 subscribe-cta">
 		<div class="container">
 			<div class="row text-center justify-content-center">
@@ -167,38 +148,18 @@ global $post;
 					<img class="subscribe-cta__envelope align-self-center" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg">
 					<div class="col-md-7">
 						<h3 class="mb-4">Suscribete a nuestro blog y enterate de tus noticias de interés.</h3>
-						<div class=" align-self-center"><?php echo do_shortcode('[contact-form-7 id="136407" title="Suscripcion (simple)"]') ?></div>
+						<button class="fw-bold button--bigwhite w-100 mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
+							¡Suscribirme ahora!
+						</button>
 					</div>
-
-
-					<!-- <button class="button--bigwhite"> Enviar</button> -->
 				</div>
 			</div>
 		</div>
 	</section>
-
-
-	<?php
-
-
-
-
-	// // The Loop
-	// if ($the_newest_post->have_posts()) {
-	// 	echo '<ul>';
-	// 	while ($the_newest_post->have_posts()) {
-	// 		$the_newest_post->the_post();
-	// 		echo '<li>' . get_the_title() . '</li>';
-	// 	}
-	// 	echo '</ul>';
-	// } else {
-	// 	// no posts found
-	// }
-	// /* Restore original Post Data */
-	// wp_reset_postdata();
-	?>
 </main><!-- #main -->
 
 <?php
 
 get_footer();
+
+get_template_part('template-parts/modal', 'newsletter');

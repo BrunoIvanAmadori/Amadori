@@ -12,9 +12,9 @@ return '
   {
     "id": 2,
     "code": "es",
-    "pt_name": "espanhol",
-    "es_name": "Español",
-    "en_name": "Spanish",
+    "pt_name": "espanha",
+    "es_name": "España",
+    "en_name": "Spain",
     "tag": "es-ES"
   },
   {
@@ -340,9 +340,9 @@ return '
   {
     "id": 43,
     "code": "pt-br",
-    "pt_name": "Portugues brasil",
-    "es_name": "Portugués, brasil",
-    "en_name": "Portuguese, Brazil",
+    "pt_name": "Brasil",
+    "es_name": "Brasil",
+    "en_name": "Brazil",
     "tag": "pt-br"
   },
   {

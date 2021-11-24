@@ -133,13 +133,33 @@ get_header();
 			<div class="bg-tail-gray"></div>
 		</div>
 		<section class="d-flex flex-column container justify-content-between">
-			<div class="row mb-5">
-				<div class="col-12">
+			<div class="row gx-5 anime-fadein">
+				<div class="col-lg-8 pe-lg-5 mb-5">
 					<div class="testimonal__video text-center">
-						<h1 class="fw-bold anime-fadein mb-5">Caso de éxito: Colegio Nuestra Señora Santa María</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio-thumb.png" controls>
-							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio.mp4" type="video/mp4">
+						<video width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg-thumb.png" controls>
+							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg.mp4" type="video/mp4">
 						</video>
+					</div>
+				</div>
+
+				<div class="col-lg-4">
+					<h2 class="fw-bold">Caso de éxito: LIM Chile</h2>
+					<p>
+						<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+						<i>“GeoVictoria nos cambió al 100%. Recomiendo GeoVictoria, siempre tienen una respuesta inmediata y correcta. Con el sistema de asistencia online, nosotros descargamos y aparece la información de inmediato, nos ahorramos de ir a terreno y perder tiempo” </i>
+						<!-- <img class="arrow-quote--right" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+					</p>
+
+					<div class="row">
+						<div class="col-3">
+							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/iseg-logobnw.png" />
+						</div>
+						<div class="col-9 d-flex flex-column justify-content-center">
+							<span>
+								<span class="fw-bold">Gabriel Lerner</span></br>
+								Gerente General ISEG
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>

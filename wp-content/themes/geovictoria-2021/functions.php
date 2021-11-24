@@ -211,7 +211,6 @@ function geovictoria_2021_scripts()
 	wp_enqueue_style('shared-styles', get_template_directory_uri() . '/dist/css/sharedStyles.css', array(), _S_VERSION, false);
 
 
-
 	wp_enqueue_script('geovictoria-2021-navigation', get_template_directory_uri() . '/dist/js/navigation.min.js', array(), _S_VERSION, true);
 
 	wp_enqueue_script('modernizr', get_template_directory_uri() . '/dist/js/modernizr-webp.min.js', array(), _S_VERSION, true);
@@ -412,7 +411,7 @@ add_filter('shortcode_atts_wpcf7', 'custom_shortcode_atts_wpcf7_filter', 10, 3);
 
 function custom_shortcode_atts_wpcf7_filter($out, $pairs, $atts)
 {
-	$my_attr = 'origen-zoho';
+	$my_attr = 'origen_zoho';
 
 	if (isset($atts[$my_attr])) {
 		$out[$my_attr] = $atts[$my_attr];

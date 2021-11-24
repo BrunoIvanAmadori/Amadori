@@ -30,10 +30,10 @@ $recientes = new WP_Query(
 			<div class="col-12 col-md-6 mb-5">
 				<div class="align-self-center pe-md-3">
 					<h1 class="gray mb-3 fw-bold">
-						No podemos encontrar esta página
+						Não conseguimos encontrar esta página
 					</h1>
 					<h4 class="fw-light mb-4 anime-fadein">
-						Parece que no existe. Prueba con el buscador o con alguno de los siguientes enlaces.
+						Parece que não existe. Tente com o mecanismo de busca ou com um dos links a seguir.
 					</h4>
 					<?php
 					get_search_form();
@@ -47,7 +47,7 @@ $recientes = new WP_Query(
 	</section>
 
 	<section class="recent-posts container">
-		<h2 class="mb-4">Entradas recientes</h2>
+		<h2 class="mb-4">Conteúdo recente</h2>
 		<div class="row gy-4">
 			<?php
 			if ($recientes->have_posts()) {

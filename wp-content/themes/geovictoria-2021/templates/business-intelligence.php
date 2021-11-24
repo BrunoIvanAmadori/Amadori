@@ -13,169 +13,168 @@ get_header();
 
 	<section class="d-flex container hero flex-column align-items-center justify-content-start">
 
-		<div class='col-12 mb-5'>
-			<div class="hero__graphics mb-5 col-12 resizer-reference">
-				<div class="resizer">
+		<div class="hero__graphics mb-5 col-12 resizer-reference">
+			<div class="resizer">
 
-					<div class="hero__img">
-						<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-bi/platform.png'>
+				<div class="hero__img">
+					<img src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-bi/platform.png'>
+				</div>
+
+
+				<div class="hero__meters">
+					<div class="hero__meter-container atrasos">
+						<div class="hero__meter-title">
+							<h6>Atrasos</h6>
+						</div>
+						<div class="hero__meter--orange">
+							<span class="hero__meter-num-progress"></span>
+							<span class="hero__meter-start-value">0%</span>
+							<span class="hero__meter-end-value">100%</span>
+							<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
+							<div class="hero__meter-fill-mask">
+								<div class="hero__meter-bg"></div>
+								<div class="hero__meter-fill--left"></div>
+								<div class="hero__meter-fill--right"></div>
+							</div>
+						</div>
+						<div class="hero__meter-left-data-container">
+							<span class="hero__meter-left-data--orange">
+							</span>
+							<small>Presentes</small>
+						</div>
+						<div class="hero__meter-right-data-container">
+							<span class="hero__meter-right-data">
+							</span>
+							<small>Planificados</small>
+						</div>
+					</div>
+
+					<div class="hero__meter-container asistencia-total">
+						<div class="hero__meter-title">
+							<h6>Asistencia total</h6>
+						</div>
+
+						<div class="hero__meter--blue">
+
+							<span class="hero__meter-num-progress"></span>
+							<span class="hero__meter-start-value">0%</span>
+							<span class="hero__meter-end-value">100%</span>
+
+							<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
+
+							<div class="hero__meter-fill-mask">
+								<div class="hero__meter-bg"></div>
+								<div class="hero__meter-fill--left"></div>
+								<div class="hero__meter-fill--right"></div>
+							</div>
+						</div>
+
+						<div class="hero__meter-left-data-container">
+							<span class="hero__meter-left-data--blue">
+							</span>
+							<small>Atrasos</small>
+						</div>
+						<div class="hero__meter-right-data-container">
+							<span class="hero__meter-right-data">
+							</span>
+							<small>Presentes</small>
+						</div>
+					</div>
+
+					<div class="hero__meter-container ausentismo-total">
+						<div class="hero__meter-title">
+							<h6>Ausentismo total</h6>
+						</div>
+
+						<div class="hero__meter--orange">
+
+							<span class="hero__meter-num-progress"></span>
+							<span class="hero__meter-start-value">0%</span>
+							<span class="hero__meter-end-value">100%</span>
+
+							<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
+							<div class="hero__meter-fill-mask">
+								<div class="hero__meter-bg"></div>
+								<div class="hero__meter-fill--left"></div>
+								<div class="hero__meter-fill--right"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero__assist-bars">
+						<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-assist-global.png'>
+						<div class="hero__bar-group">
+							<div class="hero__bar--1">100%</div>
+							<div class="hero__bar--2">100%</div>
+							<div class="hero__bar--3">100%</div>
+							<div class="hero__bar--4">100%</div>
+							<div class="hero__bar--5">100%</div>
+							<div class="hero__bar--6">100%</div>
+						</div>
+					</div>
+
+					<div class="hero__assist-line">
+						<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-assist-line.png'>
+						<img class="hero__line" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/bars-assist-line.svg'>
+					</div>
+
+					<div class="hero__plan-bars">
+						<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-plan-bars.png'>
+						<div class="hero__bar-group">
+							<div class="hero__bars--1">
+								<div class="hero__bar--gray">
+								</div>
+								<div class="hero__bar--blue">
+								</div>
+							</div>
+
+							<div class="hero__bars--2">
+								<div class="hero__bar--gray">
+								</div>
+								<div class="hero__bar--blue">
+								</div>
+							</div>
+
+							<div class="hero__bars--3">
+								<div class="hero__bar--gray">
+								</div>
+								<div class="hero__bar--blue">
+								</div>
+							</div>
+
+							<div class="hero__bars--4">
+								<div class="hero__bar--gray">
+								</div>
+								<div class="hero__bar--blue">
+								</div>
+							</div>
+
+							<div class="hero__bars--5">
+								<div class="hero__bar--gray">
+								</div>
+								<div class="hero__bar--blue">
+								</div>
+							</div>
+
+							<div class="hero__bars--6">
+								<div class="hero__bar--gray-small">
+								</div>
+								<div class="hero__bar--blue-small">
+								</div>
+							</div>
+
+							<div class="hero__bars--7">
+								<div class="hero__bar--gray-small">
+								</div>
+								<div class="hero__bar--blue-small">
+								</div>
+							</div>
+						</div>
 					</div>
 
 
-					<div class="hero__meters">
-						<div class="hero__meter-container atrasos">
-							<div class="hero__meter-title">
-								<h6>Atrasos</h6>
-							</div>
-							<div class="hero__meter--orange">
-								<span class="hero__meter-num-progress"></span>
-								<span class="hero__meter-start-value">0%</span>
-								<span class="hero__meter-end-value">100%</span>
-								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
-								<div class="hero__meter-fill-mask">
-									<div class="hero__meter-bg"></div>
-									<div class="hero__meter-fill--left"></div>
-									<div class="hero__meter-fill--right"></div>
-								</div>
-							</div>
-							<div class="hero__meter-left-data-container">
-								<span class="hero__meter-left-data--orange">
-								</span>
-								<small>Presentes</small>
-							</div>
-							<div class="hero__meter-right-data-container">
-								<span class="hero__meter-right-data">
-								</span>
-								<small>Planificados</small>
-							</div>
-						</div>
+				</div> <!-- .resizer -->
 
-						<div class="hero__meter-container asistencia-total">
-							<div class="hero__meter-title">
-								<h6>Asistencia total</h6>
-							</div>
-
-							<div class="hero__meter--blue">
-
-								<span class="hero__meter-num-progress"></span>
-								<span class="hero__meter-start-value">0%</span>
-								<span class="hero__meter-end-value">100%</span>
-
-								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
-
-								<div class="hero__meter-fill-mask">
-									<div class="hero__meter-bg"></div>
-									<div class="hero__meter-fill--left"></div>
-									<div class="hero__meter-fill--right"></div>
-								</div>
-							</div>
-
-							<div class="hero__meter-left-data-container">
-								<span class="hero__meter-left-data--blue">
-								</span>
-								<small>Atrasos</small>
-							</div>
-							<div class="hero__meter-right-data-container">
-								<span class="hero__meter-right-data">
-								</span>
-								<small>Presentes</small>
-							</div>
-						</div>
-
-						<div class="hero__meter-container ausentismo-total">
-							<div class="hero__meter-title">
-								<h6>Ausentismo total</h6>
-							</div>
-
-							<div class="hero__meter--orange">
-
-								<span class="hero__meter-num-progress"></span>
-								<span class="hero__meter-start-value">0%</span>
-								<span class="hero__meter-end-value">100%</span>
-
-								<img class="hero__meter-mask" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/meter-bg.png'>
-								<div class="hero__meter-fill-mask">
-									<div class="hero__meter-bg"></div>
-									<div class="hero__meter-fill--left"></div>
-									<div class="hero__meter-fill--right"></div>
-								</div>
-							</div>
-						</div>
-
-						<div class="hero__assist-bars">
-							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-assist-global.png'>
-							<div class="hero__bar-group">
-								<div class="hero__bar--1">100%</div>
-								<div class="hero__bar--2">100%</div>
-								<div class="hero__bar--3">100%</div>
-								<div class="hero__bar--4">100%</div>
-								<div class="hero__bar--5">100%</div>
-								<div class="hero__bar--6">100%</div>
-							</div>
-						</div>
-
-						<div class="hero__assist-line">
-							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-assist-line.png'>
-							<img class="hero__line" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/bars-assist-line.svg'>
-						</div>
-
-						<div class="hero__plan-bars">
-							<img class="hero__graph" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/graph-plan-bars.png'>
-							<div class="hero__bar-group">
-								<div class="hero__bars--1">
-									<div class="hero__bar--gray">
-									</div>
-									<div class="hero__bar--blue">
-									</div>
-								</div>
-
-								<div class="hero__bars--2">
-									<div class="hero__bar--gray">
-									</div>
-									<div class="hero__bar--blue">
-									</div>
-								</div>
-
-								<div class="hero__bars--3">
-									<div class="hero__bar--gray">
-									</div>
-									<div class="hero__bar--blue">
-									</div>
-								</div>
-
-								<div class="hero__bars--4">
-									<div class="hero__bar--gray">
-									</div>
-									<div class="hero__bar--blue">
-									</div>
-								</div>
-
-								<div class="hero__bars--5">
-									<div class="hero__bar--gray">
-									</div>
-									<div class="hero__bar--blue">
-									</div>
-								</div>
-
-								<div class="hero__bars--6">
-									<div class="hero__bar--gray-small">
-									</div>
-									<div class="hero__bar--blue-small">
-									</div>
-								</div>
-
-								<div class="hero__bars--7">
-									<div class="hero__bar--gray-small">
-									</div>
-									<div class="hero__bar--blue-small">
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-					</div> <!-- .resizer -->
-				</div>
 
 			</div> <!-- .hero__graphics -->
 		</div>

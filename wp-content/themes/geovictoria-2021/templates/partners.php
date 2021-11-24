@@ -224,7 +224,7 @@ get_header();
 				<div class="row gy-3 mb-3 anime-fadein-childs">
 
 					<div class="col-12 col-sm-6 col-lg-3">
-						<a href="https://softland.com.ar/">
+						<a href="https://www.softland.cl/descripcion-sistemas-erp/detalle-sistema-control-asistencia">
 							<div class="partners-estrategicos__partner card <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>">
 								<img class="card-img-top" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/partners/softland.png'>
 								<div class="card-body text-center">

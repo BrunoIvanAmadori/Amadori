@@ -11,7 +11,7 @@ get_header();
 </div>
 <main id="primary" class="site-main">
 
-	<section class="hero container justify-content-center">
+	<section class="hero container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
 		<div class="row w-100 d-flex flex-column flex-md-row justify-content-between align-items-center h-100 ">
 			<div class="col-12 col-md-6">
 				<div class="align-self-center pe-md-3">

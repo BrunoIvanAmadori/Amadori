@@ -59,7 +59,7 @@ get_header();
 						$link .= $_SERVER['REQUEST_URI'];
 						?>
 
-						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal" html_id="potenciales-clientes" html_class="no-privacy-policy" origen-zoho="' . $link . '"]'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal" html_id="potenciales-clientes" html_class="no-privacy-policy" origen_zoho="' . $link . '"]'); ?>
 
 					</div>
 				</div>

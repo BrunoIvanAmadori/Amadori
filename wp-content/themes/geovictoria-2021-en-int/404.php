@@ -30,10 +30,10 @@ $recientes = new WP_Query(
 			<div class="col-12 col-md-6 mb-5">
 				<div class="align-self-center pe-md-3">
 					<h1 class="gray mb-3 fw-bold">
-						No podemos encontrar esta página
+						We can't find this page
 					</h1>
 					<h4 class="fw-light mb-4 anime-fadein">
-						Parece que no existe. Prueba con el buscador o con alguno de los siguientes enlaces.
+						It seems that it does not exist. Try with the search engine.
 					</h4>
 					<?php
 					get_search_form();
@@ -46,21 +46,6 @@ $recientes = new WP_Query(
 		</div>
 	</section>
 
-	<section class="recent-posts container">
-		<h2 class="mb-4">Entradas recientes</h2>
-		<div class="row gy-4">
-			<?php
-			if ($recientes->have_posts()) {
-				while ($recientes->have_posts()) {
-					$recientes->the_post();
-					get_template_part('template-parts/blogcard');
-				}
-				//echo do_shortcode('[cpt_ajax_load_more post_type="post" template="blogcard" item_class="blog-card" posts_per_page="3" grid="3"]');
-				//	wp_reset_postdata(); 
-			}
-			?>
-		</div>
-	</section><!-- .error-404 -->
 
 </main><!-- #main -->
 
