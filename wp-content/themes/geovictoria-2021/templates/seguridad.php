@@ -146,7 +146,7 @@ get_header();
 
 	<section class="d-flex flex-column container justify-content-between">
 		<div class="row gx-5 anime-fadein">
-			<div class="col-lg-8 pe-lg-5 mb-5">
+			<div class="col-lg-7 pe-lg-5 mb-5">
 				<div class="testimonal__video text-center">
 					<video width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg-thumb.png" controls>
 						<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg.mp4" type="video/mp4">
@@ -154,8 +154,9 @@ get_header();
 				</div>
 			</div>
 
-			<div class="col-lg-4">
+			<div class="col-lg-5">
 				<h2 class="fw-bold">Caso de éxito: ISEG</h2>
+
 				<p>
 					<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
 					<i>"GeoVictoria nos permitió dejar los cuadernos de
@@ -165,19 +166,19 @@ get_header();
 					<!-- <img class="arrow-quote--right" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
 				</p>
 
-				<div class="row">
-					<div class="col-3">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/iseg-logobnw.png" />
+				<div class="row justify-content-center justify-content-lg-start">
+					<div class="col-lg-4">
+						<img class="testimonial__logo--iseg" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/iseg-logobnw.png" />
 					</div>
-					<div class="col-9 d-flex flex-column justify-content-center">
+					<div class="col-lg-8 align-self-center">
 						<span>
-							<span class="fw-bold">Gabriel Lerner</span></br>
+							<span class=" fw-bold">Gabriel Lerner</span></br>
 							Gerente General ISEG
 						</span>
 					</div>
+
 				</div>
 			</div>
-		</div>
 	</section>
 
 

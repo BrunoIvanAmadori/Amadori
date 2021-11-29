@@ -145,6 +145,7 @@ get_header();
 
 				<div class="col-lg-4 text-center text-lg-start">
 					<h3 class="fw-bold">Caso de éxito: LIM Chile</h3>
+					<img class="testimonial__logo--small" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
 					<p>
 						<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
 						<i>“GeoVictoria nos cambió al 100%. Recomiendo GeoVictoria, siempre tienen una respuesta inmediata y correcta.” </i>
@@ -154,9 +155,8 @@ get_header();
 						<span>
 							<span class="fw-bold">Bastián Garrido</span></br>
 							<small>Encargado de Gestión de Personal</small>
-
 						</span>
-						<img class="testimonial__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
+
 					</div>
 				</div>
 			</div>

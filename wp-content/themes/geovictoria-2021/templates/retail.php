@@ -144,19 +144,41 @@ get_header();
 			<div class="bg-tail-gray"></div>
 		</div>
 		<section class="d-flex flex-column container justify-content-between">
-			<div class="row mb-5">
-				<div class="col-12">
+			<div class="row gx-5 anime-fadein mb-5">
+				<h2 class="text-center mb-5">El mejor respaldo, <b>son nuestros clientes</b></h2>
+				<div class="col-lg-8 pe-lg-5 mb-5">
 					<div class="testimonal__video text-center">
-						<h1 class="fw-bold anime-fadein mb-5">Caso de éxito: Starbucks</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/caso-starbucks-thumb.png" controls>
-							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/caso-starbucks.mp4" type="video/mp4">
+						<video controlsList="nodownload" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/caso-retail-huawei-thumb.jpg" controls>
+							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/retail/caso-retail-huawei.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
+
+				<div class="col-lg-4 text-center text-lg-start">
+					<h3 class="fw-bold">Caso de éxito: Huawei</h3>
+					<img class="testimonial__logo--huawei" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/huawei-logobnw.png" />
+					<p>
+						<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+						<i>“El ahorro de tiempo es significativo, ya que hay un montón de análisis que no hay que hacer, que previamente se llevaba en planilla.” </i>
+						<!-- <img class="arrow-quote--right" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+					</p>
+					<div class="row justify-content-center justify-content-lg-start">
+						<span>
+							<span class="fw-bold">Sebastián Caram</span></br>
+							<small>Field Force & Regional Manager Chile</small>
+
+						</span>
+
+					</div>
+				</div>
 			</div>
+
 			<div class="row gy-5 gx-5 anime-fadein-childs">
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/luxottica-logobnw.png" />
+				<div class="col-lg-6 text-center">
+					<div class="testimonial__img-top">
+						<img class="testimonial__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/luxottica-logobnw.png" />
+					</div>
+
 					<p>
 						“Nos sirve para el tema operativo. Para
 						tener a fin de mes el control de caja.
@@ -173,8 +195,12 @@ get_header();
 					</p>
 				</div>
 
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mt-4 mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/kfc-logobnw.png" />
+				<div class="col-lg-6 text-center">
+					<div class="testimonial__img-top">
+						<img class="testimonial__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/kfc-logobnw.png" />
+					</div>
+
+
 					<p>
 						“Redujimos un 90% de incidentes con
 						el software y ahorramos con la
@@ -186,25 +212,6 @@ get_header();
 						</span>
 					</p>
 				</div>
-
-
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/starbucks-logobnw.png" />
-					<p>
-						“Ha sido una tremenda herramienta que
-						hemos podido entregar a nuestros
-						gerentes de tienda. No solamente por
-						lo práctica que es, lo fácil de operar que
-						es, sino que además es una
-						herramienta que eleva su gestión”
-					</p>
-					<p>
-						<span class="fw-bold">
-							Starbucks
-						</span>
-					</p>
-				</div>
-
 		</section>
 	</div>
 

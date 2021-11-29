@@ -611,32 +611,32 @@ get_header();
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start<?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-web.png" />
 					<h6>Web</h6>
-					<small>Registro via web desde la plataforma.</small>
+					<small>Marcaje desde cualquier computador con acceso a internet.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-usb.png" />
 					<h6>Huellero USB</h6>
-					<small>Registro vía lector de huellas con conexión USB.</small>
+					<small>Bajo costo y fácil implementación. Así es el marcaje con huellas vía conexión USB.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-app.png" />
-					<h6>App Mobile</h6>
-					<small>Registro vía aplicación móvil con georreferenciación y reconocimiento fácial.</small>
+					<h6>GeoVictoria App</h6>
+					<small>Ideal para trabajadores en terreno. Marcaje por <i>selfie</i> y georreferenciación.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-box.png" />
-					<h6>Box</h6>
-					<small>Registro vía reloj control LAN, 3G o WiFi.</small>
+					<h6>GeoVictoria Box</h6>
+					<small>El método de marcaje por excelencia vía reloj control mediante conexiones LAN, 3G o Wi-Fi.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-call.png" />
 					<h6>GeoVictoria Call</h6>
-					<small>Registro vía llamada telefónica.</small>
+					<small>Un método de marcaje simple y efectivo vía llamada telefónica.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
 					<h6>GeoVictoria Face</h6>
-					<small>Registro vía reconocimiento facial.
+					<small>Detección de temperatura, mascarilla y sin contacto. Así es el marcaje con reconocimiento facial.
 					</small>
 				</div>
 			</div>
@@ -651,25 +651,36 @@ get_header();
 
 		<div class="row anime-fadein-childs">
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/report.svg" />
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/cloud.svg" />
 				<h5 class="fw-bold">Plataforma en la nube</h5>
 				<p>Fácil acceso desde cualquier dispositivo con internet. Con Geovictoria no perderás información valiosa.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/form.svg" />
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/handshake.svg" />
 				<h5 class="fw-bold">Acompañamiento</h5>
 				<p>Estamos contigo en todo el proceso, desde el primer contacto, hasta concretar la implementación. En lo que necesites, cuenta con nosotros.</p>
 			</div>
 
 			<div class="d-flex col-12 col-md-6 col-lg-4 mt-4 flex-column text-center text-md-start">
-				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/optimizer.svg" />
+				<img class="features__icon align-self-center align-self-md-start" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/icons/gear.svg" />
 				<h5 class="fw-bold">Adaptabilidad</h5>
 				<p>Cada industria funciona de manera muy diferente. Nos adaptamos a cada una de ellas.</p>
 			</div>
 		</div>
 	</section>
-
+	<section class="d-flex flex-column container justify-content-between">
+		<div class="row gx-5 anime-fadein">
+			<h2 class="text-center mb-5">El mejor respaldo, <b>son nuestros clientes</b></h2>
+			<div class="pe-lg-5">
+				<div class="testimonal__video text-center">
+					<video controlsList="nodownload" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/caso-general-thumb.jpg" controls>
+						<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-general.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</section>
 	<div>
 		<img class="bg-head-blue" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-blue.svg" />
 	</div>

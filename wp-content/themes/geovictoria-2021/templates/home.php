@@ -368,6 +368,19 @@ get_header();
 			</div>
 		</div>
 	</section>
+	<section class="d-flex flex-column container justify-content-between">
+		<div class="row gx-5 anime-fadein">
+			<h2 class="text-center mb-5">El mejor respaldo, <b>son nuestros clientes</b></h2>
+			<div class="pe-lg-5">
+				<div class="testimonal__video text-center">
+					<video controlsList="nodownload" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/caso-general-thumb.jpg" controls>
+						<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-general.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<div>
 		<img class="bg-head-blue" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-blue.svg" />
 	</div>

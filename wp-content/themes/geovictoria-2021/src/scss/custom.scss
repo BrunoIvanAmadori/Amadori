@@ -708,6 +708,12 @@ footer.site-footer {
 //   }
 // }
 
+@include media-breakpoint-down(md) {
+  main#primary section.trusting-companies {
+    padding-top: 0px;
+  }
+}
+
 // .trusting-companies {
 //   &__container {
 //     height: 100px;
@@ -1455,8 +1461,45 @@ footer.entry-footer {
 
 // page-construccion
 
+.testimonial__img-top {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
 .testimonial__logo {
   max-width: 10em;
+  height: auto;
+  object-fit: contain;
+  width: 7em;
+
+  &--small {
+    @extend .testimonial__logo;
+
+    width: 7em;
+    margin: 1em 0em;
+    display: inline-block;
+    max-height: 8em;
+  }
+
+  &--huawei {
+    @extend .testimonial__logo;
+
+    width: 4em;
+    margin: 1em 0em;
+    display: inline-block;
+    max-height: 8em;
+  }
+
+  &--iseg {
+    @extend .testimonial__logo;
+
+    width: 3em;
+    margin: 1em 0em;
+    display: inline-block;
+    max-height: 8em;
+  }
 }
 
 .clients {

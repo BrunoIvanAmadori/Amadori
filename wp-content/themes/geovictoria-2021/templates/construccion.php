@@ -159,19 +159,39 @@ get_header();
 			<div class="bg-tail-gray"></div>
 		</div>
 		<section class="d-flex flex-column container justify-content-between">
-			<div class="row mb-5">
-				<div class="col-12">
+			<div class="row gx-4 anime-fadein mb-5">
+				<h2 class="text-center mb-5">El mejor respaldo, <b>son nuestros clientes</b></h2>
+				<div class="col-lg-8 pe-lg-5 mb-5">
 					<div class="testimonal__video text-center">
-						<h1 class="fw-bold anime-fadein mb-5">Caso de éxito: Ictino</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-ictino-thumb.png" controls>
-							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-ictino.mp4" type="video/mp4">
+						<video controlsList="nodownload" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-construccion-ictino-thumb.jpg" controls>
+							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-construccion-ictino.mp4" type="video/mp4">
 						</video>
+					</div>
+				</div>
+
+				<div class="col-lg-4 text-center text-lg-start">
+					<h3 class="fw-bold">Caso de éxito: Ictino</h3>
+					<img class="testimonial__logo--small" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ictino-logobnw.png" />
+					<p>
+						<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+						<i>“Es un sistema muy amigable. Tenemos certeza que el registro de asistencia es el correcto. La plataforma y el reporteo es en tiempo real.” </i>
+						<!-- <img class="arrow-quote--right" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+					</p>
+					<div class="justify-content-center justify-content-lg-start">
+						<span>
+							<span class="fw-bold">Raúl Rodríguez</span></br>
+							<small>Gerente de Recursos Humanos</small>
+
+						</span>
+
 					</div>
 				</div>
 			</div>
 			<div class="row gy-5 gx-5 anime-fadein-childs">
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/desarrolladora-logobnw.png" />
+				<div class="col-lg-6 text-center">
+					<div class="testimonial__img-top">
+						<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/desarrolladora-logobnw.png" />
+					</div>
 					<p>
 						“Con GeoVictoria los colaboradores
 						pueden marcar desde la aplicación y nos
@@ -187,26 +207,12 @@ get_header();
 					</p>
 				</div>
 
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ictino-logobnw.png" />
-					<p>
-						“Es un sistema muy amigable. Tenemos
-						certeza que el registro de asistencia es el
-						correcto. La plataforma y el reporteo es en
-						tiempo real. Puedes ver el reporte de
-						personal por obra. Nos ayuda a la
-						toma de decisiones todos los días.”
-					</p>
-					<p>
-						<span class="fw-bold">
-							Ictino
-						</span>
-					</p>
-				</div>
 
+				<div class="col-lg-6 text-center">
+					<div class="testimonial__img-top">
+						<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/eurocorp-logobnw.png" />
+					</div>
 
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/eurocorp-logobnw.png" />
 					<p>
 						“El hecho de poder entrar a ver los datos
 						de asistencia en un navegador, es algo
@@ -221,7 +227,7 @@ get_header();
 						</span>
 					</p>
 				</div>
-
+			</div>
 		</section>
 	</div>
 

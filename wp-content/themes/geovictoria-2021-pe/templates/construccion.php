@@ -159,69 +159,32 @@ get_header();
 			<div class="bg-tail-gray"></div>
 		</div>
 		<section class="d-flex flex-column container justify-content-between">
-			<div class="row mb-5">
-				<div class="col-12">
+			<div class="row gx-5 anime-fadein mb-5">
+				<h2 class="text-center mb-5">El mejor respaldo, <b>son nuestros clientes</b></h2>
+				<div class="col-lg-8 pe-lg-5 mb-5">
 					<div class="testimonal__video text-center">
-						<h1 class="fw-bold anime-fadein mb-5">Caso de éxito: Ictino</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-ictino-thumb.png" controls>
-							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-ictino.mp4" type="video/mp4">
+						<video controlsList="nodownload" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-construccion-desarrolladora-thumb.jpg" controls>
+							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-construccion-desarrolladora.mp4" type="video/mp4">
 						</video>
 					</div>
 				</div>
+
+				<div class="col-lg-4 text-center text-lg-start">
+					<h4 class="fw-bold">Caso de éxito: Desarrolladora del Pacífico</h4>
+					<img class="testimonial__logo--small" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/desarrolladora-logobnw.png" />
+					<p>
+						<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+						<i>“Con GeoVictoria los colaboradores pueden marcar desde la aplicación y nos ahorra esfuerzos en dispositivos en cada uno de los proyectos.” </i>
+						<!-- <img class="arrow-quote--right" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+					</p>
+					<div class="row justify-content-center justify-content-lg-start">
+						<span>
+							<span class="fw-bold">Vanessa Ortecho</span></br>
+							<small>Jefe Corporativo de Gestión Humana</small>
+						</span>
+					</div>
+				</div>
 			</div>
-			<div class="row gy-5 gx-5 anime-fadein-childs">
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/desarrolladora-logobnw.png" />
-					<p>
-						“Con GeoVictoria los colaboradores
-						pueden marcar desde la aplicación y nos
-						ahorra esfuerzos en dispositivos en cada
-						uno de los proyectos. Podemos ver los
-						reportes de horas, ausencias
-						y tardanzas de forma rápida.”
-					</p>
-					<p>
-						<span class="fw-bold">
-							Desarrolladora del Pacífico
-						</span>
-					</p>
-				</div>
-
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ictino-logobnw.png" />
-					<p>
-						“Es un sistema muy amigable. Tenemos
-						certeza que el registro de asistencia es el
-						correcto. La plataforma y el reporteo es en
-						tiempo real. Puedes ver el reporte de
-						personal por obra. Nos ayuda a la
-						toma de decisiones todos los días.”
-					</p>
-					<p>
-						<span class="fw-bold">
-							Ictino
-						</span>
-					</p>
-				</div>
-
-
-				<div class="col-lg-4 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/eurocorp-logobnw.png" />
-					<p>
-						“El hecho de poder entrar a ver los datos
-						de asistencia en un navegador, es algo
-						tan simple que nos facilita la gestión. Se
-						hace más eficiente, más rápida. Este es
-						uno de los principales factores que nos
-						hizo elegir GeoVictoria.”
-					</p>
-					<p>
-						<span class="fw-bold">
-							Eurocorp
-						</span>
-					</p>
-				</div>
-
 		</section>
 	</div>
 

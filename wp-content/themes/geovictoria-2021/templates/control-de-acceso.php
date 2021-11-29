@@ -213,10 +213,12 @@ get_header();
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
 						<h1 class="gray mb-3 fw-bold">
-							Marca tu acceso
+							Permite el acceso
 						</h1>
 						<p class="gray fw-light mb-3">
-							Según el método que elijas, tus trabajadores podrán marcar asistencia y será verificada gracias a nuestra tecnología biométrica.
+							Sin importar el dispositivo o el lugar de acceso,
+							valida el ingreso de personas gracias a nuestra
+							tecnología.
 						</p>
 					</div>
 				</div>
@@ -229,7 +231,9 @@ get_header();
 							¡Siempre en la nube!
 						</h1>
 						<p class="gray fw-light mb-3">
-							Los datos de asistencia estarán protegidos en la nube. La información quedará alojada en tiempo real. ¡Disponible cuando la necesites!
+							Los datos de acceso estarán protegidos en la
+							nube. Encuentra la información en tiempo real.
+							¡Disponible cuando la necesites!
 						</p>
 					</div>
 				</div>
@@ -297,7 +301,9 @@ get_header();
 							Reportes al instante
 						</h1>
 						<p class="gray fw-light mb-3">
-							Obtendrás todo tipo de reportes y podrás exportarlos en el formato que requieras. Horas extras, turnos consolidados, planificaciones y permisos. ¡Todo en un sólo lugar!
+							Obtén distintos reportes de ingresos. Creación
+							de perfiles. Planificación por días, semanas y
+							meses. ¡Todo en un solo lugar!
 						</p>
 					</div>
 				</div>
@@ -462,31 +468,15 @@ get_header();
 				<h2>Podrás elegir entre diferentes tipos de marcaje</h2>
 			</div>
 			<div class="row justify-content-between <?php if (!wp_is_mobile()) echo 'anime-fadein-childs' ?>">
-
-				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start<?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
-					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-web.png" />
-					<h6>Web</h6>
-					<small>Registro via web desde la plataforma.</small>
-				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-usb.png" />
 					<h6>Huellero USB</h6>
-					<small>Registro vía lector de huellas con conexión USB.</small>
-				</div>
-				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
-					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-app.png" />
-					<h6>App Mobile</h6>
-					<small>Registro vía aplicación móvil con georreferenciación y reconocimiento facial.</small>
+					<small>Bajo costo y fácil implementación. Así es el marcaje con huellas vía conexión USB.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-box.png" />
-					<h6>Box</h6>
-					<small>Registro vía reloj control LAN, 3G o WiFi.</small>
-				</div>
-				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
-					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-call.png" />
-					<h6>GeoVictoria Call</h6>
-					<small>Registro vía llamada telefónica.</small>
+					<h6>GeoVictoria Box</h6>
+					<small>El método de marcaje por excelencia vía reloj control mediante conexiones LAN, 3G o Wi-Fi. </small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
@@ -494,6 +484,26 @@ get_header();
 					<small>Registro vía reconocimiento facial.
 					</small>
 				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
+					<h6>Reconocimiento de Palma</h6>
+					<small>Método de marcaje biométrico certero y sin contacto.
+					</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
+					<h6>Tarjeta RFID</h6>
+					<small>Ingresa a las instalaciones con tarjetas asociadas mediante un chip inteligente.
+					</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
+					<h6>Cédula de Identidad</h6>
+					<small>Accesos verificados e individualizados gracias a la cédula de identidad.
+					</small>
+				</div>
+
+
 			</div>
 		</div>
 	</section>
