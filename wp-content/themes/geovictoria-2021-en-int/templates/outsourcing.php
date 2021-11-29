@@ -131,23 +131,41 @@ get_header();
 			<div class="bg-tail-gray"></div>
 		</div>
 		<section class="d-flex flex-column container justify-content-between">
-			<div class="row mb-5">
-				<div class="col-12">
-					<div class="testimonal__video text-center">
-						<h1 class="fw-bold anime-fadein mb-5">
-							Success story: Colegio Nuestra Señora Santa María</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio-thumb.png" controls>
-							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio.mp4" type="video/mp4">
-						</video>
+			<div class="row gx-5 anime-fadein mb-5">
+				<h2 class="text-center mb-5">Our clients are <b>our best guarantee</b></h2>
+				<div class="col-lg-8 pe-lg-5 align-self-center">
+					<div class="testimonial__video--small text-center">
+						<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/AY4odzFfqC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col-lg-4 text-center text-lg-start mt-5 mt-lg-0">
+					<h3 class="fw-bold">Success story: LIM Chile</h3>
+					<img class="testimonial__logo--small" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
+					<p>
+						<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+						<i>“GeoVictoria changed us 100%. I recommend GeoVictoria, they always have an immediate and correct answer." </i>
+						<!-- <img class="arrow-quote--right" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+					</p>
+					<div class="row justify-content-center justify-content-lg-start">
+						<span>
+							<span class="fw-bold">Bastián Garrido</span></br>
+							<small>Personnel Management</small>
+						</span>
+
 					</div>
 				</div>
 			</div>
 			<div class="row gy-5 gx-5 anime-fadein-childs">
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ecrgroup-logobnw.png" />
 					<p>
-						“Previously it was all manual with the attendance book where we detect the violation, manipulation or loss of the book.
-						GeoVictoria is the tool that grants a more accurate control ”
+						"Previously it was all manual
+						with the attendance book where
+						we detect violation,
+						manipulation or loss of the book.
+						GeoVictoria is the tool that
+						gives a more accurate control ".
 					</p>
 					<p>
 						<span class="fw-bold">
@@ -155,25 +173,16 @@ get_header();
 						</span>
 					</p>
 				</div>
-
-				<div class="col-lg-3 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
-					<p>
-
-						“GeoVictoria changed us 100%. I recommend GeoVictoria, they always have an immediate and correct answer ”
-					</p>
-					<p>
-						<span class="fw-bold">
-							LIM Chile
-						</span>
-					</p>
-				</div>
-
-
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ugs-logobnw.png" />
 					<p>
-						“With an incomplete endowment we could be applied some kind of fine for breach of contract. This application delivers the information in real time. It allows us to react with the Human Resources team and the operations area ”.
+						"With an incomplete endowment we
+						could apply some type of fine for
+						breach of contract. This
+						application delivers the information in
+						real time. It allows us to react with
+						the Human Resources team
+						and the area of ​​operations ”.
 					</p>
 					<p>
 						<span class="fw-bold">
@@ -182,11 +191,13 @@ get_header();
 					</p>
 				</div>
 
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/grupoexpro-logobnw.png" />
 					<p>
-
-						“We have much clearer billing processes with our clients thanks to the attendance data. It is an efficient, reliable and timely system".
+						"We have
+						much clearer billing processes with our clients
+						thanks to the attendance data. It's a
+						efficient and reliable system."
 					</p>
 					<p>
 						<span class="fw-bold">

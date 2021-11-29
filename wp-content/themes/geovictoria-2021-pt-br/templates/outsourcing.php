@@ -126,27 +126,37 @@ get_header();
 			<div class="bg-tail-gray"></div>
 		</div>
 		<section class="d-flex flex-column container justify-content-between">
-			<div class="row mb-5">
-				<div class="col-12">
-					<div class="testimonal__video text-center">
-						<h1 class="fw-bold anime-fadein mb-5">
-							História de sucesso: Colegio Nuestra Señora Santa María</h1>
-						<video class="anime-fadein" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio-thumb.png" controls>
-							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-colegio.mp4" type="video/mp4">
-						</video>
+			<div class="row gx-5 anime-fadein mb-5">
+				<h2 class="text-center mb-5">Nossos clientes <b>nos endossam</b></h2>
+				<div class="col-lg-8 pe-lg-5 align-self-center">
+					<div class="testimonial__video--small text-center">
+						<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/AY4odzFfqC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col-lg-4 text-center text-lg-start mt-5 mt-lg-0">
+					<h3 class="fw-bold">História de sucesso: LIM Chile</h3>
+					<img class="testimonial__logo--small" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
+					<p>
+						<!-- <img class="arrow-quote--left" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+						<i>“A GeoVictoria nos mudou 100%. Recomendo a GeoVictoria, eles sempre têm uma resposta imediata e correta.” </i>
+						<!-- <img class="arrow-quote--right" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/call-to-action/arrow.svg"> -->
+					</p>
+					<div class="row justify-content-center justify-content-lg-start">
+						<span>
+							<span class="fw-bold">Bastián Garrido</span></br>
+							<small>Gestão de pessoal</small>
+						</span>
+
 					</div>
 				</div>
 			</div>
 			<div class="row gy-5 gx-5 anime-fadein-childs">
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ecrgroup-logobnw.png" />
 					<p>
-						"Anteriormente, era tudo manual
-						com o livro de presença onde
-						detectamos violação,
-						manipulação ou perda do livro.
-						GeoVictoria é a ferramenta que
-						dá um controle mais preciso ”.
+						“Antes era tudo manual com a caderneta de assistência onde detectamos violação, manipulação ou extravio da caderneta.
+						GeoVictoria é a ferramenta que permite um controle mais preciso ”.
 					</p>
 					<p>
 						<span class="fw-bold">
@@ -154,33 +164,10 @@ get_header();
 						</span>
 					</p>
 				</div>
-
-				<div class="col-lg-3 text-center">
-					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/limchile-logobnw.png" />
-					<p>
-						“GeoVictoria nos mudou para
-						100%. Eu recomendo a GeoVictoria,
-						eles sempre têm uma resposta
-						imediato e correto ”.
-					</p>
-					<p>
-						<span class="fw-bold">
-							LIM Chile
-						</span>
-					</p>
-				</div>
-
-
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ugs-logobnw.png" />
 					<p>
-						"Com uma dotação incompleta, nós
-						poderia aplicar algum tipo de multa para
-						quebra de contrato. Está
-						aplicativo fornece as informações em
-						tempo real. Isso nos permite reagir com
-						a equipe de Recursos Humanos
-						e a área de operações ”.
+						“Com uma dotação incompleta poderíamos ser aplicados algum tipo de multa por quebra de contrato. Este aplicativo fornece as informações em tempo real. Nos permite reagir com a equipe de Recursos Humanos e a área de operações”.
 					</p>
 					<p>
 						<span class="fw-bold">
@@ -189,13 +176,10 @@ get_header();
 					</p>
 				</div>
 
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-4 text-center">
 					<img class="testimonial__logo mb-4" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/grupoexpro-logobnw.png" />
 					<p>
-						“Temos processos de cobrança
-						muito mais claro com nossos clientes
-						graças aos dados de atendimento. É um
-						sistema eficiente, confiável e oportuno "
+						“Temos processos de cobrança muito mais claros com nossos clientes graças aos dados de atendimento. É um sistema eficaz, confiável e oportuno”
 					</p>
 					<p>
 						<span class="fw-bold">

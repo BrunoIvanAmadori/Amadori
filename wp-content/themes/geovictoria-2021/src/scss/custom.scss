@@ -625,10 +625,6 @@ footer.site-footer {
 
 // Header image general
 
-// .animation-container {
-//   height: calc(100vh + 20px);
-// }
-
 // // front-page.css
 @include media-breakpoint-up(md) {
   .hero {
@@ -1466,6 +1462,26 @@ footer.entry-footer {
   display: flex;
   justify-content: center;
   vertical-align: middle;
+}
+
+.testimonial__video {
+  height: 315px;
+  width: 100%;
+
+  &--small {
+    @extend .testimonial__video;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .testimonial__video {
+    height: 550px;
+
+    &--small {
+      @extend .testimonial__video;
+      height: 315px;
+    }
+  }
 }
 
 .testimonial__logo {

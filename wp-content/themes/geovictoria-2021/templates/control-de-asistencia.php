@@ -673,10 +673,8 @@ get_header();
 		<div class="row gx-5 anime-fadein">
 			<h2 class="text-center mb-5">El mejor respaldo, <b>son nuestros clientes</b></h2>
 			<div class="pe-lg-5">
-				<div class="testimonal__video text-center">
-					<video controlsList="nodownload" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/caso-general-thumb.jpg" controls>
-						<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/outsourcing/caso-general.mp4" type="video/mp4">
-					</video>
+				<div class="testimonial__video text-center">
+					<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/GMb2_8oK1l8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>

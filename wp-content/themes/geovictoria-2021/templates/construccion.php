@@ -161,15 +161,12 @@ get_header();
 		<section class="d-flex flex-column container justify-content-between">
 			<div class="row gx-4 anime-fadein mb-5">
 				<h2 class="text-center mb-5">El mejor respaldo, <b>son nuestros clientes</b></h2>
-				<div class="col-lg-8 pe-lg-5 mb-5">
-					<div class="testimonal__video text-center">
-						<video controlsList="nodownload" width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-construccion-ictino-thumb.jpg" controls>
-							<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/construccion/caso-construccion-ictino.mp4" type="video/mp4">
-						</video>
+				<div class="col-lg-8 pe-lg-5 align-self-center">
+					<div class="testimonial__video--small text-center">
+						<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/QaYoZryJHZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
-
-				<div class="col-lg-4 text-center text-lg-start">
+				<div class="col-lg-4 text-center text-lg-start mt-5 mt-lg-0">
 					<h3 class="fw-bold">Caso de éxito: Ictino</h3>
 					<img class="testimonial__logo--small" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/ictino-logobnw.png" />
 					<p>

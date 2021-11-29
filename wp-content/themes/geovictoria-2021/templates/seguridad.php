@@ -146,15 +146,13 @@ get_header();
 
 	<section class="d-flex flex-column container justify-content-between">
 		<div class="row gx-5 anime-fadein">
-			<div class="col-lg-7 pe-lg-5 mb-5">
-				<div class="testimonal__video text-center">
-					<video width="100%" poster="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg-thumb.png" controls>
-						<source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/seguridad/caso-iseg.mp4" type="video/mp4">
-					</video>
+			<div class="col-lg-8 pe-lg-5 align-self-center">
+				<div class="testimonial__video--small text-center">
+					<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/Bt03KeKT77M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 
-			<div class="col-lg-5">
+			<div class="col-lg-4 text-center text-lg-start mt-5 mt-lg-0">
 				<h2 class="fw-bold">Caso de éxito: ISEG</h2>
 
 				<p>
