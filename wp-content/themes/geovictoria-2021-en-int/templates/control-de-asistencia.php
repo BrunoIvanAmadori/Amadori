@@ -611,32 +611,36 @@ get_header();
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start<?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-web.png" />
 					<h6>Web</h6>
-					<small>Directly from the web platform.</small>
+					<small>
+						Log from any computer with internet access.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-usb.png" />
-					<h6>Fingerprint Reader </h6>
-					<small>Log with an USB fingerprint reader.</small>
+					<h6>Fingerprint reader</h6>
+					<small>Low cost and easy implementation. Log with an USB fingerprint reader.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-app.png" />
-					<h6>Mobile App</h6>
-					<small>With georeferencing and face recognition.</small>
+					<h6>GeoVictoria App</h6>
+					<small>
+						Ideal for field workers. Selfie logging and georeferencing.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-box.png" />
-					<h6>Box</h6>
-					<small>LAN control clock, 3G o WiFi.</small>
+					<h6>GeoVictoria Box</h6>
+					<small>
+						The dialing method par excellence via control clock through LAN, 3G or Wi-Fi connections.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-call.png" />
 					<h6>GeoVictoria Call</h6>
-					<small>With a classic phone call.</small>
+					<small>
+						A simple and effective logging method via phone call.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
 					<h6>GeoVictoria Face</h6>
-					<small>With face recognition devices.
+					<small>Temperature detection, mask-proof and without contact.
 					</small>
 				</div>
 			</div>

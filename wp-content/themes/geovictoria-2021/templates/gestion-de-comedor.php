@@ -397,36 +397,27 @@ get_header();
 				<h2>Podrás elegir entre diferentes tipos de marcaje</h2>
 			</div>
 			<div class="row justify-content-between <?php if (!wp_is_mobile()) echo 'anime-fadein-childs' ?>">
-
-				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start<?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
-					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-web.png" />
-					<h6>Web</h6>
-					<small>Registro via web desde la plataforma.</small>
-				</div>
-				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
-					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-usb.png" />
-					<h6>Huellero USB</h6>
-					<small>Registro vía lector de huellas con conexión USB.</small>
-				</div>
-				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
-					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-app.png" />
-					<h6>App Mobile</h6>
-					<small>Registro vía aplicación móvil con georreferenciación y reconocimiento fácial.</small>
-				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-box.png" />
-					<h6>Box</h6>
-					<small>Registro vía reloj control LAN, 3G o WiFi.</small>
-				</div>
-				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
-					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-call.png" />
-					<h6>GeoVictoria Call</h6>
-					<small>Registro vía llamada telefónica.</small>
+					<h6>GeoVictoria Box</h6>
+					<small>El método de marcaje por excelencia vía reloj control mediante conexiones LAN, 3G o Wi-Fi.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
 					<h6>GeoVictoria Face</h6>
-					<small>Registro vía reconocimiento facial.
+					<small>Detección de temperatura, mascarilla y sin contacto. Así es el marcaje con reconocimiento facial.
+					</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-palm.png" />
+					<h6>Reconocimiento de Palma</h6>
+					<small>Método de marcaje biométrico certero y sin contacto.
+					</small>
+				</div>
+				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
+					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-password.png" />
+					<h6>Contraseña</h6>
+					<small>La ración de tus trabajadores mediante un código de seguridad.
 					</small>
 				</div>
 			</div>

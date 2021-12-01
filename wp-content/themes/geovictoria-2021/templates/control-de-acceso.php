@@ -481,7 +481,7 @@ get_header();
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
 					<h6>GeoVictoria Face</h6>
-					<small>Registro vía reconocimiento facial.
+					<small>Detección de temperatura, mascarilla y sin contacto. Así es el marcaje con reconocimiento facial.
 					</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">

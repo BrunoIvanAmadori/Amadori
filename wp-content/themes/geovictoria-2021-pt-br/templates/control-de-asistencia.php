@@ -630,35 +630,35 @@ get_header();
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start<?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-web.png" />
 					<h6>Web</h6>
-					<small>Diretamente da plataforma da web.</small>
+					<small>Marcação de qualquer computador com acesso à Internet.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-usb.png" />
-					<h6>Leitor de impressão digital </h6>
-					<small>
-						Faça login com um leitor de impressão digital USB.</small>
+					<h6>Huellero USB</h6>
+					<small>Baixo custo e fácil implementação. Esta é a marcação da impressão digital via conexão USB.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-app.png" />
-					<h6>Mobile App</h6>
-					<small>Com georreferenciamento e reconhecimento facial.</small>
+					<h6>GeoVictoria App</h6>
+					<small>Ideal para trabalhadores de campo. Marcação de <i>selfies</i> e georreferenciamento.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-box.png" />
-					<h6>Box</h6>
+					<h6>GeoVictoria Box</h6>
 					<small>
-						Relógio de controle de LAN, 3G ou WiFi.</small>
+						O método de discagem por excelência via relógio de controle através de conexões LAN, 3G ou wi-fi.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-call.png" />
 					<h6>GeoVictoria Call</h6>
-					<small>Com uma ligação clássica</small>
+					<small>
+						Um método de marcação simples e eficaz por telefone.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-face.png" />
 					<h6>GeoVictoria Face</h6>
 					<small>
-						Com dispositivos de reconhecimento de rosto.
+						Sensor sem contato, máscara e temperatura. Esta é a marcação com reconhecimento facial.
 					</small>
 				</div>
 			</div>
