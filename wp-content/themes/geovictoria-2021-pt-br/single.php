@@ -81,7 +81,8 @@ $relacionadas = new WP_Query(
 					<?php $path = explode('/', $_SERVER["REQUEST_URI"]); ?>
 
 					<a href="<?php echo '/' . $path[1]; ?>/calculadora/?utm_source=pricing+&utm_medium=banner+calculadora&utm_campaign=campa%C3%B1a+pricing">
-						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer.png'">
+						<img class="d-none d-md-flex" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer-pt-br.png">
+						<img class="d-flex d-md-none" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer-mobile-pt-br.png">
 					</a>
 				</div>
 				<footer class="entry-footer col-lg-8">

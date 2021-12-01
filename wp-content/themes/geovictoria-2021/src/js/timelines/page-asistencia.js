@@ -17,7 +17,7 @@ import {
   updateNum,
 } from "./general.js";
 
-import { dynamic } from "../pages/page-asistencia";
+// import { dynamic } from "../pages/page-asistencia";
 
 const asistencia_animation_step_1 = anime.timeline({
   autoplay: false,
@@ -164,14 +164,6 @@ transition_animation_step_1
   );
 
 const step_1 = [
-  // {
-  //   parameters: {
-  //     targets: ".step-1__text",
-  //     translateY: [200, 0],
-  //     duration: 500,
-  //     easing: "easeOutSine",
-  //   },
-  // },
   {
     parameters: pop(".step-1__entry-type"),
   },

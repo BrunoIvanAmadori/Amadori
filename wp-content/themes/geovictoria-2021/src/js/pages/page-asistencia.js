@@ -61,7 +61,7 @@ window.addEventListener("scroll", function (e) {
 addAnimationTrigger(animation_trigger_step_1, asistencia_animation_step_1);
 addAnimationTrigger(animation_trigger_step_2, asistencia_animation_step_2);
 addAnimationTrigger(animation_trigger_step_3, asistencia_animation_step_3);
-// setIconScrollPosition(show);
+setIconScrollPosition(scrollOffset);
 
 // const getAnimationSpaceHeight = () => {
 //   let el = window.getComputedStyle(document.querySelector(".animation-space"))
