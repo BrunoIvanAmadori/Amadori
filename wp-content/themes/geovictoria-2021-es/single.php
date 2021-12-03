@@ -58,11 +58,11 @@ $relacionadas = new WP_Query(
 											<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
 
 											<h4 class="card-title mb-4 text-center">
-												Inscreva-se </b> em nosso blog e descubra novidades de seu interesse.</h3>
+												Sé el primero en recibir nuevos contenidos.
 											</h4>
 
 											<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
-												<span class="white fw-bold">Inscreva-se agora!</span>
+												<span class="white fw-bold">¡Suscribirme ahora!</span>
 											</button>
 										</div>
 
@@ -81,17 +81,16 @@ $relacionadas = new WP_Query(
 					<?php $path = explode('/', $_SERVER["REQUEST_URI"]); ?>
 
 					<a href="<?php echo '/' . $path[1]; ?>/calculadora/?utm_source=pricing+&utm_medium=banner+calculadora&utm_campaign=campa%C3%B1a+pricing">
-						<img class="d-none d-md-flex" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer-pt-br.png">
-						<img class="d-flex d-md-none" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer-mobile-pt-br.png">
+						<img class="d-none d-md-flex" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer.png">
+						<img class="d-flex d-md-none" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer-mobile.png">
 					</a>
 				</div>
+
 				<footer class="entry-footer col-lg-8">
 					<h4>
-
-						Junte-se à nossa conversa!
+						¡Unete a nuestra conversación!
 					</h4>
-					<p class="fs-5">
-						Nós convidamos você a compartilhar este artigo</p>
+					<p class="fs-5">Te invitamos a compartir este artículo</p>
 					<!-- <div class="share-icon__container">
 			<div class="share-icon__circle">
 				<i class="fab fa-facebook-f"></i>

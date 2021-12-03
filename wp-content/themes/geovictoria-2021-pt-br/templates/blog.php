@@ -77,7 +77,8 @@ get_header();
 		</div> -->
 
 
-	<img class="bg-head-blue" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-blue.svg">
+	<!-- <img class="bg-head-blue" src="<?php // echo esc_url(get_template_directory_uri()); 
+										?>/dist/img/bg-head-blue.svg"> -->
 
 	</div>
 
@@ -85,7 +86,7 @@ get_header();
 
 
 
-	<section class="container-fluid bg-blue-2 subscribe-cta">
+	<!-- <section class="container-fluid bg-blue-2 subscribe-cta">
 		<div class="container">
 			<div class="row text-center justify-content-center">
 				<div class="contact__form d-flex align-items-center flex-column">
@@ -101,7 +102,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 </main><!-- #main -->
 
 <?php
