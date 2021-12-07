@@ -41,7 +41,7 @@ $recientes = new WP_Query(
 				</div>
 			</div>
 			<div class="hero__graphics col-12 col-md-6">
-				<img class="anime-pop" src='https://geovictoriaa.blob.core.windows.net/logosempresa/Error 500.svg'>
+				<img class="anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/error-500.svg">
 			</div>
 		</div>
 	</section>
