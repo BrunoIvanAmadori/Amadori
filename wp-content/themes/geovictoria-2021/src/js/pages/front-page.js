@@ -10,6 +10,7 @@ import {
 import { addAnimationTrigger } from "../addAnimationTrigger";
 import Shared from "./_shared.js";
 import "../../scss/front-page.scss";
+import submitToHubspot from "../hsFormSubmission.js";
 
 let progressMobileComponent_step_1 = document.querySelector(
   ".progressMobile__bg.step-1"

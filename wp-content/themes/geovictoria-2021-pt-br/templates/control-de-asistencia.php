@@ -722,7 +722,6 @@ get_header();
 		</section>
 </main><!-- #main -->
 <?php
+get_template_part('template-parts/modal', 'contacto');
 get_footer();
 ?>
-
-<?php get_template_part('template-parts/modal', 'contacto') ?>;

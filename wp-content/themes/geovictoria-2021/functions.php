@@ -216,6 +216,7 @@ function geovictoria_2021_scripts()
 	wp_enqueue_script('modernizr', get_template_directory_uri() . '/dist/js/modernizr-webp.min.js', array(), _S_VERSION, true);
 	//wp_enqueue_script( 'font-awesome', 'https://kit.fontawesome.com/fa0ce32386.js');
 	wp_enqueue_script('anime-js', get_template_directory_uri() . '/dist/js/anime.min.js');
+	// wp_enqueue_script('submitToHubspot', get_template_directory_uri() . '/src/js/hsFormSubmission.js');
 	wp_enqueue_script('bootstrap-bundle-js', get_template_directory_uri() . '/dist/js/bootstrap.bundle.min.js', [], _S_VERSION, true);
 
 	global $template;

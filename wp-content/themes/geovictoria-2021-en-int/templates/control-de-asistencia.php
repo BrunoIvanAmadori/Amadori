@@ -629,7 +629,7 @@ get_header();
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-box.png" />
 					<h6>GeoVictoria Box</h6>
 					<small>
-						The dialing method par excellence via control clock through LAN, 3G or Wi-Fi connections.</small>
+						The logging method par excellence via control clock through LAN, 3G or Wi-Fi connections.</small>
 				</div>
 				<div class="col-12 col-md-4 col-lg-2 d-flex flex-column justify-content-start <?php if (wp_is_mobile()) echo 'anime-fadein' ?> mb-5 mb-lg-0">
 					<img class="logging-types__icon mb-3" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-asistencia/logging-call.png" />
@@ -700,7 +700,6 @@ get_header();
 		</section>
 </main><!-- #main -->
 <?php
+get_template_part('template-parts/modal', 'contacto');
 get_footer();
 ?>
-
-<?php get_template_part('template-parts/modal', 'contacto') ?>;

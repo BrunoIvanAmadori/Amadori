@@ -451,10 +451,18 @@ get_header();
 			</button>
 		</div>
 
+		<form id="asd-clientes">
+			<p>
+				<input id="email" name="email" type="text" required>
+			</p>
+			<p>
+				<input id="first-name" name="first-name" type="text">
+			</p>
+			<input type="submit">
+		</form>
 	</section>
 </main><!-- #main -->
 <?php
+get_template_part('template-parts/modal', 'contacto');
 get_footer();
 ?>
-
-<?php get_template_part('template-parts/modal', 'contacto') ?>;

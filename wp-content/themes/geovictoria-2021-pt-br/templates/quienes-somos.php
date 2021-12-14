@@ -481,6 +481,6 @@ get_header();
 	</div> -->
 </main><!-- #main -->
 <?php
+get_template_part('template-parts/modal', 'postulaciones');
 get_footer();
 ?>
-<?php get_template_part('template-parts/modal', 'postulaciones') ?>;

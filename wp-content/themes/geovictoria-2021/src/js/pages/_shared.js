@@ -2,7 +2,7 @@ import { Sticky } from "../sticky.js";
 import { enableAnimeSelectors } from "../timelines/general";
 import { initResizer } from "../resizer";
 import Webfontloader from "../../../node_modules/webfontloader/webfontloader";
-import setWpcf7Redirection from "../wpcf7-thankyou-redirection";
+import { init as hsFormsInit } from "../hubspot-forms/init";
 
 Webfontloader.load({
   google: {
@@ -28,4 +28,4 @@ new Sticky(stickyMenu);
 
 enableAnimeSelectors();
 initResizer();
-setWpcf7Redirection();
+hsFormsInit();

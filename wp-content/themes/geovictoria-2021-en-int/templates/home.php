@@ -436,7 +436,6 @@ get_header();
 	</section>
 </main><!-- #main -->
 <?php
+get_template_part('template-parts/modal', 'contacto', ['origin' => 'front-page']);
 get_footer();
 ?>
-
-<?php get_template_part('template-parts/modal', 'contacto', ['origin' => 'front-page']) ?>;

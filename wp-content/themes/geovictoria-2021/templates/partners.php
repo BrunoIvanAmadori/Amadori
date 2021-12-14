@@ -424,6 +424,6 @@ get_header();
 
 </main><!-- #main -->
 <?php
+get_template_part('template-parts/modal', 'partners');
 get_footer();
 ?>
-<?php get_template_part('template-parts/modal', 'partners') ?>;
