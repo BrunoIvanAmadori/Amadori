@@ -1611,6 +1611,10 @@ footer.entry-footer {
   width: 100%;
 }
 
+.wpcf7-submit:disabled {
+  cursor: not-allowed;
+}
+
 .modal {
   z-index: 99999;
   padding-right: 0px !important;

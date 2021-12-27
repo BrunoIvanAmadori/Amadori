@@ -134,7 +134,7 @@ const config = {
 };
 
 module.exports = () => {
-  if (false) {
+  if (true) {
     config.mode = "production";
   } else {
     config.mode = "development";

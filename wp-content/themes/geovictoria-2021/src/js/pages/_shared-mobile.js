@@ -1,7 +1,7 @@
 import { enableAnimeSelectors } from "../timelines/general";
 import { initResizer } from "../resizer";
 import Webfontloader from "../../../node_modules/webfontloader/webfontloader";
-import setWpcf7Redirection from "../wpcf7-thankyou-redirection";
+import { init as hsFormsInit, sendToHubspot } from "../hubspot-forms/init";
 
 Webfontloader.load({
   google: {
@@ -21,8 +21,8 @@ console.log("shared-mobile-carga");
 
 initResizer();
 enableAnimeSelectors();
-setWpcf7Redirection();
-
+hsFormsInit();
+console.log("hsFormsInit Mobile");
 const progressBar = document.querySelector(".readingProgressbar");
 if (progressBar) {
   progressBar.setAttribute("value", 0);

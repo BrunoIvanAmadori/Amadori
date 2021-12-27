@@ -1,10 +1,29 @@
-<form id="cotizacion-form" onsubmit="return false;">
+<?php
+
+// Program to display URL of current page.
+if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
+  $link = "https";
+else
+  $link = "http";
+
+// Here append the common URL characters.
+$link .= "://";
+
+// Append the host(domain name, ip) to the URL.
+$link .= $_SERVER['HTTP_HOST'];
+
+// Append the requested resource location to the URL
+$link .= $_SERVER['REQUEST_URI'];
+?>
+
+
+<form id="cotizacion-form" class="calculadora gdpr" onsubmit="return(cotizacionStep1(event));">
   <div class="form-row">
     <div class="col-md-12 mb-3">
       <label for="validationDefaultUsername">Nome completo</label>
       <div class="input-group">
-        <input placeholder="Nome" name="name" id="name" type="text" class="form-control">
-        <input placeholder="Sobrenome" name="lastname" id="lastname" type="text" class="form-control">
+        <input placeholder="Nome" name="firstname" id="firstname" type="text" class="form-control" required>
+        <input placeholder="Sobrenome" name="lastname" id="lastname" type="text" class="form-control" required>
       </div>
     </div>
 
@@ -14,12 +33,12 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="inputGroupPrepend2">@</span>
         </div>
-        <input name="email" onkeyup="validateEmail()" type="text" class="form-control" id="email" placeholder="Correo" aria-describedby="inputGroupPrepend2" required>
+        <input name="email" type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Endereço de email invalido." class="form-control" id="email" placeholder="Correo" aria-describedby="inputGroupPrepend2" required>
       </div>
     </div>
 
-
   </div>
+
   <div class="form-row">
     <div class="col-12 mb-3">
       <label for="validationDefault03">Empresa</label>
@@ -53,7 +72,10 @@
       <input style="visibility:hidden;position:absolute;" value="0" id="booleanPowerbi" type="text" class="form-control" name="dashboard_bi" aria-describedby="inputGroupPrepend2" required>
       <input style="visibility:hidden;position:absolute;" value="0" id="booleanSoporte" type="text" class="form-control" name="soporte_24_7" aria-describedby="inputGroupPrepend2" required>
       <input style="visibility:hidden;position:absolute;" value="0" id="booleanOptimizador" type="text" class="form-control" name="optimizador_de_turnos" aria-describedby="inputGroupPrepend2" required>
+      <input style="visibility:hidden;position:absolute;" value="" id="servicios_cotizados" type="text" class="form-control" name="servicios_cotizados">
 
+
+      <input style="visibility:hidden;position:absolute;" value="<?php echo $link; ?>" id="origen_zoho" type="text" class="form-control" name="origen_zoho">
       <?php
       if ($_GET['utm_campaign'])
         echo '<input style="visibility:hidden;position:absolute;" value="' . $_GET['utm_campaign'] . '" type="text" class="form-control"  name="utm_campaign" aria-describedby="inputGroupPrepend2" required>';
@@ -67,7 +89,40 @@
       ?>
 
     </div>
-
+    <div class="col-12 mb-3">
+      <label class="mt-3" for="privacy-policy">
+        <input name="privacy-policy" type="checkbox" id="privacy-policy" autocomplete="off" onchange="document.getElementById('submit-descarga-pdf').disabled = !this.checked;" required>
+        <span class="small acceptance-checkbox"> Li e aceito a <a href="/pt-br/politica-de-privacidade">política de proteção de dados</a> e os <a href="/pt-br/aviso-legal">termos e condições de uso</a>.* </span>
+      </label>
+      <label class="mt-3" for="marketing-consent">
+        <input name="marketing-consent" type="checkbox" id="marketing-consent" autocomplete="off">
+        <span class="small acceptance-checkbox">
+          Aceito receber informação comercial sobre as ofertas e promoções da empresa, bem como a newsletter da empresa GEOVICTORIA, S.L. relacionadas a promoções ou notícias de nosso software.
+        </span>
+      </label>
+    </div>
+    <input id="submit-descarga-pdf" type="submit" value="Vamos conversar!" class="wpcf7-form-control wpcf7-submit" style="margin:10px 0px 0px 0px;width:100%!important;height:auto;" disabled></input>
+    <small> * indica campo obrigatório. </small></p>
+    <p class="extra-small">
+      <b>Os dados processados ​​neste formulário serão processados ​​pelo empresa GEOVICTORIA, S.L domiciliada em C / López de Hoyos, nº 35, 3º - 28002, Madrid, como Controlador de Dados.</b>
+    </p>
+    <p class="extra-small">
+      <b>Objetivo:</b> Informamos que o objetivo dos dados coletados é o gestão de usuários do site, bem como gestão de comunicação eletrônicos.
+    </p>
+    <p class="extra-small">
+      <b>Legitimação:</b> Consentimento concedido marcando a caixa de seleção correspondente. Seus dados pessoais serão tratados com base em nossa <a href="pt-br/politica-de-privacidade">política de privacidade</a>.
+    </p>
+    <p class="extra-small">
+      <b>Recusa de consentimento:</b> A não introdução dos dados marcados como obrigatórios no formulário resultará na rejeição do seu pedido.
+    </p>
+    <p class="extra-small">
+      <b>Destinatários:</b> Os seus dados não serão transferidos a nenhuma empresa, salvo obrigação legal e em certos casos a terceiros países de empresas que fazem parte do grupo GEOVICTORIA, em especial VICTORIA S.A empresa chilena, mas sujeitas ao mesmo Finalidade descrita para a prestação do serviço e apenas para esse fim. Em qualquer caso, garantimos um nível adequado de protecção e garantias para que possa fazer uso dos seus direitos. Mais detalhes podem ser encontrados na política de privacidade do nosso site.
+    </p>
+    <p class="extra-small">
+      <b>Direitos:</b> Você pode acessar, retificar e excluir seus dados, solicitar sua portabilidade, bem como sua limitação ou oposição ao seu tratamento, você tem o direito de não se sujeitar a decisões automatizadas, bem como de obter informações claras e transparentes sobre os tratamento dos seus dados, conforme explicado nas informações adicionais.
+    </p>
+    <p class="extra-small">
+      <b>Direito de registrar uma reclamação junto à Autoridade Nacional de Proteção de Dados.:</b> De GEOVICTORIA, S.L. Fazemos todos os esforços para cumprir os regulamentos de proteção de dados, uma vez que é o bem mais valioso para nós. No entanto, informamos que, se você entender que seus direitos foram prejudicados, você pode registrar uma reclamação junto ao nosso oficial de proteção de dados Cristian Calderón Bessi, e-mail ccalderon@geovictoria.com ou perante a Autoridade Nacional de Proteção de Dados.
+    </p>
   </div>
-  <button onclick="cotizacionStep1()" class="gv-btn-medium gv-primary gv-text-color-white width-only-content" style="margin:10px 0px 0px 0px;width:100%!important;height:auto;" class="btn btn-primary">Baixar Reporte</button>
 </form>

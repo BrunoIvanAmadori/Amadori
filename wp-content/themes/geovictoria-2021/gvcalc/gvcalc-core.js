@@ -1100,11 +1100,77 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function cotizacionStep1() {
+function populateServiciosCotizados() {
+  let serviciosCotizados = document.querySelectorAll(".servicio-cotizado");
+  let serviciosCotizadosArray = [];
+
+  // selecciono el campo oculto a traves del cual paso la data
+  let serviciosCotizadosField = document.querySelector("#servicios_cotizados");
+
+  // Relaciono el valor de cada servicio con el nombre que deberiamos pasar a Hubspot
+  const serviciosCotizadosNames = [
+    {
+      value: document.querySelector("#totalEmpAs").value,
+      name: "Asistencia y Turnos",
+    },
+    {
+      value: document.querySelector("#totalEmpGes").value,
+      name: "Gestión de Acceso",
+    },
+    {
+      value: document.querySelector("#totalEmpCom").value,
+      name: "Portal Comedor y Casino",
+    },
+    {
+      value: document.querySelector("#totalEmpExt").value,
+      name: "Portal Externos",
+    },
+    {
+      value: document.querySelector("#booleanPowerbi").value,
+      name: "Dashboard BI",
+    },
+    {
+      value: document.querySelector("#booleanFormapp").value,
+      name: "Formulario App",
+    },
+    {
+      value: document.querySelector("#booleanReporte").value,
+      name: "Reporte Personalizado",
+    },
+    {
+      value: document.querySelector("#booleanOptimizador").value,
+      name: "Optimizador de Turnos",
+    },
+    {
+      value: document.querySelector("#booleanIntegraerp").value,
+      name: "Integración con otros Sistemas",
+    },
+    {
+      value: document.querySelector("#booleanSoporte").value,
+      name: "Soporte 24/7",
+    },
+  ];
+
+  serviciosCotizadosField.value = "";
+
+  serviciosCotizadosNames.forEach((cb) => {
+    if (cb.value != 0 && cb.value != null && cb.value != "false") {
+      serviciosCotizadosArray.push(cb.name);
+    }
+  });
+
+  serviciosCotizadosField.value = serviciosCotizadosArray.join(";");
+}
+
+function cotizacionStep1(event) {
+  event.preventDefault();
   const form = document.getElementById("cotizacion-form");
+  const calculatorSubmit = new CustomEvent("calculator-submit", {
+    bubbles: true,
+  });
 
   URLPDF = "";
-  URLPDF += document.querySelector("#name").value;
+  URLPDF += document.querySelector("#firstname").value;
   URLPDF += document.querySelector("#email").value;
   URLPDF += document.querySelector("#enterprise").value;
   URLPDF += document.querySelector("#phone").value;
@@ -1184,15 +1250,17 @@ function cotizacionStep1() {
 
   var validFullname = 0;
 
-  if (document.querySelector("#name").value) validFullname += 0.5;
+  if (document.querySelector("#firstname").value) validFullname += 0.5;
 
   if (document.querySelector("#lastname").value) validFullname += 0.5;
 
-  console.log(validFullname);
-
-  if (form.checkValidity() && validEmail > 0 && validFullname == 1) {
+  if (form.checkValidity() && validFullname == 1) {
     //document.getElementById("step1-title").style.display = 'none';
     //document.getElementById("step1-content").style.display = 'none';
+    populateServiciosCotizados();
+
+    form.dispatchEvent(calculatorSubmit);
+    // sendToHubspot(form);
     cotizationtoMail();
     cotizationtoPdf();
 
@@ -1215,8 +1283,8 @@ function validateEmail() {
   var emailField = document.getElementById("email").value;
   var regEXP = /\S+@\S+\.\S+/;
   return regEXP.test(String(emailField).toLowerCase()) == 1
-    ? (validEmail = 1)
-    : (validEmail = 0);
+    ? ((validEmail = 1), console.log("validemail1"))
+    : ((validEmail = 0), console.log("validemail0"));
 }
 
 function getFormInputs(a) {
@@ -1269,13 +1337,13 @@ async function submitEstimate(a) {
   }
 }
 
-document
-  .querySelector("#validationDefaultUsername")
-  .addEventListener("keypress", function (evt) {
-    if (evt.which < 48 || evt.which > 57) {
-      evt.preventDefault();
-    }
-  });
+// document
+//   .querySelector("#validationDefaultUsername")
+//   .addEventListener("keypress", function (evt) {
+//     if (evt.which < 48 || evt.which > 57) {
+//       evt.preventDefault();
+//     }
+//   });
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");

@@ -22,7 +22,7 @@ $legislacionText = file_get_contents($locationFileName, true);
 
 //Start condición de IVA (USA PARSEO LOCACION)
 
-if ($location != "ar" && $location != "mx" && $location != "en" && $location != "pt-br" )
+if ($location != "ar" && $location != "mx" && $location != "en-int" && $location != "pt-br" )
 $iva_check = "+ iva";
 
 if ($location == "pe"){
@@ -34,6 +34,3 @@ $iva_check = "";
 
 
 //End condición de IVA
-
-
-?>

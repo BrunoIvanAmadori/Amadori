@@ -19,10 +19,9 @@ const extractHubspotCookie = () =>
     .split("=")[1];
 
 // form submit handler
-const submitToHubspot = (data, targetForm) => {
-  console.log("hsforms submit...");
+const doSubmitToHubspot = (data, targetForm) => {
   const getFormFields = function () {
-    let formFields = new FormData(data.target);
+    let formFields = new FormData(data);
     let fieldsToDelete = [];
 
     for (var entry of formFields.entries()) {
@@ -40,8 +39,6 @@ const submitToHubspot = (data, targetForm) => {
     return Object.fromEntries(formFields);
   };
 
-  console.log(getFormFields());
-
   const formData = {
     ...getFormFields(),
     hs_context: {
@@ -50,7 +47,6 @@ const submitToHubspot = (data, targetForm) => {
     },
   };
 
-  console.log(formData);
   const formDataUrlParams = new URLSearchParams(convertToFormData(formData));
 
   fetch("https://forms.hubspot.com/uploads/form/v2/7742864/" + targetForm, {
@@ -66,4 +62,4 @@ const submitToHubspot = (data, targetForm) => {
   });
 };
 
-export { submitToHubspot };
+export { doSubmitToHubspot };
