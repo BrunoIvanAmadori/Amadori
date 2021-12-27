@@ -40,25 +40,8 @@ get_header();
 						<p>
 							Our experts will guide you.
 						</p>
-						<?php
-						// Program to display URL of current page.
 
-						if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-							$link = "https";
-						else
-							$link = "http";
-
-						// Here append the common URL characters.
-						$link .= "://";
-
-						// Append the host(domain name, ip) to the URL.
-						$link .= $_SERVER['HTTP_HOST'];
-
-						// Append the requested resource location to the URL
-						$link .= $_SERVER['REQUEST_URI'];
-						?>
-
-						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal" html_class="potenciales-clientes gdpr" origen_zoho="' . $link . '"]'); ?>
+						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal" html_class="potenciales-clientes gdpr" origen_zoho="' . getURLWithoutQuery() . '"]'); ?>
 
 					</div>
 				</div>
