@@ -70,6 +70,7 @@
   },
   "dependencies": {
     "@splidejs/splide": "^2.4.21",
+    "@splidejs/splide-extension-auto-scroll": "^0.3.3",
     "animejs": "^3.2.1",
     "beeper": "^3.0.0",
     "bootstrap": "^5.1.0",

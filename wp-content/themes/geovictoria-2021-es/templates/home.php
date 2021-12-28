@@ -54,56 +54,51 @@ get_header();
 		</div>
 		<section class="container col-12 trusting-companies mb-3">
 			<h2 class="text-center gray section-title fw-light">Nuestros clientes ya<br><span class="fw-bold">optimizan su personal con nosotros</span></h2>
-			<div class="d-flex flex-wrap justify-content-around">
-
-				<div class="trusting-companies__container position-relative col-12 col-md-auto d-flex justify-content-center">
-					<div class="trusting-companies__content d-flex flex-column align-items-center">
-						<img class="trusting-companies__logo" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/securitas-logo.png'>
-
-					</div>
-
+			<div class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/woohoo-group-logobnw.png" />
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/voicedesk-logo.png" />
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/viso-logo.png" />
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/bohemia-logo.png" />
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/adecco-logo.png" />
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/thyssenkrupp-logo.png" />
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/sikla-logo.png" />
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/starbucks-logo.png" />
+							</div>
+						</li>
+					</ul>
 				</div>
-
-				<div class="trusting-companies__container position-relative col-12 col-md-auto d-flex justify-content-center">
-					<div class="trusting-companies__content d-flex flex-column align-items-center">
-						<img class="trusting-companies__logo" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/starbucks-logo.png'>
-						<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
-					</div>
-					<div class="trusting-companies__description">
-						<i><small> “Es una herramienta que eleva la gestión de los gerentes de tienda”</small></i>
-					</div>
-				</div>
-
-
-				<div class="trusting-companies__container position-relative col-12 col-md-auto d-flex justify-content-center">
-					<div class="trusting-companies__content d-flex flex-column align-items-center">
-						<img class="trusting-companies__logo" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/adecco-logo.png'>
-
-					</div>
-
-				</div>
-
-
-				<div class="trusting-companies__container position-relative col-12 col-md-auto d-flex justify-content-center">
-					<div class="trusting-companies__content d-flex flex-column align-items-center">
-						<img class="trusting-companies__logo--scotiabank" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/scotiabank-logo.png'>
-						<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
-					</div>
-					<div class="trusting-companies__description">
-						<i><small>“Con GeoVictoria fichamos de forma segura desde nuestras casas y lugares de trabajo”</small></i>
-					</div>
-				</div>
-
-				<div class="trusting-companies__container position-relative col-12 col-md-auto d-flex justify-content-center">
-					<div class="trusting-companies__content d-flex flex-column align-items-center" type="button">
-						<img class="trusting-companies__logo--cocacola" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/coca-logo.png'>
-						<div class="trusting-companies__arrow"><i class="fal fa-chevron-up"></i></div>
-					</div>
-					<div class="trusting-companies__description">
-						<i><small>“Gracias a este sistema, el trabajador conoce siempre la duración de su jornada”</small></i>
-					</div>
-				</div>
-
 			</div>
 		</section>
 	</div>

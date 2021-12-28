@@ -12,6 +12,9 @@ import Shared from "./_shared.js";
 import "../../scss/front-page.scss";
 import submitToHubspot from "../hsFormSubmission.js";
 
+import Splide from "@splidejs/splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+
 let progressMobileComponent_step_1 = document.querySelector(
   ".progressMobile__bg.step-1"
 );
@@ -53,3 +56,35 @@ addAnimationTrigger(
   progressMobileComponent_step_5,
   progressMobileAnimation_step_5
 );
+
+const splide = document.querySelector(".splide");
+
+if (splide) {
+  new Splide(".splide", {
+    type: "loop",
+    drag: "free",
+    focus: "center",
+    perPage: 5,
+    interval: 2500,
+    autoplay: true,
+    resetProgress: true,
+    easing: "linear",
+    speed: 2500,
+    pagination: false,
+    arrows: false,
+    lazyLoad: true,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    breakpoints: {
+      1100: {
+        perPage: 5,
+      },
+      767: {
+        perPage: 3,
+      },
+      564: {
+        perPage: 2,
+      },
+    },
+  }).mount();
+}

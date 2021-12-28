@@ -1743,3 +1743,8 @@ body {
     font-size: 1em;
   }
 }
+
+// Hide Recaptcha
+.grecaptcha-badge {
+  visibility: hidden;
+}
