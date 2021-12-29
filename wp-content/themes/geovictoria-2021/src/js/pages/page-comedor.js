@@ -59,6 +59,13 @@ window.addEventListener("scroll", function (e) {
   }
 });
 
+window.addEventListener("load", (ev) => {
+  let hiddenElements = document.querySelectorAll(".invisible");
+  for (let i = 0; i < hiddenElements.length; i++) {
+    hiddenElements[i].classList.remove("invisible");
+  }
+});
+
 addAnimationTrigger(animation_trigger_step_1, comedor_animation_step_1);
 addAnimationTrigger(animation_trigger_step_2, comedor_animation_step_2);
 addAnimationTrigger(animation_trigger_step_3, comedor_animation_step_3);

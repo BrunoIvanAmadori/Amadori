@@ -290,7 +290,7 @@ get_header();
 	<?php else : ?>
 
 		<div class="animation-container container">
-			<div class="animation-slider">
+			<div class="animation-slider invisible">
 				<section class="d-flex step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
 					<div class="step-1__bg-curve">
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-gray.svg" />

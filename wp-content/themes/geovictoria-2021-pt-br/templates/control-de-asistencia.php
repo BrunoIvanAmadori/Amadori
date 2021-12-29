@@ -294,7 +294,7 @@ get_header();
 		</section>
 	<?php else : ?>
 
-		<div class="animation-container container">
+		<div class="animation-container invisible container">
 			<div class="animation-slider">
 				<section class="d-flex step-1 animation-asistencia flex-column flex-md-row align-items-center justify-content-center">
 					<div class="step-1__bg-curve">

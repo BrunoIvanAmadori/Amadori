@@ -450,16 +450,6 @@ get_header();
 				<span class="white fw-bold w-100">¡Quiero actualizarme!</span>
 			</button>
 		</div>
-
-		<form id="asd-clientes">
-			<p>
-				<input id="email" name="email" type="text" required>
-			</p>
-			<p>
-				<input id="first-name" name="first-name" type="text">
-			</p>
-			<input type="submit">
-		</form>
 	</section>
 </main><!-- #main -->
 <?php
