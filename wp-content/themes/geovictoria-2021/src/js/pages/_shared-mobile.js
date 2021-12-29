@@ -17,12 +17,10 @@ Webfontloader.load({
   timeout: 8000,
 });
 
-console.log("shared-mobile-carga");
-
 initResizer();
 enableAnimeSelectors();
 hsFormsInit();
-console.log("hsFormsInit Mobile");
+
 const progressBar = document.querySelector(".readingProgressbar");
 if (progressBar) {
   progressBar.setAttribute("value", 0);

@@ -80,7 +80,6 @@ transition_animation_step_1
       duration: 500,
       easing: "easeInOutSine",
       changeBegin: function (anim) {
-        console.log("changeBegin");
         if (animation2 == 0) {
           acceso_animation_step_2.restart();
         }
@@ -141,7 +140,6 @@ transition_animation_step_1
     scale: [0, 1],
     duration: 500,
     changeBegin: function (anim) {
-      console.log("changeBegin");
       if (animation3 == 0) {
         acceso_animation_step_3.restart();
       }

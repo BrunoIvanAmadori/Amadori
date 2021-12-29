@@ -9,6 +9,7 @@ import Shared from "./_shared.js";
 import { throttle } from "../throttle.js";
 import "../../scss/page-comedor.scss";
 import { addAnimationTrigger } from "../addAnimationTrigger";
+import { initAnimationContainerLoading } from "../initAnimationContainerLoading";
 
 let scrollOffset = window.scrollY;
 
@@ -70,6 +71,7 @@ addAnimationTrigger(animation_trigger_step_1, comedor_animation_step_1);
 addAnimationTrigger(animation_trigger_step_2, comedor_animation_step_2);
 addAnimationTrigger(animation_trigger_step_3, comedor_animation_step_3);
 setIconScrollPosition(scrollOffset);
+initAnimationContainerLoading();
 
 // const getAnimationSpaceHeight = () => {
 //   let el = window.getComputedStyle(document.querySelector(".animation-space"))

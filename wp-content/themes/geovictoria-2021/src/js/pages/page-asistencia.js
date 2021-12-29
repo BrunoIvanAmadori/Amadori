@@ -9,6 +9,7 @@ import Shared from "./_shared.js";
 import { throttle } from "../throttle.js";
 import "../../scss/page-asistencia.scss";
 import { addAnimationTrigger } from "../addAnimationTrigger";
+import { initAnimationContainerLoading } from "../initAnimationContainerLoading";
 
 let scrollOffset = window.scrollY;
 
@@ -58,17 +59,12 @@ window.addEventListener("scroll", function (e) {
   }
 });
 
-window.addEventListener("load", (ev) => {
-  let hiddenElements = document.querySelectorAll(".invisible");
-  for (let i = 0; i < hiddenElements.length; i++) {
-    hiddenElements[i].classList.remove("invisible");
-  }
-});
-
 addAnimationTrigger(animation_trigger_step_1, asistencia_animation_step_1);
 addAnimationTrigger(animation_trigger_step_2, asistencia_animation_step_2);
 addAnimationTrigger(animation_trigger_step_3, asistencia_animation_step_3);
+
 setIconScrollPosition(scrollOffset);
+initAnimationContainerLoading();
 
 // const getAnimationSpaceHeight = () => {
 //   let el = window.getComputedStyle(document.querySelector(".animation-space"))

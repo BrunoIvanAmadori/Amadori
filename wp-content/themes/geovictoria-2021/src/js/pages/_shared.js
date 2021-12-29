@@ -22,14 +22,10 @@ let stickyMenu = document.querySelector("#sticky-menu");
 
 history.scrollRestoration = "manual";
 
-console.log("Shared carga, history.scrollRestoration");
-
 new Sticky(stickyMenu);
 
 enableAnimeSelectors();
 initResizer();
 hsFormsInit();
-
-console.log("hsFormsInit");
 
 // window.sendToHubspot = sendToHubspot;
