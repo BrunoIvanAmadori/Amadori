@@ -107,31 +107,6 @@ function init() {
       }
     });
   });
-
-  // const addListener = (form) => {
-  //   console.log(form);
-  //   if (form.el && form.hs_id) {
-  //     form.el.setAttribute("doSubmitToHubspot", "true");
-
-  //     form.el.addEventListener("submit", (ev) => {
-  //       doSubmitToHubspot(ev, form.hs_id);
-  //       ev.preventDefault();
-  //     });
-  //   }
-  // };
-
-  // forms.forEach((form) => {
-  //   addListener(form);
-  // });
 }
-
-// funcion accesible desde HTML que permite enviar form a Hubspot - la uso para la calculadora
-// function sendToHubspot(senderEl) {
-//   forms.forEach((form) => {
-//     if (form.el == senderEl) {
-//       doSubmitToHubspot(form.el, form.hs_id);
-//     }
-//   });
-// }
 
 export { init };

@@ -1,21 +1,3 @@
-<?php
-
-// Program to display URL of current page.
-if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')
-  $link = "https";
-else
-  $link = "http";
-
-// Here append the common URL characters.
-$link .= "://";
-
-// Append the host(domain name, ip) to the URL.
-$link .= $_SERVER['HTTP_HOST'];
-
-// Append the requested resource location to the URL
-$link .= $_SERVER['REQUEST_URI'];
-?>
-
 <form id="cotizacion-form" class="calculadora no-gdpr" onsubmit="return(cotizacionStep1(event));">
   <div class="form-row">
     <div class="col-md-12 mb-3">
@@ -73,7 +55,7 @@ $link .= $_SERVER['REQUEST_URI'];
     <input style="visibility:hidden;position:absolute;" value="0" id="booleanSoporte" type="text" class="form-control servicio-cotizado" name="soporte_24_7" aria-describedby="inputGroupPrepend2" required>
     <input style="visibility:hidden;position:absolute;" value="0" id="booleanOptimizador" type="text" class="form-control servicio-cotizado" name="optimizador_de_turnos" aria-describedby="inputGroupPrepend2" required>
     <input style="visibility:hidden;position:absolute;" value="" id="servicios_cotizados" type="text" class="form-control" name="servicios_cotizados">
-    <input style="visibility:hidden;position:absolute;" value="<?php echo $link; ?>" id="origen_zoho" type="text" class="form-control" name="origen_zoho">
+    <input style="visibility:hidden;position:absolute;" value="<?php echo getURLWithoutQuery(); ?>" id="origen_zoho" type="text" class="form-control" name="origen_zoho">
 
     <?php
     if ($_GET['utm_campaign'])
@@ -84,7 +66,6 @@ $link .= $_SERVER['REQUEST_URI'];
 
     if ($_GET['utm_source'])
       echo '<input style="visibility:hidden;position:absolute;" value="' . $_GET['utm_source'] . '" type="text" class="form-control"  name="utm_source" aria-describedby="inputGroupPrepend2" required>';
-
     ?>
   </div>
   <input id="submit-descarga-pdf" type="submit" value="Descargar mi cotización" class="wpcf7-form-control wpcf7-submit" style="margin:10px 0px 0px 0px;width:100%!important;height:auto;"></input>
