@@ -61,9 +61,6 @@
 							</div>
 						</a>
 					<?php endif; ?>
-
-
-
 				</div>
 				<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1')) : ?>
 					<div class="contact-phone pe-3">

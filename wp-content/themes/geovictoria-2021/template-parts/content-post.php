@@ -30,7 +30,7 @@
 
 					<img class="blog-card__logo-icon" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/logo-gv.svg'>
 					<?php echo (esc_html_x('Por', 'Speaking of author', 'geovictoria-2021')) ?>
-					<span class="fw-bold pe-2"><?php echo "Nicolas Cortés" ?></span>
+					<span class="fw-bold pe-2"><?php the_author() ?></span>
 					<i class="far fa-calendar-alt"></i>
 					<?php echo get_the_date('m/d/y') ?>
 

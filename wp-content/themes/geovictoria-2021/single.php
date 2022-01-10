@@ -88,25 +88,27 @@ $relacionadas = new WP_Query(
 
 				<footer class="entry-footer col-lg-8">
 					<h4>
-						¡Unete a nuestra conversación!
+						👋 ¡Únete a nuestra conversación!
 					</h4>
-					<p class="fs-5">Te invitamos a compartir este artículo</p>
-					<!-- <div class="share-icon__container">
-			<div class="share-icon__circle">
-				<i class="fab fa-facebook-f"></i>
-			</div>
-			<div class="share-icon__circle">
-				<i class="fab fa-linkedin-in"></i>
-			</div>
-			<div class="share-icon__circle">
-				<i class="fab fa-whatsapp"></i>
-			</div>
-			<div class="share-icon__circle">
-				<i class="fab fa-twitter"></i>
-			</div>
+					<p>Comparte el artículo y deja tu opinión.</p>
+					<div class="share-icon__container">
+
+						<button class="btn share-icon__btn--fb d-flex justify-content-center align-items-center">
+							<img class="me-3" src="<?php echo get_template_directory_uri() ?>/dist/img/icons/facebook-f-brands.svg">
+							<small class="fw-lighter">Compartir</small>
+						</button>
+						<button class="btn share-icon__btn--in d-flex justify-content-center align-items-center">
+							<img class="me-3" src="<?php echo get_template_directory_uri() ?>/dist/img/icons/linkedin-in-brands.svg">
+							<small class="fw-lighter">Compartir</small>
+						</button>
 
 
-		</div> -->
+						<button class="btn share-icon__btn--tw d-flex justify-content-center align-items-center">
+							<img class="me-3" src="<?php echo get_template_directory_uri() ?>/dist/img/icons/twitter-brands.svg">
+							<small class="fw-lighter">Twittear</small>
+						</button>
+
+					</div>
 				</footer><!-- .entry-footer -->
 
 			</article><!-- #post-<?php the_ID(); ?> -->

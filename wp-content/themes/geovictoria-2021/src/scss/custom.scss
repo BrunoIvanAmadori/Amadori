@@ -39,6 +39,9 @@ $container-max-widths: (
 
 .btn {
   font-weight: 500 !important;
+    // &:hover {
+    //   color: white !important;
+    // }
 }
 
 .container {
@@ -1441,10 +1444,53 @@ footer.entry-footer {
 //   padding-bottom: 70px;
 // }
 
-.share-icon__circle {
-  background-color: $neutral-3;
-  color: white;
-  border-radius: 100%;
+// share icon
+
+.share-icon {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__btn {
+    color: $neutral-5;
+    border-radius: 10px;
+    height: 50px;
+    margin-right: 0.5em;
+    cursor: pointer;
+    transition: all 0.15s;
+    padding: 0px 20px;
+
+    &--fb {
+      @extend .share-icon__btn;
+      background-color: #3b5998;
+      &:hover {
+        background-color: darken(#3b5998, 10%);
+      }
+    }
+
+    &--tw {
+      @extend .share-icon__btn;
+      background-color: #00acee;
+      &:hover {
+        background-color: darken(#00acee, 10%);
+      }
+    }
+
+    &--in {
+      @extend .share-icon__btn;
+      background-color: #0e76a8;
+      &:hover {
+        background-color: darken(#0e76a8, 10%);
+      }
+    }
+
+    & img {
+      height: 25px;
+      filter: invert(100%);
+    }
+  }
 }
 
 .alm-btn-wrap {

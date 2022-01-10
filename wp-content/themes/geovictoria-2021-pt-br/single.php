@@ -80,34 +80,34 @@ $relacionadas = new WP_Query(
 				<div class="entry-banner mt-4 mb-4">
 					<?php $path = explode('/', $_SERVER["REQUEST_URI"]); ?>
 
-					<a href="<?php echo '/' . $path[1]; ?>/calculadora/?utm_source=pricing+&utm_medium=banner+calculadora&utm_campaign=campa%C3%B1a+pricing">
+					<a href="<?php echo '/' . $path[1]; ?>/precos/?utm_source=pricing+&utm_medium=banner+calculadora&utm_campaign=campa%C3%B1a+pricing">
 						<img class="d-none d-md-flex" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer-pt-br.png">
 						<img class="d-flex d-md-none" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer-mobile-pt-br.png">
 					</a>
 				</div>
 				<footer class="entry-footer col-lg-8">
 					<h4>
-
-						Junte-se à nossa conversa!
+						👋 Junte-se à nossa conversa!
 					</h4>
-					<p class="fs-5">
-						Nós convidamos você a compartilhar este artigo</p>
-					<!-- <div class="share-icon__container">
-			<div class="share-icon__circle">
-				<i class="fab fa-facebook-f"></i>
-			</div>
-			<div class="share-icon__circle">
-				<i class="fab fa-linkedin-in"></i>
-			</div>
-			<div class="share-icon__circle">
-				<i class="fab fa-whatsapp"></i>
-			</div>
-			<div class="share-icon__circle">
-				<i class="fab fa-twitter"></i>
-			</div>
+					<p>Compartilhe o artigo e deixe sua opinião.</p>
+					<div class="share-icon__container">
+
+						<button class="btn share-icon__btn--fb d-flex justify-content-center align-items-center">
+							<img class="me-3" src="<?php echo get_template_directory_uri() ?>/dist/img/icons/facebook-f-brands.svg">
+							<small class="fw-lighter">Compartilhe </small>
+						</button>
+						<button class="btn share-icon__btn--in d-flex justify-content-center align-items-center">
+							<img class="me-3" src="<?php echo get_template_directory_uri() ?>/dist/img/icons/linkedin-in-brands.svg">
+							<small class="fw-lighter">Compartilhe </small>
+						</button>
 
 
-		</div> -->
+						<button class="btn share-icon__btn--tw d-flex justify-content-center align-items-center">
+							<img class="me-3" src="<?php echo get_template_directory_uri() ?>/dist/img/icons/twitter-brands.svg">
+							<small class="fw-lighter">Tweet</small>
+						</button>
+
+					</div>
 				</footer><!-- .entry-footer -->
 
 			</article><!-- #post-<?php the_ID(); ?> -->
