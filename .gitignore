@@ -1,0 +1,45 @@
+# ignore everything which is in folders
+
+
+# ignore everything in the root
+/*
+
+!.gitignore
+!.htaccess
+!gv_handler.php
+!nginx.conf
+# don't ignore wp-content
+
+!wp-content/
+
+
+# # ignore everything in the "wp-content" directory, except:
+# # "mu-plugins", "plugins", "themes" directory
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins
+!wp-content/themes
+
+# # ignore these plugins
+wp-content/plugins/*
+!wp-content/plugins/gv-conditional-html
+
+# # ignore specific themes
+wp-content/themes/twenty*/
+#wp-content/themes/geovictoria-2021
+
+#!wp-content/themes/geovictoria-2021/
+#!wp-content/themes/geovictoria-2021**
+#!wp-content/themes/geovictoria-2021*/**
+
+# # ignore node dependency directories
+wp-content/themes/geovictoria-2021/dist/
+node_modules/
+wp-content/themes/geovictoria-2021/node_modules/
+wp-content/themes/geovictoria-2021/vendor/
+
+# # ignore log files and databases
+*.log
+*.sql
+*.sqlite
+

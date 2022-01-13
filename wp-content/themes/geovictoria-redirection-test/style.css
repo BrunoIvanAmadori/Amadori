@@ -1,0 +1,52 @@
+/*
+ Theme Name:   Geovictoria 2021 (Redirection) - Child
+ Description:  Child Theme basado en Geovictoria 2021
+ Author:       Bruno Amadori
+ Template:     geovictoria-2021
+ Version:      1.0.0
+ Text Domain:  geovictoria-2021-redirection
+*/
+
+img.loader {
+  max-width: 150px !important;
+}
+
+img.flag {
+  max-width: 50px;
+}
+
+.region__flag-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100px;
+  justify-content: center;
+}
+
+.logo {
+  width: 300px;
+}
+
+.region__container {
+  border: solid 1px #dddddd;
+  background-color: #eeeeee;
+  border-radius: 1em;
+  padding: 2em 0 0.5em;
+}
+
+.region span {
+  font-size: 0.7em;
+}
+
+.region__flag {
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
