@@ -173,6 +173,16 @@ function geovictoria_2021_widgets_init()
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(array(
+		'name'          => esc_html__('Single Post Sidebar', 'geovictoria-2021'),
+		'id'            => 'single-post-sidebar',
+		'description'   => esc_html__('Add widgets here.', 'geovictoria-2021'),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	));
 }
 add_action('widgets_init', 'geovictoria_2021_widgets_init');
 
@@ -184,8 +194,9 @@ function geovictoria_2021_scripts()
 	wp_enqueue_style('geovictoria-2021-custom-fonts', get_template_directory_uri() . '/dist/fonts/fonts.css', array(), _S_VERSION, false);
 	wp_enqueue_style('geovictoria-2021-font-awesome', get_template_directory_uri() . '/dist/fonts/font-awesome.css', [], _S_VERSION, false);
 	wp_enqueue_style('geovictoria-2021-style', get_stylesheet_uri());
-	wp_style_add_data('geovictoria-2021-style', 'rtl', 'replace');
 	wp_enqueue_style('geovictoria-2021-shared-styles', get_template_directory_uri() . '/dist/css/sharedStyles.css', array(), _S_VERSION, false);
+	wp_style_add_data('geovictoria-2021-style', 'rtl', 'replace');
+
 	wp_enqueue_script('geovictoria-2021-navigation', get_template_directory_uri() . '/dist/js/navigation.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script('geovictoria-2021-modernizr', get_template_directory_uri() . '/dist/js/modernizr-webp.min.js', array(), _S_VERSION, true);
 	wp_enqueue_script('geovictoria-2021-anime-js', get_template_directory_uri() . '/dist/js/anime.min.js');

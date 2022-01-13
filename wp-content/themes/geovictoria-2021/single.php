@@ -39,9 +39,8 @@ $relacionadas = new WP_Query(
 					?>
 					<div class="col-lg-4">
 						<aside id="secondary">
-
-							<div class="row gy-4">
-								<h4>Notas relacionadas</h4>
+							<div class="notas-relacionadas">
+								<h4 class="notas-relacionadas__title">Notas relacionadas</h4>
 								<?php
 								if ($relacionadas->have_posts()) {
 									while ($relacionadas->have_posts()) {
@@ -51,41 +50,16 @@ $relacionadas = new WP_Query(
 									wp_reset_postdata();
 								}
 								?>
-
-								<div class="col-12">
-									<div class="card subscribe-sidebar h-100">
-										<div class="card-body flex-column d-flex justify-content-center">
-											<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
-
-											<h4 class="card-title mb-4 text-center">
-												Sé el primero en recibir nuevos contenidos.
-											</h4>
-
-											<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
-												<span class="white fw-bold">¡Suscribirme ahora!</span>
-											</button>
-										</div>
-
-									</div>
-								</div>
-
 							</div>
-
-
+							<div class="smart-cta">
+								<?php if (is_active_sidebar('single-post-sidebar')) : ?>
+									<?php dynamic_sidebar('single-post-sidebar'); ?>
+								<?php endif; ?>
+							</div>
 
 						</aside>
 					</div>
 				</div>
-
-				<div class="entry-banner mt-4 mb-4">
-					<?php $path = explode('/', $_SERVER["REQUEST_URI"]); ?>
-
-					<a href="<?php echo '/' . $path[1]; ?>/calculadora/?utm_source=pricing+&utm_medium=banner+calculadora&utm_campaign=campa%C3%B1a+pricing">
-						<img class="d-none d-md-flex" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer.png">
-						<img class="d-flex d-md-none" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/banner-pricer-mobile.png">
-					</a>
-				</div>
-
 				<footer class="entry-footer col-lg-8">
 					<h4>
 						👋 ¡Únete a nuestra conversación!
