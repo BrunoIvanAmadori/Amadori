@@ -30,31 +30,31 @@ class GVConditionalHTMLWidget extends WP_Widget
     }
     public function widget($args, $instance)
     {
-        $title = apply_filters('widget_title', $instance['title']);
+        $current_category = get_the_category();
 
-        //if title is present
-        if (!empty($title))
-            echo $args['before_title'] . $title . $args['after_title'];
-        //output
-
+        foreach (get_categories() as $category) :
+            if ($category->name == $current_category[0]->name) {
+                echo $instance[$category->name];
+            }
+        endforeach;
     }
     public function form($instance)
     {
         foreach (get_categories() as $category) :
 ?>
-            <p>
+            <div>
                 <label for="<?php echo $this->get_field_id($category->name) ?>"><?php echo 'Category: ' . $category->name; ?></label>
-                <textarea class="widefat" id="<?php echo $this->get_field_id($category->name) ?>" name="<?php $this->get_field_name($category->name) ?>" type="text" value="" />
-            </p>
+                <textarea class="widefat" id="<?php echo $this->get_field_id($category->name) ?>" name="<?php echo $this->get_field_name($category->name) ?>" value="<?php echo $instance[$category->name] ?>"><?php echo $instance[$category->name] ?></textarea>
+            </div>
 <?php
         endforeach;
     }
     public function update($new_instance, $old_instance)
     {
         $instance = array();
-
+        //$instance['Recursos Humanos'] = $new_instance['Recursos Humanos'];
         foreach (get_categories() as $category) :
-            $instance[$category->name] = (!empty($instance[$category->name])) ? ($new_instance[$category->name]) : '';
+            $instance[$category->name] = (!empty($new_instance[$category->name])) ? ($new_instance[$category->name]) : '';
         endforeach;
 
         return $instance;
