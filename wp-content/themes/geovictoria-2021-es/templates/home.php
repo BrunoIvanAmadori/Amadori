@@ -97,6 +97,11 @@ get_header();
 								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/starbucks-logo.png" />
 							</div>
 						</li>
+						<li class="splide__slide">
+							<div class="trusting-companies__content">
+								<img class="trusting-companies__logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/logos/soluciones-reunidas-logo.png" />
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>

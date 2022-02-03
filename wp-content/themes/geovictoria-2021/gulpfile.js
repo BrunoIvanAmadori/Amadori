@@ -18,6 +18,7 @@ const imagemin = require("gulp-imagemin");
 const imageminwebp = require("imagemin-webp");
 const webp = require("gulp-webp");
 var del = require("del");
+const changed = require("gulp-changed");
 
 // Compile CSS from Sass.
 function buildCssStyles() {
@@ -51,6 +52,7 @@ function buildJsScripts() {
 function buildImg() {
   return (
     src("src/img/**/*.+(png|jpg|gif|svg)")
+    .pipe(changed('dist/img/'))
       .pipe(plumbError()) // Global error handler through all pipes.
       .pipe(imagemin())
       //   .pipe(webp())

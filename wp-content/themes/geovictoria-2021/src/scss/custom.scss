@@ -21,9 +21,6 @@ $container-max-widths: (
 
 .btn {
   font-weight: 500 !important;
-  // &:hover {
-  //   color: white !important;
-  // }
 }
 
 .container {
@@ -152,10 +149,6 @@ h6 {
   font-family: "Brsonoma", Arial, sans-serif;
 }
 
-.section-title {
-  margin-bottom: 1.5rem;
-}
-
 video {
   cursor: pointer;
 }
@@ -177,6 +170,10 @@ a {
   &:visited {
     color: $primary-1;
   }
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
 }
 
 // _shared.css
@@ -1335,7 +1332,7 @@ div[role="form"] {
 
 .blog-card--small {
   @extend .blog-card;
-  padding-left: 0;
+  padding: 0;
   min-height: auto;
   margin-bottom: 1rem;
 
@@ -1449,6 +1446,7 @@ footer.entry-footer {
 .share-icon {
   &__container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
@@ -1461,6 +1459,11 @@ footer.entry-footer {
     cursor: pointer;
     transition: all 0.15s;
     padding: 0px 20px;
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: white;
+    }
 
     &--fb {
       @extend .share-icon__btn;
@@ -1793,4 +1796,17 @@ body {
 // Hide Recaptcha
 .grecaptcha-badge {
   visibility: hidden;
+}
+
+// Component Gray Card
+.gray-card {
+  padding: 30px;
+  background-color: $neutral-4;
+  border-radius: $border-radius-1;
+}
+
+// modal for hubspot
+.modal-hubspot {
+  width: 100%;
+  pointer-events: auto;
 }

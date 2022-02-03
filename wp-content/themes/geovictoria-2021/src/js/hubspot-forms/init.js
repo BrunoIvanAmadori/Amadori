@@ -3,12 +3,14 @@
 // addListener: settea atributo y agrega listener
 
 import { doSubmitToHubspot } from "./submit";
+import { addListeners } from "./utils";
 
 var forms = [];
 
 function init() {
   console.log("hsforms init...");
-
+  addListeners();
+  console.log("listeners added");
   // Defining form list
 
   // Defining selectors
