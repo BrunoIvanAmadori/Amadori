@@ -1,0 +1,37 @@
+/**handles:ai_childtheme_this**/
+/*
+woot woot
+*/
+
+
+/*** Any self-respecting desktop ***/
+@media all and (min-width: 1200px) {
+}
+
+/*** For the people who love to resize or keep windows open haphazardly ***/
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/*** All the mobile devices ***/
+@media all and (max-width: 1024px) {
+}
+
+/*** iPad landscape and more resizers ***/
+@media all and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*** iPad portrait and below ***/
+@media all and (max-width: 550px) {
+}
+
+/*** iPad portrait and more resizers ***/
+@media all and (min-width: 551px) and (max-width: 768px) {
+}
+
+/*** Phablets and all phones ***/
+@media all and (max-width: 550px) {
+}
+
+/*** Regular sized phones for non-Shaq sized people ***/
+@media all and (max-width: 479px) {
+}

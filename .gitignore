@@ -19,6 +19,10 @@ wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins
 !wp-content/themes
+!wp-content/uploads
+wp-content/uploads/20**
+
+# # ignore folders on uploads
 
 # # ignore these plugins
 wp-content/plugins/*
