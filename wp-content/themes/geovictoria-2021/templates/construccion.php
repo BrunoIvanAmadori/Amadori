@@ -26,7 +26,7 @@ get_header();
 						necesidades. Súmate a un nuevo mundo de gestión.
 					</p>
 					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white fw-bold">¡Quiero actualizarme!</span>
+						<span class="white fw-bold">¡Probar gratis!</span>
 					</button>
 				</div>
 			</div>

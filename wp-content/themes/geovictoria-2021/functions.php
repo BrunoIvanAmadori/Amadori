@@ -436,3 +436,116 @@ function getURLWithoutQuery()
 
 	return $link;
 }
+
+/**
+ * Function to create custom post type for Success Stories
+ */
+
+function register_caso_de_exito_cpt()
+{
+	$labels = array(
+		'name'                  => _x('Casos de éxito', 'Post type general name', 'caso_de_exito'),
+		'singular_name'         => _x('Caso de éxito', 'Post type singular name', 'caso_de_exito'),
+		'menu_name'             => _x('Casos de éxito', 'Admin Menu text', 'caso_de_exito'),
+		'name_admin_bar'        => _x('Caso de éxito', 'Add New on Toolbar', 'caso_de_exito'),
+		'add_new'               => __('Agregar Nuevo', 'caso_de_exito'),
+		'add_new_item'          => __('Agregar Nuevo caso de éxito', 'caso_de_exito'),
+		'new_item'              => __('Agregar caso de éxito', 'caso_de_exito'),
+		'edit_item'             => __('Editar caso de éxito', 'caso_de_exito'),
+		'view_item'             => __('Ver caso de éxito', 'caso_de_exito'),
+		'all_items'             => __('Todos los casos de éxito', 'caso_de_exito'),
+		'search_items'          => __('Buscar casos de éxito', 'caso_de_exito'),
+		'not_found'             => __('No se han encontrado casos de éxito.', 'caso_de_exito'),
+		'archives'              => _x('Archivo de casos de éxito', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'caso_de_exito'),
+		'insert_into_item'      => _x('Insertar en caso de éxito', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'caso_de_exito'),
+		'uploaded_to_this_item' => _x('Subido a este caso de éxito', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'caso_de_exito'),
+		'filter_items_list'     => _x('Filtrar lista de casos de éxito', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'caso_de_exito'),
+		'items_list_navigation' => _x('Navegación por lista de casos de éxito', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'caso_de_exito'),
+		'items_list'            => _x('Lista de casos de éxito', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'caso_de_exito'),
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => 'Custom post type para casos de éxito.',
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array('slug' => 'caso_de_exito'),
+		'capability_type'    => 'post',
+		'hierarchical'       => false,
+		'menu_position'      => 20,
+		'supports'           => [''],
+		'taxonomies'         => array('industria'),
+		'show_in_rest'       => false,
+		'register_meta_box_cb' => 'add_url_metaboxes',
+	);
+
+	register_post_type(sanitize_key('caso_de_exito'), $args);
+}
+
+add_action('init', 'register_caso_de_exito_cpt');
+
+
+function add_url_metaboxes()
+{
+	add_meta_box('youtube_video_url', 'YouTube Video URL', 'youtube_video_url', 'caso_de_exito');
+}
+
+function youtube_video_url()
+{
+	global $post;
+
+	// Añadimos un 'noncename' que necesitaremos para verificar los datos y de dónde vienen.
+	echo '<input type="hidden" name="youtube_video_noncename" id="youtube_video_noncename" value="' .
+		wp_create_nonce(plugin_basename(__FILE__)) . '" />';
+
+	// Recuperar los datos existentes, si es que hay datos existentes.
+	$youtube_video_url = get_post_meta($post->ID, 'youtube_video_url', true);
+
+	// El input que aparecerá en administración donde introducir/mostrar los datos
+	echo '<input type="text" name="youtube_video" value="' . $youtube_video_url  . '" />';
+}
+
+/**
+ * Function to create Industries custom taxonomy
+ */
+
+//hook into the init action and call create_book_taxonomies when it fires
+
+add_action('init', 'register_industries_taxonomy', 0);
+
+//create a custom taxonomy name it subjects for your posts
+
+function register_industries_taxonomy()
+{
+
+	// Add new taxonomy, make it hierarchical like categories
+	//first do the translations part for GUI
+
+	$labels = array(
+		'name' => _x('Industrias', 'taxonomy general name'),
+		'singular_name' => _x('Industria', 'taxonomy singular name'),
+		'search_items' =>  __('Buscar Industrias'),
+		'all_items' => __('Todas las Industrias'),
+		'parent_item' => __('Industria Padre'),
+		'parent_item_colon' => __('Industria Padre:'),
+		'edit_item' => __('Editar Industria'),
+		'update_item' => __('Actualizar Industria'),
+		'add_new_item' => __('Agregar Nueva Industria'),
+		'new_item_name' => __('Agregar nuevo nombre de Industria'),
+		'menu_name' => __('Industrias'),
+	);
+
+	// Now register the taxonomy
+	register_taxonomy('industria', array('caso_de_exito'), array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => false,
+	));
+}

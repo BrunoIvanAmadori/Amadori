@@ -24,7 +24,7 @@ get_header();
 						isso e muito mais da nossa plataforma.
 					</p>
 					<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white fw-bold">Eu quero atualizar!</span>
+						<span class="white fw-bold">Experimentar gratuitamente!</span>
 					</button>
 				</div>
 			</div>
@@ -211,7 +211,7 @@ get_header();
 				</p>
 
 				<button class="fw-bold button--bigwhite mt-3 w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
-					Eu quero atualizar!
+					Experimentar gratuitamente!
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">

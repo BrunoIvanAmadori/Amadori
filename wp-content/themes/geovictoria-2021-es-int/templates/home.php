@@ -21,7 +21,7 @@ get_header();
 						Solución integral 100% en la nube. Gestiona, elabora reportes, obtén métricas y ahorra dinero. Todo en un solo lugar.
 					</p>
 					<button class="button--bigblue bounce fw-bold w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white">¡Quiero actualizarme!</span>
+						<span class="white">¡Probar gratis!</span>
 					</button>
 				</div>
 			</div>
@@ -447,7 +447,7 @@ get_header();
 				¿Listo para ser <br>parte del cambio?
 			</h2>
 			<button class="button--bigblue bounce" data-bs-toggle="modal" data-bs-target="#contactModal">
-				<span class="white fw-bold w-100">¡Quiero actualizarme!</span>
+				<span class="white fw-bold w-100">¡Probar gratis!</span>
 			</button>
 		</div>
 

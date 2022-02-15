@@ -25,7 +25,7 @@ get_header();
 
 					</p>
 					<button class="button--bigblue bounce fw-bold w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white">Eu quero atualizar!</span>
+						<span class="white">Experimentar gratuitamente!</span>
 					</button>
 				</div>
 			</div>
@@ -427,7 +427,7 @@ get_header();
 				Pronto para ser <br>parte da mudança?
 			</h2>
 			<button class="button--bigblue bounce" data-bs-toggle="modal" data-bs-target="#contactModal">
-				<span class="white fw-bold w-100">Eu quero atualizar!</span>
+				<span class="white fw-bold w-100">Experimentar gratuitamente!</span>
 			</button>
 		</div>
 

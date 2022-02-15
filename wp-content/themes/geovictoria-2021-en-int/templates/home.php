@@ -21,7 +21,7 @@ get_header();
 						100% integral solution in the cloud. <br> Manage, prepare reports, obtain metrics <br> and save money. All in one place.
 					</p>
 					<button class="button--bigblue bounce fw-bold w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white">I want to update!</span>
+						<span class="white">Try for free!</span>
 					</button>
 				</div>
 			</div>
@@ -429,7 +429,7 @@ get_header();
 				Ready to be part of the change?
 			</h2>
 			<button class="button--bigblue bounce" data-bs-toggle="modal" data-bs-target="#contactModal">
-				<span class="white fw-bold w-100">I want to update!</span>
+				<span class="white fw-bold w-100">Try for free!</span>
 			</button>
 		</div>
 

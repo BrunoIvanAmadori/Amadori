@@ -3,8 +3,8 @@
     <div class="col-md-12 mb-3">
       <label for="validationDefaultUsername">Nome completo</label>
       <div class="input-group">
-        <input placeholder="Nome" name="firstname" id="firstname" type="text" class="form-control" required>
-        <input placeholder="Sobrenome" name="lastname" id="lastname" type="text" class="form-control" required>
+        <input pattern="^\w+( +)?(\w+)?" placeholder="Nome" name="firstname" id="firstname" type="text" class="form-control" required>
+        <input pattern="^\w+( +)?(\w+)?" placeholder="Sobrenome" name="lastname" id="lastname" type="text" class="form-control" required>
       </div>
     </div>
 

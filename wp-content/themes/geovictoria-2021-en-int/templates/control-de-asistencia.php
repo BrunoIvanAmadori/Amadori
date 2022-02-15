@@ -29,7 +29,7 @@ get_header();
 				</p>
 			</div>
 			<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-				<span class="white fw-bold">I want to update!</span>
+				<span class="white fw-bold">Try for free!</span>
 			</button>
 
 
@@ -691,7 +691,7 @@ get_header();
 				</p>
 
 				<button class="fw-bold w-100 button--bigwhite mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					I want to update!
+					Try for free!
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">

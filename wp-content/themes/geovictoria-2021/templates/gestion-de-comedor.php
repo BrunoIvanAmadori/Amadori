@@ -29,7 +29,7 @@ get_header();
 					Planifica todo en una plataforma 100% online.
 				</p>
 				<button class="button--bigblue w-100 fw-bold anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					<span class="white">¡Quiero actualizarme!</span>
+					<span class="white">¡Probar gratis!</span>
 				</button>
 			</div>
 		</div>
@@ -469,7 +469,7 @@ get_header();
 				</p>
 
 				<button class="fw-bold button--bigwhite w-100 mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					¡Quiero actualizarme!
+					¡Probar gratis!
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">

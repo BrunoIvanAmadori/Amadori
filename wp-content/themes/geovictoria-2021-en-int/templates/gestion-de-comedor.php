@@ -25,7 +25,7 @@ get_header();
 					Avoid losses, waste or non-compliance in the delivery of food from your canteen. Plan everything on a 100% online platform.
 				</p>
 				<button class="button--bigblue w-100 fw-bold anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					<span class="white">I want to update!</span>
+					<span class="white">Try for free!</span>
 				</button>
 			</div>
 		</div>
@@ -450,7 +450,7 @@ get_header();
 				</p>
 
 				<button class="fw-bold button--bigwhite w-100 mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#contactModal">
-					I want to update!
+					Try for free!
 				</button>
 			</div>
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">

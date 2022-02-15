@@ -919,7 +919,7 @@ const containList = document.querySelectorAll(".tabs-contain"),
       "&pex=" +
       externosBoxlHTML.innerText +
       "&fn=" +
-      form.name.value +
+      form.firstname.value +
       "&fap=" +
       form.lastname.value +
       "&fm=" +
@@ -988,7 +988,7 @@ const containList = document.querySelectorAll(".tabs-contain"),
       "&pex=" +
       externosBoxlHTML.innerText +
       "&fn=" +
-      form.name.value +
+      form.firstname.value +
       "&fap=" +
       form.lastname.value +
       "&fm=" +
@@ -1049,7 +1049,7 @@ const containList = document.querySelectorAll(".tabs-contain"),
       "&pex=" +
       externosBoxlHTML.innerText +
       "&fn=" +
-      form.name.value +
+      form.firstname.value +
       "&fap=" +
       form.lastname.value +
       "&fm=" +

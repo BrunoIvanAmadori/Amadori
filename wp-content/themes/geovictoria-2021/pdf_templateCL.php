@@ -3,15 +3,12 @@ error_reporting(0);
 
 //overwrite LAVILLA ALEJANDRO ASF
 
-if($_GET['div'] != "USD") {
-$iva_check 	 = "+ iva al mes";
-$iva_check_2 = "+ iva por mes";
-}
-
-else
-{
-$iva_check 	 = "";
-$iva_check_2 = "";
+if ($_GET['div'] != "USD") {
+	$iva_check 	 = "+ iva al mes";
+	$iva_check_2 = "+ iva por mes";
+} else {
+	$iva_check 	 = "";
+	$iva_check_2 = "";
 }
 
 
@@ -50,7 +47,7 @@ echo '
 	body {
 		font-family: Denk One, sans-serif;
 		color:#4e4e4e;
-		background-image: url('. $base64 .');
+		background-image: url(' . $base64 . ');
 		background-position: top left;
 		background-repeat: no-repeat;
 		background-size: 100%;
@@ -139,23 +136,23 @@ echo '
 <div class="page">
 
 	<div>
-	   <img style="width:100%;box-shadow: 2px 2px 10px 8px rgb(0 0 0 / 75%);background-color:white;" src="'. $base64_top .'">
+	   <img style="width:100%;box-shadow: 2px 2px 10px 8px rgb(0 0 0 / 75%);background-color:white;" src="' . $base64_top . '">
 	</div>	   
    <div class="j-container"> 
       <div class="j-main">
          <div class="my_content">
-            <div style="vertical-align:middle;padding-top:2px;"><h1>Hola <span>'. $_GET['fn'] . " " . $_GET['fap'] . " " . $_GET['fap'] .',</span></h1></div><br>
+            <div style="vertical-align:middle;padding-top:2px;"><h1>Hola <span>' . $_GET['fn'] . " " . $_GET['fap'] . ',</span></h1></div><br>
             <div style="padding-bottom:10px">
 				<div style="width: 80%; float:left">
 
 
-				   <h1 style="display:inline-block">Total:* </h1><h1 style="margin:15px 0px 0px 10px;display:inline-block;max-width:400px;background-color:white;border:1px solid gray;padding:1px;border-radius:8px;" > '.$_GET['div'].' <span> '.$_GET['t'].' </span> '.$iva_check.' </h1>
-				   <h2>Cantidad de empleados: <span>'. $_GET['uto'] .'</span> &nbsp;&nbsp;&nbsp;Tipo de plan: <span>'. $_GET['p'] .'</span></h2>
+				   <h1 style="display:inline-block">Total:* </h1><h1 style="margin:15px 0px 0px 10px;display:inline-block;max-width:400px;background-color:white;border:1px solid gray;padding:1px;border-radius:8px;" > ' . $_GET['div'] . ' <span> ' . $_GET['t'] . ' </span> ' . $iva_check . ' </h1>
+				   <h2>Cantidad de empleados: <span>' . $_GET['uto'] . '</span> &nbsp;&nbsp;&nbsp;Tipo de plan: <span>' . $_GET['p'] . '</span></h2>
 				</div>
 
 				<div style="width: 20%; float:right" align="center">
 					<p>Software válido por</p>
-				   <img src="'. $base64_reg .'">
+				   <img src="' . $base64_reg . '">
 				</div>			
 				
 			</div>
@@ -164,166 +161,165 @@ echo '
 				<h2>Desglose por servicio</h2>
 			</div>';
 
-		if($_GET['tas'] > 0 ){ 
-			https://www.geovictoria.com/wp-content/themes/geovictoriacom/calculator-pdf-download.php?s=cl&i=ot&div=UF&p=Mensual&t=10.98&tas=0.51&tac=5.24&tco=5.24&tex=0.00&tpo=0.00&tre=0.00&tfo=0.00&top=0.00&tin=0.00&tso=0.00&uto=200&uas=0&uac=200&uco=200&uex=0&pas=15300&pac=785&pco=785&pex=0&fn=NONE&fm=NONE@hotmail.com&fe=NONE&ft=NONE
-			echo'
+if ($_GET['tas'] > 0) {
+	https: //www.geovictoria.com/wp-content/themes/geovictoriacom/calculator-pdf-download.php?s=cl&i=ot&div=UF&p=Mensual&t=10.98&tas=0.51&tac=5.24&tco=5.24&tex=0.00&tpo=0.00&tre=0.00&tfo=0.00&top=0.00&tin=0.00&tso=0.00&uto=200&uas=0&uac=200&uco=200&uex=0&pas=15300&pac=785&pco=785&pex=0&fn=NONE&fm=NONE@hotmail.com&fe=NONE&ft=NONE
+	echo '
 			<br>
             <div>
 				<div style="width: 28%; float:left;margin-top: -20px;">
 				   <h2>Asistencia</h2>
 				</div>
 				<div style="width: 66%;" align="center">
-					<p>(para <span>'. $_GET['uas'] .'</span> empleados, un costo aproximado de $<span>'. $_GET['pas'] .'</span> por usuario al mes)</p>
+					<p>(para <span>' . $_GET['uas'] . '</span> empleados, un costo aproximado de $<span>' . $_GET['pas'] . '</span> por usuario al mes)</p>
 				</div>		
 				<div style="width:auto; float:right;margin-top: -65px;">
-				<h2> '.$_GET['div'].'  <span>'. $_GET['tas'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				<h2> ' . $_GET['div'] . '  <span>' . $_GET['tas'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>				
 				<div class="line" style="height: 60px;"></div>
 			</div>';
-			}
-			
-			if($_GET['tac'] > 0) {
+}
 
-			echo '
+if ($_GET['tac'] > 0) {
+
+	echo '
 			<br>
             <div>
 				<div style="width: 28%; float:left;margin-top: -20px;">
 				   <h2>Acceso </h2>
 				</div>
 				<div style="width: 66%;" align="center">
-					<p>(para <span>'. $_GET['uac'] .'</span> empleados, un costo aproximado de $<span>'. $_GET['pac'] .'</span> por usuario al mes)</p>
+					<p>(para <span>' . $_GET['uac'] . '</span> empleados, un costo aproximado de $<span>' . $_GET['pac'] . '</span> por usuario al mes)</p>
 				</div>		
 				<div style="width:auto; float:right;margin-top: -65px;">
-				   <h2>'.$_GET['div'].' <span>'. $_GET['tac'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['tac'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>				
 				<div class="line" style="height: 60px;"></div>
 			</div>';
-		
-			}
-			
-			if($_GET['tco'] > 0){
+}
 
-			echo'
+if ($_GET['tco'] > 0) {
+
+	echo '
 			<br>
             <div>
 				<div style="width: 28%; float:left;margin-top: -20px;">
 				   <h2>Comedor </h2>
 				</div>
 				<div style="width: 66%;" align="center">
-					<p>(para <span>'. $_GET['uco'] .'</span> empleados, un costo aproximado de $<span>'. $_GET['pco'] .'</span> por usuario al mes)</p>
+					<p>(para <span>' . $_GET['uco'] . '</span> empleados, un costo aproximado de $<span>' . $_GET['pco'] . '</span> por usuario al mes)</p>
 				</div>		
 				<div style="width:auto; float:right;margin-top: -65px;">
-				   <h2>'.$_GET['div'] .' <span>'. $_GET['tco'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['tco'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>				
 				<div class="line" style="height: 60px;"></div>
-			</div>'; }
-			
-			if($_GET['tex'] > 0){ echo '
+			</div>';
+}
+
+if ($_GET['tex'] > 0) {
+	echo '
 			<br>
             <div>
 				<div style="width: 28%; float:left;margin-top: -20px;">
 				   <h2>Externos </h2>
 				</div>
 				<div style="width: 66%;" align="center">
-					<p>(para <span>'. $_GET['uex'] .'</span> empleados, un costo aproximado de $<span>'. $_GET['pex'] .'</span> por usuario al mes)</p>
+					<p>(para <span>' . $_GET['uex'] . '</span> empleados, un costo aproximado de $<span>' . $_GET['pex'] . '</span> por usuario al mes)</p>
 				</div>		
 				<div style="width:auto; float:right;margin-top: -65px;">
-				   <h2>'.$_GET['div'] .' <span>'. $_GET['tex'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['tex'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>				
 				<div class="line" style="height: 60px;"></div>
 			</div>';
-		
-			} 
-			
-			if($_GET['tpo'] > 0) {
-				
-			echo '
+}
+
+if ($_GET['tpo'] > 0) {
+
+	echo '
             <div>
 				<div style="width: 74%; float:left;">
 				   <h2 class="subproduct">Dashboard power BI </h2>
 				</div>	
 				<div style="width:auto; float:right;">
-				   <h2>'. $_GET['div'] .' <span>'. $_GET['tpo'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['tpo'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>	
 				
 				<div class="line" style="height: 60px;"></div>
 			</div>';
-		
-			} 
-			
-			if($_GET['tre'] > 0){ 
-				
-				echo'
+}
+
+if ($_GET['tre'] > 0) {
+
+	echo '
             <div>
 				<div style="width: 74%; float:left;">
 				   <h2 class="subproduct">Reportes personalizados </h2>
 				</div>	
 				<div style="width:auto; float:right;">
-				   <h2>'. $_GET['div'] .' <span>'. $_GET['tre'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['tre'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>	
 				
 				<div class="line" style="height: 60px;"></div>
 			</div>';
-		} 
-			
-			if($_GET['tfo'] > 0){ echo '
+}
+
+if ($_GET['tfo'] > 0) {
+	echo '
             <div>
 				<div style="width: 74%; float:left;">
 				   <h2 class="subproduct">Formulario App </h2>
 				</div>	
 				<div style="width:auto; float:right;">
-				   <h2>'.$_GET['div'] .' <span>'. $_GET['tfo'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['tfo'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>	
 				
 				<div class="line" style="height: 60px;"></div>
 			</div>';
-			}
-			
-			if($_GET['top'] > 0){ echo '
+}
+
+if ($_GET['top'] > 0) {
+	echo '
             <div>
 				<div style="width: 74%; float:left;">
 				   <h2 class="subproduct" >Optimizador de turnos </h2>
 				</div>	
 				<div style="width:auto; float:right;">
-				   <h2>'.$_GET['div'] .' <span>'. $_GET['top'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['top'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>	
 				
 				<div class="line" style="height: 60px;"></div>
 			</div>			
 		';
-	
-		} if($_GET['tin'] > 0)
-		
-		{ echo '
+}
+if ($_GET['tin'] > 0) {
+	echo '
             <div>
 				<div style="width: 74%; float:left;">
 				   <h2 class="subproduct">Integración con otros sistemas </h2>
 				</div>	
 				<div style="width:auto; float:right;">
-				   <h2>'.$_GET['div'] .' <span>'. $_GET['tin'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['tin'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>	
 				
 				<div class="line" style="height: 60px;"></div>
 			</div>
 		';
-	
-		} 
-		if($_GET['tso'] > 0){ echo '
+}
+if ($_GET['tso'] > 0) {
+	echo '
             <div>
 				<div style="width: 74%; float:left;">
 				   <h2 class="subproduct">Soporte 24/7 </h2>
 				</div>	
 				<div style="width:auto; float:right;">
-				   <h2>'.$_GET['div'] .' <span>'. $_GET['tso'] .'</span> <span style="font-weight:thin" >'.$iva_check_2.'</span></h2>
+				   <h2>' . $_GET['div'] . ' <span>' . $_GET['tso'] . '</span> <span style="font-weight:thin" >' . $iva_check_2 . '</span></h2>
 				</div>	
 				
 				<div class="line" style="height: 60px;"></div>
 			</div>				
 		';
-	
-		} 	
+}
 
-			echo '
+echo '
 			<div style="font-size: smaller;">
 				<p><i>* Este documento entrega valores aproximados. Hardware, instalaciones, personalizaciones e integraciones complejas no están incluidas. Le pedimos por favor conversar con uno de nuestros ejecutivos para obtener un valor definitivo. Valores referenciales utilizando la UF del día. Este cotizador entrega valores hasta 1000 usuarios.</i></p>
 			</div>			
@@ -348,11 +344,11 @@ echo '
 				enfocados en mejorar su eficiencia operativa, a través de una
 				plataforma que entrega información precisa en tiempo real</p>
 				
-				<img src="'. $base64_quehace .'">
+				<img src="' . $base64_quehace . '">
 			</div>	
 			<div style="width:auto; float:right;">
 				<h3>INTEGRADOS CON SOFTWARES DE ERP</h3>
-				<ul style= "list-style-image: url(\''. $base64_check .'\')">
+				<ul style= "list-style-image: url(\'' . $base64_check . '\')">
 				  <li style="margin: 0 0 15px 0;">Contamos con una API de integración</li>
 				  <li style="margin: 0 0 15px 0;">Integrable con sistemas de ERP de remuneraciones</li>
 				  <li style="margin: 0 0 15px 0;">Soluciones 100% en la nube microsfot azure</li>
@@ -362,59 +358,59 @@ echo '
 		</div>	   
 		
 		<div style="position:absolute;top:35%;" align="center">
-			   <img src="'.$base64_ind_main.'">
+			   <img src="' . $base64_ind_main . '">
 
 			                                     
 			</div>	   
 			<div style="left:45px;position:absolute;top:1410px;" align="center"> ';
 
-			$case = $_GET['i'];
-			$text1 = "<h2> EMPRESAS ";
+$case = $_GET['i'];
+$text1 = "<h2> EMPRESAS ";
 
-			switch ($case) {
-				case 'ct':
-					$text1 .= "DE CONSTRUCCIÓN";
-					break;
+switch ($case) {
+	case 'ct':
+		$text1 .= "DE CONSTRUCCIÓN";
+		break;
 
-				case 'rt':
-					$text1 .= "DE RETAIL";
-					break;
+	case 'rt':
+		$text1 .= "DE RETAIL";
+		break;
 
-				case 'sg':
-					$text1 .= "DE SEGURIDAD";
-					break;		
-					
-				case 'bc':
-					$text1 .= "DE BANCA";
-					break;				
+	case 'sg':
+		$text1 .= "DE SEGURIDAD";
+		break;
 
-				case 'sl':
-					$text1 .= "DE SALUD";
-					break;
+	case 'bc':
+		$text1 .= "DE BANCA";
+		break;
 
-				case 'ag':
-					$text1 .= "DE AGROINDUSTRIA";
-					break;
+	case 'sl':
+		$text1 .= "DE SALUD";
+		break;
 
-				default:
-					$text1 .= "QUE TRABAJAN CON NOSOTROS";
-					break;
-			}
+	case 'ag':
+		$text1 .= "DE AGROINDUSTRIA";
+		break;
+
+	default:
+		$text1 .= "QUE TRABAJAN CON NOSOTROS";
+		break;
+}
 
 
 
-			echo 
-			
-			$text1.' 			</h2>
+echo
 
-			<img src="'.$base64_ind_bar.'">
+$text1 . ' 			</h2>
+
+			<img src="' . $base64_ind_bar . '">
 
 
 
 			</div>	 
 			
 		<div>
-			   <img style="position:absolute;width:100%;bottom:35px;" src="'. $base64_foot .'">
+			   <img style="position:absolute;width:100%;bottom:35px;" src="' . $base64_foot . '">
 			</div>	
 		
 		</div> 
@@ -426,6 +422,3 @@ echo '
 
 
 	.';
-
-	
-	?>
