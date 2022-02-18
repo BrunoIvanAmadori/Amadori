@@ -1677,6 +1677,17 @@ body {
   font-size: 0.9em;
 }
 
+.no-privacy-policy .form__privacy-policy {
+  display: none;
+}
+
+@include media-breakpoint-up(sm) {
+  .small-form-on-desktop {
+    transform: scale(0.9);
+    margin-top: -50px;
+  }
+}
+
 // comments
 
 .comment-list {
@@ -1809,4 +1820,61 @@ body {
 .modal-hubspot {
   width: 100%;
   pointer-events: auto;
+}
+
+// Hubspot embed form styles
+
+.hide-como_nos_conociste_ .hs_como_nos_conociste_ {
+  display: none !important;
+}
+
+.hs-input {
+  width: 100% !important;
+}
+
+.hs-button {
+  @extend .button--bigblue;
+  width: 100%;
+  padding: 10px !important;
+  font-size: 24px !important;
+  font-weight: bold;
+}
+
+.hs-error-msgs label {
+  color: #f2545b;
+}
+
+.inputs-list label {
+  float: none;
+  width: auto;
+  padding: 0;
+  line-height: 18px;
+  white-space: normal;
+  font-weight: normal;
+}
+
+input.hs-input.error,
+div.field.error input,
+div.field.error textarea,
+div.field.error .chzn-choices,
+textarea.hs-input.error,
+select.hs-input.error {
+  border-color: #c87872;
+}
+
+.inputs-list > li {
+  display: block;
+  padding: 0;
+  width: 100%;
+  padding-top: 0;
+}
+
+ul.no-list {
+  list-style: none;
+}
+
+.inputs-list {
+  margin: 0 0 5px;
+  width: 100%;
+  padding-left: 5px;
 }
