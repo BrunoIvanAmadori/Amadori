@@ -1,7 +1,7 @@
 <div class="col-12 col-md-6 col-lg-4">
     <div class="blog-card card">
         <a class="blog-card__link" href="<?php the_permalink() ?>"></a>
-        <div class="blog-card__img" style="background-image:url('<?php echo esc_url(get_the_post_thumbnail_url($post->ID, 'large')); ?>')"></div>
+        <div class="blog-card__img" style="background-image:url('<?php echo esc_url(get_the_post_thumbnail_url($post->ID, 'medium')); ?>')"></div>
         <div class="card-body d-flex flex-column justify-content-between">
             <div class="blog-card__content">
                 <div class="blog-card__tag-container">
