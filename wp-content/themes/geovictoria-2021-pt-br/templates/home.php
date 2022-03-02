@@ -133,7 +133,7 @@ get_header();
 						Ver mais
 					</div>
 				</a>
-				<a class="product--box <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>" href="gestao-de-comedor">
+				<a class="product--box <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>" href="gestao-de-refeitorio">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-comedor.svg" />
 						<h4 class="fw-bold">Controle<br>de Refeitório</h4>

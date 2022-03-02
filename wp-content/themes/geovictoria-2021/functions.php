@@ -549,3 +549,5 @@ function register_industries_taxonomy()
 		'rewrite' => false,
 	));
 }
+
+add_filter('wp_lazy_loading_enabled', '__return_false');

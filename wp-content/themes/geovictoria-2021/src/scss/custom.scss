@@ -91,6 +91,10 @@ b {
   color: $neutral-1;
 }
 
+.bg-neutral-4 {
+  background-color: $neutral-4;
+}
+
 .white {
   color: #ffffff;
 }
@@ -630,6 +634,12 @@ footer.site-footer {
 
   &__img {
     object-fit: contain;
+    max-height: 450px;
+
+    &--small {
+      object-fit: contain;
+      height: 300px;
+    }
   }
 
   &__text {
@@ -788,6 +798,11 @@ footer.site-footer {
   top: 400px;
   opacity: 0.8;
 
+  &--top-100-up {
+    @extend .bg-curve;
+    top: -100px;
+  }
+
   &--top-250 {
     @extend .bg-curve;
     top: 250px;
@@ -838,6 +853,38 @@ footer.site-footer {
 // }
 
 // products.css
+
+.product {
+  width: 100%;
+  margin: 20px 20px 0px 0px;
+  padding: 20px;
+  border-radius: $border-radius-3;
+  text-align: center;
+  background-color: $neutral-5;
+  box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px -2px 21px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s;
+  color: $neutral-1 !important;
+
+  &__icon {
+    height: 100px;
+    object-fit: contain;
+  }
+
+  &--box {
+    @extend .product;
+  }
+
+  &--card {
+    @extend .product;
+  }
+
+  &:hover {
+    transform: scale(1.05) !important;
+  }
+}
 
 .button {
   i {
@@ -1877,4 +1924,26 @@ ul.no-list {
   margin: 0 0 5px;
   width: 100%;
   padding-left: 5px;
+}
+
+.logging-types {
+  background-color: $primary-4;
+  color: white;
+  text-align: center;
+
+  &__icon {
+    height: 60px;
+    max-width: 70px;
+    object-fit: contain;
+    display: flex;
+    align-self: center;
+  }
+}
+
+.potenciales-clientes.home {
+  & input[type="submit"] {
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
