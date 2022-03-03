@@ -11,6 +11,13 @@
  */
 
 ?>
+<?php
+$contacto_ventas_1 = get_theme_mod('geovictoria-2021_info_contacto_ventas_1');
+$contacto_ventas_1_sanitized = preg_replace('/\D/', '', $contacto_ventas_1);
+
+$contacto_email_ventas = get_theme_mod('geovictoria-2021_info_contacto_email_ventas');
+$contacto_email_ventas_sanitized = esc_html($contacto_email_ventas);
+?>
 
 <footer id="colophon" class="site-footer container-fluid">
 	<div class="container d-flex justify-content-between flex-column flex-md-row flex-wrap px-4">
@@ -65,14 +72,14 @@
 				<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1')) : ?>
 					<div class="contact-phone pe-3">
 						<i class="far fa-phone-alt blue"></i>
-						<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></small>
+						<a class="underline" href="tel:<?php echo $contacto_ventas_1_sanitized; ?>"><small><?php echo $contacto_ventas_1; ?></small></a>
 					</div>
 				<?php endif; ?>
 
 				<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_ventas')) : ?>
 					<div class="contact-email">
 						<i class="far fa-envelope blue"></i>
-						<small><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></small>
+						<a class="underline" href="mailto:<?php echo $contacto_email_ventas_sanitized; ?>"><small><?php echo $contacto_email_ventas_sanitized; ?></small></a>
 					</div>
 				<?php endif; ?>
 			</div>

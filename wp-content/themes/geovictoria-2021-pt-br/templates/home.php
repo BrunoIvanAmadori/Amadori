@@ -9,6 +9,27 @@ get_header();
 <div class="bg-header">
 	<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-header.svg" />
 </div>
+
+<div class="container d-flex d-md-none align-items-center mt-3 justify-content-center">
+	<span class="me-3">Contato comercial:</span>
+
+	<?php
+	$contacto_ventas_1 = get_theme_mod('geovictoria-2021_info_contacto_ventas_1');
+	$contacto_ventas_1_sanitized = preg_replace('/\D/', '', $contacto_ventas_1);
+
+	$contacto_email_ventas = get_theme_mod('geovictoria-2021_info_contacto_email_ventas');
+	$contacto_email_ventas_sanitized = esc_html($contacto_email_ventas);
+	?>
+
+	<a href="tel:<?php echo $contacto_ventas_1_sanitized ?>">
+		<div class="contact-icon d-flex justify-content-center align-items-center"><i class="fas fa-phone"></i></div>
+	</a>
+
+	<a href="mailto:<?php echo $contacto_email_ventas_sanitized ?>">
+		<div class="contact-icon d-flex justify-content-center align-items-center"><i class="fas fa-envelope"></i></div>
+	</a>
+</div>
+
 <main id="primary" class="site-main">
 	<section class="hero container-fluid">
 		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center h-100 text-center text-md-start">
@@ -30,23 +51,8 @@ get_header();
 				</div>
 			</div>
 			<div class="col-12 col-md-6 mb-5">
-
-				<div class="animation-home text-start anime resizer-reference">
-					<div class="resizer">
-						<div class="animation-home__screen-group">
-							<!-- <img class="animation-home animation-home__arrow" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/arrow.svg'> -->
-							<img class="animation-home animation-home__entry-type" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/entry-type.png'>
-							<img class="animation-home animation-home__user" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/user.png'>
-							<img class="animation-home animation-home__screen-desk" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-desk.png'>
-						</div>
-						<!-- <img class="animation-home animation-home__screen" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen.png'> -->
-
-						<img class="animation-home animation-home__screen-mobile" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-mobile.png'>
-						<img class="animation-home animation-home__screen-tablet" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-tablet.png'>
-						<img class="animation-home animation-home__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/box.png'>
-						<img class="animation-home animation-home__usb" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/usb.png'>
-					</div>
-				</div>
+				<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri());
+											?>/dist/img/gv-home.png'>
 			</div>
 		</div>
 	</section>
@@ -119,21 +125,21 @@ get_header();
 
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between <?php if (!wp_is_mobile()) echo 'anime-fadein-childs'; ?>">
-				<a class="product--box <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>" href="controle-de-ponto">
+				<a class="product--box <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>" href="servicos/controle-de-ponto">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-asistencia.svg" />
 						<h4 class="fw-bold">Controle <br>de Ponto</h4>
 						Ver mais
 					</div>
 				</a>
-				<a class="product--box <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>" href="controle-de-acesso">
+				<a class="product--box <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>" href="servicos/controle-de-acesso">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-acceso.svg" />
 						<h4 class="fw-bold">Controle <br>de Acesso</h4>
 						Ver mais
 					</div>
 				</a>
-				<a class="product--box <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>" href="gestao-de-refeitorio">
+				<a class="product--box <?php if (wp_is_mobile()) echo 'anime-fadein'; ?>" href="servicos/gestao-de-refeitorio">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-comedor.svg" />
 						<h4 class="fw-bold">Controle<br>de Refeitório</h4>
@@ -145,7 +151,7 @@ get_header();
 
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<a class="product--card" href="business-intelligence">
+				<a class="product--card" href="servicos/business-intelligence">
 					<div class="d-flex flex-column align-items-center anime-fadein">
 						<div class='row'>
 							<div class="col justify-content-center text-end">

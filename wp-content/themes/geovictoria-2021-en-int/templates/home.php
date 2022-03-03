@@ -10,41 +10,60 @@ get_header();
 	<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-header.svg" />
 </div>
 <main id="primary" class="site-main">
-	<section class="hero container-fluid">
-		<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center h-100 text-center text-md-start">
-			<div class="col-12 col-md-6 mb-5">
-				<div class="align-self-center pe-md-3">
-					<h1 class="gray mb-3 fw-bold">
-						The essential workforce management solution
-					</h1>
-					<p class="gray fw-light mb-3">
+	<section class="container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
+		<div class="row gx-5 flex-column-reverse flex-sm-row">
+			<div class="col-12 col-md-7 mb-5">
+				<div class="animation-home text-start anime resizer-reference mt-3">
+					<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri());
+												?>/dist/img/gv-home.png'>
+					<!-- <div class="resizer">
+						<div class="animation-home__screen-group"> -->
+					<!-- <img class="animation-home animation-home__arrow" src='<?php // echo esc_url(get_template_directory_uri());
+																				?>/dist/img/animation-home/arrow.svg'>
+							 <img class="animation-home animation-home__entry-type" src='<?php // echo esc_url(get_template_directory_uri());
+																							?>/dist/img/animation-home/entry-type.png'>
+							<img class="animation-home animation-home__user" src='<?php // echo esc_url(get_template_directory_uri());
+																					?>/dist/img/animation-home/user.png'>
+							<img class="animation-home animation-home__screen-desk" src='<?php // echo esc_url(get_template_directory_uri());
+																							?>/dist/img/animation-home/screen-desk.png'>
+						</div>
+						 <img class="animation-home animation-home__screen" src='<?php // echo esc_url(get_template_directory_uri());
+																					?>/dist/img/animation-home/screen.png'> -->
+
+					<!-- <img class="animation-home animation-home__screen-mobile" src='<?php //  echo esc_url(get_template_directory_uri()); -->
+																						?>/dist/img/animation-home/screen-mobile.png'>
+						<img class="animation-home animation-home__screen-tablet" src='<?php // echo esc_url(get_template_directory_uri());
+																						?>/dist/img/animation-home/screen-tablet.png'>
+						<img class="animation-home animation-home__box" src='<?php // echo esc_url(get_template_directory_uri());
+																				?>/dist/img/animation-home/box.png'>
+						<img class="animation-home animation-home__usb" src='<?php //  echo esc_url(get_template_directory_uri());
+																				?>/dist/img/animation-home/usb.png'>
+					</div> -->
+
+					<h3 class="gray mb-3 fw-bold text-center mt-5">
+
+						The attendance and shift control platform par excellence
+					</h3>
+					<p class="gray fw-light mb-3 text-center">
 						100% integral solution in the cloud. <br> Manage, prepare reports, obtain metrics <br> and save money. All in one place.
 					</p>
-					<button class="button--bigblue bounce fw-bold w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
-						<span class="white">Try for free!</span>
-					</button>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 mb-5">
 
-				<div class="animation-home text-start anime resizer-reference">
-					<div class="resizer">
-						<div class="animation-home__screen-group">
-							<!-- <img class="animation-home animation-home__arrow" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/arrow.svg'> -->
-							<img class="animation-home animation-home__entry-type" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/entry-type.png'>
-							<img class="animation-home animation-home__user" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/user.png'>
-							<img class="animation-home animation-home__screen-desk" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-desk.png'>
-						</div>
-						<!-- <img class="animation-home animation-home__screen" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen.png'> -->
 
-						<img class="animation-home animation-home__screen-mobile" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-mobile.png'>
-						<img class="animation-home animation-home__screen-tablet" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-tablet.png'>
-						<img class="animation-home animation-home__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/box.png'>
-						<img class="animation-home animation-home__usb" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/usb.png'>
+			<div class="col-12 col-md-5 mb-5">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5>Ask for a quote and simplify your management.</h5>
+					</div>
+					<div class="modal-body">
+						<!-- <p>Cotiza con nosotros y simplifica tu gestión</p> -->
+						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal" html_class="potenciales-clientes no-gdpr home" origen_zoho="' . getURLWithoutQuery() . '"]'); ?>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</section>
 	<div class="position-relative">
 		<div class="bg-curve--top-250">

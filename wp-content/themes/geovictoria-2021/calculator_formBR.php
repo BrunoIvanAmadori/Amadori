@@ -91,7 +91,7 @@
       <b>Objetivo:</b> Informamos que o objetivo dos dados coletados é o gestão de usuários do site, bem como gestão de comunicação eletrônicos.
     </p>
     <p class="extra-small">
-      <b>Legitimação:</b> Consentimento concedido marcando a caixa de seleção correspondente. Seus dados pessoais serão tratados com base em nossa <a href="pt-br/politica-de-privacidade">política de privacidade</a>.
+      <b>Legitimação:</b> Consentimento concedido marcando a caixa de seleção correspondente. Seus dados pessoais serão tratados com base em nossa <a href="/pt-br/politica-de-privacidade">política de privacidade</a>.
     </p>
     <p class="extra-small">
       <b>Recusa de consentimento:</b> A não introdução dos dados marcados como obrigatórios no formulário resultará na rejeição do seu pedido.

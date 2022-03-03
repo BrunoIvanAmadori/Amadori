@@ -9,42 +9,78 @@ get_header();
 <div class="bg-header">
 	<img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-header.svg" />
 </div>
+
+<div class="container d-flex d-md-none align-items-center mt-3 justify-content-center">
+	<span class="me-3">Contacto comercial:</span>
+	<?php
+	$contacto_ventas_1 = get_theme_mod('geovictoria-2021_info_contacto_ventas_1');
+	$contacto_ventas_1_sanitized = preg_replace('/\D/', '', $contacto_ventas_1);
+
+	$contacto_email_ventas = get_theme_mod('geovictoria-2021_info_contacto_email_ventas');
+	$contacto_email_ventas_sanitized = esc_html($contacto_email_ventas);
+	?>
+	<a href="tel:<?php echo $contacto_ventas_1_sanitized ?>">
+		<div class="contact-icon d-flex justify-content-center align-items-center"><i class="fas fa-phone"></i></div>
+	</a>
+
+	<a href="mailto:<?php echo $contacto_email_ventas_sanitized ?>">
+		<div class="contact-icon d-flex justify-content-center align-items-center"><i class="fas fa-envelope"></i></div>
+	</a>
+</div>
+
 <main id="primary" class="site-main">
-	<section class="hero container d-flex flex-column flex-md-row justify-content-around text-center text-md-start">
+	<section class="container">
+		<div class="row gx-5 flex-column-reverse flex-md-row">
+			<div class="col-12 col-md-7 mb-5">
+				<div class="animation-home text-start anime resizer-reference mt-3">
+					<img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri());
+												?>/dist/img/gv-home.png'>
+					<!-- <div class="resizer">
+						<div class="animation-home__screen-group"> -->
+					<!-- <img class="animation-home animation-home__arrow" src='<?php // echo esc_url(get_template_directory_uri());
+																				?>/dist/img/animation-home/arrow.svg'>
+							 <img class="animation-home animation-home__entry-type" src='<?php // echo esc_url(get_template_directory_uri());
+																							?>/dist/img/animation-home/entry-type.png'>
+							<img class="animation-home animation-home__user" src='<?php // echo esc_url(get_template_directory_uri());
+																					?>/dist/img/animation-home/user.png'>
+							<img class="animation-home animation-home__screen-desk" src='<?php // echo esc_url(get_template_directory_uri());
+																							?>/dist/img/animation-home/screen-desk.png'>
+						</div>
+						 <img class="animation-home animation-home__screen" src='<?php // echo esc_url(get_template_directory_uri());
+																					?>/dist/img/animation-home/screen.png'> -->
 
-		<div class="col-12 col-md-6 mb-5">
-			<div class="align-self-center pe-md-3">
-				<h1 class="gray mb-3 fw-bold">
-					La gestión de fuerza laboral por excelencia
-				</h1>
-				<p class="gray fw-light mb-3">
-					Solución integral 100% en la nube. Gestiona, elabora informes, obtén métricas y ahorra dinero. Todo en un solo lugar.
-				</p>
-				<button class="button--bigblue bounce fw-bold w-100" data-bs-toggle="modal" data-bs-target="#contactModal">
-					<span class="white">¡Probar gratis!</span>
-				</button>
+					<!-- <img class="animation-home animation-home__screen-mobile" src='<?php //  echo esc_url(get_template_directory_uri()); -->
+																						?>/dist/img/animation-home/screen-mobile.png'>
+						<img class="animation-home animation-home__screen-tablet" src='<?php // echo esc_url(get_template_directory_uri());
+																						?>/dist/img/animation-home/screen-tablet.png'>
+						<img class="animation-home animation-home__box" src='<?php // echo esc_url(get_template_directory_uri());
+																				?>/dist/img/animation-home/box.png'>
+						<img class="animation-home animation-home__usb" src='<?php //  echo esc_url(get_template_directory_uri());
+																				?>/dist/img/animation-home/usb.png'>
+					</div> -->
+
+					<h3 class="gray mb-3 fw-bold text-center mt-5">
+						La plataforma de control de asistencia y turnos por excelencia
+					</h3>
+					<p class="gray fw-light mb-3 text-center">
+						Solución integral 100% en la nube. Gestiona, elabora reportes, obtén métricas y ahorra dinero. Todo en un solo lugar.
+					</p>
+				</div>
 			</div>
-		</div>
-		<div class="col-12 col-md-6 mb-5">
 
-			<div class="animation-home text-start anime resizer-reference">
-				<div class="resizer">
-					<div class="animation-home__screen-group">
-						<!-- <img class="animation-home animation-home__arrow" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/arrow.svg'> -->
-						<img class="animation-home animation-home__entry-type" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/entry-type.png'>
-						<img class="animation-home animation-home__user" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/user.png'>
-						<img class="animation-home animation-home__screen-desk" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-desk.png'>
+
+			<div class="col-12 col-md-5 mb-5">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5>Cotiza con nosotros y simplifica tu gestión.</h5>
 					</div>
-					<!-- <img class="animation-home animation-home__screen" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen.png'> -->
-
-					<img class="animation-home animation-home__screen-mobile" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-mobile.png'>
-					<img class="animation-home animation-home__screen-tablet" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/screen-tablet.png'>
-					<img class="animation-home animation-home__box" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/box.png'>
-					<img class="animation-home animation-home__usb" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/animation-home/usb.png'>
+					<div class="modal-body">
+						<!-- <p>Cotiza con nosotros y simplifica tu gestión</p> -->
+						<?php echo do_shortcode('[contact-form-7 id="136404" title="Formulario principal" html_class="potenciales-clientes no-gdpr home" origen_zoho="' . getURLWithoutQuery() . '"]'); ?>
+					</div>
 				</div>
 			</div>
 		</div>
-
 
 	</section>
 	<div class="position-relative">
@@ -114,21 +150,21 @@ get_header();
 
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between anime-fadein">
-				<a class="product--box anime-fadein" href="control-de-asistencia">
+				<a class="product--box anime-fadein" href="servicios/control-de-asistencia">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-asistencia.svg" />
 						<h4 class="fw-bold">Control de<br>asistencia</h4>
 						Ver más
 					</div>
 				</a>
-				<a class="product--box anime-fadein" href="control-de-acceso">
+				<a class="product--box anime-fadein" href="servicios/control-de-acceso">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-acceso.svg" />
 						<h4 class="fw-bold">Control<br>de acceso</h4>
 						Ver más
 					</div>
 				</a>
-				<a class="product--box anime-fadein" href="gestion-de-comedor">
+				<a class="product--box anime-fadein" href="servicios/gestion-de-comedor">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-comedor.svg" />
 						<h4 class="fw-bold">Gestión de<br>comedor</h4>
@@ -140,7 +176,7 @@ get_header();
 
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<a class="product--card anime-fadein" href="business-intelligence">
+				<a class="product--card anime-fadein" href="servicios/business-intelligence">
 					<div class="d-flex flex-column align-items-center">
 						<div class='row'>
 							<div class="col justify-content-center text-end">

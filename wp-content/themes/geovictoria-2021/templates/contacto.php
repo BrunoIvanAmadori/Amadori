@@ -48,6 +48,24 @@ get_header();
 					</div>
 				</div>
 
+				<?php
+				$contacto_ventas_1 = get_theme_mod('geovictoria-2021_info_contacto_ventas_1');
+				$contacto_ventas_1_sanitized = preg_replace('/\D/', '', $contacto_ventas_1);
+
+				$contacto_email_ventas = get_theme_mod('geovictoria-2021_info_contacto_email_ventas');
+				$contacto_email_ventas_sanitized = esc_html($contacto_email_ventas);
+
+				$contacto_soporte_1 = get_theme_mod('geovictoria-2021_info_contacto_soporte_1');
+				$contacto_soporte_1_sanitized = preg_replace('/\D/', '', $contacto_soporte_1);
+
+				$contacto_soporte_2 = get_theme_mod('geovictoria-2021_info_contacto_soporte_2');
+				$contacto_soporte_2_sanitized = preg_replace('/\D/', '', $contacto_soporte_2);
+
+				$contacto_email_soporte = get_theme_mod('geovictoria-2021_info_contacto_email_soporte');
+				$contacto_email_soporte_sanitized = preg_replace('/\D/', '', $contacto_email_soporte);
+				?>
+
+
 				<div class="col-12 col-md-4">
 					<div class="contact__info">
 						<h4 class="mb-4">Vías de comunicación</h4>
@@ -57,25 +75,25 @@ get_header();
 							<h5>Soporte</h5>
 							<div>
 								<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_1')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_1')); ?>">
+									<a class="underline" href="tel:<?php echo $contacto_soporte_1_sanitized; ?>">
 										<i class="fas fa-phone-alt"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_1')); ?></span>
+										<span><?php echo $contacto_soporte_1; ?></span>
 									</a><br>
 								<?php endif; ?>
 
 								<?php if (get_theme_mod('geovictoria-2021_info_contacto_soporte_2')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_2')); ?>">
+									<a class="underline" href="tel:<?php echo $contacto_soporte_2_sanitized; ?>">
 										<i class="fas fa-phone-alt"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_soporte_2')); ?></span>
+										<span><?php echo $contacto_soporte_2; ?></span>
 									</a>
 								<?php endif; ?>
 							</div>
 
 							<div>
 								<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_soporte')) : ?>
-									<a href="mailto:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_soporte')); ?>">
+									<a class="underline" href="mailto:<?php echo $contacto_email_soporte; ?>">
 										<i class="far fa-envelope"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_soporte')); ?></span>
+										<span><?php echo $contacto_email_soporte; ?></span>
 									</a>
 								<?php endif; ?>
 							</div>
@@ -86,24 +104,24 @@ get_header();
 							<h5>Ventas</h5>
 							<div>
 								<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_1')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?>">
+									<a class="underline" href="tel:<?php echo $contacto_ventas_1_sanitized; ?>">
 										<i class="fas fa-phone-alt"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_1')); ?></span>
+										<span><?php echo $contacto_ventas_1; ?></span>
 									</a><br>
 								<?php endif; ?>
 								<?php if (get_theme_mod('geovictoria-2021_info_contacto_ventas_2')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_2')); ?>">
+									<a class="underline" href="tel:<?php echo $contacto_ventas_2_sanitized;; ?>">
 										<i class="fas fa-phone-alt"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_ventas_2')); ?></span>
+										<span><?php echo $contacto_ventas_2; ?></span>
 									</a><br>
 								<?php endif; ?>
 							</div>
 
 							<div>
 								<?php if (get_theme_mod('geovictoria-2021_info_contacto_email_ventas')) : ?>
-									<a href="tel:<?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?>">
+									<a class="underline" href="mailto:<?php echo $contacto_email_ventas; ?>">
 										<i class="far fa-envelope"></i>
-										<span><?php echo esc_html(get_theme_mod('geovictoria-2021_info_contacto_email_ventas')); ?></span>
+										<span><?php echo $contacto_email_ventas_sanitized; ?></span>
 									</a>
 								<?php endif; ?>
 							</div>
