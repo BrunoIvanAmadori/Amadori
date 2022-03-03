@@ -133,21 +133,21 @@ get_header();
 
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between anime-fadein">
-				<a class="product--box" href="attendance-control">
+				<a class="product--box" href="services/attendance-control">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-asistencia.svg" />
 						<h4 class="fw-bold">Attendance <br> control</h4>
 						See more
 					</div>
 				</a>
-				<a class="product--box" href="access-control">
+				<a class="product--box" href="services/access-control">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-acceso.svg" />
 						<h4 class="fw-bold">Access control</h4>
 						See more
 					</div>
 				</a>
-				<a class="product--box" href="canteen-management">
+				<a class="product--box" href="services/canteen-management">
 					<div class=' d-flex flex-column align-content-center'>
 						<img class="product__icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/product-comedor.svg" />
 						<h4 class="fw-bold">Canteen management</h4>
@@ -159,7 +159,7 @@ get_header();
 
 		<div class="row d-flex justify-content-center">
 			<div class="col d-flex flex-column flex-md-row justify-content-between">
-				<a class="product--card" href="business-intelligence">
+				<a class="product--card" href="services/business-intelligence">
 					<div class="d-flex flex-column align-items-center anime-fadein-childs">
 						<div class='row'>
 							<div class="col justify-content-center text-end">
