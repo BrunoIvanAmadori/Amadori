@@ -39,9 +39,8 @@ $relacionadas = new WP_Query(
 					?>
 					<div class="col-lg-4">
 						<aside id="secondary">
-
-							<div class="row gy-4">
-								<h4>Notas relacionadas</h4>
+							<div class="notas-relacionadas">
+								<h4 class="notas-relacionadas__title">Notas relacionadas</h4>
 								<?php
 								if ($relacionadas->have_posts()) {
 									while ($relacionadas->have_posts()) {
@@ -51,27 +50,20 @@ $relacionadas = new WP_Query(
 									wp_reset_postdata();
 								}
 								?>
-
-								<div class="col-12">
-									<div class="card subscribe-sidebar h-100">
-										<div class="card-body flex-column d-flex justify-content-center">
-											<img class="subscribe-sidebar__envelope align-self-center" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg'>
-
-											<h4 class="card-title mb-4 text-center">
-												Sé el primero en recibir nuevos contenidos.
-											</h4>
-
-											<button class="button--bigblue w-100 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
-												<span class="white fw-bold">¡Suscribirme ahora!</span>
-											</button>
-										</div>
-
-									</div>
-								</div>
-
 							</div>
-
-
+							<div class="smart-cta">
+								<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-cc42b351-0ea9-4050-8d50-6853080bae44"><span class="hs-cta-node hs-cta-cc42b351-0ea9-4050-8d50-6853080bae44" id="hs-cta-cc42b351-0ea9-4050-8d50-6853080bae44">
+										<!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/7742864/cc42b351-0ea9-4050-8d50-6853080bae44"><img class="hs-cta-img" id="hs-cta-img-cc42b351-0ea9-4050-8d50-6853080bae44" style="border-width:0px;" height="414" width="331" src="https://no-cache.hubspot.com/cta/default/7742864/cc42b351-0ea9-4050-8d50-6853080bae44.png" alt="Conoce las tendencias que debes implementar este 2022 - Descarga el ebook aqui" /></a>
+									</span>
+									<script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+									<script type="text/javascript">
+										hbspt.cta.load(7742864, 'cc42b351-0ea9-4050-8d50-6853080bae44', {
+											"useNewLoader": "true",
+											"region": "na1"
+										});
+									</script>
+								</span><!-- end HubSpot Call-to-Action Code -->
+							</div>
 
 						</aside>
 					</div>
