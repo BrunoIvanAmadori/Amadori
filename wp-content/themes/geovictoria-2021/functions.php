@@ -437,6 +437,56 @@ function getURLWithoutQuery()
 	return $link;
 }
 
+// /**
+//  * Function to create custom post type for Success Stories
+//  */
+
+// function register_caso_de_exito_cpt()
+// {
+// 	$labels = array(
+// 		'name'                  => _x('Casos de éxito', 'Post type general name', 'caso_de_exito'),
+// 		'singular_name'         => _x('Caso de éxito', 'Post type singular name', 'caso_de_exito'),
+// 		'menu_name'             => _x('Casos de éxito', 'Admin Menu text', 'caso_de_exito'),
+// 		'name_admin_bar'        => _x('Caso de éxito', 'Add New on Toolbar', 'caso_de_exito'),
+// 		'add_new'               => __('Agregar Nuevo', 'caso_de_exito'),
+// 		'add_new_item'          => __('Agregar Nuevo caso de éxito', 'caso_de_exito'),
+// 		'new_item'              => __('Agregar caso de éxito', 'caso_de_exito'),
+// 		'edit_item'             => __('Editar caso de éxito', 'caso_de_exito'),
+// 		'view_item'             => __('Ver caso de éxito', 'caso_de_exito'),
+// 		'all_items'             => __('Todos los casos de éxito', 'caso_de_exito'),
+// 		'search_items'          => __('Buscar casos de éxito', 'caso_de_exito'),
+// 		'not_found'             => __('No se han encontrado casos de éxito.', 'caso_de_exito'),
+// 		'archives'              => _x('Archivo de casos de éxito', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'caso_de_exito'),
+// 		'insert_into_item'      => _x('Insertar en caso de éxito', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'caso_de_exito'),
+// 		'uploaded_to_this_item' => _x('Subido a este caso de éxito', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'caso_de_exito'),
+// 		'filter_items_list'     => _x('Filtrar lista de casos de éxito', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'caso_de_exito'),
+// 		'items_list_navigation' => _x('Navegación por lista de casos de éxito', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'caso_de_exito'),
+// 		'items_list'            => _x('Lista de casos de éxito', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'caso_de_exito'),
+// 	);
+
+// 	$args = array(
+// 		'labels'             => $labels,
+// 		'description'        => 'Custom post type para casos de éxito.',
+// 		'public'             => true,
+// 		'publicly_queryable' => true,
+// 		'show_ui'            => true,
+// 		'show_in_menu'       => true,
+// 		'query_var'          => true,
+// 		'rewrite'            => array('slug' => 'caso_de_exito'),
+// 		'capability_type'    => 'post',
+// 		'hierarchical'       => false,
+// 		'menu_position'      => 20,
+// 		'supports'           => [''],
+// 		'taxonomies'         => array('industria'),
+// 		'show_in_rest'       => false,
+// 		// 'register_meta_box_cb' => 'add_metaboxes',
+// 	);
+
+// 	register_post_type(sanitize_key('caso_de_exito'), $args);
+// }
+
+// add_action('init', 'register_caso_de_exito_cpt');
+
 /**
  * Function to create custom post type for Success Stories
  */
@@ -479,34 +529,13 @@ function register_caso_de_exito_cpt()
 		'supports'           => [''],
 		'taxonomies'         => array('industria'),
 		'show_in_rest'       => false,
-		'register_meta_box_cb' => 'add_url_metaboxes',
+		// 'register_meta_box_cb' => 'add_metaboxes',
 	);
 
 	register_post_type(sanitize_key('caso_de_exito'), $args);
 }
 
 add_action('init', 'register_caso_de_exito_cpt');
-
-
-function add_url_metaboxes()
-{
-	add_meta_box('youtube_video_url', 'YouTube Video URL', 'youtube_video_url', 'caso_de_exito');
-}
-
-function youtube_video_url()
-{
-	global $post;
-
-	// Añadimos un 'noncename' que necesitaremos para verificar los datos y de dónde vienen.
-	echo '<input type="hidden" name="youtube_video_noncename" id="youtube_video_noncename" value="' .
-		wp_create_nonce(plugin_basename(__FILE__)) . '" />';
-
-	// Recuperar los datos existentes, si es que hay datos existentes.
-	$youtube_video_url = get_post_meta($post->ID, 'youtube_video_url', true);
-
-	// El input que aparecerá en administración donde introducir/mostrar los datos
-	echo '<input type="text" name="youtube_video" value="' . $youtube_video_url  . '" />';
-}
 
 /**
  * Function to create Industries custom taxonomy
@@ -549,5 +578,344 @@ function register_industries_taxonomy()
 		'rewrite' => false,
 	));
 }
+
+/**
+ * Function to create soluciones custom taxonomy
+ */
+
+//hook into the init action and call create_book_taxonomies when it fires
+
+add_action('init', 'register_soluciones_taxonomy', 0);
+
+//create a custom taxonomy name it subjects for your posts
+
+function register_soluciones_taxonomy()
+{
+
+	// Add new taxonomy, make it hierarchical like categories
+	//first do the translations part for GUI
+
+	$labels = array(
+		'name' => _x('Soluciones', 'taxonomy general name'),
+		'singular_name' => _x('Solución', 'taxonomy singular name'),
+		'search_items' =>  __('Buscar Soluciones'),
+		'all_items' => __('Todas las Soluciones'),
+		'parent_item' => __('Solución Padre'),
+		'parent_item_colon' => __('Solución Padre:'),
+		'edit_item' => __('Editar Solución'),
+		'update_item' => __('Actualizar Solución'),
+		'add_new_item' => __('Agregar Nueva Solución'),
+		'new_item_name' => __('Agregar nuevo nombre de Solución'),
+		'menu_name' => __('Soluciones'),
+	);
+
+	// Now register the taxonomy
+	register_taxonomy('solucion', array('caso_de_exito'), array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => false,
+	));
+}
+
+if (function_exists('acf_add_local_field_group')) :
+
+	acf_add_local_field_group(array(
+		'key' => 'group_6243269913d10',
+		'title' => 'Datos de Empresa',
+		'fields' => array(
+			array(
+				'key' => 'field_624326c9ca289',
+				'label' => 'Nombre de Empresa',
+				'name' => 'nombre_de_empresa',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 1,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
+				'key' => 'field_624326e3ca28a',
+				'label' => 'Logo de Empresa',
+				'name' => 'logo_de_empresa',
+				'type' => 'image',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'return_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+				'min_width' => '',
+				'min_height' => '',
+				'min_size' => '',
+				'max_width' => '',
+				'max_height' => '',
+				'max_size' => '',
+				'mime_types' => '',
+			),
+			array(
+				'key' => 'field_6243270bca28b',
+				'label' => 'País de Empresa',
+				'name' => 'pais_de_empresa',
+				'type' => 'select',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'choices' => array(
+					'Ninguno' => 'Ninguno',
+					'Chile' => 'Chile',
+					'Colombia' => 'Colombia',
+					'Argentina' => 'Argentina',
+					'Perú' => 'Perú',
+					'Brasil' => 'Brasil',
+					'México' => 'México',
+				),
+				'default_value' => false,
+				'allow_null' => 0,
+				'multiple' => 0,
+				'ui' => 0,
+				'return_format' => 'value',
+				'ajax' => 0,
+				'placeholder' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'caso_de_exito',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+
+	acf_add_local_field_group(array(
+		'key' => 'group_6243280984201',
+		'title' => 'Datos del Interlocutor',
+		'fields' => array(
+			array(
+				'key' => 'field_624328099dc97',
+				'label' => 'Nombre del Interlocutor',
+				'name' => 'nombre_del_interlocutor',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 1,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
+				'key' => 'field_62432809a19f4',
+				'label' => 'Testimonio del Interlocutor',
+				'name' => 'testimonio_del_interlocutor',
+				'type' => 'textarea',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'new_lines' => '',
+			),
+			array(
+				'key' => 'field_62432809a19f5',
+				'label' => 'Testimonio del Interlocutor (Portugués)',
+				'name' => 'testimonio_del_interlocutor_pt',
+				'type' => 'textarea',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'rows' => '',
+				'new_lines' => '',
+			),
+			array(
+				'key' => 'field_624328099dc98',
+				'label' => 'Cargo del Interlocutor',
+				'name' => 'cargo_del_interlocutor',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+			array(
+				'key' => 'field_624328099dc99',
+				'label' => 'Cargo del Interlocutor (portugués)',
+				'name' => 'cargo_del_interlocutor_pt',
+				'type' => 'text',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'caso_de_exito',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+
+	acf_add_local_field_group(array(
+		'key' => 'group_6243282b39e6a',
+		'title' => 'Datos del Video',
+		'fields' => array(
+			array(
+				'key' => 'field_6243282b4daac',
+				'label' => 'URL de video de YouTube',
+				'name' => 'url_de_video_de_youtube',
+				'type' => 'url',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+			),
+			array(
+				'key' => 'field_6243283735840',
+				'label' => 'Imagen de previsualización de video de Youtube',
+				'name' => 'previsualizacion_de_video_de_youtube',
+				'type' => 'image',
+				'instructions' => '',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'return_format' => 'array',
+				'preview_size' => 'medium',
+				'library' => 'all',
+				'min_width' => '',
+				'min_height' => '',
+				'min_size' => '',
+				'max_width' => '',
+				'max_height' => '',
+				'max_size' => '',
+				'mime_types' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'caso_de_exito',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+
+endif;
+
+function ACF_title_updater()
+{
+	$my_post = array();
+	$my_post['post_title'] = get_field("nombre_de_empresa");
+	wp_update_post($my_post);
+}
+
+add_action('acf/save_post', 'ACF_title_updater', 20);
+
 
 add_filter('wp_lazy_loading_enabled', '__return_false');

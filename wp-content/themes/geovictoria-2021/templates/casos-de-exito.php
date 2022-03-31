@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Casos de Éxito
+Template Name: Casos de Exito
 */
 
 get_header();
@@ -30,10 +30,17 @@ get_header();
 			</div>
 		</div>
 	</section>
+
+	<?php
+	// Nos posicionamos en el blog raiz, donde estara toda la informacion que pediremos.
+	switch_to_blog(1);
+	?>
+
 	<section class="container categories mt-4 mb-4">
 		<div class="row justify-content-center">
 			<h2 class="mb-4">Selecciona la industria</h2>
 			<?php
+
 			$terms = get_terms(array(
 				'taxonomy' => 'industria', 'hide_empty' => false
 			));
@@ -52,107 +59,30 @@ get_header();
 	</section>
 	<?php
 
-		 = get_term_by('slug', 'seleccion-portada', 'industria')->term_id;
-	$populares_portada_id = get_term_by('slug', 'populares-portada', 'post-tag')->term_id;
-
-	$seleccionadas_por_editor = new WP_Query(
-		array(
-			'post_type' => 'post',
-			'post_status' => 'publish',
-			'posts_per_page' => 1,
-			'tag_slug__in' => 'seleccion-portada'
-		)
+	$args = array(
+		'post_type'        => 'caso_de_exito',
+		'posts_per_page'   => 20,
 	);
 
-	$populares = new WP_Query(
-		array(
-			'post_type' => 'post',
-			'post_status' => 'publish',
-			'posts_per_page' => 3,
-			'tag_slug__in' => 'popular-portada'
+	$casos_de_exito = new WP_Query($args);
 
-		)
-	);
+	if ($casos_de_exito->have_posts()) {
 
-	$recientes = new WP_Query(
-		array(
-			'post_type' => 'post',
-			'post_status' => 'publish',
-			'posts_per_page' => 3,
-			'tag__not_in' => [	, $populares_portada_id]
-		)
-	);
+		while ($casos_de_exito->have_posts()) {
+			$casos_de_exito->the_post();
+			get_template_part('template-parts/blogcard');
+		}
+	}
+
+	// Cerramos la conexion con el blog raiz
+	wp_reset_query();
+	restore_current_blog();
+
 	?>
 
-
-
-	<div class="container-fluid px-0 blog-content">
-
-		<section class="container popular-post">
-			<div class="row justify-content-center gy-4">
-				<h2 class="mb-4">Notas populares</h2>
-				<?php
-				if ($populares->have_posts()) {
-					while ($populares->have_posts()) {
-						$populares->the_post();
-						get_template_part('template-parts/blogcard');
-					}
-					wp_reset_postdata();
-				}
-				?>
-			</div> <!-- row -->
-		</section>
-
-
-
-		<section class="container recent-post">
-			<div class="row justify-content-center gy-4">
-				<h2 class="mb-4">Notas Recientes</h2>
-				<!-- <div class="ajax d-flex flex-wrap"> -->
-				<?php
-				if ($recientes->have_posts()) {
-					while ($recientes->have_posts()) {
-						$recientes->the_post();
-						get_template_part('template-parts/blogcard');
-					}
-					//echo do_shortcode('[cpt_ajax_load_more post_type="post" template="blogcard" item_class="blog-card" posts_per_page="3" grid="3"]');
-					//	wp_reset_postdata(); 
-
-
-				}
-				?>
-
-				<!-- </div> -->
-
-
-				<?php echo do_shortcode('[ajax_load_more id="blog" container_type="div" post_type="post" posts_per_page="3" offset="4" pause="true" images_loaded="true" scroll="false" button_label="Mostrar más" transition_container_classes="row mb-4"]');
-				?>
-
-			</div> <!-- row -->
-		</section>
-		<section class="container recent-post-load-more">
-
-		</section>
-
-		<!-- <div class="container show-more">
-			<div class="row justify-content-center">
-				<div class="col-12 d-flex justify-content-center">
-					<button class="button--bigblue">
-						<i class="far fa-eye"></i>
-						Mostrar más
-					</button>
-				</div>
-			</div>
-		</div> -->
-
-
-		<img class="bg-head-blue" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-blue.svg">
+	<img class="bg-head-blue" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-blue.svg">
 
 	</div>
-
-
-
-
 
 	<section class="container-fluid bg-blue-2 subscribe-cta">
 		<div class="container">
