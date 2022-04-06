@@ -259,9 +259,9 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3 anime-fadein">
+				<h2 class="white fw-bold mb-3 anime-fadein">
 					¿Listo para ser parte del mundo Business Intelligence?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3 anime-fadein">
 					Únete a las más de 5000 empresas que toman decisiones acertadas gracias a nuestra solución. Mejora el desempeño en tu empresa gracias a información valiosa y centralizada.

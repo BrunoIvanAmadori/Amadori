@@ -68,9 +68,9 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Manage the rations
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Depending on the method you choose, your workers will be able to register their entrance to the canteen and receive the food ration assigned for the day.
 					</p>
@@ -81,9 +81,9 @@ get_header();
 		<section class="d-flex container step-2 animation-comedor flex-column-reverse flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Always in the cloud!
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						The data of the rations delivered will be protected in the cloud. The information will be hosted in real time and available when you need it!
 					</p>
@@ -140,9 +140,9 @@ get_header();
 			</div>
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Instant reports
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Get reports of the people authorized to receive food, the information of the place and the time at which they validated their assigned ration.
 					</p>
@@ -194,9 +194,9 @@ get_header();
 
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Manage the rations
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Depending on the method you choose, your workers will be able to register their entrance to the canteen and receive the food ration assigned for the day.
 						</p>
@@ -207,9 +207,9 @@ get_header();
 			<section class="d-flex step-2 animation-comedor flex-column-reverse flex-md-row align-items-center justify-content-center">
 				<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Always in the cloud!
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							The data of the rations delivered will be protected in the cloud. The information will be hosted in real time. Available when you need it!
 						</p>
@@ -270,9 +270,9 @@ get_header();
 				</div>
 				<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Instant reports
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Get reports of the people authorized to receive food, the information of the place and time they validated their assigned ration.
 						</p>
@@ -440,9 +440,9 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3">
+				<h2 class="white fw-bold mb-3">
 					Ready to transform your business?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3 anime-fadein">
 					Thousands of companies already manage their canteens from our platform.

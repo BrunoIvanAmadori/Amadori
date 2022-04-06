@@ -71,9 +71,9 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Registra tu asistencia
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Según el método que elijas, tus trabajadores podrán fichar asistencia y será verificada gracias a nuestra tecnología biométrica.
 					</p>
@@ -85,9 +85,9 @@ get_header();
 		<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						¡Siempre en la nube!
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Los datos de asistencia estarán protegidos en la nube. La información quedará alojada en tiempo real. ¡Disponible cuando la necesites!
 					</p>
@@ -277,9 +277,9 @@ get_header();
 			</div>
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Informes al instante
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Obtendrás todo tipo de informes y podrás exportarlos en el formato que requieras. Horas extras, turnos consolidados, planificaciones y permisos. ¡Todo en un sólo lugar!
 					</p>
@@ -319,9 +319,9 @@ get_header();
 
 					<div class="col-12 col-md-6 step-1 step-1__text">
 						<div class="align-self-center pe-md-3 text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold anime-fadein">
+							<h2 class="gray mb-3 fw-bold anime-fadein">
 								Registra tu asistencia
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3 anime-fadein">
 								Según el método que elijas, tus trabajadores podrán fichar asistencia y será verificada gracias a nuestra tecnología biométrica.
 							</p>
@@ -332,9 +332,9 @@ get_header();
 				<section class="d-flex step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
 					<div class="col-12 col-md-6 step-2 step-2__text">
 						<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold">
+							<h2 class="gray mb-3 fw-bold">
 								¡Siempre en la nube!
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3">
 								Los datos de asistencia estarán protegidos en la nube. La información quedará alojada en tiempo real. ¡Disponible cuando la necesites!
 							</p>
@@ -528,9 +528,9 @@ get_header();
 					</div>
 					<div class="col-12 col-md-6 step-3 step-3__text">
 						<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold">
+							<h2 class="gray mb-3 fw-bold">
 								Informes al instante
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3">
 								Obtendrás todo tipo de informes y podrás exportarlos en el formato que requieras. Horas extras, turnos consolidados, planificaciones y permisos. ¡Todo en un sólo lugar!
 							</p>
@@ -685,9 +685,9 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3 anime-fadein">
+				<h2 class="white fw-bold mb-3 anime-fadein">
 					¿Listo para ser parte del cambio?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3 anime-fadein">
 					Sabemos que toda transformación es un desafío. Más de 5000 empresas ya gestionan su asistencia con nosotros.

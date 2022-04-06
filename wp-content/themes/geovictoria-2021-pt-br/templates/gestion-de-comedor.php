@@ -71,9 +71,9 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Gerencie as refeições
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Dependendo do método que você escolher, seus funcionários podem
 						registrar sua entrada no refeitório e receberão um voucher
@@ -86,9 +86,9 @@ get_header();
 		<section class="d-flex container step-2 animation-comedor flex-column-reverse flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Sempre na nuvem!
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Os dados das refeições entregues ficarão protegidos
 						na nuvem. As informações serão armazenadas em tempo
@@ -147,10 +147,10 @@ get_header();
 			</div>
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Relatórios instantâneos
 
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Obtenha e gere relatórios das pessoas habilitadas para receber alimentação, a informação do local e a hora em que receberam sua refeição atribuída.
 					</p>
@@ -202,9 +202,9 @@ get_header();
 
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Gerencie as refeições
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Dependendo do método que você escolher, seus funcionários podem
 							registrar sua entrada no refeitório e receberão um voucher
@@ -217,9 +217,9 @@ get_header();
 			<section class="d-flex step-2 animation-comedor flex-column-reverse flex-md-row align-items-center justify-content-center">
 				<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Sempre na nuvem!
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Os dados das refeições entregues ficarão protegidos
 							na nuvem. As informações serão armazenadas em tempo
@@ -282,10 +282,10 @@ get_header();
 				</div>
 				<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Relatórios instantâneos
 
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Obtenha e gere relatórios das pessoas habilitadas para receber alimentação, a informação do local e a hora em que receberam sua refeição atribuída.
 						</p>
@@ -476,10 +476,10 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3">
+				<h2 class="white fw-bold mb-3">
 					Pronto para ser
 					parte da mudança?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3 anime-fadein">
 					Milhares de empresas já gerenciam seus

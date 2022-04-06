@@ -682,6 +682,12 @@ footer.site-footer {
   &__graphics {
     justify-content: center;
     display: flex;
+
+    &--casos-de-exito {
+      justify-content: center;
+      display: flex;
+      height: 500px;
+    }
   }
 }
 
@@ -1354,6 +1360,12 @@ div[role="form"] {
   }
 }
 
+// pagination
+.page-item.active .page-link {
+  background-color: $primary-3;
+  border-color: $primary-3;
+}
+
 .blog-card--big {
   @extend .blog-card;
   height: 500px;
@@ -1976,5 +1988,20 @@ ul.no-list {
     padding: 10px;
     font-size: 24px;
     font-weight: bold;
+  }
+}
+
+.search-filter {
+}
+
+.caso-de-exito {
+  &__logo {
+    width: 3em;
+    margin-bottom: 1em;
+  }
+
+  &__flag {
+    width: 30px;
+    margin-right: 5px;
   }
 }

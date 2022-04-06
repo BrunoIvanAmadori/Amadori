@@ -72,9 +72,9 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Record your attendance
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Depending on the method you choose, your workers will be able to record attendance and it will be verified thanks to our biometric technology.
 					</p>
@@ -86,9 +86,9 @@ get_header();
 		<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Always in the cloud!
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Attendance data will be protected in the cloud. The information will be hosted in real time. Available when you need it!
 					</p>
@@ -278,9 +278,9 @@ get_header();
 			</div>
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Instant reports
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						You will get all kinds of reports and you can export them in the format you require. Overtime, consolidated shifts, schedules and permits. All in one place!
 					</p>
@@ -320,9 +320,9 @@ get_header();
 
 					<div class="col-12 col-md-6 step-1 step-1__text">
 						<div class="align-self-center pe-md-3 text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold anime-fadein">
+							<h2 class="gray mb-3 fw-bold anime-fadein">
 								Record your attendance
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3 anime-fadein">
 								Depending on the method you choose, your workers will be able to record attendance and it will be verified thanks to our biometric technology.
 							</p>
@@ -333,9 +333,9 @@ get_header();
 				<section class="d-flex step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
 					<div class="col-12 col-md-6 step-2 step-2__text">
 						<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold">
+							<h2 class="gray mb-3 fw-bold">
 								Always in the cloud!
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3">
 								Your data will be protected in the cloud and always available. Find your information in real time.
 							</p>
@@ -529,9 +529,9 @@ get_header();
 					</div>
 					<div class="col-12 col-md-6 step-3 step-3__text">
 						<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold">
+							<h2 class="gray mb-3 fw-bold">
 								Instant reports
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3">
 								You will get all kinds of reports and you can export them in the format you require. Overtime, consolidated shifts, schedules and permits. All in one place!
 							</p>
@@ -682,9 +682,9 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3 anime-fadein">
+				<h2 class="white fw-bold mb-3 anime-fadein">
 					Ready to transform your business?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3 anime-fadein">
 					We know that every transformation is a challenge. More than 5000 companies already manage their attendance with us.

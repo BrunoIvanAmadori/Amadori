@@ -437,56 +437,6 @@ function getURLWithoutQuery()
 	return $link;
 }
 
-// /**
-//  * Function to create custom post type for Success Stories
-//  */
-
-// function register_caso_de_exito_cpt()
-// {
-// 	$labels = array(
-// 		'name'                  => _x('Casos de éxito', 'Post type general name', 'caso_de_exito'),
-// 		'singular_name'         => _x('Caso de éxito', 'Post type singular name', 'caso_de_exito'),
-// 		'menu_name'             => _x('Casos de éxito', 'Admin Menu text', 'caso_de_exito'),
-// 		'name_admin_bar'        => _x('Caso de éxito', 'Add New on Toolbar', 'caso_de_exito'),
-// 		'add_new'               => __('Agregar Nuevo', 'caso_de_exito'),
-// 		'add_new_item'          => __('Agregar Nuevo caso de éxito', 'caso_de_exito'),
-// 		'new_item'              => __('Agregar caso de éxito', 'caso_de_exito'),
-// 		'edit_item'             => __('Editar caso de éxito', 'caso_de_exito'),
-// 		'view_item'             => __('Ver caso de éxito', 'caso_de_exito'),
-// 		'all_items'             => __('Todos los casos de éxito', 'caso_de_exito'),
-// 		'search_items'          => __('Buscar casos de éxito', 'caso_de_exito'),
-// 		'not_found'             => __('No se han encontrado casos de éxito.', 'caso_de_exito'),
-// 		'archives'              => _x('Archivo de casos de éxito', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'caso_de_exito'),
-// 		'insert_into_item'      => _x('Insertar en caso de éxito', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'caso_de_exito'),
-// 		'uploaded_to_this_item' => _x('Subido a este caso de éxito', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'caso_de_exito'),
-// 		'filter_items_list'     => _x('Filtrar lista de casos de éxito', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'caso_de_exito'),
-// 		'items_list_navigation' => _x('Navegación por lista de casos de éxito', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'caso_de_exito'),
-// 		'items_list'            => _x('Lista de casos de éxito', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'caso_de_exito'),
-// 	);
-
-// 	$args = array(
-// 		'labels'             => $labels,
-// 		'description'        => 'Custom post type para casos de éxito.',
-// 		'public'             => true,
-// 		'publicly_queryable' => true,
-// 		'show_ui'            => true,
-// 		'show_in_menu'       => true,
-// 		'query_var'          => true,
-// 		'rewrite'            => array('slug' => 'caso_de_exito'),
-// 		'capability_type'    => 'post',
-// 		'hierarchical'       => false,
-// 		'menu_position'      => 20,
-// 		'supports'           => [''],
-// 		'taxonomies'         => array('industria'),
-// 		'show_in_rest'       => false,
-// 		// 'register_meta_box_cb' => 'add_metaboxes',
-// 	);
-
-// 	register_post_type(sanitize_key('caso_de_exito'), $args);
-// }
-
-// add_action('init', 'register_caso_de_exito_cpt');
-
 /**
  * Function to create custom post type for Success Stories
  */
@@ -541,10 +491,6 @@ add_action('init', 'register_caso_de_exito_cpt');
  * Function to create Industries custom taxonomy
  */
 
-//hook into the init action and call create_book_taxonomies when it fires
-
-add_action('init', 'register_industries_taxonomy', 0);
-
 //create a custom taxonomy name it subjects for your posts
 
 function register_industries_taxonomy()
@@ -579,13 +525,13 @@ function register_industries_taxonomy()
 	));
 }
 
+//hook into the init action and call create_book_taxonomies when it fires
+
+add_action('init', 'register_industries_taxonomy', 0);
+
 /**
  * Function to create soluciones custom taxonomy
  */
-
-//hook into the init action and call create_book_taxonomies when it fires
-
-add_action('init', 'register_soluciones_taxonomy', 0);
 
 //create a custom taxonomy name it subjects for your posts
 
@@ -596,21 +542,21 @@ function register_soluciones_taxonomy()
 	//first do the translations part for GUI
 
 	$labels = array(
-		'name' => _x('Soluciones', 'taxonomy general name'),
-		'singular_name' => _x('Solución', 'taxonomy singular name'),
-		'search_items' =>  __('Buscar Soluciones'),
-		'all_items' => __('Todas las Soluciones'),
-		'parent_item' => __('Solución Padre'),
-		'parent_item_colon' => __('Solución Padre:'),
-		'edit_item' => __('Editar Solución'),
-		'update_item' => __('Actualizar Solución'),
-		'add_new_item' => __('Agregar Nueva Solución'),
-		'new_item_name' => __('Agregar nuevo nombre de Solución'),
-		'menu_name' => __('Soluciones'),
+		'name' => _x('Servicios', 'taxonomy general name'),
+		'singular_name' => _x('Servicio', 'taxonomy singular name'),
+		'search_items' =>  __('Buscar Servicios'),
+		'all_items' => __('Todos las Servicios'),
+		'parent_item' => __('Servicio Padre'),
+		'parent_item_colon' => __('Servicio Padre:'),
+		'edit_item' => __('Editar Servicio'),
+		'update_item' => __('Actualizar Servicio'),
+		'add_new_item' => __('Agregar Nueva Servicio'),
+		'new_item_name' => __('Agregar nuevo nombre de Servicio'),
+		'menu_name' => __('Servicios'),
 	);
 
 	// Now register the taxonomy
-	register_taxonomy('solucion', array('caso_de_exito'), array(
+	register_taxonomy('servicio', array('caso_de_exito'), array(
 		'hierarchical' => true,
 		'labels' => $labels,
 		'show_ui' => true,
@@ -621,7 +567,108 @@ function register_soluciones_taxonomy()
 	));
 }
 
+
+//hook into the init action and call create_book_taxonomies when it fires
+
+add_action('init', 'register_soluciones_taxonomy', 0);
+
+// Add custom fields for Custom Post types and Taxonomies
+
 if (function_exists('acf_add_local_field_group')) :
+
+	// INDUSTRIA
+
+	acf_add_local_field_group(array(
+		'key' => 'group_6245f15337453',
+		'title' => 'Traducción de Industria',
+		'fields' => array(
+			array(
+				'key' => 'field_6245f15d7340c',
+				'label' => 'Nombre (portugues)',
+				'name' => 'nombre_industria_pt',
+				'type' => 'text',
+				'instructions' => 'El nombre que aparecerá en la versión en portugués.',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'taxonomy',
+					'operator' => '==',
+					'value' => 'servicio',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'acf_after_title',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+
+	// SOLUCION
+
+	acf_add_local_field_group(array(
+		'key' => 'group_6245f231a61a7',
+		'title' => 'Traducción de solución',
+		'fields' => array(
+			array(
+				'key' => 'field_6245f2385b464',
+				'label' => 'Nombre (Portugués)',
+				'name' => 'nombre_solucion_pt',
+				'type' => 'text',
+				'instructions' => 'El nombre que aparecerá en la versión en portugués.',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'taxonomy',
+					'operator' => '==',
+					'value' => 'solucion',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'acf_after_title',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+		'show_in_rest' => 0,
+	));
+
+	// CASO DE EXITO
 
 	acf_add_local_field_group(array(
 		'key' => 'group_6243269913d10',
@@ -684,7 +731,7 @@ if (function_exists('acf_add_local_field_group')) :
 					'id' => '',
 				),
 				'choices' => array(
-					'Ninguno' => 'Ninguno',
+					'No especificado' => 'No especificado',
 					'Chile' => 'Chile',
 					'Colombia' => 'Colombia',
 					'Argentina' => 'Argentina',
@@ -766,7 +813,7 @@ if (function_exists('acf_add_local_field_group')) :
 			array(
 				'key' => 'field_62432809a19f5',
 				'label' => 'Testimonio del Interlocutor (Portugués)',
-				'name' => 'testimonio_del_interlocutor_pt',
+				'name' => 'testimonio_del_interlocutor_pt	',
 				'type' => 'textarea',
 				'instructions' => '',
 				'required' => 0,
@@ -807,7 +854,7 @@ if (function_exists('acf_add_local_field_group')) :
 				'name' => 'cargo_del_interlocutor_pt',
 				'type' => 'text',
 				'instructions' => '',
-				'required' => 0,
+				'required' => 1,
 				'conditional_logic' => 0,
 				'wrapper' => array(
 					'width' => '',
@@ -874,7 +921,7 @@ if (function_exists('acf_add_local_field_group')) :
 					'class' => '',
 					'id' => '',
 				),
-				'return_format' => 'array',
+				'return_format' => 'url',
 				'preview_size' => 'medium',
 				'library' => 'all',
 				'min_width' => '',
@@ -908,9 +955,12 @@ if (function_exists('acf_add_local_field_group')) :
 
 endif;
 
+// Update title with Nombre de Empresa when saving post
 function ACF_title_updater()
 {
+	global $post;
 	$my_post = array();
+	$my_post['ID'] = $post->ID;
 	$my_post['post_title'] = get_field("nombre_de_empresa");
 	wp_update_post($my_post);
 }
@@ -919,3 +969,103 @@ add_action('acf/save_post', 'ACF_title_updater', 20);
 
 
 add_filter('wp_lazy_loading_enabled', '__return_false');
+
+/**
+ * Obtain pagination links in an array, so I can stylize it in a custom fashion
+ */
+
+function wpdocs_get_paginated_links($query)
+{
+	// When we're on page 1, 'paged' is 0, but we're counting from 1,
+	// so we're using max() to get 1 instead of 0
+	$currentPage = max(1, get_query_var('paged', 1));
+
+	// This creates an array with all available page numbers, if there
+	// is only *one* page, max_num_pages will return 0, so here we also
+	// use the max() function to make sure we'll always get 1
+	$pages = range(1, max(1, $query->max_num_pages));
+
+	// Now, map over $pages and return the page number, the url to that
+	// page and a boolean indicating whether that number is the current page
+	return array_map(function ($page) use ($currentPage) {
+		return (object) array(
+			"isCurrent" => $page == $currentPage,
+			"page" => $page,
+			"url" => get_pagenum_link($page)
+		);
+	}, $pages);
+}
+
+/**
+ * Function for obtaining language flag.
+ * 
+ */
+
+function getGVSiteFlagUrl($country_code) {
+	$flag_url = esc_url(get_template_directory_uri() . '/dist/img/flags/' . $country_code . '.png');
+	return $flag_url;
+}
+
+$language_table_json = include(get_template_directory() . "/inc/language_table.php");
+$language_table = json_decode($language_table_json);
+
+$sites = [];
+
+// Obtengo urls de los sitios para los links
+
+
+
+// loopeo por todos los sitios para sab
+
+foreach (get_sites() as $site) : // Loopeo por todos los sitios 
+?>
+<?php
+
+	// Si es el sitio actual
+
+	if (get_current_blog_id() == $site->blog_id || $site->blog_id == 1) :
+		$country_code = str_replace('/', '', $site->path);
+		if ($country_code) {
+			$current_site_path = $country_code;
+		} else {
+			$current_site_path = 'cl';
+		}
+
+	// Si no es el sitio actual, agregalo a la lista. De manera que solo figuren los sitios que no son el actual.
+	else :
+		$country_code = str_replace('/', '', $site->path);
+		$sites[] = ['country_code' => $country_code];
+	endif;
+endforeach;
+
+var_dump($sites);
+
+// Obtengo idioma actual del sitio para saber en que idioma mostrar el nombre del lenguaje
+switch (substr(get_locale(), 0, 2)) {
+	case "en":
+		$lang_name = 'en_name';
+		break;
+	case "es":
+		$lang_name = 'es_name';
+		break;
+	case "pt":
+		$lang_name = 'pt_name';
+		break;
+}
+
+// obtengo el nombre del lenguaje
+for ($i = 0; $i < count($sites); $i++) {
+	foreach ($language_table as $language) :
+		if ($language->code == $sites[$i][0]) {
+			$sites[$i][1] = $language->$lang_name;
+		}
+	endforeach;
+}
+// obtengo la url de la bandera de cada sitio
+
+$current_site_flag_url = esc_url(get_template_directory_uri() . '/dist/img/flags/' . $current_site_path . '.png');
+
+for ($i = 0; $i < count($sites); $i++) {
+	$sites[$i][2] = esc_url(get_template_directory_uri() . '/dist/img/flags/' . $sites[$i][0] . '.png');
+}
+?>

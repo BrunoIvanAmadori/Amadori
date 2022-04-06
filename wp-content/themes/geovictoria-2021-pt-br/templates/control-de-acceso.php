@@ -79,9 +79,9 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Permitir acesso
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Independentemente do dispositivo ou local de acesso, valide a entrada de pessoas graças às nossas tecnologias.
 					</p>
@@ -92,9 +92,9 @@ get_header();
 		<section class="d-flex container step-2 animation-acceso flex-column-reverse flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Sempre na nuvem!
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Os dados dos acesso serão protegidos na nuvem. Encontre as informações em tempo real. Disponíveis para quando você precisar!
 					</p>
@@ -158,9 +158,9 @@ get_header();
 			</div>
 			<div class="col-12 col-md-6 mb-5 mt-5 step-3 step-3__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Relatórios instantâneos
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Obtenha diferentes relatórios de acessos. Criação de perfis. Planejamento por dias, semanas e meses. Tudo em um só lugar
 					</p>
@@ -211,9 +211,9 @@ get_header();
 
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Permitir acesso
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Independentemente do dispositivo ou local de acesso, valide a entrada de pessoas graças às nossas tecnologias.
 						</p>
@@ -224,9 +224,9 @@ get_header();
 			<section class="d-flex step-2 animation-acceso flex-column-reverse flex-md-row align-items-center justify-content-center">
 				<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Sempre na nuvem!
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Os dados dos acesso serão protegidos na nuvem. Encontre as informações em tempo real. Disponíveis para quando você precisar!
 						</p>
@@ -292,9 +292,9 @@ get_header();
 				</div>
 				<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Relatórios instantâneos
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Obtenha diferentes relatórios de acessos. Criação de perfis. Planejamento por dias, semanas e meses. Tudo em um só lugar
 						</p>
@@ -532,9 +532,9 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3 anime-fadein-childs">
-				<h1 class="white fw-bold mb-3">
+				<h2 class="white fw-bold mb-3">
 					Pronto para fazer parte da mudança?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3">
 					Sabemos que toda transformação é um desafio. Mais de 5000 empresas já gerenciam seus acessos conosco.

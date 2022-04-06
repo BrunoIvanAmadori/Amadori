@@ -72,9 +72,9 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Registre seu ponto
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Dependendo do método que você escolher, seus trabalhadores
 						poderão registrar o ponto e será verificado
@@ -88,9 +88,9 @@ get_header();
 		<section class="d-flex container step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Sempre na nuvem!
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Os dados dos registros de ponto serão protegidos na nuvem. As informações serão armazenadas em
 						tempo real. E estarão isponíveis para quando você precisar!
@@ -281,9 +281,9 @@ get_header();
 			</div>
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Relatórios instantâneos
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Você obterá todos os tipos de relatórios e poderá exportá-los no
 						formato que você precisar. Horas extras, turnos consolidados,
@@ -325,9 +325,9 @@ get_header();
 
 					<div class="col-12 col-md-6 step-1 step-1__text">
 						<div class="align-self-center pe-md-3 text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold anime-fadein">
+							<h2 class="gray mb-3 fw-bold anime-fadein">
 								Registre seu ponto
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3 anime-fadein">
 								Dependendo do método que você escolher, seus trabalhadores
 								poderão registrar o ponto e será verificado
@@ -340,9 +340,9 @@ get_header();
 				<section class="d-flex step-2 animation-asistencia flex-column-reverse flex-md-row align-items-center justify-content-center">
 					<div class="col-12 col-md-6 step-2 step-2__text">
 						<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold">
+							<h2 class="gray mb-3 fw-bold">
 								Sempre na nuvem!
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3">
 								Os dados dos registros de ponto serão protegidos na nuvem. As informações serão armazenadas em
 								tempo real. E estarão isponíveis para quando você precisar!
@@ -537,9 +537,9 @@ get_header();
 					</div>
 					<div class="col-12 col-md-6 step-3 step-3__text">
 						<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-							<h1 class="gray mb-3 fw-bold">
+							<h2 class="gray mb-3 fw-bold">
 								Relatórios instantâneos
-							</h1>
+							</h2>
 							<p class="gray fw-light mb-3">
 								Você obterá todos os tipos de relatórios e poderá exportá-los no
 								formato que você precisar. Horas extras, turnos consolidados,
@@ -701,10 +701,10 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3 anime-fadein">
+				<h2 class="white fw-bold mb-3 anime-fadein">
 					Pronto para ser
 					parte da mudança?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3 anime-fadein">
 					Sabemos que toda transformação é

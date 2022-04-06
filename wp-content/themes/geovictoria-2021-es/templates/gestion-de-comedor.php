@@ -72,9 +72,9 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Gestiona las raciones
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Según el método que elijas, tus trabajadores podrán registrar su entrada al comedor y recibir la ración de alimento asignada para el día.
 					</p>
@@ -85,9 +85,9 @@ get_header();
 		<section class="d-flex container step-2 animation-comedor flex-column-reverse flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						¡Siempre en la nube!
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Los datos de las raciones entregadas estarán protegidos en la nube. La información quedará alojada en tiempo real. ¡Disponible cuando la necesites!
 					</p>
@@ -144,9 +144,9 @@ get_header();
 			</div>
 			<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Informes al instante
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Obtén informes de las personas habilitadas para recibir alimento, la información del lugar y la hora en que validaron su ración asignada.
 					</p>
@@ -198,9 +198,9 @@ get_header();
 
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Gestiona las raciones
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Según el método que elijas, tus trabajadores podrán registrar su entrada al comedor y recibir la ración de alimento asignada para el día.
 						</p>
@@ -211,9 +211,9 @@ get_header();
 			<section class="d-flex step-2 animation-comedor flex-column-reverse flex-md-row align-items-center justify-content-center">
 				<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							¡Siempre en la nube!
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Los datos de las raciones entregadas estarán protegidos en la nube. La información quedará alojada en tiempo real. ¡Disponible cuando la necesites!
 						</p>
@@ -274,9 +274,9 @@ get_header();
 				</div>
 				<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Informes al instante
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Obtén informes de las personas habilitadas para recibir alimento, la información del lugar y la hora en que validaron su ración asignada.
 						</p>
@@ -458,9 +458,9 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3">
-				<h1 class="white fw-bold mb-3">
+				<h2 class="white fw-bold mb-3">
 					¿Listo para ser parte del cambio?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3 anime-fadein">
 					Miles de empresas ya gestionan su

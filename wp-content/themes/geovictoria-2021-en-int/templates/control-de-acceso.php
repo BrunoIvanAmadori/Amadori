@@ -80,9 +80,9 @@ get_header();
 
 			<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Allow access
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Regardless of the device or the place of access, validate the entry of people thanks to our technology.
 					</p>
@@ -93,9 +93,9 @@ get_header();
 		<section class="d-flex container step-2 animation-acceso flex-column-reverse flex-md-row align-items-center justify-content-center">
 			<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Always in the cloud!
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Your data will be protected in the cloud and always available. Find your information in real time.
 					</p>
@@ -159,9 +159,9 @@ get_header();
 			</div>
 			<div class="col-12 col-md-6 mb-5 mt-5 step-3 step-3__text">
 				<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-					<h1 class="gray mb-3 fw-bold">
+					<h2 class="gray mb-3 fw-bold">
 						Instant reports
-					</h1>
+					</h2>
 					<p class="gray fw-light mb-3">
 						Get different entry reports. Profiling. Planning for days, weeks and months. All in one place!
 					</p>
@@ -212,9 +212,9 @@ get_header();
 
 				<div class="col-12 col-md-6 mb-5 step-1 step-1__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Allow access
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Regardless of the device or the place of access, validate the entry of people thanks to our technology.
 						</p>
@@ -225,9 +225,9 @@ get_header();
 			<section class="d-flex step-2 animation-acceso flex-column-reverse flex-md-row align-items-center justify-content-center">
 				<div class="col-12 col-md-6 mb-5 step-2 step-2__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Always in the cloud!
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							Your data will be protected in the cloud and always available. Find your information in real time.
 						</p>
@@ -293,9 +293,9 @@ get_header();
 				</div>
 				<div class="col-12 col-md-6 mb-5 step-3 step-3__text">
 					<div class="align-self-center pe-md-3 anime-fadein-childs text-center text-md-start">
-						<h1 class="gray mb-3 fw-bold">
+						<h2 class="gray mb-3 fw-bold">
 							Instant reports
-						</h1>
+						</h2>
 						<p class="gray fw-light mb-3">
 							You will get all kinds of reports and you can export them in the format you require. Overtime, consolidated shifts, schedules and permits. All in one place!
 						</p>
@@ -550,9 +550,9 @@ get_header();
 	<div class="container-fluid bg-blue-2">
 		<section class="d-flex justify-content-between container why-us">
 			<div class="col-12 col-md-6 text-center text-md-start align-self-center pe-3 anime-fadein-childs">
-				<h1 class="white fw-bold mb-3">
+				<h2 class="white fw-bold mb-3">
 					Ready to transform your business?
-				</h1>
+				</h2>
 
 				<p class="white fw-light mb-3">
 					We know that every transformation is a challenge. More than 5000 companies already manage their access with us.
