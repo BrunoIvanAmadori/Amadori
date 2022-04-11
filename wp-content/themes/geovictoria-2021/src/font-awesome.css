@@ -265,6 +265,10 @@
   content: "\f095";
 }
 
+.fa-play:before {
+  content: "\f04b";
+}
+
 .fa-phone-alt:before {
   content: "\f879";
 }

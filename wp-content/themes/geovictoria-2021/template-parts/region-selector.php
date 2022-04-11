@@ -1,6 +1,6 @@
 <?php
-$language_table_json = include(get_template_directory() . "/inc/language_table.php");
-$language_table = json_decode($language_table_json);
+$region_table_json = include(get_template_directory() . "/inc/region_table.php");
+$region_table = json_decode($region_table_json);
 
 $sites = [];
 
@@ -39,9 +39,9 @@ switch (substr(get_locale(), 0, 2)) {
 
 // obtengo el nombre del lenguaje
 for ($i = 0; $i < count($sites); $i++) {
-    foreach ($language_table as $language) :
-        if ($language->code == $sites[$i][0]) {
-            $sites[$i][1] = $language->$lang_name;
+    foreach ($region_table as $region) :
+        if ($region->code == $sites[$i][0]) {
+            $sites[$i][1] = $region->$lang_name;
         }
     endforeach;
 }
@@ -53,17 +53,17 @@ for ($i = 0; $i < count($sites); $i++) {
     $sites[$i][2] = esc_url(get_template_directory_uri() . '/dist/img/flags/' . $sites[$i][0] . '.png');
 }
 ?>
-<div class="language-selector">
+<div class="region-selector">
 
-    <button class="btn language-selector__button dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img class="language-selector__flag" src="<?php echo esc_url($current_site_flag_url); ?>">
+    <button class="btn region-selector__button dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <img class="region-selector__flag" src="<?php echo esc_url($current_site_flag_url); ?>">
     </button>
 
-    <ul class="language-selector__menu dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <ul class="region-selector__menu dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <?php for ($i = 0; $i < count($sites); $i++) : ?>
             <a href="<?php echo '/' . $sites[$i][0]; ?>">
                 <li>
-                    <img class="language-selector__flag" src="<?php echo $sites[$i][2] ?>">
+                    <img class="region-selector__flag" src="<?php echo $sites[$i][2] ?>">
                     <span><small> <?php echo ucfirst($sites[$i][1]); ?> </span></small>
                 </li>
 

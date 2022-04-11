@@ -132,7 +132,7 @@
 							?>
 
 						</div>
-						<?php get_template_part('template-parts/language-selector'); ?>
+						<?php get_template_part('template-parts/region-selector'); ?>
 					</div>
 				</header>
 
@@ -140,7 +140,7 @@
 					<div class="container">
 						<nav class="navbar navbar-expand-lg navbar-light justify-content-md-between">
 							<div class="d-md-block d-lg-none">
-								<?php get_template_part('template-parts/language-selector'); ?>
+								<?php get_template_part('template-parts/region-selector'); ?>
 							</div>
 							<div class="site-branding navbar-brand">
 								<?php

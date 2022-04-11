@@ -22,7 +22,7 @@ get_header();
 						Control de Asistencia en nuestros casos de éxito.
 					</p>
 					<?php
-					// Nos posicionamos en el blog raiz, donde estara toda la informacion que pediremos.
+					// We switch to root blog where all the 'casos de exito' are stored.
 					switch_to_blog(1);
 					?>
 
@@ -32,30 +32,48 @@ get_header();
 
 					$args = [
 						'post_type'        => 'caso_de_exito',
-						'posts_per_page' => -1
+						'posts_per_page' => -1,
+						'taxonomy' => ''
 					];
 
 					$casos_de_exito_not_filtered = new WP_Query($args);
+					$selected_industria = $_GET['industria'];
+					$selected_servicio = $_GET['servicio'];
 
-					if (!empty($_GET['industria'])) {
-						$selected_industria = $_GET['industria'];
+					if (!empty($selected_servicio) && !empty($selected_industria)) {
 						$args['tax_query'] = array(
+							'relation' => 'AND',
 							array(
 								'taxonomy' => 'industria',
+								'field' => 'slug',
 								'terms' => $selected_industria,
-							)
-						);
-					}
-
-					if (!empty($_GET['servicio'])) {
-						$selected_servicio = $_GET['servicio'];
-
-						$args['tax_query'] = array(
+							),
 							array(
 								'taxonomy' => 'servicio',
+								'field' => 'slug',
 								'terms' => $selected_servicio,
 							)
 						);
+					} else {
+						if (!empty($selected_industria)) {
+							$args['tax_query'] = array(
+								array(
+									'taxonomy' => 'industria',
+									'field' => 'slug',
+									'terms' => $selected_industria,
+								)
+							);
+						}
+
+						if (!empty($selected_servicio)) {
+							$args['tax_query'] = array(
+								array(
+									'taxonomy' => 'servicio',
+									'field' => 'slug',
+									'terms' => $selected_servicio,
+								)
+							);
+						}
 					}
 
 					if (!empty($_GET['pais'])) {
@@ -91,8 +109,6 @@ get_header();
 					}
 
 					?>
-
-
 					<div class="row justify-content-center">
 						<?php
 						$industrias = get_terms(array(
@@ -171,128 +187,91 @@ get_header();
 		</div>
 	</section>
 
-
-
-	<section>
-		<div class="container">
-			<div class="row gy-4">
+	<section class="container">
+		<div class="row gy-4">
+			<?php
+			if ($casos_de_exito_filtered->have_posts()) :
+				while ($casos_de_exito_filtered->have_posts()) {
+					$casos_de_exito_filtered->the_post();
+					get_template_part('template-parts/caso-de-exito-card');
+				}
+			?>
 				<?php
-				if ($casos_de_exito_filtered->have_posts()) {
-					while ($casos_de_exito_filtered->have_posts()) {
-						$casos_de_exito_filtered->the_post();
-						get_template_part('template-parts/caso-de-exito-card');
-					}
+				$paginated_links = wpdocs_get_paginated_links($casos_de_exito_filtered);
+				$isFirstPage = $paged == 1;
+				$isLastPage = $paged == count($paginated_links);
+				$isOnlyOnePage = count($paginated_links) == 1;
+				?>
+
+				<?php
+				if (!$isOnlyOnePage) :
 				?>
 					<nav class="pagination-nav justify-content-center d-flex">
-
 						<ul class="pagination ms-0">
-							<?php $paginated_links = wpdocs_get_paginated_links($casos_de_exito_filtered); ?>
 
-							<?php if ($paged == 1) : ?>
-								<li class="page-item disabled">
-									<a class="page-link" tabindex="-1">
-										<?php echo "Anterior"; ?>
-									</a>
-								</li>
-							<?php else : ?>
-								<li class="page-item">
-									<a class="page-link" href="<?php echo $paginated_links[(int)$paged - 2]->url; ?>">
-										<?php echo "Anterior"; ?>
-									</a>
-								</li>
-							<?php endif; ?>
+							<?php
+							// We get the 'Anterior' button.
+							?>
 
+							<li class="page-item <?php echo ($isFirstPage) ? 'disabled' : ''; ?>">
+								<a class="page-link" <?php echo ($isFirstPage) ? 'tabindex="-1"' : ''; ?> <?php echo (!$isFirstPage) ? 'href="' . $paginated_links[(int)$paged - 2]->url . '"' : '' ?>>
+									<?php echo "Anterior"; ?>
+								</a>
+							</li>
+
+							<?php
+							// We show the pagination numbers.
+							?>
 
 							<?php foreach (wpdocs_get_paginated_links($casos_de_exito_filtered) as $link) : ?>
-
-								<?php if ($link->isCurrent) : ?>
-									<li class="page-item active">
-										<a class="page-link" tabindex="-1">
-											<strong><?php echo $link->page; ?></strong>
-										</a>
-									</li>
-								<?php else : ?>
-									<li class="page-item">
-										<a class="page-link" href="<?php echo $link->url; ?>">
-											<?php echo $link->page; ?>
-										</a>
-									</li>
-								<?php endif; ?>
-
+								<?php $isCurrentLinkActive = $link->isCurrent; ?>
+								<li class="page-item <?php echo ($isCurrentLinkActive) ? 'active' : ''; ?>">
+									<a class="page-link" <?php echo ($isCurrentLinkActive) ? 'tabindex="-1"' : ''; ?> <?php echo (!$isCurrentLinkActive) ? 'href="' . $link->url . '"' : ''; ?>>
+										<strong><?php echo $link->page; ?></strong>
+									</a>
+								</li>
 							<?php endforeach; ?>
 
-							<?php if ($paged == count($paginated_links)) : ?>
-								<li class="page-item disabled">
-									<a class="page-link" tabindex="-1">
-										<?php echo "Siguiente"; ?>
-									</a>
-								</li>
-							<?php else : ?>
-								<li class="page-item">
-									<a class="page-link" href="<?php echo $paginated_links[(int)$paged]->url; ?>">
-										<?php echo "Siguiente"; ?>
-									</a>
-								</li>
-							<?php endif; ?>
+							<?php
+							// We show the 'Siguiente' button.
+							?>
+
+							<li class="page-item <?php echo ($isLastPage) ? 'disabled' : ''; ?>">
+								<a class="page-link" <?php echo ($isLastPage) ? 'tabindex="-1"' : ''; ?> <?php echo (!$isLastPage) ? 'href="' . $paginated_links[(int)$paged]->url . '"' : '' ?>>
+									<?php echo "Siguiente"; ?>
+								</a>
+							</li>
 						</ul>
-
-						<?php
-
-						// echo paginate_links(array(
-						// 	'base'         => str_replace(999999999, '%#%', esc_url(get_pagenum_link(999999999))),
-						// 	'total'        => $casos_de_exito_filtered->max_num_pages,
-						// 	'current'      => max(1, get_query_var('paged')),
-						// 	'format'       => '?paged=%#%',
-						// 	'show_all'     => false,
-						// 	'type'         => 'plain',
-						// 	'end_size'     => 2,
-						// 	'mid_size'     => 1,
-						// 	'prev_next'    => true,
-						// 	'prev_text'    => sprintf('<i></i> %1$s', __('Siguiente', 'text-domain')),
-						// 	'next_text'    => sprintf('%1$s <i></i>', __('Anterior', 'text-domain')),
-						// 	'add_args'     => false,
-						// 	'add_fragment' => '',
-						// ));
-						?>
 					</nav>
-				<?php
-				} else {
-					echo '<h2>No se han encontrado casos de éxito</h2>';
-					echo '<p>Intenta nuevamente cambiando el criterio del filtro.</p>';
-				}
-
-				// Cerramos la conexion con el blog raiz
-				wp_reset_query();
-				restore_current_blog();
-
-				?>
-			</div>
-
-		</div>
-	</section>
-
-
-
-	<img class="bg-head-blue" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/bg-head-blue.svg">
-
-	</div>
-
-	<section class="container-fluid bg-blue-2 subscribe-cta">
-		<div class="container">
-			<div class="row text-center justify-content-center">
-				<div class="contact__form d-flex align-items-center flex-column">
-					<img class="subscribe-cta__envelope align-self-center" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/blog/envelope.svg">
-					<div class="col-md-7">
-						<h3 class="mb-4"><b>
-								Suscríbete</b> a nuestro blog y enterate de tus noticias de interés.</h3>
-						<button class="fw-bold button--bigwhite w-100 mt-3 anime-fadein" data-bs-toggle="modal" data-bs-target="#newsletterModal">
-							¡Suscribirme ahora!
-						</button>
+				<?php endif; ?>
+			<?php else : ?>
+				<div class="row w-100 d-flex flex-column flex-md-row justify-content-between align-items-center h-100 mb-5">
+					<div class="col-12 col-md-6">
+						<div class="align-self-center pe-md-3">
+							<h2 class="gray mb-3 fw-bold">
+								No se han encontrado casos de éxito
+							</h2>
+							<h4 class="fw-light mb-4 anime-fadein">
+								Intenta nuevamente cambiando el criterio del filtro.
+							</h4>
+						</div>
+					</div>
+					<div class="hero__graphics col-12 col-md-6">
+						<img class="anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/error-500.svg">
 					</div>
 				</div>
-			</div>
+			<?php endif; ?>
+
+
+			<?php
+			// We close connection with root blog
+			wp_reset_query();
+			restore_current_blog();
+			?>
 		</div>
 	</section>
+
+
 </main><!-- #main -->
 
 <?php

@@ -477,7 +477,7 @@ function register_caso_de_exito_cpt()
 		'hierarchical'       => false,
 		'menu_position'      => 20,
 		'supports'           => [''],
-		'taxonomies'         => array('industria'),
+		'taxonomies'         => array('industria', 'servicio'),
 		'show_in_rest'       => false,
 		// 'register_meta_box_cb' => 'add_metaboxes',
 	);
@@ -486,6 +486,52 @@ function register_caso_de_exito_cpt()
 }
 
 add_action('init', 'register_caso_de_exito_cpt');
+
+add_filter('manage_caso_de_exito_posts_columns', 'filter_posts_columns');
+
+function filter_posts_columns($columns)
+{
+	$columns = [
+		'cb'   => $columns['cb'],
+		'empresa' => __('Empresa'),
+		'pais' => __('Pais'),
+		'servicio' => __('Servicio'),
+		'industria' => __('Industria'),
+		'imagen'   => __('Imagen')
+	];
+
+	return $columns;
+}
+
+add_action('manage_caso_de_exito_posts_custom_column', 'caso_de_exito_column', 10, 2);
+
+function caso_de_exito_column($column, $post_id)
+{
+	// Pais column
+	if ('pais' === $column) {
+		echo get_field('pais_de_empresa', $post_id);
+	}
+
+	// Empresa column
+	if ('empresa' === $column) {
+		echo get_field('nombre_de_empresa', $post_id);
+	}
+
+	// Industria column
+	if ('industria' === $column) {
+		echo get_the_terms($post_id, 'industria')[0]->name;
+	}
+
+	// Servicio column
+	if ('servicio' === $column) {
+		echo get_the_terms($post_id, 'servicio')[0]->name;
+	}
+
+	// Servicio column
+	if ('imagen' === $column) {
+		echo '<img height="80" src="' . get_field('previsualizacion_de_video_de_youtube') . '">';
+	}
+}
 
 /**
  * Function to create Industries custom taxonomy
@@ -607,7 +653,7 @@ if (function_exists('acf_add_local_field_group')) :
 				array(
 					'param' => 'taxonomy',
 					'operator' => '==',
-					'value' => 'servicio',
+					'value' => 'industria',
 				),
 			),
 		),
@@ -631,7 +677,7 @@ if (function_exists('acf_add_local_field_group')) :
 			array(
 				'key' => 'field_6245f2385b464',
 				'label' => 'Nombre (Portugués)',
-				'name' => 'nombre_solucion_pt',
+				'name' => 'nombre_servicio_pt',
 				'type' => 'text',
 				'instructions' => 'El nombre que aparecerá en la versión en portugués.',
 				'required' => 0,
@@ -653,7 +699,7 @@ if (function_exists('acf_add_local_field_group')) :
 				array(
 					'param' => 'taxonomy',
 					'operator' => '==',
-					'value' => 'solucion',
+					'value' => 'servicio',
 				),
 			),
 		),
@@ -772,25 +818,25 @@ if (function_exists('acf_add_local_field_group')) :
 		'key' => 'group_6243280984201',
 		'title' => 'Datos del Interlocutor',
 		'fields' => array(
-			array(
-				'key' => 'field_624328099dc97',
-				'label' => 'Nombre del Interlocutor',
-				'name' => 'nombre_del_interlocutor',
-				'type' => 'text',
-				'instructions' => '',
-				'required' => 1,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'maxlength' => '',
-			),
+			// array(
+			// 	'key' => 'field_624328099dc97',
+			// 	'label' => 'Nombre del Interlocutor',
+			// 	'name' => 'nombre_del_interlocutor',
+			// 	'type' => 'text',
+			// 	'instructions' => '',
+			// 	'required' => 0,
+			// 	'conditional_logic' => 0,
+			// 	'wrapper' => array(
+			// 		'width' => '',
+			// 		'class' => '',
+			// 		'id' => '',
+			// 	),
+			// 	'default_value' => '',
+			// 	'placeholder' => '',
+			// 	'prepend' => '',
+			// 	'append' => '',
+			// 	'maxlength' => '',
+			// ),
 			array(
 				'key' => 'field_62432809a19f4',
 				'label' => 'Testimonio del Interlocutor',
@@ -813,7 +859,7 @@ if (function_exists('acf_add_local_field_group')) :
 			array(
 				'key' => 'field_62432809a19f5',
 				'label' => 'Testimonio del Interlocutor (Portugués)',
-				'name' => 'testimonio_del_interlocutor_pt	',
+				'name' => 'testimonio_del_interlocutor_pt',
 				'type' => 'textarea',
 				'instructions' => '',
 				'required' => 0,
@@ -829,44 +875,44 @@ if (function_exists('acf_add_local_field_group')) :
 				'rows' => '',
 				'new_lines' => '',
 			),
-			array(
-				'key' => 'field_624328099dc98',
-				'label' => 'Cargo del Interlocutor',
-				'name' => 'cargo_del_interlocutor',
-				'type' => 'text',
-				'instructions' => '',
-				'required' => 0,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'maxlength' => '',
-			),
-			array(
-				'key' => 'field_624328099dc99',
-				'label' => 'Cargo del Interlocutor (portugués)',
-				'name' => 'cargo_del_interlocutor_pt',
-				'type' => 'text',
-				'instructions' => '',
-				'required' => 1,
-				'conditional_logic' => 0,
-				'wrapper' => array(
-					'width' => '',
-					'class' => '',
-					'id' => '',
-				),
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'maxlength' => '',
-			),
+			// array(
+			// 	'key' => 'field_624328099dc98',
+			// 	'label' => 'Cargo del Interlocutor',
+			// 	'name' => 'cargo_del_interlocutor',
+			// 	'type' => 'text',
+			// 	'instructions' => '',
+			// 	'required' => 1,
+			// 	'conditional_logic' => 0,
+			// 	'wrapper' => array(
+			// 		'width' => '',
+			// 		'class' => '',
+			// 		'id' => '',
+			// 	),
+			// 	'default_value' => '',
+			// 	'placeholder' => '',
+			// 	'prepend' => '',
+			// 	'append' => '',
+			// 	'maxlength' => '',
+			// ),
+			// array(
+			// 	'key' => 'field_624328099dc99',
+			// 	'label' => 'Cargo del Interlocutor (portugués)',
+			// 	'name' => 'cargo_del_interlocutor_pt',
+			// 	'type' => 'text',
+			// 	'instructions' => '',
+			// 	'required' => 1,
+			// 	'conditional_logic' => 0,
+			// 	'wrapper' => array(
+			// 		'width' => '',
+			// 		'class' => '',
+			// 		'id' => '',
+			// 	),
+			// 	'default_value' => '',
+			// 	'placeholder' => '',
+			// 	'prepend' => '',
+			// 	'append' => '',
+			// 	'maxlength' => '',
+			// ),
 		),
 		'location' => array(
 			array(
@@ -898,7 +944,7 @@ if (function_exists('acf_add_local_field_group')) :
 				'name' => 'url_de_video_de_youtube',
 				'type' => 'url',
 				'instructions' => '',
-				'required' => 0,
+				'required' => 1,
 				'conditional_logic' => 0,
 				'wrapper' => array(
 					'width' => '',
@@ -906,7 +952,7 @@ if (function_exists('acf_add_local_field_group')) :
 					'id' => '',
 				),
 				'default_value' => '',
-				'placeholder' => '',
+				'placeholder' => 'https://www.youtube.com/XXXXXXX',
 			),
 			array(
 				'key' => 'field_6243283735840',
@@ -996,76 +1042,141 @@ function wpdocs_get_paginated_links($query)
 	}, $pages);
 }
 
+function eliminar_tildes($cadena)
+{
+
+	//Codificamos la cadena en formato utf8 en caso de que nos de errores
+	$cadena = utf8_encode($cadena);
+
+	//Ahora reemplazamos las letras
+	$cadena = str_replace(
+		array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
+		array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+		$cadena
+	);
+
+	$cadena = str_replace(
+		array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'),
+		array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+		$cadena
+	);
+
+	$cadena = str_replace(
+		array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'),
+		array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+		$cadena
+	);
+
+	$cadena = str_replace(
+		array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
+		array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+		$cadena
+	);
+
+	$cadena = str_replace(
+		array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'),
+		array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+		$cadena
+	);
+
+	$cadena = str_replace(
+		array('ñ', 'Ñ', 'ç', 'Ç'),
+		array('n', 'N', 'c', 'C'),
+		$cadena
+	);
+
+	return $cadena;
+}
+
 /**
  * Function for obtaining language flag.
  * 
  */
 
-function getGVSiteFlagUrl($country_code) {
-	$flag_url = esc_url(get_template_directory_uri() . '/dist/img/flags/' . $country_code . '.png');
-	return $flag_url;
+function getGvSites()
+{
+
+	$data[] = ['region_code' => [], 'region_name' => [], 'current_site' => [], 'flag_url' => []];
+
+	$region_table_json = include(get_template_directory() . "/inc/region_table.php");
+	$region_table = json_decode($region_table_json);
+
+	// Obtengo idioma actual del sitio para saber en que idioma mostrar el nombre del lenguaje
+	switch (substr(get_locale(), 0, 2)) {
+		case "en":
+			$lang_name = 'en_name';
+			break;
+		case "es":
+			$lang_name = 'es_name';
+			break;
+		case "pt":
+			$lang_name = 'pt_name';
+			break;
+	}
+
+	for ($i = 0; $i < count(get_sites()); $i++) : // Loopeo por todos los sitios 
+?>
+		<?php
+		$sites = get_sites();
+		$region_code = str_replace('/', '', $sites[$i]->path);
+		// Si es el sitio actual
+		echo get_current_blog_id();
+		if (get_current_blog_id() == $sites[$i]->blog_id) :
+
+			$data[$i] = ['region_code' => $region_code, 'current_site' => 1];
+
+
+		// Si no es el sitio actual, agregalo a la lista. De manera que solo figuren los sitios que no son el actual.
+		else :
+			echo 'ocurre';
+			$data[$i] = ['region_code' => $region_code, 'current_site' => 0];
+		endif;
+
+		foreach ($region_table as $region) :
+			if ($region->code == $data[$i]['region_code']) {
+				$data[$i]['region_name'] = $region->$lang_name;
+			}
+		endforeach;
+
+		if ($data[$i]['region_code']) {
+			$data[$i]['flag_url'] = getFlagUrlByRegionCode($data[$i]['region_code']);
+		}
+	endfor;
+
+	return $data;
 }
 
-$language_table_json = include(get_template_directory() . "/inc/language_table.php");
-$language_table = json_decode($language_table_json);
+function getFlagUrlByRegionCode($region_code)
+{
+	return esc_url(get_template_directory_uri() . '/dist/img/flags/' . $region_code . '.png');
+}
 
-$sites = [];
+function getRegionCodeByRegionName($region_name)
+{
+	$region_table_json = include(get_template_directory() . "/inc/region_table.php");
+	$region_table = json_decode($region_table_json);
 
-// Obtengo urls de los sitios para los links
 
-
-
-// loopeo por todos los sitios para sab
-
-foreach (get_sites() as $site) : // Loopeo por todos los sitios 
-?>
-<?php
-
-	// Si es el sitio actual
-
-	if (get_current_blog_id() == $site->blog_id || $site->blog_id == 1) :
-		$country_code = str_replace('/', '', $site->path);
-		if ($country_code) {
-			$current_site_path = $country_code;
+	foreach ($region_table as $region) :
+		if ($region->es_name == $region_name || $region->pt_name == $region_name || $region->en_name == $region_name) {
+			$region_code = $region->code;
 		} else {
-			$current_site_path = 'cl';
+			eliminar_tildes($region_name);
+			if ($region->es_name == $region_name || $region->pt_name == $region_name || $region->en_name == $region_name) {
+				$region_code = $region->code;
+			}
 		}
 
-	// Si no es el sitio actual, agregalo a la lista. De manera que solo figuren los sitios que no son el actual.
-	else :
-		$country_code = str_replace('/', '', $site->path);
-		$sites[] = ['country_code' => $country_code];
-	endif;
-endforeach;
 
-var_dump($sites);
-
-// Obtengo idioma actual del sitio para saber en que idioma mostrar el nombre del lenguaje
-switch (substr(get_locale(), 0, 2)) {
-	case "en":
-		$lang_name = 'en_name';
-		break;
-	case "es":
-		$lang_name = 'es_name';
-		break;
-	case "pt":
-		$lang_name = 'pt_name';
-		break;
-}
-
-// obtengo el nombre del lenguaje
-for ($i = 0; $i < count($sites); $i++) {
-	foreach ($language_table as $language) :
-		if ($language->code == $sites[$i][0]) {
-			$sites[$i][1] = $language->$lang_name;
-		}
 	endforeach;
+	return $region_code;
 }
-// obtengo la url de la bandera de cada sitio
 
-$current_site_flag_url = esc_url(get_template_directory_uri() . '/dist/img/flags/' . $current_site_path . '.png');
+add_action('admin_menu', 'remove_caso_de_exito_if_not_root');
 
-for ($i = 0; $i < count($sites); $i++) {
-	$sites[$i][2] = esc_url(get_template_directory_uri() . '/dist/img/flags/' . $sites[$i][0] . '.png');
+function remove_caso_de_exito_if_not_root()
+{
+	if (get_current_blog_id() != 1) {
+		remove_menu_page('edit.php?post_type=caso_de_exito');
+	}
 }
-?>
