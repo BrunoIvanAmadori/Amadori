@@ -326,30 +326,20 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-// Include Custom Post Type: 'Casos de Exito'.
 
-include 'inc/casos-de-exito.php';
+// CUSTOM FUNCTIONS
 
 
 
 /**
- * This filter is for fixing the retrieval of assets via get_template_directory_uri on the multisite installation. Somehow, URLs of SVGS, CSS and JS weren't working because of the "/{country-code}/" subdirectory.
+ * This fix is for the multisite installation. Somehow, URLs of SVGS, CSS and JS weren't working because of the "/{country-code}/" subdirectory.
  * This may be because our server is delivering via nGinx static assets so, it can't take the htaccess rewrite instructions.
  * With this function I manage to check if I'm in a subdirectory url, and strip it away.
- *
  */
 
-function get_template_directory_uri_fix_for_multisite($string)
+function multisiteUrlFix($string)
 {
-
-	if (get_current_blog_id() != 1) {
-		// Checking that I'm not in the root URL folder, which is the main site
-		// SIDENOTE:
-		// This introduces problems for the Casos de Exito templates. Casos de Exito's templates in different regions
-		// create queries for the root blog, because all the Casos de Exito are inside the rooot blog...
-		// so... this filter won't work when inside a root blog query on the Caso de Exito template.
-		// I did a specific workaround on Casos de Exito in order to retrieve the template_directory BEFORE going inside the root blog loop.
-
+	if (get_current_blog_id() != 1) { //checking that I'm not in the root URL folder, which is the main site
 		//Modify the string here
 		$array = explode("/", $string);
 		array_splice($array, 3, 1);
@@ -360,7 +350,7 @@ function get_template_directory_uri_fix_for_multisite($string)
 	}
 }
 
-add_filter('template_directory_uri', 'get_template_directory_uri_fix_for_multisite', 10, 2);
+add_filter('template_directory_uri', 'multisiteUrlFix', 10, 2);
 
 
 /**
@@ -386,7 +376,6 @@ add_filter('upload_dir', 'wpse_147750_upload_dir');
 
 /**
  * Register Custom Navigation Walker
- * This is needed to properly use bootstrap on Wordpress native Navigation Menu
  */
 function register_navwalker()
 {
@@ -405,15 +394,13 @@ function wpdocs_custom_excerpt_length($length)
 {
 	return 20;
 }
-
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
 
 
-// 
+// Code for adding shortcode attributes to Contact Form 7
 
-/**
- * Add filter to enable adding shortcode attributes to Contact Form 7 snippet.
- */
+add_filter('shortcode_atts_wpcf7', 'custom_shortcode_atts_wpcf7_filter', 10, 3);
+
 function custom_shortcode_atts_wpcf7_filter($out, $pairs, $atts)
 {
 	$my_attr = 'origen_zoho';
@@ -425,10 +412,9 @@ function custom_shortcode_atts_wpcf7_filter($out, $pairs, $atts)
 	return $out;
 }
 
-add_filter('shortcode_atts_wpcf7', 'custom_shortcode_atts_wpcf7_filter', 10, 3);
 
 /**
- * Displays URL of current page.
+ * Program to display URL of current page.
  * @return string URL without query string
  */
 
@@ -451,89 +437,117 @@ function getURLWithoutQuery()
 	return $link;
 }
 
+/**
+ * Function to create custom post type for Success Stories
+ */
 
+function register_caso_de_exito_cpt()
+{
+	$labels = array(
+		'name'                  => _x('Casos de éxito', 'Post type general name', 'caso_de_exito'),
+		'singular_name'         => _x('Caso de éxito', 'Post type singular name', 'caso_de_exito'),
+		'menu_name'             => _x('Casos de éxito', 'Admin Menu text', 'caso_de_exito'),
+		'name_admin_bar'        => _x('Caso de éxito', 'Add New on Toolbar', 'caso_de_exito'),
+		'add_new'               => __('Agregar Nuevo', 'caso_de_exito'),
+		'add_new_item'          => __('Agregar Nuevo caso de éxito', 'caso_de_exito'),
+		'new_item'              => __('Agregar caso de éxito', 'caso_de_exito'),
+		'edit_item'             => __('Editar caso de éxito', 'caso_de_exito'),
+		'view_item'             => __('Ver caso de éxito', 'caso_de_exito'),
+		'all_items'             => __('Todos los casos de éxito', 'caso_de_exito'),
+		'search_items'          => __('Buscar casos de éxito', 'caso_de_exito'),
+		'not_found'             => __('No se han encontrado casos de éxito.', 'caso_de_exito'),
+		'archives'              => _x('Archivo de casos de éxito', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'caso_de_exito'),
+		'insert_into_item'      => _x('Insertar en caso de éxito', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'caso_de_exito'),
+		'uploaded_to_this_item' => _x('Subido a este caso de éxito', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'caso_de_exito'),
+		'filter_items_list'     => _x('Filtrar lista de casos de éxito', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'caso_de_exito'),
+		'items_list_navigation' => _x('Navegación por lista de casos de éxito', 'Screen reader text for the pagination heading on the post type listing screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4', 'caso_de_exito'),
+		'items_list'            => _x('Lista de casos de éxito', 'Screen reader text for the items list heading on the post type listing screen. Default “Posts list”/”Pages list”. Added in 4.4', 'caso_de_exito'),
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => 'Custom post type para casos de éxito.',
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array('slug' => 'caso_de_exito'),
+		'capability_type'    => 'post',
+		'hierarchical'       => false,
+		'menu_position'      => 20,
+		'supports'           => [''],
+		'taxonomies'         => array('industria'),
+		'show_in_rest'       => false,
+		'register_meta_box_cb' => 'add_url_metaboxes',
+	);
+
+	register_post_type(sanitize_key('caso_de_exito'), $args);
+}
+
+add_action('init', 'register_caso_de_exito_cpt');
+
+
+function add_url_metaboxes()
+{
+	add_meta_box('youtube_video_url', 'YouTube Video URL', 'youtube_video_url', 'caso_de_exito');
+}
+
+function youtube_video_url()
+{
+	global $post;
+
+	// Añadimos un 'noncename' que necesitaremos para verificar los datos y de dónde vienen.
+	echo '<input type="hidden" name="youtube_video_noncename" id="youtube_video_noncename" value="' .
+		wp_create_nonce(plugin_basename(__FILE__)) . '" />';
+
+	// Recuperar los datos existentes, si es que hay datos existentes.
+	$youtube_video_url = get_post_meta($post->ID, 'youtube_video_url', true);
+
+	// El input que aparecerá en administración donde introducir/mostrar los datos
+	echo '<input type="text" name="youtube_video" value="' . $youtube_video_url  . '" />';
+}
 
 /**
- * getGvSites
- *
- * @return Array
- * With region_code, region_name, flag_url and current_site.
- * Useful for creating a Region Selector.
+ * Function to create Industries custom taxonomy
  */
-function getGvSites()
+
+//hook into the init action and call create_book_taxonomies when it fires
+
+add_action('init', 'register_industries_taxonomy', 0);
+
+//create a custom taxonomy name it subjects for your posts
+
+function register_industries_taxonomy()
 {
-	$data[] = ['region_code' => [], 'region_name' => [], 'current_site' => [], 'flag_url' => []];
 
-	$region_table_json = include(get_template_directory() . "/inc/region_table.php");
-	$region_table = json_decode($region_table_json);
+	// Add new taxonomy, make it hierarchical like categories
+	//first do the translations part for GUI
 
-	// Obtengo idioma actual del sitio para saber en que idioma mostrar el nombre del lenguaje
-	switch (substr(get_locale(), 0, 2)) {
-		case "en":
-			$lang_name = 'en_name';
-			break;
-		case "es":
-			$lang_name = 'es_name';
-			break;
-		case "pt":
-			$lang_name = 'pt_name';
-			break;
-	}
+	$labels = array(
+		'name' => _x('Industrias', 'taxonomy general name'),
+		'singular_name' => _x('Industria', 'taxonomy singular name'),
+		'search_items' =>  __('Buscar Industrias'),
+		'all_items' => __('Todas las Industrias'),
+		'parent_item' => __('Industria Padre'),
+		'parent_item_colon' => __('Industria Padre:'),
+		'edit_item' => __('Editar Industria'),
+		'update_item' => __('Actualizar Industria'),
+		'add_new_item' => __('Agregar Nueva Industria'),
+		'new_item_name' => __('Agregar nuevo nombre de Industria'),
+		'menu_name' => __('Industrias'),
+	);
 
-	for ($i = 0; $i < count(get_sites()); $i++) : // Loopeo por todos los sitios 
-?>
-		<?php
-		$sites = get_sites();
-		$region_code = str_replace('/', '', $sites[$i]->path);
-		// Si es el sitio actual
-		if (get_current_blog_id() == $sites[$i]->blog_id) :
-			$data[$i] = ['region_code' => $region_code, 'current_site' => 1];
-
-		// Si no es el sitio actual, agregalo a la lista. De manera que solo figuren los sitios que no son el actual.
-		else :
-			$data[$i] = ['region_code' => $region_code, 'current_site' => 0];
-		endif;
-
-		foreach ($region_table as $region) :
-			if ($region->code == $data[$i]['region_code']) {
-				$data[$i]['region_name'] = $region->$lang_name;
-			}
-		endforeach;
-
-		if ($data[$i]['region_code']) {
-			$data[$i]['flag_url'] = getFlagUrlByRegionCode($data[$i]['region_code']);
-		}
-	endfor;
-
-	return $data;
+	// Now register the taxonomy
+	register_taxonomy('industria', array('caso_de_exito'), array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_in_rest' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => false,
+	));
 }
 
-/**
- * getFlagUrlByRegionCode
- *
- * @param String $region_code Region code (i.e.: cl, pt-br, etc)
- * @return String Url of the flag.
- * Useful if you only want to retrieve a flag URL.
- */
-function getFlagUrlByRegionCode($region_code)
-{
-	return esc_url(get_template_directory_uri() . '/dist/img/flags/' . $region_code . '.png');
-}
-
-function getRegionCodeByRegionName($region_name)
-{
-	$region_table_json = include(get_template_directory() . "/inc/region_table.php");
-	$region_table = json_decode($region_table_json);
-
-	foreach ($region_table as $region) :
-		if ($region->es_name == $region_name || $region->pt_name == $region_name || $region->en_name == $region_name) {
-			$region_code = $region->code;
-		} else {
-			eliminar_tildes($region_name);
-			if ($region->es_name == $region_name || $region->pt_name == $region_name || $region->en_name == $region_name) {
-				$region_code = $region->code;
-			}
-		}
-	endforeach;
-	return $region_code;
-}
+add_filter('wp_lazy_loading_enabled', '__return_false');

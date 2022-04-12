@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Casos de Exito
+Template Name: Casos de Exito (Portugués)
 */
 
 get_header();
@@ -183,7 +183,7 @@ get_header();
                 </div>
             </div>
             <div class="hero__graphics--casos-de-exito col-12 col-md-6">
-                <img class="anime-pop" src='<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/casos-de-exito/header-casos-de-exito.png'>
+                <img class="anime-pop" src='<?php echo esc_url(get_template_directory()); ?>/dist/img/casos-de-exito/header-casos-de-exito.png'>
             </div>
         </div>
     </section>
@@ -258,11 +258,10 @@ get_header();
                         </div>
                     </div>
                     <div class="hero__graphics col-12 col-md-6">
-                        <img class="anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/error-500.svg">
+                        <img class="anime-pop" src="<?php echo esc_url(get_template_directory()); ?>/dist/img/error-500.svg">
                     </div>
                 </div>
             <?php endif; ?>
-
 
             <?php
             // We close connection with root blog
@@ -271,11 +270,10 @@ get_header();
             ?>
         </div>
     </section>
+    < </main>
+        <!-- #main -->
 
-
-</main><!-- #main -->
-
-<?php
-get_template_part('template-parts/modal', 'newsletter');
-get_footer();
-?>
+        <?php
+        get_template_part('template-parts/modal', 'newsletter');
+        get_footer();
+        ?>

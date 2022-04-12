@@ -3,7 +3,8 @@
         <a class="caso-de-exito-card__link" target="_blank" href="<?php echo get_field("url_de_video_de_youtube") ?>"></a>
         <div class="caso-de-exito-card__img d-flex justify-content-center align-items-center" style="background-image:url('<?php echo get_field('previsualizacion_de_video_de_youtube'); ?>')">
             <div class="caso-de-exito-card__play-bg">
-                <div class="caso-de-exito-card__play"><img src="<?php echo get_template_directory_uri() . '/dist/img/casos-de-exito/play-solid.svg' ?>"></div>
+
+                <div class="caso-de-exito-card__play"><img src="<?php echo $args['template_directory'] . '/dist/img/casos-de-exito/play-solid.svg' ?>"></div>
             </div>
         </div>
         <div class="card-body d-flex flex-column justify-content-between">
@@ -29,7 +30,7 @@
                     if (get_field("pais_de_empresa") != "No especificado") :
                     ?>
                         <div class="caso-de-exito__flag">
-                            <img src="<?php echo getFlagUrlByRegionCode($region_code); ?>">
+                            <img src="<?php echo $args['template_directory'] . '/dist/img/flags/' . $region_code . '.png'; ?>">
                         </div>
                     <?php
                     endif;
@@ -63,7 +64,7 @@
                                 echo '"' . wp_trim_words($selected_testimonio, 18) . '"';
                                 ?>
                             </i>
-                            <a class="d-inline-block" href=""><span><img width="15" class="mb-2 ms-1" src="<?php echo get_template_directory_uri() . '/dist/img/casos-de-exito/simbolo-nueva-ventana.png' ?>"></span> Ver video </a>
+                            <a class="d-inline-block" href=""><span><img width="15" class="mb-2 ms-1" src="<?php echo $args['template_directory'] . '/dist/img/casos-de-exito/simbolo-nueva-ventana.png' ?>"></span> Ver video </a>
                         </small>
                     </div>
                 <?php

@@ -60,7 +60,7 @@ get_header();
 					</div> -->
 
 					<h3 class="gray mb-3 fw-bold text-center mt-5">
-						La gestión de fuerza laboral por excelencia
+						La plataforma de control de asistencia y turnos por excelencia
 					</h3>
 					<p class="gray fw-light mb-3 text-center">
 						Solución integral 100% en la nube. Gestiona, elabora reportes, obtén métricas y ahorra dinero. Todo en un solo lugar.
