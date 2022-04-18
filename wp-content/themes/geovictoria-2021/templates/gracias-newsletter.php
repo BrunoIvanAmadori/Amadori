@@ -42,8 +42,21 @@ $temas_de_interes = explode('+', $temas_de_interes);
 					<?php endif; ?>
 				</div>
 			</div>
-
 		</div>
+		<div class="newsletter-banner d-flex justify-content-center">
+			<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-cd51d050-949d-44f7-bfa8-81ccad96711c"><span class="hs-cta-node hs-cta-cd51d050-949d-44f7-bfa8-81ccad96711c" id="hs-cta-cd51d050-949d-44f7-bfa8-81ccad96711c">
+					<!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/7742864/cd51d050-949d-44f7-bfa8-81ccad96711c"><img class="hs-cta-img" id="hs-cta-img-cd51d050-949d-44f7-bfa8-81ccad96711c" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/7742864/cd51d050-949d-44f7-bfa8-81ccad96711c.png" alt="Nueva llamada a la acción" /></a>
+				</span>
+				<script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+				<script type="text/javascript">
+					hbspt.cta.load(7742864, 'cd51d050-949d-44f7-bfa8-81ccad96711c', {
+						"useNewLoader": "true",
+						"region": "na1"
+					});
+				</script>
+			</span><!-- end HubSpot Call-to-Action Code -->
+		</div>
+
 	</section>
 	<section class="container text-center text-md-start flex-column">
 		<?php if ($temas_de_interes[0]) : ?>

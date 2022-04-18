@@ -67,4 +67,28 @@
 		);
 		?>
 	</div><!-- .entry-content -->
+	<div class="entry-banner mb-4 d-flex justify-content-center">
+
+		<!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-c07de3bc-047c-49d0-9d1f-ab21791589bc"><span class="hs-cta-node hs-cta-c07de3bc-047c-49d0-9d1f-ab21791589bc" id="hs-cta-c07de3bc-047c-49d0-9d1f-ab21791589bc">
+				<!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/7742864/c07de3bc-047c-49d0-9d1f-ab21791589bc" target="_blank" rel="noopener"><img class="hs-cta-img" id="hs-cta-img-c07de3bc-047c-49d0-9d1f-ab21791589bc" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/7742864/c07de3bc-047c-49d0-9d1f-ab21791589bc.png" alt="Nueva llamada a la acción" /></a>
+			</span>
+			<script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+			<script type="text/javascript">
+				hbspt.cta.load(7742864, 'c07de3bc-047c-49d0-9d1f-ab21791589bc', {
+					"useNewLoader": "true",
+					"region": "na1"
+				});
+			</script>
+		</span><!-- end HubSpot Call-to-Action Code -->
+		<?php // $path = explode('/', $_SERVER["REQUEST_URI"]); 
+		?>
+
+		<!-- <a href="<?php // echo '/' . $path[1]; 
+						?>/calculadora/?utm_source=pricing+&utm_medium=banner+calculadora&utm_campaign=campa%C3%B1a+pricing">
+<img class="d-none d-md-flex" src="<?php // echo esc_url(get_template_directory_uri()); 
+									?>/dist/img/blog/banner-pricer.png">
+<img class="d-flex d-md-none" src="<?php // echo esc_url(get_template_directory_uri()); 
+									?>/dist/img/blog/banner-pricer-mobile.png">
+</a> -->
+	</div>
 </div>

@@ -111,10 +111,6 @@ get_header();
 		</div>
 	</section>
 
-
-
-
-
 	<section class="d-flex flex-column container justify-content-between features">
 		<div class="row">
 			<h2 class="text-center fw-bold gray section-title anime-fadein">¿Por qué elegir GeoVictoria?</h2>
@@ -180,7 +176,6 @@ get_header();
 							<small>Gerente de Recursos Humanos</small>
 
 						</span>
-
 					</div>
 				</div>
 			</div>
@@ -203,7 +198,6 @@ get_header();
 						</span>
 					</p>
 				</div>
-
 
 				<div class="col-lg-6 text-center">
 					<div class="testimonial__img-top">

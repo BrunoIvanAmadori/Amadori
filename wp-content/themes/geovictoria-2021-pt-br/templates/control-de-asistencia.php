@@ -719,8 +719,38 @@ get_header();
 			<div class="col-5 h-100 justify-content-center d-none d-md-flex">
 				<img class="why-us__img anime-pop" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/footer-sales.png" />
 			</div>
+
+		</section>
+	</div>
+
+	<?php
+	$args = [
+		'post_type'        => 'post',
+		'posts_per_page'   => 6,
+		'tag'            => ['controle-de-ponto'],
+	];
+
+	$control_de_asistencia_query = new WP_Query($args);
+
+	if ($control_de_asistencia_query->have_posts()) :
+	?>
+		<section class="d-flex flex-column container justify-content-center related-posts">
+			<h2 class="align-self-center gray">Saiba mais sobre o Controle de Ponto</h2>
+			<div class="row mt-3 gy-4">
+				<?php
+				while ($control_de_asistencia_query->have_posts()) {
+					$control_de_asistencia_query->the_post();
+					get_template_part('template-parts/blogcard');
+				}
+				?>
+			</div>
+		<?php
+	endif;
+
+		?>
 		</section>
 </main><!-- #main -->
+
 <?php
 get_template_part('template-parts/modal', 'contacto');
 get_footer();

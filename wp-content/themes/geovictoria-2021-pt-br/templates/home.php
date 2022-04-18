@@ -36,8 +36,7 @@ get_header();
 			<div class="col-12 col-md-6 mb-5">
 				<div class="align-self-center pe-md-3">
 					<h1 class="gray mb-3 fw-bold">
-						Gestão para capital
-						humano por excelência
+						O software de assistência e controle de ponto por excelência
 					</h1>
 					<p class="gray fw-light mb-3">
 						Solução integral 100% na nuvem.

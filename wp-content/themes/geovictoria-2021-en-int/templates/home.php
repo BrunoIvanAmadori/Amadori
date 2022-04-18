@@ -42,7 +42,7 @@ get_header();
 
 					<h3 class="gray mb-3 fw-bold text-center mt-5">
 
-						The attendance and shift control platform par excellence
+						The attendance and shift control software par excellence
 					</h3>
 					<p class="gray fw-light mb-3 text-center">
 						100% integral solution in the cloud. <br> Manage, prepare reports, obtain metrics <br> and save money. All in one place.

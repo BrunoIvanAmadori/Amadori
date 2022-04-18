@@ -21,6 +21,10 @@ get_header();
                         Conhece como impactamos com cada um dos nossos clientes, na gestão de Controle de Ponto.
                     </p>
                     <?php
+                    // We save template directory first because of a problem retrieving template directory when in blog id 1.
+                    // This is because of a fix I had to do previously called multiSiteUrlFix in functions.php
+                    // in which I modify the URLs of the get_template_directory manually because couldn't solve multisite url on nginx
+                    $template_directory = get_template_directory_uri();
                     // We switch to root blog where all the 'casos de exito' are stored.
                     switch_to_blog(1);
                     ?>
@@ -183,7 +187,7 @@ get_header();
                 </div>
             </div>
             <div class="hero__graphics--casos-de-exito col-12 col-md-6">
-                <img class="anime-pop" src='<?php echo esc_url(get_template_directory()); ?>/dist/img/casos-de-exito/header-casos-de-exito.png'>
+                <img class="anime-pop" src='<?php echo esc_url($template_directory); ?>/dist/img/casos-de-exito/header-casos-de-exito.png'>
             </div>
         </div>
     </section>
@@ -194,7 +198,7 @@ get_header();
             if ($casos_de_exito_filtered->have_posts()) :
                 while ($casos_de_exito_filtered->have_posts()) {
                     $casos_de_exito_filtered->the_post();
-                    get_template_part('template-parts/caso-de-exito-card', null, ['region' => 'pt-br']);
+                    get_template_part('template-parts/caso-de-exito-card', null, ['region' => 'pt-br', 'template_directory' => $template_directory]);
                 }
             ?>
                 <?php
@@ -258,7 +262,7 @@ get_header();
                         </div>
                     </div>
                     <div class="hero__graphics col-12 col-md-6">
-                        <img class="anime-pop" src="<?php echo esc_url(get_template_directory()); ?>/dist/img/error-500.svg">
+                        <img class="anime-pop" src="<?php echo esc_url($template_directory); ?>/dist/img/error-500.svg">
                     </div>
                 </div>
             <?php endif; ?>
