@@ -4,6 +4,10 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const fileLoader = require("file-loader");
+const CopyPlugin = require("copy-webpack-plugin");
+const ImageMinimizerPlugin = require("imagemin-webpack-plugin").default;
+const { extendDefaultPlugins } = require("svgo");
+const TerserPlugin = require("terser-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -82,17 +86,7 @@ const config = {
       filename: "./js/pages/page-single-mobile.js",
     },
   },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: "/css/[name].css",
-    }),
 
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-  ],
   module: {
     rules: [
       {
@@ -112,24 +106,38 @@ const config = {
           "sass-loader",
         ],
       },
-      {
-        test: /\.(woff|woff2)$/,
-        use: {
-          loader: "url-loader",
-          options: {
-            limit: 10000,
-            mimetype: "application/font-woff",
-            name: "[name].[ext]",
-            outputPath: "./fonts/",
-            publicPath: "./fonts/",
-            esModule: false,
-          },
-        },
-      },
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
+  },
+  output: {
+    path: path.resolve(__dirname, "dist"),
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "/css/[name].css",
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "src/fonts/", to: "fonts/" },
+        { from: "src/img/", to: "img/" },
+        { from: "src/js/scripts/", to: "js/" },
+      ],
+    }),
+    new ImageMinimizerPlugin([
+      {
+        pngquant: {
+          quality: [0.7, 0.7],
+        },
+      },
+    ]),
+    // Add your plugins here
+    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+  ],
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
 };
 
